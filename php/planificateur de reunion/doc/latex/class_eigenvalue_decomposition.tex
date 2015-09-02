@@ -1,0 +1,91 @@
+\section{Eigenvalue\+Decomposition Class Reference}
+\label{class_eigenvalue_decomposition}\index{Eigenvalue\+Decomposition@{Eigenvalue\+Decomposition}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf \+\_\+\+\_\+construct} (\$Arg)
+\item 
+{\bf get\+V} ()
+\item 
+{\bf get\+Real\+Eigenvalues} ()
+\item 
+{\bf get\+Imag\+Eigenvalues} ()
+\item 
+{\bf get\+D} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Eigenvalue\+Decomposition@{Eigenvalue\+Decomposition}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!Eigenvalue\+Decomposition@{Eigenvalue\+Decomposition}}
+\subsubsection[{\+\_\+\+\_\+construct}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+\item[{}]{\$\+Arg}
+\end{DoxyParamCaption}
+)}\label{class_eigenvalue_decomposition_aad04401937c318eb9bce0ecb35b4a4ce}
+Constructor\+: Check for symmetry, then construct the eigenvalue decomposition
+
+public 
+\begin{DoxyParams}{Parameters}
+{\em A} & Square matrix \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Structure to access D and V. 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\index{Eigenvalue\+Decomposition@{Eigenvalue\+Decomposition}!get\+D@{get\+D}}
+\index{get\+D@{get\+D}!Eigenvalue\+Decomposition@{Eigenvalue\+Decomposition}}
+\subsubsection[{get\+D}]{\setlength{\rightskip}{0pt plus 5cm}get\+D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_eigenvalue_decomposition_a2ab5850d0dd2f9cb68ec4cfffe0af769}
+Return the block diagonal eigenvalue matrix
+
+public \begin{DoxyReturn}{Returns}
+D 
+\end{DoxyReturn}
+\index{Eigenvalue\+Decomposition@{Eigenvalue\+Decomposition}!get\+Imag\+Eigenvalues@{get\+Imag\+Eigenvalues}}
+\index{get\+Imag\+Eigenvalues@{get\+Imag\+Eigenvalues}!Eigenvalue\+Decomposition@{Eigenvalue\+Decomposition}}
+\subsubsection[{get\+Imag\+Eigenvalues}]{\setlength{\rightskip}{0pt plus 5cm}get\+Imag\+Eigenvalues (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_eigenvalue_decomposition_a8bf955b764985c3234c1308a7e3965ff}
+Return the imaginary parts of the eigenvalues
+
+public \begin{DoxyReturn}{Returns}
+imag(diag(\+D)) 
+\end{DoxyReturn}
+\index{Eigenvalue\+Decomposition@{Eigenvalue\+Decomposition}!get\+Real\+Eigenvalues@{get\+Real\+Eigenvalues}}
+\index{get\+Real\+Eigenvalues@{get\+Real\+Eigenvalues}!Eigenvalue\+Decomposition@{Eigenvalue\+Decomposition}}
+\subsubsection[{get\+Real\+Eigenvalues}]{\setlength{\rightskip}{0pt plus 5cm}get\+Real\+Eigenvalues (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_eigenvalue_decomposition_a5947fbbbd85356529c94091f3ab8cc09}
+Return the real parts of the eigenvalues
+
+public \begin{DoxyReturn}{Returns}
+real(diag(\+D)) 
+\end{DoxyReturn}
+\index{Eigenvalue\+Decomposition@{Eigenvalue\+Decomposition}!get\+V@{get\+V}}
+\index{get\+V@{get\+V}!Eigenvalue\+Decomposition@{Eigenvalue\+Decomposition}}
+\subsubsection[{get\+V}]{\setlength{\rightskip}{0pt plus 5cm}get\+V (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_eigenvalue_decomposition_abcf26f3d1d95ad9c3b8a78eba1cb3030}
+Return the eigenvector matrix
+
+public \begin{DoxyReturn}{Returns}
+V 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/var/www/workspace/\+O\+D\+I-\/\+P\+R\+O\+J\+E\+C\+T/model/\+P\+H\+P\+Excel/\+Classes/\+P\+H\+P\+Excel/\+Shared/\+J\+A\+M\+A/Eigenvalue\+Decomposition.\+php\end{DoxyCompactItemize}

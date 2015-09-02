@@ -1,0 +1,230 @@
+\section{Survey Class Reference}
+\label{class_survey}\index{Survey@{Survey}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf get\+I\+D} ()
+\item 
+{\bf set\+Authour} (\$author)
+\item 
+{\bf get\+Author} ()
+\item 
+{\bf set\+I\+D} (\$survey\+I\+D)
+\item 
+{\bf add\+Time\+Slot} (\$time\+Slot)
+\item 
+{\bf add\+Responses} (\$response)
+\item 
+{\bf get\+Responses} ()
+\item 
+{\bf get\+Time\+Slots} ()
+\item 
+{\bf get\+Time\+Slots\+Number} ()
+\item 
+{\bf get\+Comment} ()
+\item 
+{\bf set\+Comment} (\$comment)
+\item 
+{\bf set\+Title} (\$title)
+\item 
+{\bf get\+Title} ()
+\item 
+{\bf get\+Disponibility\+Numbers\+By\+Time\+Slot} ()
+\item 
+{\bf set\+Disponibility\+Numbes\+By\+Time\+Slot} (\$array)
+\item 
+{\bf get\+Max\+Number\+Available\+Persons} ()
+\item 
+{\bf set\+Max\+Number\+Available\+Persons} (\$number)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{Survey@{Survey}!add\+Responses@{add\+Responses}}
+\index{add\+Responses@{add\+Responses}!Survey@{Survey}}
+\subsubsection[{add\+Responses}]{\setlength{\rightskip}{0pt plus 5cm}add\+Responses (
+\begin{DoxyParamCaption}
+\item[{}]{\$response}
+\end{DoxyParamCaption}
+)}\label{class_survey_a7e9411eb971356d56391d98ca566c16f}
+Permet d'ajouter dans le sondage les réponses choisi par des utilisateurs. 
+\begin{DoxyParams}{Parameters}
+{\em array} & of \doxyref{Response}{p.}{class_response} \$response \\
+\hline
+\end{DoxyParams}
+\index{Survey@{Survey}!add\+Time\+Slot@{add\+Time\+Slot}}
+\index{add\+Time\+Slot@{add\+Time\+Slot}!Survey@{Survey}}
+\subsubsection[{add\+Time\+Slot}]{\setlength{\rightskip}{0pt plus 5cm}add\+Time\+Slot (
+\begin{DoxyParamCaption}
+\item[{}]{\$time\+Slot}
+\end{DoxyParamCaption}
+)}\label{class_survey_a37d4f636517ddf0ba4823502a8892047}
+Permet d'ajouter dans le sondage les créneaux horaire (celui proposé par l'auteur du sondage). 
+\begin{DoxyParams}[1]{Parameters}
+\doxyref{Time\+Slot}{p.}{class_time_slot} & {\em \$time\+Slot} & \\
+\hline
+\end{DoxyParams}
+\index{Survey@{Survey}!get\+Author@{get\+Author}}
+\index{get\+Author@{get\+Author}!Survey@{Survey}}
+\subsubsection[{get\+Author}]{\setlength{\rightskip}{0pt plus 5cm}get\+Author (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_survey_a5286e30390ae3e1b274940286493dd24}
+récupèrer le nom de l'auteur du sondage. \begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\index{Survey@{Survey}!get\+Comment@{get\+Comment}}
+\index{get\+Comment@{get\+Comment}!Survey@{Survey}}
+\subsubsection[{get\+Comment}]{\setlength{\rightskip}{0pt plus 5cm}get\+Comment (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_survey_adb57c3d1b74c19589ba1d641ea1a390e}
+Retourne un commenraire au sujet du sondage en question. \begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\index{Survey@{Survey}!get\+Disponibility\+Numbers\+By\+Time\+Slot@{get\+Disponibility\+Numbers\+By\+Time\+Slot}}
+\index{get\+Disponibility\+Numbers\+By\+Time\+Slot@{get\+Disponibility\+Numbers\+By\+Time\+Slot}!Survey@{Survey}}
+\subsubsection[{get\+Disponibility\+Numbers\+By\+Time\+Slot}]{\setlength{\rightskip}{0pt plus 5cm}get\+Disponibility\+Numbers\+By\+Time\+Slot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_survey_ae89e85e4b6791cd0f05e6d4397106000}
+Retourne le nombre de personne disponible pour chaque créneau horaire. \begin{DoxyReturn}{Returns}
+array of int 
+\end{DoxyReturn}
+\index{Survey@{Survey}!get\+I\+D@{get\+I\+D}}
+\index{get\+I\+D@{get\+I\+D}!Survey@{Survey}}
+\subsubsection[{get\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}get\+I\+D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_survey_a30dd7fff4fec7a39f9be9d27d4b22a59}
+Retourne l'I\+D du sondage  exemple 147841 \index{Survey@{Survey}!get\+Max\+Number\+Available\+Persons@{get\+Max\+Number\+Available\+Persons}}
+\index{get\+Max\+Number\+Available\+Persons@{get\+Max\+Number\+Available\+Persons}!Survey@{Survey}}
+\subsubsection[{get\+Max\+Number\+Available\+Persons}]{\setlength{\rightskip}{0pt plus 5cm}get\+Max\+Number\+Available\+Persons (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_survey_a90404d527ddc04df14b0be20f212f87c}
+Retourne le nombre de personne disponible du meilleur créneau horaire. \begin{DoxyReturn}{Returns}
+nombre 
+\end{DoxyReturn}
+\index{Survey@{Survey}!get\+Responses@{get\+Responses}}
+\index{get\+Responses@{get\+Responses}!Survey@{Survey}}
+\subsubsection[{get\+Responses}]{\setlength{\rightskip}{0pt plus 5cm}get\+Responses (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_survey_a23b5694091fd594edd4b7e2d9ea7ab08}
+Retourne dans le sondage les réponses choisi par des utilisateurs. \begin{DoxyReturn}{Returns}
+array of \doxyref{Response}{p.}{class_response} 
+\end{DoxyReturn}
+\index{Survey@{Survey}!get\+Time\+Slots@{get\+Time\+Slots}}
+\index{get\+Time\+Slots@{get\+Time\+Slots}!Survey@{Survey}}
+\subsubsection[{get\+Time\+Slots}]{\setlength{\rightskip}{0pt plus 5cm}get\+Time\+Slots (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_survey_ae37e85f894ccf8577479e27e32eb2e96}
+Retourne un tableau de créneaux horaire. \begin{DoxyReturn}{Returns}
+array of \doxyref{Time\+Slot}{p.}{class_time_slot} 
+\end{DoxyReturn}
+\index{Survey@{Survey}!get\+Time\+Slots\+Number@{get\+Time\+Slots\+Number}}
+\index{get\+Time\+Slots\+Number@{get\+Time\+Slots\+Number}!Survey@{Survey}}
+\subsubsection[{get\+Time\+Slots\+Number}]{\setlength{\rightskip}{0pt plus 5cm}get\+Time\+Slots\+Number (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_survey_a8b4182329e25244f7d9174528a560065}
+Retourne le nombre de créneaux horaire dans un sondage. \begin{DoxyReturn}{Returns}
+nombre 
+\end{DoxyReturn}
+\index{Survey@{Survey}!get\+Title@{get\+Title}}
+\index{get\+Title@{get\+Title}!Survey@{Survey}}
+\subsubsection[{get\+Title}]{\setlength{\rightskip}{0pt plus 5cm}get\+Title (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_survey_a95e859a4588a39a1824b717378a84c29}
+Retourne le titre du sondage en question. \begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\index{Survey@{Survey}!set\+Authour@{set\+Authour}}
+\index{set\+Authour@{set\+Authour}!Survey@{Survey}}
+\subsubsection[{set\+Authour}]{\setlength{\rightskip}{0pt plus 5cm}set\+Authour (
+\begin{DoxyParamCaption}
+\item[{}]{\$author}
+\end{DoxyParamCaption}
+)}\label{class_survey_a207d6a0496c7ee7dbabb77c307a952bf}
+Fixe le nom du celui qui crée du songage. 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$author} & \\
+\hline
+\end{DoxyParams}
+\index{Survey@{Survey}!set\+Comment@{set\+Comment}}
+\index{set\+Comment@{set\+Comment}!Survey@{Survey}}
+\subsubsection[{set\+Comment}]{\setlength{\rightskip}{0pt plus 5cm}set\+Comment (
+\begin{DoxyParamCaption}
+\item[{}]{\$comment}
+\end{DoxyParamCaption}
+)}\label{class_survey_a169d67ad53abdd4e6d1cd931fe15e839}
+Fixe un commenraire au sujet du sondage en question. 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$comment} & \\
+\hline
+\end{DoxyParams}
+\index{Survey@{Survey}!set\+Disponibility\+Numbes\+By\+Time\+Slot@{set\+Disponibility\+Numbes\+By\+Time\+Slot}}
+\index{set\+Disponibility\+Numbes\+By\+Time\+Slot@{set\+Disponibility\+Numbes\+By\+Time\+Slot}!Survey@{Survey}}
+\subsubsection[{set\+Disponibility\+Numbes\+By\+Time\+Slot}]{\setlength{\rightskip}{0pt plus 5cm}set\+Disponibility\+Numbes\+By\+Time\+Slot (
+\begin{DoxyParamCaption}
+\item[{}]{\$array}
+\end{DoxyParamCaption}
+)}\label{class_survey_a41c4db16c66da5283aa79f2b6a1eda7b}
+Fixe le nombre de personne disponible pour chaque créneau horaire. 
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$array} & \\
+\hline
+\end{DoxyParams}
+\index{Survey@{Survey}!set\+I\+D@{set\+I\+D}}
+\index{set\+I\+D@{set\+I\+D}!Survey@{Survey}}
+\subsubsection[{set\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}set\+I\+D (
+\begin{DoxyParamCaption}
+\item[{}]{\$survey\+I\+D}
+\end{DoxyParamCaption}
+)}\label{class_survey_a0b4664cab93b8e7f5b096a0fb3254e0f}
+Fixe l' id du sondage, récupèraration via la base de donnée. 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$survey\+I\+D} & \\
+\hline
+\end{DoxyParams}
+\index{Survey@{Survey}!set\+Max\+Number\+Available\+Persons@{set\+Max\+Number\+Available\+Persons}}
+\index{set\+Max\+Number\+Available\+Persons@{set\+Max\+Number\+Available\+Persons}!Survey@{Survey}}
+\subsubsection[{set\+Max\+Number\+Available\+Persons}]{\setlength{\rightskip}{0pt plus 5cm}set\+Max\+Number\+Available\+Persons (
+\begin{DoxyParamCaption}
+\item[{}]{\$number}
+\end{DoxyParamCaption}
+)}\label{class_survey_a6e4b9d53b910ecf9e40a4e102f441ef4}
+Fixe le nombre de personne disponible du meilleur créneau horaire. 
+\begin{DoxyParams}{Parameters}
+{\em nombre} & \\
+\hline
+\end{DoxyParams}
+\index{Survey@{Survey}!set\+Title@{set\+Title}}
+\index{set\+Title@{set\+Title}!Survey@{Survey}}
+\subsubsection[{set\+Title}]{\setlength{\rightskip}{0pt plus 5cm}set\+Title (
+\begin{DoxyParamCaption}
+\item[{}]{\$title}
+\end{DoxyParamCaption}
+)}\label{class_survey_a884ba9bb0d54bde7839e798db7964476}
+Fixe un titre au sondage en question. 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$title} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/var/www/workspace/\+O\+D\+I-\/\+P\+R\+O\+J\+E\+C\+T/model/Survey.\+inc.\+php\end{DoxyCompactItemize}

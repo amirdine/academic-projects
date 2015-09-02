@@ -1,0 +1,144 @@
+\section{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Excel2007 Class Reference}
+\label{class_p_h_p_excel___reader___excel2007}\index{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Excel2007@{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Excel2007}}
+
+
+Inheritance diagram for P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Excel2007\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{class_p_h_p_excel___reader___excel2007__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Excel2007\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{class_p_h_p_excel___reader___excel2007__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf \+\_\+\+\_\+construct} ()
+\item 
+{\bf can\+Read} (\$p\+Filename)
+\item 
+{\bf list\+Worksheet\+Names} (\$p\+Filename)
+\item 
+{\bf list\+Worksheet\+Info} (\$p\+Filename)
+\item 
+{\bfseries \+\_\+get\+From\+Zip\+Archive} (\$archive, \$file\+Name= '')\label{class_p_h_p_excel___reader___excel2007_a46dc4510900920c705bb12654b9f6712}
+
+\item 
+{\bf load} (\$p\+Filename)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Excel2007@{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Excel2007}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Excel2007@{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Excel2007}}
+\subsubsection[{\+\_\+\+\_\+construct}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___reader___excel2007_a095c5d389db211932136b53f25f39685}
+Create a new \doxyref{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Excel2007}{p.}{class_p_h_p_excel___reader___excel2007} instance 
+
+\subsection{Member Function Documentation}
+\index{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Excel2007@{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Excel2007}!can\+Read@{can\+Read}}
+\index{can\+Read@{can\+Read}!P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Excel2007@{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Excel2007}}
+\subsubsection[{can\+Read}]{\setlength{\rightskip}{0pt plus 5cm}can\+Read (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Filename}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___reader___excel2007_aaf37e346855968e7310a6b43eb701fff}
+Can the current \doxyref{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+I\+Reader}{p.}{interface_p_h_p_excel___reader___i_reader} read the file?
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Filename} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Exception}{p.}{class_p_h_p_excel___reader___exception}} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements {\bf P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+I\+Reader} \doxyref{}{p.}{interface_p_h_p_excel___reader___i_reader_aaf37e346855968e7310a6b43eb701fff}.
+
+\index{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Excel2007@{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Excel2007}!list\+Worksheet\+Info@{list\+Worksheet\+Info}}
+\index{list\+Worksheet\+Info@{list\+Worksheet\+Info}!P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Excel2007@{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Excel2007}}
+\subsubsection[{list\+Worksheet\+Info}]{\setlength{\rightskip}{0pt plus 5cm}list\+Worksheet\+Info (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Filename}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___reader___excel2007_a7ae73ad1b0fda6cd8644f583326626aa}
+Return worksheet info (Name, Last Column Letter, Last Column Index, Total Rows, Total Columns)
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Filename} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Exception}{p.}{class_p_h_p_excel___reader___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\index{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Excel2007@{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Excel2007}!list\+Worksheet\+Names@{list\+Worksheet\+Names}}
+\index{list\+Worksheet\+Names@{list\+Worksheet\+Names}!P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Excel2007@{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Excel2007}}
+\subsubsection[{list\+Worksheet\+Names}]{\setlength{\rightskip}{0pt plus 5cm}list\+Worksheet\+Names (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Filename}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___reader___excel2007_afa718d59525a71d195cee8b1d54c51c5}
+Reads names of the worksheets from a file, without parsing the whole file to a \doxyref{P\+H\+P\+Excel}{p.}{class_p_h_p_excel} object
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Filename} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Exception}{p.}{class_p_h_p_excel___reader___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\index{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Excel2007@{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Excel2007}!load@{load}}
+\index{load@{load}!P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Excel2007@{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Excel2007}}
+\subsubsection[{load}]{\setlength{\rightskip}{0pt plus 5cm}load (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Filename}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___reader___excel2007_a138b94503ca4c44b510190c29d4f16fe}
+Loads \doxyref{P\+H\+P\+Excel}{p.}{class_p_h_p_excel} from file
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Filename} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Exception}{p.}{class_p_h_p_excel___reader___exception}} & \\
+\hline
+\end{DoxyExceptions}
+respect xsi\+:type
+
+respect xsi\+:type 
+
+Implements {\bf P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+I\+Reader} \doxyref{}{p.}{interface_p_h_p_excel___reader___i_reader_a138b94503ca4c44b510190c29d4f16fe}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/var/www/workspace/\+O\+D\+I-\/\+P\+R\+O\+J\+E\+C\+T/model/\+P\+H\+P\+Excel/\+Classes/\+P\+H\+P\+Excel/\+Reader/Excel2007.\+php\end{DoxyCompactItemize}

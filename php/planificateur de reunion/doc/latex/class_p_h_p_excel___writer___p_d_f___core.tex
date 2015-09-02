@@ -1,0 +1,250 @@
+\section{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+P\+D\+F\+\_\+\+Core Class Reference}
+\label{class_p_h_p_excel___writer___p_d_f___core}\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+P\+D\+F\+\_\+\+Core@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+P\+D\+F\+\_\+\+Core}}
+
+
+Inheritance diagram for P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+P\+D\+F\+\_\+\+Core\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_p_h_p_excel___writer___p_d_f___core__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+P\+D\+F\+\_\+\+Core\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=277pt]{class_p_h_p_excel___writer___p_d_f___core__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf \+\_\+\+\_\+construct} ({\bf P\+H\+P\+Excel} \$php\+Excel)
+\item 
+{\bf get\+Font} ()
+\item 
+{\bf set\+Font} (\$font\+Name)
+\item 
+{\bf get\+Paper\+Size} ()
+\item 
+{\bf set\+Paper\+Size} (\$p\+Value=P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Page\+Setup\+::\+P\+A\+P\+E\+R\+S\+I\+Z\+E\+\_\+\+L\+E\+T\+T\+E\+R)
+\item 
+{\bf get\+Orientation} ()
+\item 
+{\bf set\+Orientation} (\$p\+Value=P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Page\+Setup\+::\+O\+R\+I\+E\+N\+T\+A\+T\+I\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T)
+\item 
+{\bf get\+Temp\+Dir} ()
+\item 
+{\bf set\+Temp\+Dir} (\$p\+Value= '')
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf prepare\+For\+Save} (\$p\+Filename=N\+U\+L\+L)
+\item 
+{\bf restore\+State\+After\+Save} (\$file\+Handle)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$\+\_\+temp\+Dir} = ''\label{class_p_h_p_excel___writer___p_d_f___core_a439c80984b2d22d386b70b60682017a9}
+
+\item 
+{\bfseries \$\+\_\+font} = 'freesans'\label{class_p_h_p_excel___writer___p_d_f___core_a45c151163c65d134fc39f8e0c16a40bb}
+
+\item 
+{\bfseries \$\+\_\+orientation} = N\+U\+L\+L\label{class_p_h_p_excel___writer___p_d_f___core_ae06fece29857c1eb126a1d132953fe0e}
+
+\item 
+{\bfseries \$\+\_\+paper\+Size} = N\+U\+L\+L\label{class_p_h_p_excel___writer___p_d_f___core_ac4f8eb34fffdf97406c8bc9065befec3}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static {\bfseries \$\+\_\+paper\+Sizes}\label{class_p_h_p_excel___writer___p_d_f___core_a794acdb47b184665fa7d888612beab13}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+P\+D\+F\+\_\+\+Core@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+P\+D\+F\+\_\+\+Core}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+P\+D\+F\+\_\+\+Core@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+P\+D\+F\+\_\+\+Core}}
+\subsubsection[{\+\_\+\+\_\+construct}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+H\+P\+Excel}}]{\$php\+Excel}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___p_d_f___core_a4e5deaf4592bef642360c431317b4811}
+Create a new \doxyref{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+P\+D\+F}{p.}{class_p_h_p_excel___writer___p_d_f}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxyref{P\+H\+P\+Excel}{p.}{class_p_h_p_excel} & {\em \$php\+Excel} & \doxyref{P\+H\+P\+Excel}{p.}{class_p_h_p_excel} object \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+P\+D\+F\+\_\+\+Core@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+P\+D\+F\+\_\+\+Core}!get\+Font@{get\+Font}}
+\index{get\+Font@{get\+Font}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+P\+D\+F\+\_\+\+Core@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+P\+D\+F\+\_\+\+Core}}
+\subsubsection[{get\+Font}]{\setlength{\rightskip}{0pt plus 5cm}get\+Font (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___p_d_f___core_af2469ce4ebc6317428d2bf86fe7f205f}
+Get Font
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+P\+D\+F\+\_\+\+Core@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+P\+D\+F\+\_\+\+Core}!get\+Orientation@{get\+Orientation}}
+\index{get\+Orientation@{get\+Orientation}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+P\+D\+F\+\_\+\+Core@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+P\+D\+F\+\_\+\+Core}}
+\subsubsection[{get\+Orientation}]{\setlength{\rightskip}{0pt plus 5cm}get\+Orientation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___p_d_f___core_a173749a621180fd9278040151c453038}
+Get Orientation
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+P\+D\+F\+\_\+\+Core@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+P\+D\+F\+\_\+\+Core}!get\+Paper\+Size@{get\+Paper\+Size}}
+\index{get\+Paper\+Size@{get\+Paper\+Size}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+P\+D\+F\+\_\+\+Core@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+P\+D\+F\+\_\+\+Core}}
+\subsubsection[{get\+Paper\+Size}]{\setlength{\rightskip}{0pt plus 5cm}get\+Paper\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___p_d_f___core_afbd974bee135ab7dcbd0e066a0fd0a65}
+Get Paper Size
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+P\+D\+F\+\_\+\+Core@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+P\+D\+F\+\_\+\+Core}!get\+Temp\+Dir@{get\+Temp\+Dir}}
+\index{get\+Temp\+Dir@{get\+Temp\+Dir}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+P\+D\+F\+\_\+\+Core@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+P\+D\+F\+\_\+\+Core}}
+\subsubsection[{get\+Temp\+Dir}]{\setlength{\rightskip}{0pt plus 5cm}get\+Temp\+Dir (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___p_d_f___core_a9aa1b4ac7589c5e8d472a2902b9b49d2}
+Get temporary storage directory
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+P\+D\+F\+\_\+\+Core@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+P\+D\+F\+\_\+\+Core}!prepare\+For\+Save@{prepare\+For\+Save}}
+\index{prepare\+For\+Save@{prepare\+For\+Save}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+P\+D\+F\+\_\+\+Core@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+P\+D\+F\+\_\+\+Core}}
+\subsubsection[{prepare\+For\+Save}]{\setlength{\rightskip}{0pt plus 5cm}prepare\+For\+Save (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Filename = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_p_h_p_excel___writer___p_d_f___core_a059bbf456edd76e3651781cd2bcbd830}
+Save \doxyref{P\+H\+P\+Excel}{p.}{class_p_h_p_excel} to P\+D\+F file, pre-\/save
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Filename} & Name of the file to save as \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Exception}{p.}{class_p_h_p_excel___writer___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+P\+D\+F\+\_\+\+Core@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+P\+D\+F\+\_\+\+Core}!restore\+State\+After\+Save@{restore\+State\+After\+Save}}
+\index{restore\+State\+After\+Save@{restore\+State\+After\+Save}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+P\+D\+F\+\_\+\+Core@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+P\+D\+F\+\_\+\+Core}}
+\subsubsection[{restore\+State\+After\+Save}]{\setlength{\rightskip}{0pt plus 5cm}restore\+State\+After\+Save (
+\begin{DoxyParamCaption}
+\item[{}]{\$file\+Handle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_p_h_p_excel___writer___p_d_f___core_a2c7a7173fd56a851d60a496d3941325b}
+Save \doxyref{P\+H\+P\+Excel}{p.}{class_p_h_p_excel} to P\+D\+F file, post-\/save
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$file\+Handle} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Exception}{p.}{class_p_h_p_excel___writer___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+P\+D\+F\+\_\+\+Core@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+P\+D\+F\+\_\+\+Core}!set\+Font@{set\+Font}}
+\index{set\+Font@{set\+Font}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+P\+D\+F\+\_\+\+Core@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+P\+D\+F\+\_\+\+Core}}
+\subsubsection[{set\+Font}]{\setlength{\rightskip}{0pt plus 5cm}set\+Font (
+\begin{DoxyParamCaption}
+\item[{}]{\$font\+Name}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___p_d_f___core_ab0b2106c7c96fa293a5ce9fce64a4440}
+Set font. Examples\+: 'arialunicid0-\/chinese-\/simplified' 'arialunicid0-\/chinese-\/traditional' 'arialunicid0-\/korean' 'arialunicid0-\/japanese'
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$font\+Name} & \\
+\hline
+\end{DoxyParams}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+P\+D\+F\+\_\+\+Core@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+P\+D\+F\+\_\+\+Core}!set\+Orientation@{set\+Orientation}}
+\index{set\+Orientation@{set\+Orientation}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+P\+D\+F\+\_\+\+Core@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+P\+D\+F\+\_\+\+Core}}
+\subsubsection[{set\+Orientation}]{\setlength{\rightskip}{0pt plus 5cm}set\+Orientation (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Value = {\ttfamily PHPExcel\+\_\+Worksheet\+\_\+PageSetup\+:\+:ORIENTATION\+\_\+DEFAULT}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___p_d_f___core_acb9bb6ddc5d35a817d4cd1a7c79f329b}
+Set Orientation
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Value} & Page orientation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+P\+D\+F}{p.}{class_p_h_p_excel___writer___p_d_f} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+P\+D\+F\+\_\+\+Core@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+P\+D\+F\+\_\+\+Core}!set\+Paper\+Size@{set\+Paper\+Size}}
+\index{set\+Paper\+Size@{set\+Paper\+Size}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+P\+D\+F\+\_\+\+Core@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+P\+D\+F\+\_\+\+Core}}
+\subsubsection[{set\+Paper\+Size}]{\setlength{\rightskip}{0pt plus 5cm}set\+Paper\+Size (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Value = {\ttfamily PHPExcel\+\_\+Worksheet\+\_\+PageSetup\+:\+:PAPERSIZE\+\_\+LETTER}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___p_d_f___core_a20e7a1a18a72fd2a4ddc6bc4f89b870d}
+Set Paper Size
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Value} & Paper size \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+P\+D\+F}{p.}{class_p_h_p_excel___writer___p_d_f} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+P\+D\+F\+\_\+\+Core@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+P\+D\+F\+\_\+\+Core}!set\+Temp\+Dir@{set\+Temp\+Dir}}
+\index{set\+Temp\+Dir@{set\+Temp\+Dir}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+P\+D\+F\+\_\+\+Core@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+P\+D\+F\+\_\+\+Core}}
+\subsubsection[{set\+Temp\+Dir}]{\setlength{\rightskip}{0pt plus 5cm}set\+Temp\+Dir (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Value = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___p_d_f___core_af5d2915ff97610d13d9f19cac6292a98}
+Set temporary storage directory
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Value} & Temporary storage directory \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Exception}{p.}{class_p_h_p_excel___writer___exception}} & when directory does not exist \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+P\+D\+F}{p.}{class_p_h_p_excel___writer___p_d_f} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/var/www/workspace/\+O\+D\+I-\/\+P\+R\+O\+J\+E\+C\+T/model/\+P\+H\+P\+Excel/\+Classes/\+P\+H\+P\+Excel/\+Writer/\+P\+D\+F/Core.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,131 @@
+\section{Action Class Reference}
+\label{class_action}\index{Action@{Action}}
+
+
+Inheritance diagram for Action\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_action__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf \+\_\+\+\_\+construct} ()
+\item 
+{\bf get\+View} ()
+\item 
+{\bf get\+Session\+Login} ()
+\item 
+{\bf run} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf set\+View} (\$view)
+\item 
+{\bf set\+Session\+Login} (\$login)
+\item 
+{\bf set\+Message\+View} (\$message, \$style=\char`\"{}\char`\"{})
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$database}\label{class_action_a7691c0162d89de0b6ba47edcd8ba8878}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Action@{Action}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!Action@{Action}}
+\subsubsection[{\+\_\+\+\_\+construct}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_action_a095c5d389db211932136b53f25f39685}
+Construit une instance de la classe \doxyref{Action}{p.}{class_action}. 
+
+\subsection{Member Function Documentation}
+\index{Action@{Action}!get\+Session\+Login@{get\+Session\+Login}}
+\index{get\+Session\+Login@{get\+Session\+Login}!Action@{Action}}
+\subsubsection[{get\+Session\+Login}]{\setlength{\rightskip}{0pt plus 5cm}get\+Session\+Login (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_action_abec1ed09810935f5b52a22ca84c999e5}
+Récupére le login de l'utilisateur s'il est connecté, ou null sinon.
+
+\begin{DoxyReturn}{Returns}
+string login de l'utilisateur ou null. 
+\end{DoxyReturn}
+\index{Action@{Action}!get\+View@{get\+View}}
+\index{get\+View@{get\+View}!Action@{Action}}
+\subsubsection[{get\+View}]{\setlength{\rightskip}{0pt plus 5cm}get\+View (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_action_a50677812ea3f0258f7d03bbac5265413}
+Retourne la vue qui doit être affichée par le contrôleur.
+
+\begin{DoxyReturn}{Returns}
+\doxyref{View}{p.}{class_view} Vue qui doit être affichée par le contrôleur. 
+\end{DoxyReturn}
+\index{Action@{Action}!run@{run}}
+\index{run@{run}!Action@{Action}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [abstract]}}\label{class_action_afb0fafe7e02a3ae1993c01c19fad2bae}
+Méthode qui doit être implémentée par chaque action afin de décrire son comportement. \index{Action@{Action}!set\+Message\+View@{set\+Message\+View}}
+\index{set\+Message\+View@{set\+Message\+View}!Action@{Action}}
+\subsubsection[{set\+Message\+View}]{\setlength{\rightskip}{0pt plus 5cm}set\+Message\+View (
+\begin{DoxyParamCaption}
+\item[{}]{\$message, }
+\item[{}]{\$style = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_action_a9bd2ebdc8cb9836ba9b0f1d574fb1116}
+Fixe la vue de façon à afficher un message à l'utilisateur.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$message} & Message à afficher à l'utilisateur. \\
+\hline
+string & {\em \$style} & style de l'affichage. \\
+\hline
+\end{DoxyParams}
+\index{Action@{Action}!set\+Session\+Login@{set\+Session\+Login}}
+\index{set\+Session\+Login@{set\+Session\+Login}!Action@{Action}}
+\subsubsection[{set\+Session\+Login}]{\setlength{\rightskip}{0pt plus 5cm}set\+Session\+Login (
+\begin{DoxyParamCaption}
+\item[{}]{\$login}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_action_a4806dda8f2882191e7e385410285b4c7}
+Sauvegarde le pseudonyme de l'utilisateur dans la session.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$login} & de l'utilisateur. \\
+\hline
+\end{DoxyParams}
+\index{Action@{Action}!set\+View@{set\+View}}
+\index{set\+View@{set\+View}!Action@{Action}}
+\subsubsection[{set\+View}]{\setlength{\rightskip}{0pt plus 5cm}set\+View (
+\begin{DoxyParamCaption}
+\item[{}]{\$view}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_action_ab7b32659820de59ffe097cd1848f5d36}
+Fixe la vue qui doit être affichée par le contrôleur.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxyref{View}{p.}{class_view} & {\em \$view} & Vue qui doit être affichée par le contrôleur. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/var/www/workspace/\+O\+D\+I-\/\+P\+R\+O\+J\+E\+C\+T/actions/Action.\+inc.\+php\end{DoxyCompactItemize}

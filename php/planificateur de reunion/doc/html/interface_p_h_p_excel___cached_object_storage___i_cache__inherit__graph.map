@@ -1,0 +1,13 @@
+<map id="PHPExcel_CachedObjectStorage_ICache" name="PHPExcel_CachedObjectStorage_ICache">
+<area shape="rect" id="node3" href="$class_p_h_p_excel___cached_object_storage___a_p_c.html" title="PHPExcel_CachedObjectStorage_APC" alt="" coords="285,5,552,35"/>
+<area shape="rect" id="node5" href="$class_p_h_p_excel___cached_object_storage___disc_i_s_a_m.html" title="PHPExcel_CachedObjectStorage\l_DiscISAM" alt="" coords="304,58,533,105"/>
+<area shape="rect" id="node7" href="$class_p_h_p_excel___cached_object_storage___igbinary.html" title="PHPExcel_CachedObjectStorage\l_Igbinary" alt="" coords="304,127,533,174"/>
+<area shape="rect" id="node9" href="$class_p_h_p_excel___cached_object_storage___memcache.html" title="PHPExcel_CachedObjectStorage\l_Memcache" alt="" coords="304,197,533,243"/>
+<area shape="rect" id="node11" href="$class_p_h_p_excel___cached_object_storage___memory.html" title="PHPExcel_CachedObjectStorage\l_Memory" alt="" coords="304,266,533,313"/>
+<area shape="rect" id="node13" href="$class_p_h_p_excel___cached_object_storage___memory_g_zip.html" title="PHPExcel_CachedObjectStorage\l_MemoryGZip" alt="" coords="304,335,533,382"/>
+<area shape="rect" id="node15" href="$class_p_h_p_excel___cached_object_storage___memory_serialized.html" title="PHPExcel_CachedObjectStorage\l_MemorySerialized" alt="" coords="304,405,533,451"/>
+<area shape="rect" id="node17" href="$class_p_h_p_excel___cached_object_storage___p_h_p_temp.html" title="PHPExcel_CachedObjectStorage\l_PHPTemp" alt="" coords="304,474,533,521"/>
+<area shape="rect" id="node19" href="$class_p_h_p_excel___cached_object_storage___s_q_lite.html" title="PHPExcel_CachedObjectStorage\l_SQLite" alt="" coords="304,543,533,590"/>
+<area shape="rect" id="node21" href="$class_p_h_p_excel___cached_object_storage___s_q_lite3.html" title="PHPExcel_CachedObjectStorage\l_SQLite3" alt="" coords="304,613,533,659"/>
+<area shape="rect" id="node23" href="$class_p_h_p_excel___cached_object_storage___wincache.html" title="PHPExcel_CachedObjectStorage\l_Wincache" alt="" coords="304,682,533,729"/>
+</map>

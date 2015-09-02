@@ -1,0 +1,79 @@
+\section{Cholesky\+Decomposition Class Reference}
+\label{class_cholesky_decomposition}\index{Cholesky\+Decomposition@{Cholesky\+Decomposition}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf \+\_\+\+\_\+construct} (\$A=null)
+\item 
+{\bf is\+S\+P\+D} ()
+\item 
+{\bf get\+L} ()
+\item 
+{\bf solve} (\$B=null)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Cholesky\+Decomposition@{Cholesky\+Decomposition}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!Cholesky\+Decomposition@{Cholesky\+Decomposition}}
+\subsubsection[{\+\_\+\+\_\+construct}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+\item[{}]{\$\+A = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_cholesky_decomposition_a98fa74f0e24b1b022f45c8045a1e37f6}
+\doxyref{Cholesky\+Decomposition}{p.}{class_cholesky_decomposition}
+
+Class constructor -\/ decomposes symmetric positive definite matrix 
+\begin{DoxyParams}{Parameters}
+{\em mixed} & Matrix square symmetric positive definite matrix \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Cholesky\+Decomposition@{Cholesky\+Decomposition}!get\+L@{get\+L}}
+\index{get\+L@{get\+L}!Cholesky\+Decomposition@{Cholesky\+Decomposition}}
+\subsubsection[{get\+L}]{\setlength{\rightskip}{0pt plus 5cm}get\+L (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_cholesky_decomposition_abc0103e71858811a94d8eeeb4b55a764}
+get\+L
+
+Return triangular factor. \begin{DoxyReturn}{Returns}
+Matrix Lower triangular matrix 
+\end{DoxyReturn}
+\index{Cholesky\+Decomposition@{Cholesky\+Decomposition}!is\+S\+P\+D@{is\+S\+P\+D}}
+\index{is\+S\+P\+D@{is\+S\+P\+D}!Cholesky\+Decomposition@{Cholesky\+Decomposition}}
+\subsubsection[{is\+S\+P\+D}]{\setlength{\rightskip}{0pt plus 5cm}is\+S\+P\+D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_cholesky_decomposition_a3652555569db19ec6853ec67dfc90806}
+Is the matrix symmetric and positive definite?
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\index{Cholesky\+Decomposition@{Cholesky\+Decomposition}!solve@{solve}}
+\index{solve@{solve}!Cholesky\+Decomposition@{Cholesky\+Decomposition}}
+\subsubsection[{solve}]{\setlength{\rightskip}{0pt plus 5cm}solve (
+\begin{DoxyParamCaption}
+\item[{}]{\$\+B = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_cholesky_decomposition_a4f4ddfa8c70b6072c9d52de11e62497c}
+Solve A$\ast$\+X = B
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$\+B} & Row-\/equal matrix \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Matrix L $\ast$ L' $\ast$ X = B 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/var/www/workspace/\+O\+D\+I-\/\+P\+R\+O\+J\+E\+C\+T/model/\+P\+H\+P\+Excel/\+Classes/\+P\+H\+P\+Excel/\+Shared/\+J\+A\+M\+A/Cholesky\+Decomposition.\+php\end{DoxyCompactItemize}

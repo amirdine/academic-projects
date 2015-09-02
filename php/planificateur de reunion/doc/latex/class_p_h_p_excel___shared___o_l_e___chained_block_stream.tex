@@ -1,0 +1,146 @@
+\section{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+O\+L\+E\+\_\+\+Chained\+Block\+Stream Class Reference}
+\label{class_p_h_p_excel___shared___o_l_e___chained_block_stream}\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+O\+L\+E\+\_\+\+Chained\+Block\+Stream@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+O\+L\+E\+\_\+\+Chained\+Block\+Stream}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf stream\+\_\+open} (\$path, \$mode, \$options, \&\$opened\+Path)
+\item 
+{\bf stream\+\_\+close} ()
+\item 
+{\bf stream\+\_\+read} (\$count)
+\item 
+{\bf stream\+\_\+eof} ()
+\item 
+{\bf stream\+\_\+tell} ()
+\item 
+{\bf stream\+\_\+seek} (\$offset, \$whence)
+\item 
+{\bf stream\+\_\+stat} ()
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$ole}\label{class_p_h_p_excel___shared___o_l_e___chained_block_stream_a87048ace5ace790855de1f5ddde31e0a}
+
+\item 
+{\bfseries \$params}\label{class_p_h_p_excel___shared___o_l_e___chained_block_stream_afe68e6fbe7acfbffc0af0c84a1996466}
+
+\item 
+{\bfseries \$data}\label{class_p_h_p_excel___shared___o_l_e___chained_block_stream_a6efc15b5a2314dd4b5aaa556a375c6d6}
+
+\item 
+{\bfseries \$pos}\label{class_p_h_p_excel___shared___o_l_e___chained_block_stream_a5de51f0c80b3bb3b39a57b23f6b9ea9f}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+O\+L\+E\+\_\+\+Chained\+Block\+Stream@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+O\+L\+E\+\_\+\+Chained\+Block\+Stream}!stream\+\_\+close@{stream\+\_\+close}}
+\index{stream\+\_\+close@{stream\+\_\+close}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+O\+L\+E\+\_\+\+Chained\+Block\+Stream@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+O\+L\+E\+\_\+\+Chained\+Block\+Stream}}
+\subsubsection[{stream\+\_\+close}]{\setlength{\rightskip}{0pt plus 5cm}stream\+\_\+close (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___shared___o_l_e___chained_block_stream_af4c22f18f65f3a87da0abd141752a3f4}
+Implements support for fclose(). \index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+O\+L\+E\+\_\+\+Chained\+Block\+Stream@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+O\+L\+E\+\_\+\+Chained\+Block\+Stream}!stream\+\_\+eof@{stream\+\_\+eof}}
+\index{stream\+\_\+eof@{stream\+\_\+eof}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+O\+L\+E\+\_\+\+Chained\+Block\+Stream@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+O\+L\+E\+\_\+\+Chained\+Block\+Stream}}
+\subsubsection[{stream\+\_\+eof}]{\setlength{\rightskip}{0pt plus 5cm}stream\+\_\+eof (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___shared___o_l_e___chained_block_stream_a3e9ce71f7c8ab0db36dfd38ea2039476}
+Implements support for feof().
+
+\begin{DoxyReturn}{Returns}
+bool T\+R\+U\+E if the file pointer is at E\+O\+F; otherwise F\+A\+L\+S\+E 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+O\+L\+E\+\_\+\+Chained\+Block\+Stream@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+O\+L\+E\+\_\+\+Chained\+Block\+Stream}!stream\+\_\+open@{stream\+\_\+open}}
+\index{stream\+\_\+open@{stream\+\_\+open}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+O\+L\+E\+\_\+\+Chained\+Block\+Stream@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+O\+L\+E\+\_\+\+Chained\+Block\+Stream}}
+\subsubsection[{stream\+\_\+open}]{\setlength{\rightskip}{0pt plus 5cm}stream\+\_\+open (
+\begin{DoxyParamCaption}
+\item[{}]{\$path, }
+\item[{}]{\$mode, }
+\item[{}]{\$options, }
+\item[{\&}]{\$opened\+Path}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___shared___o_l_e___chained_block_stream_a1c5dd015561cc138dd0a378892c48888}
+Implements support for fopen(). For creating streams using this wrapper, use O\+L\+E\+\_\+\+P\+P\+S\+\_\+\+File\+::get\+Stream().
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & resource name including scheme, e.\+g. ole-\/chainedblockstream\+://ole\+Instance\+Id=1 \\
+\hline
+string & {\em \$mode} & only \char`\"{}r\char`\"{} is supported \\
+\hline
+int & {\em \$options} & mask of S\+T\+R\+E\+A\+M\+\_\+\+R\+E\+P\+O\+R\+T\+\_\+\+E\+R\+R\+O\+R\+S and S\+T\+R\+E\+A\+M\+\_\+\+U\+S\+E\+\_\+\+P\+A\+T\+H \\
+\hline
+string & {\em \&\$opened\+Path} & absolute path of the opened stream (out parameter) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool true on success 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+O\+L\+E\+\_\+\+Chained\+Block\+Stream@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+O\+L\+E\+\_\+\+Chained\+Block\+Stream}!stream\+\_\+read@{stream\+\_\+read}}
+\index{stream\+\_\+read@{stream\+\_\+read}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+O\+L\+E\+\_\+\+Chained\+Block\+Stream@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+O\+L\+E\+\_\+\+Chained\+Block\+Stream}}
+\subsubsection[{stream\+\_\+read}]{\setlength{\rightskip}{0pt plus 5cm}stream\+\_\+read (
+\begin{DoxyParamCaption}
+\item[{}]{\$count}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___shared___o_l_e___chained_block_stream_acf4adec38e34adc3b8cdec2f6ddaf1df}
+Implements support for fread(), fgets() etc.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$count} & maximum number of bytes to read \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+O\+L\+E\+\_\+\+Chained\+Block\+Stream@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+O\+L\+E\+\_\+\+Chained\+Block\+Stream}!stream\+\_\+seek@{stream\+\_\+seek}}
+\index{stream\+\_\+seek@{stream\+\_\+seek}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+O\+L\+E\+\_\+\+Chained\+Block\+Stream@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+O\+L\+E\+\_\+\+Chained\+Block\+Stream}}
+\subsubsection[{stream\+\_\+seek}]{\setlength{\rightskip}{0pt plus 5cm}stream\+\_\+seek (
+\begin{DoxyParamCaption}
+\item[{}]{\$offset, }
+\item[{}]{\$whence}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___shared___o_l_e___chained_block_stream_a11b8cbb2e2211df9c677df917afe092f}
+Implements support for fseek().
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$offset} & byte offset \\
+\hline
+int & {\em \$whence} & S\+E\+E\+K\+\_\+\+S\+E\+T, S\+E\+E\+K\+\_\+\+C\+U\+R or S\+E\+E\+K\+\_\+\+E\+N\+D \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+O\+L\+E\+\_\+\+Chained\+Block\+Stream@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+O\+L\+E\+\_\+\+Chained\+Block\+Stream}!stream\+\_\+stat@{stream\+\_\+stat}}
+\index{stream\+\_\+stat@{stream\+\_\+stat}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+O\+L\+E\+\_\+\+Chained\+Block\+Stream@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+O\+L\+E\+\_\+\+Chained\+Block\+Stream}}
+\subsubsection[{stream\+\_\+stat}]{\setlength{\rightskip}{0pt plus 5cm}stream\+\_\+stat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___shared___o_l_e___chained_block_stream_ad5c2e5aede8f0bd6b523de4be61f169a}
+Implements support for fstat(). Currently the only supported field is \char`\"{}size\char`\"{}. \begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+O\+L\+E\+\_\+\+Chained\+Block\+Stream@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+O\+L\+E\+\_\+\+Chained\+Block\+Stream}!stream\+\_\+tell@{stream\+\_\+tell}}
+\index{stream\+\_\+tell@{stream\+\_\+tell}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+O\+L\+E\+\_\+\+Chained\+Block\+Stream@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+O\+L\+E\+\_\+\+Chained\+Block\+Stream}}
+\subsubsection[{stream\+\_\+tell}]{\setlength{\rightskip}{0pt plus 5cm}stream\+\_\+tell (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___shared___o_l_e___chained_block_stream_aa3320416e4520b888b7a9b0ce6508cd6}
+Returns the position of the file pointer, i.\+e. its offset into the file stream. Implements support for ftell().
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/var/www/workspace/\+O\+D\+I-\/\+P\+R\+O\+J\+E\+C\+T/model/\+P\+H\+P\+Excel/\+Classes/\+P\+H\+P\+Excel/\+Shared/\+O\+L\+E/Chained\+Block\+Stream.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,288 @@
+\section{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Date Class Reference}
+\label{class_p_h_p_excel___shared___date}\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Date@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Date}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static {\bf set\+Excel\+Calendar} (\$base\+Date)
+\item 
+static {\bf get\+Excel\+Calendar} ()
+\item 
+static {\bf Excel\+To\+P\+H\+P} (\$date\+Value=0, \$adjust\+To\+Timezone=F\+A\+L\+S\+E, \$timezone=N\+U\+L\+L)
+\item 
+static {\bf Excel\+To\+P\+H\+P\+Object} (\$date\+Value=0)
+\item 
+static {\bf P\+H\+P\+To\+Excel} (\$date\+Value=0, \$adjust\+To\+Timezone=F\+A\+L\+S\+E, \$timezone=N\+U\+L\+L)
+\item 
+static {\bf Formatted\+P\+H\+P\+To\+Excel} (\$year, \$month, \$day, \$hours=0, \$minutes=0, \$seconds=0)
+\item 
+static {\bf is\+Date\+Time} ({\bf P\+H\+P\+Excel\+\_\+\+Cell} \$p\+Cell)
+\item 
+static {\bf is\+Date\+Time\+Format} ({\bf P\+H\+P\+Excel\+\_\+\+Style\+\_\+\+Number\+Format} \$p\+Format)
+\item 
+static {\bf is\+Date\+Time\+Format\+Code} (\$p\+Format\+Code= '')
+\item 
+static {\bf string\+To\+Excel} (\$date\+Value= '')
+\item 
+static {\bfseries month\+String\+To\+Number} (\$month)\label{class_p_h_p_excel___shared___date_a68705202ddb2d2b6301f900e64bdd5a8}
+
+\item 
+static {\bfseries day\+String\+To\+Number} (\$day)\label{class_p_h_p_excel___shared___date_abfed762232dc90990dd1685f8f197501}
+
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const {\bf C\+A\+L\+E\+N\+D\+A\+R\+\_\+\+W\+I\+N\+D\+O\+W\+S\+\_\+1900} = 1900
+\item 
+const {\bfseries C\+A\+L\+E\+N\+D\+A\+R\+\_\+\+M\+A\+C\+\_\+1904} = 1904\label{class_p_h_p_excel___shared___date_ad435ee06d69fde268c002dd1a9fcc240}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static {\bfseries \$\+\_\+month\+Names}
+\item 
+static {\bfseries \$\+\_\+number\+Suffixes}
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static {\bfseries \$\+\_\+excel\+Base\+Date} = self\+::\+C\+A\+L\+E\+N\+D\+A\+R\+\_\+\+W\+I\+N\+D\+O\+W\+S\+\_\+1900\label{class_p_h_p_excel___shared___date_ac978a2bdd3e79fa89e03ac2181dd7c18}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Date@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Date}!Excel\+To\+P\+H\+P@{Excel\+To\+P\+H\+P}}
+\index{Excel\+To\+P\+H\+P@{Excel\+To\+P\+H\+P}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Date@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Date}}
+\subsubsection[{Excel\+To\+P\+H\+P}]{\setlength{\rightskip}{0pt plus 5cm}static Excel\+To\+P\+H\+P (
+\begin{DoxyParamCaption}
+\item[{}]{\$date\+Value = {\ttfamily 0}, }
+\item[{}]{\$adjust\+To\+Timezone = {\ttfamily FALSE}, }
+\item[{}]{\$timezone = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___date_a75636ce0b89f86b3b055266623b0d941}
+Convert a date from Excel to P\+H\+P
+
+
+\begin{DoxyParams}[1]{Parameters}
+long & {\em \$date\+Value} & Excel date/time value \\
+\hline
+boolean & {\em \$adjust\+To\+Timezone} & Flag indicating whether \$date\+Value should be treated as a U\+S\+T timestamp, or adjusted to U\+S\+T \\
+\hline
+string & {\em \$timezone} & The timezone for finding the adjustment from U\+S\+T \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+long P\+H\+P serialized date/time 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Date@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Date}!Excel\+To\+P\+H\+P\+Object@{Excel\+To\+P\+H\+P\+Object}}
+\index{Excel\+To\+P\+H\+P\+Object@{Excel\+To\+P\+H\+P\+Object}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Date@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Date}}
+\subsubsection[{Excel\+To\+P\+H\+P\+Object}]{\setlength{\rightskip}{0pt plus 5cm}static Excel\+To\+P\+H\+P\+Object (
+\begin{DoxyParamCaption}
+\item[{}]{\$date\+Value = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___date_add55323c5d87e387d92dd84873cd1995}
+Convert a date from Excel to a P\+H\+P Date/\+Time object
+
+
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$date\+Value} & Excel date/time value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+integer P\+H\+P date/time object 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Date@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Date}!Formatted\+P\+H\+P\+To\+Excel@{Formatted\+P\+H\+P\+To\+Excel}}
+\index{Formatted\+P\+H\+P\+To\+Excel@{Formatted\+P\+H\+P\+To\+Excel}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Date@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Date}}
+\subsubsection[{Formatted\+P\+H\+P\+To\+Excel}]{\setlength{\rightskip}{0pt plus 5cm}static Formatted\+P\+H\+P\+To\+Excel (
+\begin{DoxyParamCaption}
+\item[{}]{\$year, }
+\item[{}]{\$month, }
+\item[{}]{\$day, }
+\item[{}]{\$hours = {\ttfamily 0}, }
+\item[{}]{\$minutes = {\ttfamily 0}, }
+\item[{}]{\$seconds = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___date_aeb2d46bebfaf3257ae36c6799d2c28dd}
+Formatted\+P\+H\+P\+To\+Excel
+
+
+\begin{DoxyParams}[1]{Parameters}
+long & {\em \$year} & \\
+\hline
+long & {\em \$month} & \\
+\hline
+long & {\em \$day} & \\
+\hline
+long & {\em \$hours} & \\
+\hline
+long & {\em \$minutes} & \\
+\hline
+long & {\em \$seconds} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+long Excel date/time value 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Date@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Date}!get\+Excel\+Calendar@{get\+Excel\+Calendar}}
+\index{get\+Excel\+Calendar@{get\+Excel\+Calendar}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Date@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Date}}
+\subsubsection[{get\+Excel\+Calendar}]{\setlength{\rightskip}{0pt plus 5cm}static get\+Excel\+Calendar (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___date_a8b37d2968a55a3db9a9c753be754d4ba}
+Return the Excel calendar (Windows 1900 or Mac 1904)
+
+\begin{DoxyReturn}{Returns}
+integer Excel base date (1900 or 1904) 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Date@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Date}!is\+Date\+Time@{is\+Date\+Time}}
+\index{is\+Date\+Time@{is\+Date\+Time}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Date@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Date}}
+\subsubsection[{is\+Date\+Time}]{\setlength{\rightskip}{0pt plus 5cm}static is\+Date\+Time (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+H\+P\+Excel\+\_\+\+Cell}}]{\$p\+Cell}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___date_ad0882c9c9f83aca443fa92af719e8c4e}
+Is a given cell a date/time?
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Cell}{p.}{class_p_h_p_excel___cell} & {\em \$p\+Cell} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Date@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Date}!is\+Date\+Time\+Format@{is\+Date\+Time\+Format}}
+\index{is\+Date\+Time\+Format@{is\+Date\+Time\+Format}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Date@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Date}}
+\subsubsection[{is\+Date\+Time\+Format}]{\setlength{\rightskip}{0pt plus 5cm}static is\+Date\+Time\+Format (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+H\+P\+Excel\+\_\+\+Style\+\_\+\+Number\+Format}}]{\$p\+Format}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___date_aee6c00b5da0996bce84a29918cab620d}
+Is a given number format a date/time?
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Style\+\_\+\+Number\+Format}{p.}{class_p_h_p_excel___style___number_format} & {\em \$p\+Format} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Date@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Date}!is\+Date\+Time\+Format\+Code@{is\+Date\+Time\+Format\+Code}}
+\index{is\+Date\+Time\+Format\+Code@{is\+Date\+Time\+Format\+Code}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Date@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Date}}
+\subsubsection[{is\+Date\+Time\+Format\+Code}]{\setlength{\rightskip}{0pt plus 5cm}static is\+Date\+Time\+Format\+Code (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Format\+Code = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___date_a1aa72d1f134a3ec58077b6c254edb7c6}
+Is a given number format code a date/time?
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Format\+Code} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Date@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Date}!P\+H\+P\+To\+Excel@{P\+H\+P\+To\+Excel}}
+\index{P\+H\+P\+To\+Excel@{P\+H\+P\+To\+Excel}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Date@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Date}}
+\subsubsection[{P\+H\+P\+To\+Excel}]{\setlength{\rightskip}{0pt plus 5cm}static P\+H\+P\+To\+Excel (
+\begin{DoxyParamCaption}
+\item[{}]{\$date\+Value = {\ttfamily 0}, }
+\item[{}]{\$adjust\+To\+Timezone = {\ttfamily FALSE}, }
+\item[{}]{\$timezone = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___date_a3eb03fc4fc51dfe8bffc2066f60fcf0c}
+Convert a date from P\+H\+P to Excel
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$date\+Value} & P\+H\+P serialized date/time or date object \\
+\hline
+boolean & {\em \$adjust\+To\+Timezone} & Flag indicating whether \$date\+Value should be treated as a U\+S\+T timestamp, or adjusted to U\+S\+T \\
+\hline
+string & {\em \$timezone} & The timezone for finding the adjustment from U\+S\+T \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed Excel date/time value or boolean F\+A\+L\+S\+E on failure 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Date@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Date}!set\+Excel\+Calendar@{set\+Excel\+Calendar}}
+\index{set\+Excel\+Calendar@{set\+Excel\+Calendar}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Date@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Date}}
+\subsubsection[{set\+Excel\+Calendar}]{\setlength{\rightskip}{0pt plus 5cm}static set\+Excel\+Calendar (
+\begin{DoxyParamCaption}
+\item[{}]{\$base\+Date}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___date_a5bac42c219294da328d98c1e9e2353d3}
+Set the Excel calendar (Windows 1900 or Mac 1904)
+
+
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$base\+Date} & Excel base date (1900 or 1904) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean Success or failure 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Date@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Date}!string\+To\+Excel@{string\+To\+Excel}}
+\index{string\+To\+Excel@{string\+To\+Excel}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Date@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Date}}
+\subsubsection[{string\+To\+Excel}]{\setlength{\rightskip}{0pt plus 5cm}static string\+To\+Excel (
+\begin{DoxyParamCaption}
+\item[{}]{\$date\+Value = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___date_a6be2876eeadc6fedec4b9f7721558219}
+Convert a date/time string to Excel time
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$date\+Value} & Examples\+: '2009-\/12-\/31', '2009-\/12-\/31 15\+:59', '2009-\/12-\/31 15\+:59\+:10' \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float$\vert$\+F\+A\+L\+S\+E Excel date/time serial value 
+\end{DoxyReturn}
+
+
+\subsection{Field Documentation}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Date@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Date}!\$\+\_\+month\+Names@{\$\+\_\+month\+Names}}
+\index{\$\+\_\+month\+Names@{\$\+\_\+month\+Names}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Date@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Date}}
+\subsubsection[{\$\+\_\+month\+Names}]{\setlength{\rightskip}{0pt plus 5cm}\$\+\_\+month\+Names\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___date_af115a9b1a2d000dc6948adad17dad7cc}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= array(    \textcolor{stringliteral}{'Jan'} => \textcolor{stringliteral}{'January'},
+                                        \textcolor{stringliteral}{'Feb'} => \textcolor{stringliteral}{'February'},
+                                        \textcolor{stringliteral}{'Mar'} => \textcolor{stringliteral}{'March'},
+                                        \textcolor{stringliteral}{'Apr'} => \textcolor{stringliteral}{'April'},
+                                        \textcolor{stringliteral}{'May'} => \textcolor{stringliteral}{'May'},
+                                        \textcolor{stringliteral}{'Jun'} => \textcolor{stringliteral}{'June'},
+                                        \textcolor{stringliteral}{'Jul'} => \textcolor{stringliteral}{'July'},
+                                        \textcolor{stringliteral}{'Aug'} => \textcolor{stringliteral}{'August'},
+                                        \textcolor{stringliteral}{'Sep'} => \textcolor{stringliteral}{'September'},
+                                        \textcolor{stringliteral}{'Oct'} => \textcolor{stringliteral}{'October'},
+                                        \textcolor{stringliteral}{'Nov'} => \textcolor{stringliteral}{'November'},
+                                        \textcolor{stringliteral}{'Dec'} => \textcolor{stringliteral}{'December'},
+                                      )
+\end{DoxyCode}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Date@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Date}!\$\+\_\+number\+Suffixes@{\$\+\_\+number\+Suffixes}}
+\index{\$\+\_\+number\+Suffixes@{\$\+\_\+number\+Suffixes}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Date@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Date}}
+\subsubsection[{\$\+\_\+number\+Suffixes}]{\setlength{\rightskip}{0pt plus 5cm}\$\+\_\+number\+Suffixes\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___date_a450506b29c74f0ad2f4188e337e11594}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= array(    \textcolor{stringliteral}{'st'},
+                                            \textcolor{stringliteral}{'nd'},
+                                            \textcolor{stringliteral}{'rd'},
+                                            \textcolor{stringliteral}{'th'},
+                                          )
+\end{DoxyCode}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Date@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Date}!C\+A\+L\+E\+N\+D\+A\+R\+\_\+\+W\+I\+N\+D\+O\+W\+S\+\_\+1900@{C\+A\+L\+E\+N\+D\+A\+R\+\_\+\+W\+I\+N\+D\+O\+W\+S\+\_\+1900}}
+\index{C\+A\+L\+E\+N\+D\+A\+R\+\_\+\+W\+I\+N\+D\+O\+W\+S\+\_\+1900@{C\+A\+L\+E\+N\+D\+A\+R\+\_\+\+W\+I\+N\+D\+O\+W\+S\+\_\+1900}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Date@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Date}}
+\subsubsection[{C\+A\+L\+E\+N\+D\+A\+R\+\_\+\+W\+I\+N\+D\+O\+W\+S\+\_\+1900}]{\setlength{\rightskip}{0pt plus 5cm}const C\+A\+L\+E\+N\+D\+A\+R\+\_\+\+W\+I\+N\+D\+O\+W\+S\+\_\+1900 = 1900}\label{class_p_h_p_excel___shared___date_a37f4e6f725bd4b1057a885b29e619a58}
+constants 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/var/www/workspace/\+O\+D\+I-\/\+P\+R\+O\+J\+E\+C\+T/model/\+P\+H\+P\+Excel/\+Classes/\+P\+H\+P\+Excel/\+Shared/Date.\+php\end{DoxyCompactItemize}

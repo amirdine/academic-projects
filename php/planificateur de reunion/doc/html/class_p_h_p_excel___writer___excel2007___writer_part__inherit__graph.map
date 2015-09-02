@@ -1,0 +1,15 @@
+<map id="PHPExcel_Writer_Excel2007_WriterPart" name="PHPExcel_Writer_Excel2007_WriterPart">
+<area shape="rect" id="node3" href="$class_p_h_p_excel___writer___excel2007___chart.html" title="PHPExcel_Writer_Excel2007\l_Chart" alt="" coords="277,5,480,51"/>
+<area shape="rect" id="node5" href="$class_p_h_p_excel___writer___excel2007___comments.html" title="PHPExcel_Writer_Excel2007\l_Comments" alt="" coords="277,74,480,121"/>
+<area shape="rect" id="node7" href="$class_p_h_p_excel___writer___excel2007___content_types.html" title="PHPExcel_Writer_Excel2007\l_ContentTypes" alt="" coords="277,143,480,190"/>
+<area shape="rect" id="node9" href="$class_p_h_p_excel___writer___excel2007___doc_props.html" title="PHPExcel_Writer_Excel2007\l_DocProps" alt="" coords="277,213,480,259"/>
+<area shape="rect" id="node11" href="$class_p_h_p_excel___writer___excel2007___drawing.html" title="PHPExcel_Writer_Excel2007\l_Drawing" alt="" coords="277,282,480,329"/>
+<area shape="rect" id="node13" href="$class_p_h_p_excel___writer___excel2007___rels.html" title="PHPExcel_Writer_Excel2007_Rels" alt="" coords="259,352,499,381"/>
+<area shape="rect" id="node15" href="$class_p_h_p_excel___writer___excel2007___rels_ribbon.html" title="PHPExcel_Writer_Excel2007\l_RelsRibbon" alt="" coords="277,405,480,451"/>
+<area shape="rect" id="node17" href="$class_p_h_p_excel___writer___excel2007___rels_v_b_a.html" title="PHPExcel_Writer_Excel2007\l_RelsVBA" alt="" coords="277,474,480,521"/>
+<area shape="rect" id="node19" href="$class_p_h_p_excel___writer___excel2007___string_table.html" title="PHPExcel_Writer_Excel2007\l_StringTable" alt="" coords="277,543,480,590"/>
+<area shape="rect" id="node21" href="$class_p_h_p_excel___writer___excel2007___style.html" title="PHPExcel_Writer_Excel2007\l_Style" alt="" coords="277,613,480,659"/>
+<area shape="rect" id="node23" href="$class_p_h_p_excel___writer___excel2007___theme.html" title="PHPExcel_Writer_Excel2007\l_Theme" alt="" coords="277,682,480,729"/>
+<area shape="rect" id="node25" href="$class_p_h_p_excel___writer___excel2007___workbook.html" title="PHPExcel_Writer_Excel2007\l_Workbook" alt="" coords="277,751,480,798"/>
+<area shape="rect" id="node27" href="$class_p_h_p_excel___writer___excel2007___worksheet.html" title="PHPExcel_Writer_Excel2007\l_Worksheet" alt="" coords="277,821,480,867"/>
+</map>

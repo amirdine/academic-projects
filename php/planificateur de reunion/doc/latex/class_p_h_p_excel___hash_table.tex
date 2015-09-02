@@ -1,0 +1,212 @@
+\section{P\+H\+P\+Excel\+\_\+\+Hash\+Table Class Reference}
+\label{class_p_h_p_excel___hash_table}\index{P\+H\+P\+Excel\+\_\+\+Hash\+Table@{P\+H\+P\+Excel\+\_\+\+Hash\+Table}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf \+\_\+\+\_\+construct} (\$p\+Source=null)
+\item 
+{\bf add\+From\+Source} (\$p\+Source=null)
+\item 
+{\bf add} ({\bf P\+H\+P\+Excel\+\_\+\+I\+Comparable} \$p\+Source=null)
+\item 
+{\bf remove} ({\bf P\+H\+P\+Excel\+\_\+\+I\+Comparable} \$p\+Source=null)
+\item 
+{\bf clear} ()
+\item 
+{\bf count} ()
+\item 
+{\bf get\+Index\+For\+Hash\+Code} (\$p\+Hash\+Code= '')
+\item 
+{\bf get\+By\+Index} (\$p\+Index=0)
+\item 
+{\bf get\+By\+Hash\+Code} (\$p\+Hash\+Code= '')
+\item 
+{\bf to\+Array} ()
+\item 
+{\bf \+\_\+\+\_\+clone} ()
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$\+\_\+items} = array()\label{class_p_h_p_excel___hash_table_a65c51bf556379978ebb1f61ad8021ad6}
+
+\item 
+{\bfseries \$\+\_\+key\+Map} = array()\label{class_p_h_p_excel___hash_table_ae8b5b60a74f1a869982477dabd64225f}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{P\+H\+P\+Excel\+\_\+\+Hash\+Table@{P\+H\+P\+Excel\+\_\+\+Hash\+Table}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!P\+H\+P\+Excel\+\_\+\+Hash\+Table@{P\+H\+P\+Excel\+\_\+\+Hash\+Table}}
+\subsubsection[{\+\_\+\+\_\+construct}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Source = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___hash_table_abd41db3fc6a62b834399e4f420fbc8f6}
+Create a new \doxyref{P\+H\+P\+Excel\+\_\+\+Hash\+Table}{p.}{class_p_h_p_excel___hash_table}
+
+
+\begin{DoxyParams}{Parameters}
+{\em P\+H\+P\+Excel\+\_\+\+I\+Comparable\mbox{[}$\,$\mbox{]}} & \$p\+Source Optional source array to create Hash\+Table from \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+
+
+\subsection{Member Function Documentation}
+\index{P\+H\+P\+Excel\+\_\+\+Hash\+Table@{P\+H\+P\+Excel\+\_\+\+Hash\+Table}!\+\_\+\+\_\+clone@{\+\_\+\+\_\+clone}}
+\index{\+\_\+\+\_\+clone@{\+\_\+\+\_\+clone}!P\+H\+P\+Excel\+\_\+\+Hash\+Table@{P\+H\+P\+Excel\+\_\+\+Hash\+Table}}
+\subsubsection[{\+\_\+\+\_\+clone}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+clone (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___hash_table_ad0cb87b388bc74d63dc884accdca8713}
+Implement P\+H\+P \+\_\+\+\_\+clone to create a deep clone, not just a shallow copy. \index{P\+H\+P\+Excel\+\_\+\+Hash\+Table@{P\+H\+P\+Excel\+\_\+\+Hash\+Table}!add@{add}}
+\index{add@{add}!P\+H\+P\+Excel\+\_\+\+Hash\+Table@{P\+H\+P\+Excel\+\_\+\+Hash\+Table}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}add (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+H\+P\+Excel\+\_\+\+I\+Comparable}}]{\$p\+Source = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___hash_table_ada323fb291e7296e1fdde5a926309cc5}
+Add Hash\+Table item
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxyref{P\+H\+P\+Excel\+\_\+\+I\+Comparable}{p.}{interface_p_h_p_excel___i_comparable} & {\em \$p\+Source} & Item to add \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\index{P\+H\+P\+Excel\+\_\+\+Hash\+Table@{P\+H\+P\+Excel\+\_\+\+Hash\+Table}!add\+From\+Source@{add\+From\+Source}}
+\index{add\+From\+Source@{add\+From\+Source}!P\+H\+P\+Excel\+\_\+\+Hash\+Table@{P\+H\+P\+Excel\+\_\+\+Hash\+Table}}
+\subsubsection[{add\+From\+Source}]{\setlength{\rightskip}{0pt plus 5cm}add\+From\+Source (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Source = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___hash_table_a7aefda922200684ba5337adbb828140f}
+Add Hash\+Table items from source
+
+
+\begin{DoxyParams}{Parameters}
+{\em P\+H\+P\+Excel\+\_\+\+I\+Comparable\mbox{[}$\,$\mbox{]}} & \$p\+Source Source array to create Hash\+Table from \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\index{P\+H\+P\+Excel\+\_\+\+Hash\+Table@{P\+H\+P\+Excel\+\_\+\+Hash\+Table}!clear@{clear}}
+\index{clear@{clear}!P\+H\+P\+Excel\+\_\+\+Hash\+Table@{P\+H\+P\+Excel\+\_\+\+Hash\+Table}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___hash_table_aa821bec12eaa7e0f649397c9675ff505}
+Clear Hash\+Table \index{P\+H\+P\+Excel\+\_\+\+Hash\+Table@{P\+H\+P\+Excel\+\_\+\+Hash\+Table}!count@{count}}
+\index{count@{count}!P\+H\+P\+Excel\+\_\+\+Hash\+Table@{P\+H\+P\+Excel\+\_\+\+Hash\+Table}}
+\subsubsection[{count}]{\setlength{\rightskip}{0pt plus 5cm}count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___hash_table_ac751e87b3d4c4bf2feb03bee8b092755}
+Count
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Hash\+Table@{P\+H\+P\+Excel\+\_\+\+Hash\+Table}!get\+By\+Hash\+Code@{get\+By\+Hash\+Code}}
+\index{get\+By\+Hash\+Code@{get\+By\+Hash\+Code}!P\+H\+P\+Excel\+\_\+\+Hash\+Table@{P\+H\+P\+Excel\+\_\+\+Hash\+Table}}
+\subsubsection[{get\+By\+Hash\+Code}]{\setlength{\rightskip}{0pt plus 5cm}get\+By\+Hash\+Code (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Hash\+Code = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___hash_table_ab737f6a63311dc24e7b4065575c5d1a3}
+Get by hashcode
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Hash\+Code} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+I\+Comparable}{p.}{interface_p_h_p_excel___i_comparable} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Hash\+Table@{P\+H\+P\+Excel\+\_\+\+Hash\+Table}!get\+By\+Index@{get\+By\+Index}}
+\index{get\+By\+Index@{get\+By\+Index}!P\+H\+P\+Excel\+\_\+\+Hash\+Table@{P\+H\+P\+Excel\+\_\+\+Hash\+Table}}
+\subsubsection[{get\+By\+Index}]{\setlength{\rightskip}{0pt plus 5cm}get\+By\+Index (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Index = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___hash_table_a78bc825c3bf8dfffbb01240312611150}
+Get by index
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$p\+Index} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+I\+Comparable}{p.}{interface_p_h_p_excel___i_comparable} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Hash\+Table@{P\+H\+P\+Excel\+\_\+\+Hash\+Table}!get\+Index\+For\+Hash\+Code@{get\+Index\+For\+Hash\+Code}}
+\index{get\+Index\+For\+Hash\+Code@{get\+Index\+For\+Hash\+Code}!P\+H\+P\+Excel\+\_\+\+Hash\+Table@{P\+H\+P\+Excel\+\_\+\+Hash\+Table}}
+\subsubsection[{get\+Index\+For\+Hash\+Code}]{\setlength{\rightskip}{0pt plus 5cm}get\+Index\+For\+Hash\+Code (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Hash\+Code = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___hash_table_a2cf273dccf07c7bf1cb6b3d0c61c840f}
+Get index for hash code
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Hash\+Code} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Index 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Hash\+Table@{P\+H\+P\+Excel\+\_\+\+Hash\+Table}!remove@{remove}}
+\index{remove@{remove}!P\+H\+P\+Excel\+\_\+\+Hash\+Table@{P\+H\+P\+Excel\+\_\+\+Hash\+Table}}
+\subsubsection[{remove}]{\setlength{\rightskip}{0pt plus 5cm}remove (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+H\+P\+Excel\+\_\+\+I\+Comparable}}]{\$p\+Source = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___hash_table_aa65f7b1f6d5160f59b8854b148d28e2e}
+Remove Hash\+Table item
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxyref{P\+H\+P\+Excel\+\_\+\+I\+Comparable}{p.}{interface_p_h_p_excel___i_comparable} & {\em \$p\+Source} & Item to remove \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\index{P\+H\+P\+Excel\+\_\+\+Hash\+Table@{P\+H\+P\+Excel\+\_\+\+Hash\+Table}!to\+Array@{to\+Array}}
+\index{to\+Array@{to\+Array}!P\+H\+P\+Excel\+\_\+\+Hash\+Table@{P\+H\+P\+Excel\+\_\+\+Hash\+Table}}
+\subsubsection[{to\+Array}]{\setlength{\rightskip}{0pt plus 5cm}to\+Array (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___hash_table_a658defb34762c8f40085aec87e16ba1a}
+Hash\+Table to array
+
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+I\+Comparable}{p.}{interface_p_h_p_excel___i_comparable}[] 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/var/www/workspace/\+O\+D\+I-\/\+P\+R\+O\+J\+E\+C\+T/model/\+P\+H\+P\+Excel/\+Classes/\+P\+H\+P\+Excel/Hash\+Table.\+php\end{DoxyCompactItemize}

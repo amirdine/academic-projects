@@ -1,0 +1,90 @@
+\section{View Class Reference}
+\label{class_view}\index{View@{View}}
+
+
+Inheritance diagram for View\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{class_view__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf run} ()
+\item 
+{\bf set\+Message} (\$message, \$style=\char`\"{}\char`\"{})
+\item 
+{\bf set\+Login} (\$login)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf display\+Body} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$message} = \char`\"{}\char`\"{}\label{class_view_abf17cb2dba2ed17cb28aa5f37deb5293}
+
+\item 
+{\bfseries \$style} = \char`\"{}\char`\"{}\label{class_view_a4b16ebd3ba5d6cd79dd64e240aec4a58}
+
+\item 
+{\bfseries \$login} = null\label{class_view_afc31993e855f9631572adfedcfe6f34b}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{View@{View}!display\+Body@{display\+Body}}
+\index{display\+Body@{display\+Body}!View@{View}}
+\subsubsection[{display\+Body}]{\setlength{\rightskip}{0pt plus 5cm}display\+Body (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}\label{class_view_a40b09eae1ecbd17cdbc914fe587f186f}
+Affiche le corps de la page. Cette méthode doit être implémentée par les différentes vues. \index{View@{View}!run@{run}}
+\index{run@{run}!View@{View}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_view_afb0fafe7e02a3ae1993c01c19fad2bae}
+Génère la page à afficher au client. \index{View@{View}!set\+Login@{set\+Login}}
+\index{set\+Login@{set\+Login}!View@{View}}
+\subsubsection[{set\+Login}]{\setlength{\rightskip}{0pt plus 5cm}set\+Login (
+\begin{DoxyParamCaption}
+\item[{}]{\$login}
+\end{DoxyParamCaption}
+)}\label{class_view_aa3bdb4795cdc0b406946e175a1dd96cd}
+Fixe le login de l'utilisateur (s'il est connecté).
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$login} & Login de l'utilisateur. \\
+\hline
+\end{DoxyParams}
+\index{View@{View}!set\+Message@{set\+Message}}
+\index{set\+Message@{set\+Message}!View@{View}}
+\subsubsection[{set\+Message}]{\setlength{\rightskip}{0pt plus 5cm}set\+Message (
+\begin{DoxyParamCaption}
+\item[{}]{\$message, }
+\item[{}]{\$style = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)}\label{class_view_ae440613f93c10c81e09f65e4f7b0fa13}
+Fixe le message qui doit être affichée par la vue.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$message} & Message à afficher. \\
+\hline
+string & {\em \$style} & Style du message à afficher. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/var/www/workspace/\+O\+D\+I-\/\+P\+R\+O\+J\+E\+C\+T/views/View.\+inc.\+php\end{DoxyCompactItemize}

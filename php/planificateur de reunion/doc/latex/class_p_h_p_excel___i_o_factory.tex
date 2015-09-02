@@ -1,0 +1,193 @@
+\section{P\+H\+P\+Excel\+\_\+\+I\+O\+Factory Class Reference}
+\label{class_p_h_p_excel___i_o_factory}\index{P\+H\+P\+Excel\+\_\+\+I\+O\+Factory@{P\+H\+P\+Excel\+\_\+\+I\+O\+Factory}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static {\bf get\+Search\+Locations} ()
+\item 
+static {\bf set\+Search\+Locations} (\$value)
+\item 
+static {\bf add\+Search\+Location} (\$type= '', \$location= '', \$classname= '')
+\item 
+static {\bf create\+Writer} ({\bf P\+H\+P\+Excel} \$php\+Excel, \$writer\+Type= '')
+\item 
+static {\bf create\+Reader} (\$reader\+Type= '')
+\item 
+static {\bf load} (\$p\+Filename)
+\item 
+static {\bf identify} (\$p\+Filename)
+\item 
+static {\bf create\+Reader\+For\+File} (\$p\+Filename)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{P\+H\+P\+Excel\+\_\+\+I\+O\+Factory@{P\+H\+P\+Excel\+\_\+\+I\+O\+Factory}!add\+Search\+Location@{add\+Search\+Location}}
+\index{add\+Search\+Location@{add\+Search\+Location}!P\+H\+P\+Excel\+\_\+\+I\+O\+Factory@{P\+H\+P\+Excel\+\_\+\+I\+O\+Factory}}
+\subsubsection[{add\+Search\+Location}]{\setlength{\rightskip}{0pt plus 5cm}static add\+Search\+Location (
+\begin{DoxyParamCaption}
+\item[{}]{\$type = {\ttfamily ''}, }
+\item[{}]{\$location = {\ttfamily ''}, }
+\item[{}]{\$classname = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___i_o_factory_a2a5cc3341e15ab98891d62d49d7ed82d}
+Add search location
+
+public 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$type} & Example\+: I\+Writer \\
+\hline
+string & {\em \$location} & Example\+: P\+H\+P\+Excel/\+Writer/\{0\}.php \\
+\hline
+string & {\em \$classname} & Example\+: P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\{0\} \\
+\hline
+\end{DoxyParams}
+\index{P\+H\+P\+Excel\+\_\+\+I\+O\+Factory@{P\+H\+P\+Excel\+\_\+\+I\+O\+Factory}!create\+Reader@{create\+Reader}}
+\index{create\+Reader@{create\+Reader}!P\+H\+P\+Excel\+\_\+\+I\+O\+Factory@{P\+H\+P\+Excel\+\_\+\+I\+O\+Factory}}
+\subsubsection[{create\+Reader}]{\setlength{\rightskip}{0pt plus 5cm}static create\+Reader (
+\begin{DoxyParamCaption}
+\item[{}]{\$reader\+Type = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___i_o_factory_a42cda8882e4376e2cb1a3e58f1f8672e}
+Create \doxyref{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+I\+Reader}{p.}{interface_p_h_p_excel___reader___i_reader}
+
+public 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$reader\+Type} & Example\+: Excel2007 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+I\+Reader}{p.}{interface_p_h_p_excel___reader___i_reader} 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Exception}{p.}{class_p_h_p_excel___reader___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\index{P\+H\+P\+Excel\+\_\+\+I\+O\+Factory@{P\+H\+P\+Excel\+\_\+\+I\+O\+Factory}!create\+Reader\+For\+File@{create\+Reader\+For\+File}}
+\index{create\+Reader\+For\+File@{create\+Reader\+For\+File}!P\+H\+P\+Excel\+\_\+\+I\+O\+Factory@{P\+H\+P\+Excel\+\_\+\+I\+O\+Factory}}
+\subsubsection[{create\+Reader\+For\+File}]{\setlength{\rightskip}{0pt plus 5cm}static create\+Reader\+For\+File (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Filename}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___i_o_factory_a379875eae587dff9e66cb87d11d2a75e}
+Create \doxyref{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+I\+Reader}{p.}{interface_p_h_p_excel___reader___i_reader} for file using automatic \doxyref{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+I\+Reader}{p.}{interface_p_h_p_excel___reader___i_reader} resolution
+
+public 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Filename} & The name of the spreadsheet file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+I\+Reader}{p.}{interface_p_h_p_excel___reader___i_reader} 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Exception}{p.}{class_p_h_p_excel___reader___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\index{P\+H\+P\+Excel\+\_\+\+I\+O\+Factory@{P\+H\+P\+Excel\+\_\+\+I\+O\+Factory}!create\+Writer@{create\+Writer}}
+\index{create\+Writer@{create\+Writer}!P\+H\+P\+Excel\+\_\+\+I\+O\+Factory@{P\+H\+P\+Excel\+\_\+\+I\+O\+Factory}}
+\subsubsection[{create\+Writer}]{\setlength{\rightskip}{0pt plus 5cm}static create\+Writer (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+H\+P\+Excel}}]{\$php\+Excel, }
+\item[{}]{\$writer\+Type = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___i_o_factory_ace6b4a9caabe3d16ab54b7dba0732beb}
+Create \doxyref{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+I\+Writer}{p.}{interface_p_h_p_excel___writer___i_writer}
+
+public 
+\begin{DoxyParams}[1]{Parameters}
+\doxyref{P\+H\+P\+Excel}{p.}{class_p_h_p_excel} & {\em \$php\+Excel} & \\
+\hline
+string & {\em \$writer\+Type} & Example\+: Excel2007 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+I\+Writer}{p.}{interface_p_h_p_excel___writer___i_writer} 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Exception}{p.}{class_p_h_p_excel___reader___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\index{P\+H\+P\+Excel\+\_\+\+I\+O\+Factory@{P\+H\+P\+Excel\+\_\+\+I\+O\+Factory}!get\+Search\+Locations@{get\+Search\+Locations}}
+\index{get\+Search\+Locations@{get\+Search\+Locations}!P\+H\+P\+Excel\+\_\+\+I\+O\+Factory@{P\+H\+P\+Excel\+\_\+\+I\+O\+Factory}}
+\subsubsection[{get\+Search\+Locations}]{\setlength{\rightskip}{0pt plus 5cm}static get\+Search\+Locations (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___i_o_factory_acc494c52f3642b1bafd66a8ab61b1af1}
+Get search locations
+
+public \begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+I\+O\+Factory@{P\+H\+P\+Excel\+\_\+\+I\+O\+Factory}!identify@{identify}}
+\index{identify@{identify}!P\+H\+P\+Excel\+\_\+\+I\+O\+Factory@{P\+H\+P\+Excel\+\_\+\+I\+O\+Factory}}
+\subsubsection[{identify}]{\setlength{\rightskip}{0pt plus 5cm}static identify (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Filename}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___i_o_factory_adad188cf49d4281abd1c11ac64e14815}
+Identify file type using automatic \doxyref{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+I\+Reader}{p.}{interface_p_h_p_excel___reader___i_reader} resolution
+
+public 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Filename} & The name of the spreadsheet file to identify \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Exception}{p.}{class_p_h_p_excel___reader___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\index{P\+H\+P\+Excel\+\_\+\+I\+O\+Factory@{P\+H\+P\+Excel\+\_\+\+I\+O\+Factory}!load@{load}}
+\index{load@{load}!P\+H\+P\+Excel\+\_\+\+I\+O\+Factory@{P\+H\+P\+Excel\+\_\+\+I\+O\+Factory}}
+\subsubsection[{load}]{\setlength{\rightskip}{0pt plus 5cm}static load (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Filename}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___i_o_factory_a4fe2c07eea4976e7b5ca8a6ef0fdb2ea}
+Loads \doxyref{P\+H\+P\+Excel}{p.}{class_p_h_p_excel} from file using automatic \doxyref{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+I\+Reader}{p.}{interface_p_h_p_excel___reader___i_reader} resolution
+
+public 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Filename} & The name of the spreadsheet file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel}{p.}{class_p_h_p_excel} 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Exception}{p.}{class_p_h_p_excel___reader___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\index{P\+H\+P\+Excel\+\_\+\+I\+O\+Factory@{P\+H\+P\+Excel\+\_\+\+I\+O\+Factory}!set\+Search\+Locations@{set\+Search\+Locations}}
+\index{set\+Search\+Locations@{set\+Search\+Locations}!P\+H\+P\+Excel\+\_\+\+I\+O\+Factory@{P\+H\+P\+Excel\+\_\+\+I\+O\+Factory}}
+\subsubsection[{set\+Search\+Locations}]{\setlength{\rightskip}{0pt plus 5cm}static set\+Search\+Locations (
+\begin{DoxyParamCaption}
+\item[{}]{\$value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___i_o_factory_a92d351781343becc52c2f958cdfc376a}
+Set search locations
+
+public 
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Exception}{p.}{class_p_h_p_excel___reader___exception}} & \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/var/www/workspace/\+O\+D\+I-\/\+P\+R\+O\+J\+E\+C\+T/model/\+P\+H\+P\+Excel/\+Classes/\+P\+H\+P\+Excel/I\+O\+Factory.\+php\end{DoxyCompactItemize}

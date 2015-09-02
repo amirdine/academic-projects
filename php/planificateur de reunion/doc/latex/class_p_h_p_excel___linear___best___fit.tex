@@ -1,0 +1,120 @@
+\section{P\+H\+P\+Excel\+\_\+\+Linear\+\_\+\+Best\+\_\+\+Fit Class Reference}
+\label{class_p_h_p_excel___linear___best___fit}\index{P\+H\+P\+Excel\+\_\+\+Linear\+\_\+\+Best\+\_\+\+Fit@{P\+H\+P\+Excel\+\_\+\+Linear\+\_\+\+Best\+\_\+\+Fit}}
+
+
+Inheritance diagram for P\+H\+P\+Excel\+\_\+\+Linear\+\_\+\+Best\+\_\+\+Fit\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{class_p_h_p_excel___linear___best___fit__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for P\+H\+P\+Excel\+\_\+\+Linear\+\_\+\+Best\+\_\+\+Fit\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{class_p_h_p_excel___linear___best___fit__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf get\+Value\+Of\+Y\+For\+X} (\$x\+Value)
+\item 
+{\bf get\+Value\+Of\+X\+For\+Y} (\$y\+Value)
+\item 
+{\bf get\+Equation} (\$dp=0)
+\item 
+{\bf \+\_\+\+\_\+construct} (\$y\+Values, \$x\+Values=array(), \$const =True)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$\+\_\+best\+Fit\+Type} = 'linear'\label{class_p_h_p_excel___linear___best___fit_a4771ba52d86525c0c781339ec94f3466}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{P\+H\+P\+Excel\+\_\+\+Linear\+\_\+\+Best\+\_\+\+Fit@{P\+H\+P\+Excel\+\_\+\+Linear\+\_\+\+Best\+\_\+\+Fit}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!P\+H\+P\+Excel\+\_\+\+Linear\+\_\+\+Best\+\_\+\+Fit@{P\+H\+P\+Excel\+\_\+\+Linear\+\_\+\+Best\+\_\+\+Fit}}
+\subsubsection[{\+\_\+\+\_\+construct}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+\item[{}]{\$y\+Values, }
+\item[{}]{\$x\+Values = {\ttfamily array()}, }
+\item[{}]{\$const = {\ttfamily True}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___linear___best___fit_aee1da27c15879e9ccb9e1dccb30c793b}
+Define the regression and calculate the goodness of fit for a set of X and Y data values
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em float\mbox{[}$\,$\mbox{]}} & \$y\+Values The set of Y-\/values for this regression \\
+\hline
+ & {\em float\mbox{[}$\,$\mbox{]}} & \$x\+Values The set of X-\/values for this regression \\
+\hline
+boolean & {\em \$const} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{P\+H\+P\+Excel\+\_\+\+Linear\+\_\+\+Best\+\_\+\+Fit@{P\+H\+P\+Excel\+\_\+\+Linear\+\_\+\+Best\+\_\+\+Fit}!get\+Equation@{get\+Equation}}
+\index{get\+Equation@{get\+Equation}!P\+H\+P\+Excel\+\_\+\+Linear\+\_\+\+Best\+\_\+\+Fit@{P\+H\+P\+Excel\+\_\+\+Linear\+\_\+\+Best\+\_\+\+Fit}}
+\subsubsection[{get\+Equation}]{\setlength{\rightskip}{0pt plus 5cm}get\+Equation (
+\begin{DoxyParamCaption}
+\item[{}]{\$dp = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___linear___best___fit_a015c81d685693d7575b997328ff5930f}
+Return the Equation of the best-\/fit line
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$dp} & Number of places of decimal precision to display \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Linear\+\_\+\+Best\+\_\+\+Fit@{P\+H\+P\+Excel\+\_\+\+Linear\+\_\+\+Best\+\_\+\+Fit}!get\+Value\+Of\+X\+For\+Y@{get\+Value\+Of\+X\+For\+Y}}
+\index{get\+Value\+Of\+X\+For\+Y@{get\+Value\+Of\+X\+For\+Y}!P\+H\+P\+Excel\+\_\+\+Linear\+\_\+\+Best\+\_\+\+Fit@{P\+H\+P\+Excel\+\_\+\+Linear\+\_\+\+Best\+\_\+\+Fit}}
+\subsubsection[{get\+Value\+Of\+X\+For\+Y}]{\setlength{\rightskip}{0pt plus 5cm}get\+Value\+Of\+X\+For\+Y (
+\begin{DoxyParamCaption}
+\item[{}]{\$y\+Value}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___linear___best___fit_ae806bb042d6c95387e82c6feb5d178a5}
+Return the X-\/\+Value for a specified value of Y
+
+
+\begin{DoxyParams}[1]{Parameters}
+float & {\em \$y\+Value} & Y-\/\+Value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float X-\/\+Value 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Linear\+\_\+\+Best\+\_\+\+Fit@{P\+H\+P\+Excel\+\_\+\+Linear\+\_\+\+Best\+\_\+\+Fit}!get\+Value\+Of\+Y\+For\+X@{get\+Value\+Of\+Y\+For\+X}}
+\index{get\+Value\+Of\+Y\+For\+X@{get\+Value\+Of\+Y\+For\+X}!P\+H\+P\+Excel\+\_\+\+Linear\+\_\+\+Best\+\_\+\+Fit@{P\+H\+P\+Excel\+\_\+\+Linear\+\_\+\+Best\+\_\+\+Fit}}
+\subsubsection[{get\+Value\+Of\+Y\+For\+X}]{\setlength{\rightskip}{0pt plus 5cm}get\+Value\+Of\+Y\+For\+X (
+\begin{DoxyParamCaption}
+\item[{}]{\$x\+Value}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___linear___best___fit_a0166e34b8a912b4ddf624660852345ec}
+Return the Y-\/\+Value for a specified value of X
+
+
+\begin{DoxyParams}[1]{Parameters}
+float & {\em \$x\+Value} & X-\/\+Value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float Y-\/\+Value 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/var/www/workspace/\+O\+D\+I-\/\+P\+R\+O\+J\+E\+C\+T/model/\+P\+H\+P\+Excel/\+Classes/\+P\+H\+P\+Excel/\+Shared/trend/linear\+Best\+Fit\+Class.\+php\end{DoxyCompactItemize}

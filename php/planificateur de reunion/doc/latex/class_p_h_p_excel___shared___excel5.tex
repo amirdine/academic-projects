@@ -1,0 +1,172 @@
+\section{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Excel5 Class Reference}
+\label{class_p_h_p_excel___shared___excel5}\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Excel5@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Excel5}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static {\bf size\+Col} (\$sheet, \$col= 'A')
+\item 
+static {\bf size\+Row} (\$sheet, \$row=1)
+\item 
+static {\bf get\+Distance\+X} ({\bf P\+H\+P\+Excel\+\_\+\+Worksheet} \$sheet, \$start\+Column= 'A', \$start\+Offset\+X=0, \$end\+Column= 'A', \$end\+Offset\+X=0)
+\item 
+static {\bf get\+Distance\+Y} ({\bf P\+H\+P\+Excel\+\_\+\+Worksheet} \$sheet, \$start\+Row=1, \$start\+Offset\+Y=0, \$end\+Row=1, \$end\+Offset\+Y=0)
+\item 
+static {\bf one\+Anchor2two\+Anchor} (\$sheet, \$coordinates, \$offset\+X, \$offset\+Y, \$width, \$height)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Excel5@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Excel5}!get\+Distance\+X@{get\+Distance\+X}}
+\index{get\+Distance\+X@{get\+Distance\+X}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Excel5@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Excel5}}
+\subsubsection[{get\+Distance\+X}]{\setlength{\rightskip}{0pt plus 5cm}static get\+Distance\+X (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+H\+P\+Excel\+\_\+\+Worksheet}}]{\$sheet, }
+\item[{}]{\$start\+Column = {\ttfamily 'A'}, }
+\item[{}]{\$start\+Offset\+X = {\ttfamily 0}, }
+\item[{}]{\$end\+Column = {\ttfamily 'A'}, }
+\item[{}]{\$end\+Offset\+X = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___excel5_a06749b6cca23c7ec20b67e2761641ee9}
+Get the horizontal distance in pixels between two anchors The distance\+X is found as sum of all the spanning columns widths minus correction for the two offsets
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} & {\em \$sheet} & \\
+\hline
+string & {\em \$start\+Column} & \\
+\hline
+integer & {\em \$start\+Offset\+X} & Offset within start cell measured in 1/1024 of the cell width \\
+\hline
+string & {\em \$end\+Column} & \\
+\hline
+integer & {\em \$end\+Offset\+X} & Offset within end cell measured in 1/1024 of the cell width \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+integer Horizontal measured in pixels 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Excel5@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Excel5}!get\+Distance\+Y@{get\+Distance\+Y}}
+\index{get\+Distance\+Y@{get\+Distance\+Y}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Excel5@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Excel5}}
+\subsubsection[{get\+Distance\+Y}]{\setlength{\rightskip}{0pt plus 5cm}static get\+Distance\+Y (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+H\+P\+Excel\+\_\+\+Worksheet}}]{\$sheet, }
+\item[{}]{\$start\+Row = {\ttfamily 1}, }
+\item[{}]{\$start\+Offset\+Y = {\ttfamily 0}, }
+\item[{}]{\$end\+Row = {\ttfamily 1}, }
+\item[{}]{\$end\+Offset\+Y = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___excel5_ad52b79c955574bf77ba52e74392cee19}
+Get the vertical distance in pixels between two anchors The distance\+Y is found as sum of all the spanning rows minus two offsets
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} & {\em \$sheet} & \\
+\hline
+integer & {\em \$start\+Row} & (1-\/based) \\
+\hline
+integer & {\em \$start\+Offset\+Y} & Offset within start cell measured in 1/256 of the cell height \\
+\hline
+integer & {\em \$end\+Row} & (1-\/based) \\
+\hline
+integer & {\em \$end\+Offset\+Y} & Offset within end cell measured in 1/256 of the cell height \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+integer Vertical distance measured in pixels 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Excel5@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Excel5}!one\+Anchor2two\+Anchor@{one\+Anchor2two\+Anchor}}
+\index{one\+Anchor2two\+Anchor@{one\+Anchor2two\+Anchor}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Excel5@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Excel5}}
+\subsubsection[{one\+Anchor2two\+Anchor}]{\setlength{\rightskip}{0pt plus 5cm}static one\+Anchor2two\+Anchor (
+\begin{DoxyParamCaption}
+\item[{}]{\$sheet, }
+\item[{}]{\$coordinates, }
+\item[{}]{\$offset\+X, }
+\item[{}]{\$offset\+Y, }
+\item[{}]{\$width, }
+\item[{}]{\$height}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___excel5_a216a401dabe881ac271564f0b87659b0}
+Convert 1-\/cell anchor coordinates to 2-\/cell anchor coordinates This function is ported from P\+E\+A\+R Spreadsheet\+\_\+\+Writer\+\_\+\+Excel with small modifications
+
+Calculate the vertices that define the position of the image as required by the O\+B\+J record. \begin{DoxyVerb} +------------+------------+
+ |   A    |   B  |
+\end{DoxyVerb}
+ +-\/-\/---+-\/-\/-\/-\/-\/-\/-\/-\/-\/---+-\/-\/-\/-\/-\/-\/-\/-\/-\/---+ $\vert$ $\vert$(x1,y1) $\vert$ $\vert$ $\vert$ 1 $\vert$(A1).\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+$\vert$\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+ $\vert$ $\vert$ $\vert$ $\vert$ $\vert$ $\vert$ $\vert$ $\vert$ $\vert$ $\vert$ $\vert$ +-\/-\/---+-\/---$\vert$ B\+I\+T\+M\+A\+P $\vert$-\/-\/---+ $\vert$ $\vert$ $\vert$ $\vert$ $\vert$ $\vert$ 2 $\vert$ $\vert$\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+. $\vert$ $\vert$ $\vert$ $\vert$ (B2)$\vert$ $\vert$ $\vert$ $\vert$ (x2,y2)$\vert$ +-\/--- +-\/-\/-\/-\/-\/-\/-\/-\/-\/---+-\/-\/-\/-\/-\/-\/-\/-\/-\/---+
+
+Example of a bitmap that covers some of the area from cell A1 to cell B2.
+
+Based on the width and height of the bitmap we need to calculate 8 vars\+: \$col\+\_\+start, \$row\+\_\+start, \$col\+\_\+end, \$row\+\_\+end, \$x1, \$y1, \$x2, \$y2. The width and height of the cells are also variable and have to be taken into account. The values of \$col\+\_\+start and \$row\+\_\+start are passed in from the calling function. The values of \$col\+\_\+end and \$row\+\_\+end are calculated by subtracting the width and height of the bitmap from the width and height of the underlying cells. The vertices are expressed as a percentage of the underlying cell width as follows (rhs values are in pixels)\+: \begin{DoxyVerb}x1 = X / W *1024
+y1 = Y / H *256
+x2 = (X-1) / W *1024
+y2 = (Y-1) / H *256
+
+Where:  X is distance from the left side of the underlying cell
+       Y is distance from the top of the underlying cell
+       W is the width of the cell
+       H is the height of the cell
+\end{DoxyVerb}
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} & {\em \$sheet} & \\
+\hline
+string & {\em \$coordinates} & E.\+g. 'A1' \\
+\hline
+integer & {\em \$offset\+X} & Horizontal offset in pixels \\
+\hline
+integer & {\em \$offset\+Y} & Vertical offset in pixels \\
+\hline
+integer & {\em \$width} & Width in pixels \\
+\hline
+integer & {\em \$height} & Height in pixels \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Excel5@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Excel5}!size\+Col@{size\+Col}}
+\index{size\+Col@{size\+Col}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Excel5@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Excel5}}
+\subsubsection[{size\+Col}]{\setlength{\rightskip}{0pt plus 5cm}static size\+Col (
+\begin{DoxyParamCaption}
+\item[{}]{\$sheet, }
+\item[{}]{\$col = {\ttfamily 'A'}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___excel5_a9d03d6061e559fb7174dd408768b53b7}
+Get the width of a column in pixels. We use the relationship y = ceil(7x) where x is the width in intrinsic Excel units (measuring width in number of normal characters) This holds for Arial 10
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} & {\em \$sheet} & The sheet \\
+\hline
+string & {\em \$col} & The column \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+integer The width in pixels 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Excel5@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Excel5}!size\+Row@{size\+Row}}
+\index{size\+Row@{size\+Row}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Excel5@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Excel5}}
+\subsubsection[{size\+Row}]{\setlength{\rightskip}{0pt plus 5cm}static size\+Row (
+\begin{DoxyParamCaption}
+\item[{}]{\$sheet, }
+\item[{}]{\$row = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___excel5_a920a5f25b4b102e58e59bd041c53f2cd}
+Convert the height of a cell from user's units to pixels. By interpolation the relationship is\+: y = 4/3x. If the height hasn't been set by the user we use the default value. If the row is hidden we use a value of zero.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} & {\em \$sheet} & The sheet \\
+\hline
+integer & {\em \$row} & The row index (1-\/based) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+integer The width in pixels 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/var/www/workspace/\+O\+D\+I-\/\+P\+R\+O\+J\+E\+C\+T/model/\+P\+H\+P\+Excel/\+Classes/\+P\+H\+P\+Excel/\+Shared/Excel5.\+php\end{DoxyCompactItemize}

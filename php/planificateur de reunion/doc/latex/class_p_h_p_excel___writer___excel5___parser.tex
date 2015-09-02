@@ -1,0 +1,576 @@
+\section{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser Class Reference}
+\label{class_p_h_p_excel___writer___excel5___parser}\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf \+\_\+\+\_\+construct} ()
+\item 
+{\bf \+\_\+initialize\+Hashes} ()
+\item 
+{\bf \+\_\+convert} (\$token)
+\item 
+{\bf \+\_\+convert\+Number} (\$num)
+\item 
+{\bf \+\_\+convert\+String} (\$string)
+\item 
+{\bf \+\_\+convert\+Function} (\$token, \$num\+\_\+args)
+\item 
+{\bf \+\_\+convert\+Range2d} (\$range, \$class=0)
+\item 
+{\bf \+\_\+convert\+Range3d} (\$token)
+\item 
+{\bf \+\_\+convert\+Ref2d} (\$cell)
+\item 
+{\bf \+\_\+convert\+Ref3d} (\$cell)
+\item 
+{\bf \+\_\+convert\+Error} (\$error\+Code)
+\item 
+{\bf \+\_\+pack\+Ext\+Ref} (\$ext\+\_\+ref)
+\item 
+{\bf \+\_\+get\+Ref\+Index} (\$ext\+\_\+ref)
+\item 
+{\bf \+\_\+get\+Sheet\+Index} (\$sheet\+\_\+name)
+\item 
+{\bf set\+Ext\+Sheet} (\$name, \$index)
+\item 
+{\bf \+\_\+cell\+To\+Packed\+Rowcol} (\$cell)
+\item 
+{\bf \+\_\+range\+To\+Packed\+Range} (\$range)
+\item 
+{\bf \+\_\+cell\+To\+Rowcol} (\$cell)
+\item 
+{\bf \+\_\+advance} ()
+\item 
+{\bf \+\_\+match} (\$token)
+\item 
+{\bf parse} (\$formula)
+\item 
+{\bf \+\_\+condition} ()
+\item 
+{\bf \+\_\+expression} ()
+\item 
+{\bf \+\_\+parenthesized\+Expression} ()
+\item 
+{\bf \+\_\+term} ()
+\item 
+{\bf \+\_\+fact} ()
+\item 
+{\bf \+\_\+func} ()
+\item 
+{\bf \+\_\+create\+Tree} (\$value, \$left, \$right)
+\item 
+{\bf to\+Reverse\+Polish} (\$tree=array())
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const {\bf R\+E\+G\+E\+X\+\_\+\+S\+H\+E\+E\+T\+\_\+\+T\+I\+T\+L\+E\+\_\+\+U\+N\+Q\+U\+O\+T\+E\+D} = '[$^\wedge$\textbackslash{}$\ast$\textbackslash{}\+:\textbackslash{}/\textbackslash{}\textbackslash{}\textbackslash{}\textbackslash{}\textbackslash{}?\textbackslash{}[\textbackslash{}]\textbackslash{}+\textbackslash{}-\/\textbackslash{}\% \textbackslash{}\textbackslash{}\textbackslash{}'\textbackslash{}$^\wedge$\textbackslash{}\&\textbackslash{}$<$\textbackslash{}$>$\textbackslash{}=\textbackslash{},\textbackslash{};\textbackslash{}\#\textbackslash{}(\textbackslash{})\textbackslash{}\char`\"{}\textbackslash{}\{\textbackslash{}\}]+'
+\item 
+const {\bfseries R\+E\+G\+E\+X\+\_\+\+S\+H\+E\+E\+T\+\_\+\+T\+I\+T\+L\+E\+\_\+\+Q\+U\+O\+T\+E\+D} = '(([$^\wedge$\textbackslash{}$\ast$\textbackslash{}\+:\textbackslash{}/\textbackslash{}\textbackslash{}\textbackslash{}\textbackslash{}\textbackslash{}?\textbackslash{}[\textbackslash{}]\textbackslash{}\textbackslash{}\textbackslash{}'])+$\vert$(\textbackslash{}\textbackslash{}\textbackslash{}'\textbackslash{}\textbackslash{}\textbackslash{}')+)+'\label{class_p_h_p_excel___writer___excel5___parser_a704df039618a88aae58f9e89750901d8}
+
+\item 
+{\bfseries \$\+\_\+current\+\_\+char}\label{class_p_h_p_excel___writer___excel5___parser_a97f7799d57fbb12ba975d85d75082c58}
+
+\item 
+{\bfseries \$\+\_\+current\+\_\+token}\label{class_p_h_p_excel___writer___excel5___parser_a82aee2b23ef047f377d47fafcfaaeeab}
+
+\item 
+{\bfseries \$\+\_\+formula}\label{class_p_h_p_excel___writer___excel5___parser_a4ed8c8f9c2eec2181ee77d08a675ac13}
+
+\item 
+{\bfseries \$\+\_\+lookahead}\label{class_p_h_p_excel___writer___excel5___parser_a61b9b84422c68f5f7b87249f04be0a30}
+
+\item 
+{\bfseries \$\+\_\+parse\+\_\+tree}\label{class_p_h_p_excel___writer___excel5___parser_a7326e84ee938d53649e79141d5296d1b}
+
+\item 
+{\bfseries \$\+\_\+ext\+\_\+sheets}\label{class_p_h_p_excel___writer___excel5___parser_abc78ce3defdd83f2299ede891a2e0344}
+
+\item 
+{\bfseries \$\+\_\+references}\label{class_p_h_p_excel___writer___excel5___parser_ad0608cac4d7d36216f8ec187ed82948a}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser}}
+\subsubsection[{\+\_\+\+\_\+construct}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___excel5___parser_a095c5d389db211932136b53f25f39685}
+The class constructor 
+
+\subsection{Member Function Documentation}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser}!\+\_\+advance@{\+\_\+advance}}
+\index{\+\_\+advance@{\+\_\+advance}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser}}
+\subsubsection[{\+\_\+advance}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+advance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___excel5___parser_ade22d953a879405990d509953c03bfe2}
+Advance to the next valid token.
+
+private \index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser}!\+\_\+cell\+To\+Packed\+Rowcol@{\+\_\+cell\+To\+Packed\+Rowcol}}
+\index{\+\_\+cell\+To\+Packed\+Rowcol@{\+\_\+cell\+To\+Packed\+Rowcol}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser}}
+\subsubsection[{\+\_\+cell\+To\+Packed\+Rowcol}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+cell\+To\+Packed\+Rowcol (
+\begin{DoxyParamCaption}
+\item[{}]{\$cell}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___excel5___parser_a1245d28099180f554a6ae32ec4720d41}
+pack() row and column into the required 3 or 4 byte format.
+
+private 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$cell} & The Excel cell reference to be packed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array Array containing the row and column in packed() format 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser}!\+\_\+cell\+To\+Rowcol@{\+\_\+cell\+To\+Rowcol}}
+\index{\+\_\+cell\+To\+Rowcol@{\+\_\+cell\+To\+Rowcol}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser}}
+\subsubsection[{\+\_\+cell\+To\+Rowcol}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+cell\+To\+Rowcol (
+\begin{DoxyParamCaption}
+\item[{}]{\$cell}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___excel5___parser_a365b02c83ed4af03908b22097a248855}
+Convert an Excel cell reference such as A1 or \$\+B2 or C\$3 or \$\+D\$4 to a zero indexed row and column number. Also returns two (0,1) values to indicate whether the row or column are relative references.
+
+private 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$cell} & The Excel cell reference in A1 format. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser}!\+\_\+condition@{\+\_\+condition}}
+\index{\+\_\+condition@{\+\_\+condition}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser}}
+\subsubsection[{\+\_\+condition}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+condition (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___excel5___parser_a06f9239e1e7f1640f03a26e9769dd74f}
+It parses a condition. It assumes the following rule\+: Cond -\/$>$ Expr [(\char`\"{}$>$\char`\"{} $\vert$ \char`\"{}$<$\char`\"{}) Expr]
+
+private \begin{DoxyReturn}{Returns}
+mixed The parsed ptg'd tree on success 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser}!\+\_\+convert@{\+\_\+convert}}
+\index{\+\_\+convert@{\+\_\+convert}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser}}
+\subsubsection[{\+\_\+convert}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+convert (
+\begin{DoxyParamCaption}
+\item[{}]{\$token}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___excel5___parser_a66b9028effca7b807068f0ada3791885}
+Convert a token to the proper ptg value.
+
+private 
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$token} & The token to convert. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed the converted token on success 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser}!\+\_\+convert\+Error@{\+\_\+convert\+Error}}
+\index{\+\_\+convert\+Error@{\+\_\+convert\+Error}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser}}
+\subsubsection[{\+\_\+convert\+Error}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+convert\+Error (
+\begin{DoxyParamCaption}
+\item[{}]{\$error\+Code}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___excel5___parser_a526e4666f6ffc77bdd679b062b170525}
+Convert an error code to a ptg\+Err
+
+private 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$error\+Code} & The error code for conversion to its ptg value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string The error code ptg\+Err 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser}!\+\_\+convert\+Function@{\+\_\+convert\+Function}}
+\index{\+\_\+convert\+Function@{\+\_\+convert\+Function}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser}}
+\subsubsection[{\+\_\+convert\+Function}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+convert\+Function (
+\begin{DoxyParamCaption}
+\item[{}]{\$token, }
+\item[{}]{\$num\+\_\+args}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___excel5___parser_ab1dc2686bff5d44b207ac4895b3a0641}
+Convert a function to a ptg\+Func or ptg\+Func\+Var\+V depending on the number of args that it takes.
+
+private 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$token} & The name of the function for convertion to ptg value. \\
+\hline
+integer & {\em \$num\+\_\+args} & The number of arguments the function receives. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string The packed ptg for the function 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser}!\+\_\+convert\+Number@{\+\_\+convert\+Number}}
+\index{\+\_\+convert\+Number@{\+\_\+convert\+Number}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser}}
+\subsubsection[{\+\_\+convert\+Number}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+convert\+Number (
+\begin{DoxyParamCaption}
+\item[{}]{\$num}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___excel5___parser_a469f3f4d10c53271ea7992e848fe52dc}
+Convert a number token to ptg\+Int or ptg\+Num
+
+private 
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$num} & an integer or double for conversion to its ptg value \\
+\hline
+\end{DoxyParams}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser}!\+\_\+convert\+Range2d@{\+\_\+convert\+Range2d}}
+\index{\+\_\+convert\+Range2d@{\+\_\+convert\+Range2d}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser}}
+\subsubsection[{\+\_\+convert\+Range2d}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+convert\+Range2d (
+\begin{DoxyParamCaption}
+\item[{}]{\$range, }
+\item[{}]{\$class = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___excel5___parser_a3ee5b8b92e0ae5cd2181daa837f54435}
+Convert an Excel range such as A1\+:D4 to a ptg\+Ref\+V.
+
+private 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$range} & An Excel range in the A1\+:A2 \\
+\hline
+int & {\em \$class} & \\
+\hline
+\end{DoxyParams}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser}!\+\_\+convert\+Range3d@{\+\_\+convert\+Range3d}}
+\index{\+\_\+convert\+Range3d@{\+\_\+convert\+Range3d}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser}}
+\subsubsection[{\+\_\+convert\+Range3d}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+convert\+Range3d (
+\begin{DoxyParamCaption}
+\item[{}]{\$token}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___excel5___parser_a166b50463b019ce79306c0ad784c80ab}
+Convert an Excel 3d range such as \char`\"{}\+Sheet1!\+A1\+:\+D4\char`\"{} or \char`\"{}\+Sheet1\+:\+Sheet2!\+A1\+:\+D4\char`\"{} to a ptg\+Area3d.
+
+private 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$token} & An Excel range in the Sheet1!\+A1\+:A2 format. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed The packed ptg\+Area3d token on success. 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser}!\+\_\+convert\+Ref2d@{\+\_\+convert\+Ref2d}}
+\index{\+\_\+convert\+Ref2d@{\+\_\+convert\+Ref2d}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser}}
+\subsubsection[{\+\_\+convert\+Ref2d}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+convert\+Ref2d (
+\begin{DoxyParamCaption}
+\item[{}]{\$cell}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___excel5___parser_abde6b6a1540207dd076d53e6e1f92708}
+Convert an Excel reference such as A1, \$\+B2, C\$3 or \$\+D\$4 to a ptg\+Ref\+V.
+
+private 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$cell} & An Excel cell reference \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string The cell in packed() format with the corresponding ptg 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser}!\+\_\+convert\+Ref3d@{\+\_\+convert\+Ref3d}}
+\index{\+\_\+convert\+Ref3d@{\+\_\+convert\+Ref3d}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser}}
+\subsubsection[{\+\_\+convert\+Ref3d}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+convert\+Ref3d (
+\begin{DoxyParamCaption}
+\item[{}]{\$cell}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___excel5___parser_ae55d0969bd5237e8f636023ec875d353}
+Convert an Excel 3d reference such as \char`\"{}\+Sheet1!\+A1\char`\"{} or \char`\"{}\+Sheet1\+:\+Sheet2!\+A1\char`\"{} to a ptg\+Ref3d.
+
+private 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$cell} & An Excel cell reference \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed The packed ptg\+Ref3d token on success. 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser}!\+\_\+convert\+String@{\+\_\+convert\+String}}
+\index{\+\_\+convert\+String@{\+\_\+convert\+String}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser}}
+\subsubsection[{\+\_\+convert\+String}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+convert\+String (
+\begin{DoxyParamCaption}
+\item[{}]{\$string}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___excel5___parser_a2f9a9b3a83cee56c32b37da35940de4f}
+Convert a string token to ptg\+Str
+
+private 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$string} & A string for conversion to its ptg value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed the converted token on success 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser}!\+\_\+create\+Tree@{\+\_\+create\+Tree}}
+\index{\+\_\+create\+Tree@{\+\_\+create\+Tree}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser}}
+\subsubsection[{\+\_\+create\+Tree}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+create\+Tree (
+\begin{DoxyParamCaption}
+\item[{}]{\$value, }
+\item[{}]{\$left, }
+\item[{}]{\$right}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___excel5___parser_a8fc69695e3ca3a38073abb42a5809133}
+Creates a tree. In fact an array which may have one or two arrays (sub-\/trees) as elements.
+
+private 
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$value} & The value of this node. \\
+\hline
+mixed & {\em \$left} & The left array (sub-\/tree) or a final node. \\
+\hline
+mixed & {\em \$right} & The right array (sub-\/tree) or a final node. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array A tree 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser}!\+\_\+expression@{\+\_\+expression}}
+\index{\+\_\+expression@{\+\_\+expression}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser}}
+\subsubsection[{\+\_\+expression}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+expression (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___excel5___parser_a98ebbe6f8c4868664bec241343f6b264}
+It parses a expression. It assumes the following rule\+: Expr -\/$>$ Term [(\char`\"{}+\char`\"{} $\vert$ \char`\"{}-\/\char`\"{}) Term] -\/$>$ \char`\"{}string\char`\"{} -\/$>$ \char`\"{}-\/\char`\"{} Term \+: Negative value -\/$>$ \char`\"{}+\char`\"{} Term \+: Positive value -\/$>$ Error code
+
+private \begin{DoxyReturn}{Returns}
+mixed The parsed ptg'd tree on success 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser}!\+\_\+fact@{\+\_\+fact}}
+\index{\+\_\+fact@{\+\_\+fact}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser}}
+\subsubsection[{\+\_\+fact}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+fact (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___excel5___parser_a5509a461d9bb6a0565ad118a03359b1f}
+It parses a factor. It assumes the following rule\+: Fact -\/$>$ ( Expr ) $\vert$ Cell\+Ref $\vert$ Cell\+Range $\vert$ Number $\vert$ Function
+
+private \begin{DoxyReturn}{Returns}
+mixed The parsed ptg'd tree on success 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser}!\+\_\+func@{\+\_\+func}}
+\index{\+\_\+func@{\+\_\+func}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser}}
+\subsubsection[{\+\_\+func}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+func (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___excel5___parser_a2b5a3399bb46f0b528ef703b9263f845}
+It parses a function call. It assumes the following rule\+: Func -\/$>$ ( Expr [,Expr]$\ast$ )
+
+private \begin{DoxyReturn}{Returns}
+mixed The parsed ptg'd tree on success 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser}!\+\_\+get\+Ref\+Index@{\+\_\+get\+Ref\+Index}}
+\index{\+\_\+get\+Ref\+Index@{\+\_\+get\+Ref\+Index}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser}}
+\subsubsection[{\+\_\+get\+Ref\+Index}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+get\+Ref\+Index (
+\begin{DoxyParamCaption}
+\item[{}]{\$ext\+\_\+ref}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___excel5___parser_a07f1f5de3a602158751805aaaade757a}
+Look up the R\+E\+F index that corresponds to an external sheet name (or range). If it doesn't exist yet add it to the workbook's references array. It assumes all sheet names given must exist.
+
+private 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$ext\+\_\+ref} & The name of the external reference \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed The reference index in packed() format on success 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser}!\+\_\+get\+Sheet\+Index@{\+\_\+get\+Sheet\+Index}}
+\index{\+\_\+get\+Sheet\+Index@{\+\_\+get\+Sheet\+Index}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser}}
+\subsubsection[{\+\_\+get\+Sheet\+Index}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+get\+Sheet\+Index (
+\begin{DoxyParamCaption}
+\item[{}]{\$sheet\+\_\+name}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___excel5___parser_aeeac5f5a50731f5cb16f065c533517dc}
+Look up the index that corresponds to an external sheet name. The hash of sheet names is updated by the addworksheet() method of the \doxyref{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Workbook}{p.}{class_p_h_p_excel___writer___excel5___workbook} class.
+
+private 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$sheet\+\_\+name} & Sheet name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+integer The sheet index, -\/1 if the sheet was not found 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser}!\+\_\+initialize\+Hashes@{\+\_\+initialize\+Hashes}}
+\index{\+\_\+initialize\+Hashes@{\+\_\+initialize\+Hashes}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser}}
+\subsubsection[{\+\_\+initialize\+Hashes}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+initialize\+Hashes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___excel5___parser_ab03b4aa5f1b53faa7699b35cadce5859}
+Initialize the ptg and function hashes.
+
+private \index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser}!\+\_\+match@{\+\_\+match}}
+\index{\+\_\+match@{\+\_\+match}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser}}
+\subsubsection[{\+\_\+match}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+match (
+\begin{DoxyParamCaption}
+\item[{}]{\$token}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___excel5___parser_ade73fd7bc5759e09e22538c2ceef11e0}
+Checks if it's a valid token.
+
+private 
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$token} & The token to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed The checked token or false on failure 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser}!\+\_\+pack\+Ext\+Ref@{\+\_\+pack\+Ext\+Ref}}
+\index{\+\_\+pack\+Ext\+Ref@{\+\_\+pack\+Ext\+Ref}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser}}
+\subsubsection[{\+\_\+pack\+Ext\+Ref}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+pack\+Ext\+Ref (
+\begin{DoxyParamCaption}
+\item[{}]{\$ext\+\_\+ref}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___excel5___parser_a923a4fec719f83237364466461389631}
+Convert the sheet name part of an external reference, for example \char`\"{}\+Sheet1\char`\"{} or \char`\"{}\+Sheet1\+:\+Sheet2\char`\"{}, to a packed structure.
+
+private 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$ext\+\_\+ref} & The name of the external reference \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string The reference index in packed() format 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser}!\+\_\+parenthesized\+Expression@{\+\_\+parenthesized\+Expression}}
+\index{\+\_\+parenthesized\+Expression@{\+\_\+parenthesized\+Expression}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser}}
+\subsubsection[{\+\_\+parenthesized\+Expression}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+parenthesized\+Expression (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___excel5___parser_a18193328fad4e676f69db2a0a990ddf5}
+This function just introduces a ptg\+Paren element in the tree, so that Excel doesn't get confused when working with a parenthesized formula afterwards.
+
+private \begin{DoxySeeAlso}{See also}
+\doxyref{\+\_\+fact()}{p.}{class_p_h_p_excel___writer___excel5___parser_a5509a461d9bb6a0565ad118a03359b1f} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+array The parsed ptg'd tree 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser}!\+\_\+range\+To\+Packed\+Range@{\+\_\+range\+To\+Packed\+Range}}
+\index{\+\_\+range\+To\+Packed\+Range@{\+\_\+range\+To\+Packed\+Range}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser}}
+\subsubsection[{\+\_\+range\+To\+Packed\+Range}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+range\+To\+Packed\+Range (
+\begin{DoxyParamCaption}
+\item[{}]{\$range}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___excel5___parser_abd518afe013ca6090d57da71d59c24d4}
+pack() row range into the required 3 or 4 byte format. Just using maximum col/rows, which is probably not the correct solution
+
+private 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$range} & The Excel range to be packed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array Array containing (row1,col1,row2,col2) in packed() format 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser}!\+\_\+term@{\+\_\+term}}
+\index{\+\_\+term@{\+\_\+term}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser}}
+\subsubsection[{\+\_\+term}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+term (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___excel5___parser_a09663c2bc34b587467903538a161276c}
+It parses a term. It assumes the following rule\+: Term -\/$>$ Fact [(\char`\"{}$\ast$\char`\"{} $\vert$ \char`\"{}/\char`\"{}) Fact]
+
+private \begin{DoxyReturn}{Returns}
+mixed The parsed ptg'd tree on success 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser}!parse@{parse}}
+\index{parse@{parse}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser}}
+\subsubsection[{parse}]{\setlength{\rightskip}{0pt plus 5cm}parse (
+\begin{DoxyParamCaption}
+\item[{}]{\$formula}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___excel5___parser_aa8a18d9fb932c4bb040a5aaf24b5b9e0}
+The parsing method. It parses a formula.
+
+public 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$formula} & The formula to parse, without the initial equal sign (=). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed true on success 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser}!set\+Ext\+Sheet@{set\+Ext\+Sheet}}
+\index{set\+Ext\+Sheet@{set\+Ext\+Sheet}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser}}
+\subsubsection[{set\+Ext\+Sheet}]{\setlength{\rightskip}{0pt plus 5cm}set\+Ext\+Sheet (
+\begin{DoxyParamCaption}
+\item[{}]{\$name, }
+\item[{}]{\$index}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___excel5___parser_a7697e8505e8d343a9f48ac359193f19e}
+This method is used to update the array of sheet names. It is called by the add\+Worksheet() method of the \doxyref{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Workbook}{p.}{class_p_h_p_excel___writer___excel5___workbook} class.
+
+public \begin{DoxySeeAlso}{See also}
+P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Workbook\+::add\+Worksheet() 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & The name of the worksheet being added \\
+\hline
+integer & {\em \$index} & The index of the worksheet being added \\
+\hline
+\end{DoxyParams}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser}!to\+Reverse\+Polish@{to\+Reverse\+Polish}}
+\index{to\+Reverse\+Polish@{to\+Reverse\+Polish}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser}}
+\subsubsection[{to\+Reverse\+Polish}]{\setlength{\rightskip}{0pt plus 5cm}to\+Reverse\+Polish (
+\begin{DoxyParamCaption}
+\item[{}]{\$tree = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___excel5___parser_a3bbc2d15a99f5c454211993d84c422b5}
+Builds a string containing the tree in reverse polish notation (What you would use in a H\+P calculator stack). The following tree\+:
+
+
+\begin{DoxyItemize}
+\item / \textbackslash{} 2 3
+\end{DoxyItemize}
+
+produces\+: \char`\"{}23+\char`\"{}
+
+The following tree\+:
+
+
+\begin{DoxyItemize}
+\item / \textbackslash{} 3 $\ast$ / \textbackslash{} 6 A1
+\end{DoxyItemize}
+
+produces\+: \char`\"{}36\+A1$\ast$+\char`\"{}
+
+In fact all operands, functions, references, etc... are written as ptg's
+
+public 
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$tree} & The optional tree to convert. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string The tree in reverse polish notation 
+\end{DoxyReturn}
+
+
+\subsection{Field Documentation}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser}!R\+E\+G\+E\+X\+\_\+\+S\+H\+E\+E\+T\+\_\+\+T\+I\+T\+L\+E\+\_\+\+U\+N\+Q\+U\+O\+T\+E\+D@{R\+E\+G\+E\+X\+\_\+\+S\+H\+E\+E\+T\+\_\+\+T\+I\+T\+L\+E\+\_\+\+U\+N\+Q\+U\+O\+T\+E\+D}}
+\index{R\+E\+G\+E\+X\+\_\+\+S\+H\+E\+E\+T\+\_\+\+T\+I\+T\+L\+E\+\_\+\+U\+N\+Q\+U\+O\+T\+E\+D@{R\+E\+G\+E\+X\+\_\+\+S\+H\+E\+E\+T\+\_\+\+T\+I\+T\+L\+E\+\_\+\+U\+N\+Q\+U\+O\+T\+E\+D}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Parser}}
+\subsubsection[{R\+E\+G\+E\+X\+\_\+\+S\+H\+E\+E\+T\+\_\+\+T\+I\+T\+L\+E\+\_\+\+U\+N\+Q\+U\+O\+T\+E\+D}]{\setlength{\rightskip}{0pt plus 5cm}const R\+E\+G\+E\+X\+\_\+\+S\+H\+E\+E\+T\+\_\+\+T\+I\+T\+L\+E\+\_\+\+U\+N\+Q\+U\+O\+T\+E\+D = '[$^\wedge$\textbackslash{}$\ast$\textbackslash{}\+:\textbackslash{}/\textbackslash{}\textbackslash{}\textbackslash{}\textbackslash{}\textbackslash{}?\textbackslash{}[\textbackslash{}]\textbackslash{}+\textbackslash{}-\/\textbackslash{}\% \textbackslash{}\textbackslash{}\textbackslash{}'\textbackslash{}$^\wedge$\textbackslash{}\&\textbackslash{}$<$\textbackslash{}$>$\textbackslash{}=\textbackslash{},\textbackslash{};\textbackslash{}\#\textbackslash{}(\textbackslash{})\textbackslash{}\char`\"{}\textbackslash{}\{\textbackslash{}\}]+'}\label{class_p_h_p_excel___writer___excel5___parser_ab2a0024af17ff0d4f3c3720a46c0cf72}
+Constants 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/var/www/workspace/\+O\+D\+I-\/\+P\+R\+O\+J\+E\+C\+T/model/\+P\+H\+P\+Excel/\+Classes/\+P\+H\+P\+Excel/\+Writer/\+Excel5/Parser.\+php\end{DoxyCompactItemize}

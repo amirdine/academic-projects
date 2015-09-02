@@ -1,0 +1,145 @@
+\section{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Memory\+Serialized Class Reference}
+\label{class_p_h_p_excel___cached_object_storage___memory_serialized}\index{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Memory\+Serialized@{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Memory\+Serialized}}
+
+
+Inheritance diagram for P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Memory\+Serialized\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_p_h_p_excel___cached_object_storage___memory_serialized__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Memory\+Serialized\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_p_h_p_excel___cached_object_storage___memory_serialized__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf add\+Cache\+Data} (\$p\+Coord, {\bf P\+H\+P\+Excel\+\_\+\+Cell} \$cell)
+\item 
+{\bf get\+Cache\+Data} (\$p\+Coord)
+\item 
+{\bf get\+Cell\+List} ()
+\item 
+{\bf unset\+Worksheet\+Cells} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf \+\_\+store\+Data} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\index{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Memory\+Serialized@{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Memory\+Serialized}!\+\_\+store\+Data@{\+\_\+store\+Data}}
+\index{\+\_\+store\+Data@{\+\_\+store\+Data}!P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Memory\+Serialized@{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Memory\+Serialized}}
+\subsubsection[{\+\_\+store\+Data}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+store\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_p_h_p_excel___cached_object_storage___memory_serialized_afee3fef349b3e569da48e878b06924ed}
+Store cell data in cache for the current cell object if it's \char`\"{}dirty\char`\"{}, and the 'nullify' the current cell object
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\index{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Memory\+Serialized@{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Memory\+Serialized}!add\+Cache\+Data@{add\+Cache\+Data}}
+\index{add\+Cache\+Data@{add\+Cache\+Data}!P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Memory\+Serialized@{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Memory\+Serialized}}
+\subsubsection[{add\+Cache\+Data}]{\setlength{\rightskip}{0pt plus 5cm}add\+Cache\+Data (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Coord, }
+\item[{{\bf P\+H\+P\+Excel\+\_\+\+Cell}}]{\$cell}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___cached_object_storage___memory_serialized_ad67d427e919ac13624188bcbebc4a1df}
+Add or Update a cell in cache identified by coordinate address
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Coord} & Coordinate address of the cell to update \\
+\hline
+\doxyref{P\+H\+P\+Excel\+\_\+\+Cell}{p.}{class_p_h_p_excel___cell} & {\em \$cell} & Cell to update \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements {\bf P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+I\+Cache} \doxyref{}{p.}{interface_p_h_p_excel___cached_object_storage___i_cache_ad67d427e919ac13624188bcbebc4a1df}.
+
+\index{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Memory\+Serialized@{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Memory\+Serialized}!get\+Cache\+Data@{get\+Cache\+Data}}
+\index{get\+Cache\+Data@{get\+Cache\+Data}!P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Memory\+Serialized@{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Memory\+Serialized}}
+\subsubsection[{get\+Cache\+Data}]{\setlength{\rightskip}{0pt plus 5cm}get\+Cache\+Data (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Coord}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___cached_object_storage___memory_serialized_a7c7ab4b1ed71d38b5d4581f738af52ef}
+Get cell at a specific coordinate
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Coord} & Coordinate of the cell \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Cell}{p.}{class_p_h_p_excel___cell} Cell that was found, or null if not found 
+\end{DoxyReturn}
+
+
+Implements {\bf P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+I\+Cache} \doxyref{}{p.}{interface_p_h_p_excel___cached_object_storage___i_cache_a7c7ab4b1ed71d38b5d4581f738af52ef}.
+
+\index{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Memory\+Serialized@{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Memory\+Serialized}!get\+Cell\+List@{get\+Cell\+List}}
+\index{get\+Cell\+List@{get\+Cell\+List}!P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Memory\+Serialized@{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Memory\+Serialized}}
+\subsubsection[{get\+Cell\+List}]{\setlength{\rightskip}{0pt plus 5cm}get\+Cell\+List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___cached_object_storage___memory_serialized_adebf78f21c01b7615cfdcaf2821120f5}
+Get a list of all cell addresses currently held in cache
+
+\begin{DoxyReturn}{Returns}
+array of string 
+\end{DoxyReturn}
+
+
+Implements {\bf P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+I\+Cache} \doxyref{}{p.}{interface_p_h_p_excel___cached_object_storage___i_cache_adebf78f21c01b7615cfdcaf2821120f5}.
+
+\index{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Memory\+Serialized@{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Memory\+Serialized}!unset\+Worksheet\+Cells@{unset\+Worksheet\+Cells}}
+\index{unset\+Worksheet\+Cells@{unset\+Worksheet\+Cells}!P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Memory\+Serialized@{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Memory\+Serialized}}
+\subsubsection[{unset\+Worksheet\+Cells}]{\setlength{\rightskip}{0pt plus 5cm}unset\+Worksheet\+Cells (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___cached_object_storage___memory_serialized_aa75306c27cb6ab1fdb16ccdb24a8e04e}
+Clear the cell collection and disconnect from our parent
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/var/www/workspace/\+O\+D\+I-\/\+P\+R\+O\+J\+E\+C\+T/model/\+P\+H\+P\+Excel/\+Classes/\+P\+H\+P\+Excel/\+Cached\+Object\+Storage/Memory\+Serialized.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,164 @@
+\section{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Stream\+Wrapper Class Reference}
+\label{class_p_h_p_excel___shared___zip_stream_wrapper}\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Stream\+Wrapper@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Stream\+Wrapper}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf stream\+\_\+open} (\$path, \$mode, \$options, \&\$opened\+\_\+path)
+\item 
+{\bf stat\+Name} ()
+\item 
+{\bf url\+\_\+stat} ()
+\item 
+{\bf stream\+\_\+stat} ()
+\item 
+{\bf stream\+\_\+read} (\$count)
+\item 
+{\bf stream\+\_\+tell} ()
+\item 
+{\bf stream\+\_\+eof} ()
+\item 
+{\bf stream\+\_\+seek} (\$offset, \$whence)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static {\bf register} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Stream\+Wrapper@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Stream\+Wrapper}!register@{register}}
+\index{register@{register}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Stream\+Wrapper@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Stream\+Wrapper}}
+\subsubsection[{register}]{\setlength{\rightskip}{0pt plus 5cm}static register (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___zip_stream_wrapper_a610b9c89b82e11ea426e1804874a6ef4}
+Register wrapper \index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Stream\+Wrapper@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Stream\+Wrapper}!stat\+Name@{stat\+Name}}
+\index{stat\+Name@{stat\+Name}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Stream\+Wrapper@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Stream\+Wrapper}}
+\subsubsection[{stat\+Name}]{\setlength{\rightskip}{0pt plus 5cm}stat\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___shared___zip_stream_wrapper_abcbc948f1e5d3b457098f818cdb5ccd5}
+Implements support for fstat().
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Stream\+Wrapper@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Stream\+Wrapper}!stream\+\_\+eof@{stream\+\_\+eof}}
+\index{stream\+\_\+eof@{stream\+\_\+eof}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Stream\+Wrapper@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Stream\+Wrapper}}
+\subsubsection[{stream\+\_\+eof}]{\setlength{\rightskip}{0pt plus 5cm}stream\+\_\+eof (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___shared___zip_stream_wrapper_a3e9ce71f7c8ab0db36dfd38ea2039476}
+E\+O\+F stream
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Stream\+Wrapper@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Stream\+Wrapper}!stream\+\_\+open@{stream\+\_\+open}}
+\index{stream\+\_\+open@{stream\+\_\+open}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Stream\+Wrapper@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Stream\+Wrapper}}
+\subsubsection[{stream\+\_\+open}]{\setlength{\rightskip}{0pt plus 5cm}stream\+\_\+open (
+\begin{DoxyParamCaption}
+\item[{}]{\$path, }
+\item[{}]{\$mode, }
+\item[{}]{\$options, }
+\item[{\&}]{\$opened\+\_\+path}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___shared___zip_stream_wrapper_ad1e362aaee8513dec3d2be62cd3a402c}
+Implements support for fopen().
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & resource name including scheme, e.\+g. \\
+\hline
+string & {\em \$mode} & only \char`\"{}r\char`\"{} is supported \\
+\hline
+int & {\em \$options} & mask of S\+T\+R\+E\+A\+M\+\_\+\+R\+E\+P\+O\+R\+T\+\_\+\+E\+R\+R\+O\+R\+S and S\+T\+R\+E\+A\+M\+\_\+\+U\+S\+E\+\_\+\+P\+A\+T\+H \\
+\hline
+string & {\em \&\$opened\+Path} & absolute path of the opened stream (out parameter) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool true on success 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Stream\+Wrapper@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Stream\+Wrapper}!stream\+\_\+read@{stream\+\_\+read}}
+\index{stream\+\_\+read@{stream\+\_\+read}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Stream\+Wrapper@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Stream\+Wrapper}}
+\subsubsection[{stream\+\_\+read}]{\setlength{\rightskip}{0pt plus 5cm}stream\+\_\+read (
+\begin{DoxyParamCaption}
+\item[{}]{\$count}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___shared___zip_stream_wrapper_acf4adec38e34adc3b8cdec2f6ddaf1df}
+Implements support for fread(), fgets() etc.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$count} & maximum number of bytes to read \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Stream\+Wrapper@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Stream\+Wrapper}!stream\+\_\+seek@{stream\+\_\+seek}}
+\index{stream\+\_\+seek@{stream\+\_\+seek}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Stream\+Wrapper@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Stream\+Wrapper}}
+\subsubsection[{stream\+\_\+seek}]{\setlength{\rightskip}{0pt plus 5cm}stream\+\_\+seek (
+\begin{DoxyParamCaption}
+\item[{}]{\$offset, }
+\item[{}]{\$whence}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___shared___zip_stream_wrapper_a11b8cbb2e2211df9c677df917afe092f}
+Seek stream
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$offset} & byte offset \\
+\hline
+int & {\em \$whence} & S\+E\+E\+K\+\_\+\+S\+E\+T, S\+E\+E\+K\+\_\+\+C\+U\+R or S\+E\+E\+K\+\_\+\+E\+N\+D \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Stream\+Wrapper@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Stream\+Wrapper}!stream\+\_\+stat@{stream\+\_\+stat}}
+\index{stream\+\_\+stat@{stream\+\_\+stat}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Stream\+Wrapper@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Stream\+Wrapper}}
+\subsubsection[{stream\+\_\+stat}]{\setlength{\rightskip}{0pt plus 5cm}stream\+\_\+stat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___shared___zip_stream_wrapper_ad5c2e5aede8f0bd6b523de4be61f169a}
+Implements support for fstat().
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Stream\+Wrapper@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Stream\+Wrapper}!stream\+\_\+tell@{stream\+\_\+tell}}
+\index{stream\+\_\+tell@{stream\+\_\+tell}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Stream\+Wrapper@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Stream\+Wrapper}}
+\subsubsection[{stream\+\_\+tell}]{\setlength{\rightskip}{0pt plus 5cm}stream\+\_\+tell (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___shared___zip_stream_wrapper_aa3320416e4520b888b7a9b0ce6508cd6}
+Returns the position of the file pointer, i.\+e. its offset into the file stream. Implements support for ftell().
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Stream\+Wrapper@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Stream\+Wrapper}!url\+\_\+stat@{url\+\_\+stat}}
+\index{url\+\_\+stat@{url\+\_\+stat}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Stream\+Wrapper@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Stream\+Wrapper}}
+\subsubsection[{url\+\_\+stat}]{\setlength{\rightskip}{0pt plus 5cm}url\+\_\+stat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___shared___zip_stream_wrapper_ae9a7f036e10c96e0ad09f285a87a36c9}
+Implements support for fstat().
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/var/www/workspace/\+O\+D\+I-\/\+P\+R\+O\+J\+E\+C\+T/model/\+P\+H\+P\+Excel/\+Classes/\+P\+H\+P\+Excel/\+Shared/Zip\+Stream\+Wrapper.\+php\end{DoxyCompactItemize}

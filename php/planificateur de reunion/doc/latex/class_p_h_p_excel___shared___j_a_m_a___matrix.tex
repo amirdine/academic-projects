@@ -1,0 +1,611 @@
+\section{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix Class Reference}
+\label{class_p_h_p_excel___shared___j_a_m_a___matrix}\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf \+\_\+\+\_\+construct} ()
+\item 
+{\bf get\+Array} ()
+\item 
+{\bf get\+Row\+Dimension} ()
+\item 
+{\bf get\+Column\+Dimension} ()
+\item 
+{\bf get} (\$i=null, \$j=null)
+\item 
+{\bf get\+Matrix} ()
+\item 
+{\bf check\+Matrix\+Dimensions} (\$B=null)
+\item 
+{\bf set} (\$i=null, \$j=null, \$c=null)
+\item 
+{\bf identity} (\$m=null, \$n=null)
+\item 
+{\bf diagonal} (\$m=null, \$n=null, \$c=1)
+\item 
+{\bf get\+Matrix\+By\+Row} (\$i0=null, \$i\+F=null)
+\item 
+{\bf get\+Matrix\+By\+Col} (\$j0=null, \$j\+F=null)
+\item 
+{\bf transpose} ()
+\item 
+{\bf trace} ()
+\item 
+{\bf uminus} ()
+\item 
+{\bf plus} ()
+\item 
+{\bf plus\+Equals} ()
+\item 
+{\bf minus} ()
+\item 
+{\bf minus\+Equals} ()
+\item 
+{\bf array\+Times} ()
+\item 
+{\bf array\+Times\+Equals} ()
+\item 
+{\bf array\+Right\+Divide} ()
+\item 
+{\bf array\+Right\+Divide\+Equals} ()
+\item 
+{\bf array\+Left\+Divide} ()
+\item 
+{\bf array\+Left\+Divide\+Equals} ()
+\item 
+{\bf times} ()
+\item 
+{\bf power} ()
+\item 
+{\bf concat} ()
+\item 
+{\bf solve} (\$B)
+\item 
+{\bf inverse} ()
+\item 
+{\bf det} ()
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const {\bfseries Polymorphic\+Argument\+Exception} = \char`\"{}Invalid argument pattern for polymorphic function.\char`\"{}\label{class_p_h_p_excel___shared___j_a_m_a___matrix_a699650d6b9c488b43ed6e8df58a4503d}
+
+\item 
+const {\bfseries Argument\+Type\+Exception} = \char`\"{}Invalid argument type.\char`\"{}\label{class_p_h_p_excel___shared___j_a_m_a___matrix_aaa602d9ba473fc3c6b41f8104ac79d18}
+
+\item 
+const {\bfseries Argument\+Bounds\+Exception} = \char`\"{}Invalid argument range.\char`\"{}\label{class_p_h_p_excel___shared___j_a_m_a___matrix_ae53e3d0ebf47ed0540f77e55d9a0ba98}
+
+\item 
+const {\bfseries Matrix\+Dimension\+Exception} = \char`\"{}Matrix dimensions are not equal.\char`\"{}\label{class_p_h_p_excel___shared___j_a_m_a___matrix_a175ab844c4b34997aa57eea9e4fb5e55}
+
+\item 
+const {\bfseries Array\+Length\+Exception} = \char`\"{}Array length must be a multiple of m.\char`\"{}\label{class_p_h_p_excel___shared___j_a_m_a___matrix_a70d333981c0ba3d3ad4ee987b743ceda}
+
+\item 
+{\bfseries \$\+A} = array()\label{class_p_h_p_excel___shared___j_a_m_a___matrix_a4f0795a6e9cb9646fd4c616a1eb2f46d}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\doxyref{P\+H\+P\+Excel}{p.}{class_p_h_p_excel} root directory 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix}}
+\subsubsection[{\+\_\+\+\_\+construct}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___shared___j_a_m_a___matrix_a095c5d389db211932136b53f25f39685}
+Polymorphic constructor
+
+As P\+H\+P has no support for polymorphic constructors, we hack our own sort of polymorphism using func\+\_\+num\+\_\+args, func\+\_\+get\+\_\+arg, and gettype. In essence, we're just implementing a simple R\+T\+T\+I filter and calling the appropriate constructor. 
+
+\subsection{Member Function Documentation}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix}!array\+Left\+Divide@{array\+Left\+Divide}}
+\index{array\+Left\+Divide@{array\+Left\+Divide}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix}}
+\subsubsection[{array\+Left\+Divide}]{\setlength{\rightskip}{0pt plus 5cm}array\+Left\+Divide (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___shared___j_a_m_a___matrix_a742bc977bd877d5489ff425d449f72d6}
+array\+Left\+Divide
+
+Element-\/by-\/element Left division A / B 
+\begin{DoxyParams}[1]{Parameters}
+Matrix & {\em \$\+B} & Matrix B \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Matrix Division result 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix}!array\+Left\+Divide\+Equals@{array\+Left\+Divide\+Equals}}
+\index{array\+Left\+Divide\+Equals@{array\+Left\+Divide\+Equals}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix}}
+\subsubsection[{array\+Left\+Divide\+Equals}]{\setlength{\rightskip}{0pt plus 5cm}array\+Left\+Divide\+Equals (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___shared___j_a_m_a___matrix_ac17f3131ecd83ff75c8e187f10fa9a5d}
+array\+Left\+Divide\+Equals
+
+Element-\/by-\/element Left division Aij = Aij / Bij 
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$\+B} & Matrix/\+Array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Matrix Matrix Aij 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix}!array\+Right\+Divide@{array\+Right\+Divide}}
+\index{array\+Right\+Divide@{array\+Right\+Divide}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix}}
+\subsubsection[{array\+Right\+Divide}]{\setlength{\rightskip}{0pt plus 5cm}array\+Right\+Divide (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___shared___j_a_m_a___matrix_af7261c27d4d4a5fb8e4b91bba42125b6}
+array\+Right\+Divide
+
+Element-\/by-\/element right division A / B 
+\begin{DoxyParams}[1]{Parameters}
+Matrix & {\em \$\+B} & Matrix B \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Matrix Division result 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix}!array\+Right\+Divide\+Equals@{array\+Right\+Divide\+Equals}}
+\index{array\+Right\+Divide\+Equals@{array\+Right\+Divide\+Equals}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix}}
+\subsubsection[{array\+Right\+Divide\+Equals}]{\setlength{\rightskip}{0pt plus 5cm}array\+Right\+Divide\+Equals (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___shared___j_a_m_a___matrix_a37bb85c6f60c8a0a2d751caf027ad68c}
+array\+Right\+Divide\+Equals
+
+Element-\/by-\/element right division Aij = Aij / Bij 
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$\+B} & Matrix/\+Array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Matrix Matrix Aij 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix}!array\+Times@{array\+Times}}
+\index{array\+Times@{array\+Times}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix}}
+\subsubsection[{array\+Times}]{\setlength{\rightskip}{0pt plus 5cm}array\+Times (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___shared___j_a_m_a___matrix_a3c56f57abdfdbbbf7efb24709ddb44ca}
+array\+Times
+
+Element-\/by-\/element multiplication Cij = Aij $\ast$ Bij 
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$\+B} & Matrix/\+Array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Matrix Matrix Cij 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix}!array\+Times\+Equals@{array\+Times\+Equals}}
+\index{array\+Times\+Equals@{array\+Times\+Equals}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix}}
+\subsubsection[{array\+Times\+Equals}]{\setlength{\rightskip}{0pt plus 5cm}array\+Times\+Equals (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___shared___j_a_m_a___matrix_a51ce3c11283b6741f2e8cc1d4ef99c7a}
+array\+Times\+Equals
+
+Element-\/by-\/element multiplication Aij = Aij $\ast$ Bij 
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$\+B} & Matrix/\+Array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Matrix Matrix Aij 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix}!check\+Matrix\+Dimensions@{check\+Matrix\+Dimensions}}
+\index{check\+Matrix\+Dimensions@{check\+Matrix\+Dimensions}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix}}
+\subsubsection[{check\+Matrix\+Dimensions}]{\setlength{\rightskip}{0pt plus 5cm}check\+Matrix\+Dimensions (
+\begin{DoxyParamCaption}
+\item[{}]{\$\+B = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___shared___j_a_m_a___matrix_a65b2d9645d8635073f90adfea1dc6589}
+check\+Matrix\+Dimensions
+
+Is matrix B the same size? 
+\begin{DoxyParams}[1]{Parameters}
+Matrix & {\em \$\+B} & Matrix B \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix}!concat@{concat}}
+\index{concat@{concat}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix}}
+\subsubsection[{concat}]{\setlength{\rightskip}{0pt plus 5cm}concat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___shared___j_a_m_a___matrix_a5c044919fdfd8d4b36d87288b04937b0}
+concat
+
+A = A \& B 
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$\+B} & Matrix/\+Array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Matrix Sum 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix}!det@{det}}
+\index{det@{det}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix}}
+\subsubsection[{det}]{\setlength{\rightskip}{0pt plus 5cm}det (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___shared___j_a_m_a___matrix_a1422c32a4e07773772a60265f8cf36d9}
+det
+
+Calculate determinant \begin{DoxyReturn}{Returns}
+float Determinant 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix}!diagonal@{diagonal}}
+\index{diagonal@{diagonal}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix}}
+\subsubsection[{diagonal}]{\setlength{\rightskip}{0pt plus 5cm}diagonal (
+\begin{DoxyParamCaption}
+\item[{}]{\$m = {\ttfamily null}, }
+\item[{}]{\$n = {\ttfamily null}, }
+\item[{}]{\$c = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___shared___j_a_m_a___matrix_aeb07501ee4d7209ae36be4da84944292}
+diagonal
+
+Generate a diagonal matrix 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$m} & Row dimension \\
+\hline
+int & {\em \$n} & Column dimension \\
+\hline
+mixed & {\em \$c} & Diagonal value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Matrix Diagonal matrix 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix}!get@{get}}
+\index{get@{get}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix}}
+\subsubsection[{get}]{\setlength{\rightskip}{0pt plus 5cm}get (
+\begin{DoxyParamCaption}
+\item[{}]{\$i = {\ttfamily null}, }
+\item[{}]{\$j = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___shared___j_a_m_a___matrix_a8a9420e1382934eb680f2c614a2d1cf3}
+get
+
+Get the i,j-\/th element of the matrix. 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$i} & Row position \\
+\hline
+int & {\em \$j} & Column position \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed Element (int/float/double) 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix}!get\+Array@{get\+Array}}
+\index{get\+Array@{get\+Array}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix}}
+\subsubsection[{get\+Array}]{\setlength{\rightskip}{0pt plus 5cm}get\+Array (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___shared___j_a_m_a___matrix_a3f86c2f58955e5100b8411ab13927232}
+get\+Array
+
+\begin{DoxyReturn}{Returns}
+array Matrix array 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix}!get\+Column\+Dimension@{get\+Column\+Dimension}}
+\index{get\+Column\+Dimension@{get\+Column\+Dimension}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix}}
+\subsubsection[{get\+Column\+Dimension}]{\setlength{\rightskip}{0pt plus 5cm}get\+Column\+Dimension (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___shared___j_a_m_a___matrix_ada363a9d0fb5fcd4b9932a8b245232e0}
+get\+Column\+Dimension
+
+\begin{DoxyReturn}{Returns}
+int Column dimension 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix}!get\+Matrix@{get\+Matrix}}
+\index{get\+Matrix@{get\+Matrix}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix}}
+\subsubsection[{get\+Matrix}]{\setlength{\rightskip}{0pt plus 5cm}get\+Matrix (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___shared___j_a_m_a___matrix_a639f0c65ab0ff04c45bfd2bb825dd0d4}
+get\+Matrix
+
+Get a submatrix 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$i0} & Initial row index \\
+\hline
+int & {\em \$i\+F} & Final row index \\
+\hline
+int & {\em \$j0} & Initial column index \\
+\hline
+int & {\em \$j\+F} & Final column index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Matrix Submatrix 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix}!get\+Matrix\+By\+Col@{get\+Matrix\+By\+Col}}
+\index{get\+Matrix\+By\+Col@{get\+Matrix\+By\+Col}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix}}
+\subsubsection[{get\+Matrix\+By\+Col}]{\setlength{\rightskip}{0pt plus 5cm}get\+Matrix\+By\+Col (
+\begin{DoxyParamCaption}
+\item[{}]{\$j0 = {\ttfamily null}, }
+\item[{}]{\$j\+F = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___shared___j_a_m_a___matrix_ab4e414dff44b2cbc549dc26d3e9d01e8}
+get\+Matrix\+By\+Col
+
+Get a submatrix by column index/range 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$i0} & Initial column index \\
+\hline
+int & {\em \$i\+F} & Final column index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Matrix Submatrix 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix}!get\+Matrix\+By\+Row@{get\+Matrix\+By\+Row}}
+\index{get\+Matrix\+By\+Row@{get\+Matrix\+By\+Row}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix}}
+\subsubsection[{get\+Matrix\+By\+Row}]{\setlength{\rightskip}{0pt plus 5cm}get\+Matrix\+By\+Row (
+\begin{DoxyParamCaption}
+\item[{}]{\$i0 = {\ttfamily null}, }
+\item[{}]{\$i\+F = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___shared___j_a_m_a___matrix_a53e7fcd9132ddc46e8f6072981271e10}
+get\+Matrix\+By\+Row
+
+Get a submatrix by row index/range 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$i0} & Initial row index \\
+\hline
+int & {\em \$i\+F} & Final row index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Matrix Submatrix 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix}!get\+Row\+Dimension@{get\+Row\+Dimension}}
+\index{get\+Row\+Dimension@{get\+Row\+Dimension}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix}}
+\subsubsection[{get\+Row\+Dimension}]{\setlength{\rightskip}{0pt plus 5cm}get\+Row\+Dimension (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___shared___j_a_m_a___matrix_a284c39ac0f3b91f4fe4e23fbf3b581fe}
+get\+Row\+Dimension
+
+\begin{DoxyReturn}{Returns}
+int Row dimension 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix}!identity@{identity}}
+\index{identity@{identity}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix}}
+\subsubsection[{identity}]{\setlength{\rightskip}{0pt plus 5cm}identity (
+\begin{DoxyParamCaption}
+\item[{}]{\$m = {\ttfamily null}, }
+\item[{}]{\$n = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___shared___j_a_m_a___matrix_a21795bfe23a358915e1d5d5b1d745664}
+identity
+
+Generate an identity matrix. 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$m} & Row dimension \\
+\hline
+int & {\em \$n} & Column dimension \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Matrix Identity matrix 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix}!inverse@{inverse}}
+\index{inverse@{inverse}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix}}
+\subsubsection[{inverse}]{\setlength{\rightskip}{0pt plus 5cm}inverse (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___shared___j_a_m_a___matrix_af336d96a4800ea0debb07dd84f448dc6}
+Matrix inverse or pseudoinverse.
+
+\begin{DoxyReturn}{Returns}
+Matrix ... Inverse(\+A) if A is square, pseudoinverse otherwise. 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix}!minus@{minus}}
+\index{minus@{minus}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix}}
+\subsubsection[{minus}]{\setlength{\rightskip}{0pt plus 5cm}minus (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___shared___j_a_m_a___matrix_aa6222d13f3c04121128827a0ee92a20c}
+minus
+
+A -\/ B 
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$\+B} & Matrix/\+Array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Matrix Sum 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix}!minus\+Equals@{minus\+Equals}}
+\index{minus\+Equals@{minus\+Equals}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix}}
+\subsubsection[{minus\+Equals}]{\setlength{\rightskip}{0pt plus 5cm}minus\+Equals (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___shared___j_a_m_a___matrix_a3f69521938731a9201411fa7ed717807}
+minus\+Equals
+
+A = A -\/ B 
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$\+B} & Matrix/\+Array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Matrix Sum 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix}!plus@{plus}}
+\index{plus@{plus}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix}}
+\subsubsection[{plus}]{\setlength{\rightskip}{0pt plus 5cm}plus (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___shared___j_a_m_a___matrix_a5bb868a26aa664a8833b6a7de9e9d3bb}
+plus
+
+A + B 
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$\+B} & Matrix/\+Array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Matrix Sum 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix}!plus\+Equals@{plus\+Equals}}
+\index{plus\+Equals@{plus\+Equals}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix}}
+\subsubsection[{plus\+Equals}]{\setlength{\rightskip}{0pt plus 5cm}plus\+Equals (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___shared___j_a_m_a___matrix_a3626acb3fce0149c49d0c0ec6ea67305}
+plus\+Equals
+
+A = A + B 
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$\+B} & Matrix/\+Array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Matrix Sum 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix}!power@{power}}
+\index{power@{power}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix}}
+\subsubsection[{power}]{\setlength{\rightskip}{0pt plus 5cm}power (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___shared___j_a_m_a___matrix_a5a36edc03e4439a8541e7b1ece3a0889}
+power
+
+A = A $^\wedge$ B 
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$\+B} & Matrix/\+Array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Matrix Sum 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix}!set@{set}}
+\index{set@{set}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}set (
+\begin{DoxyParamCaption}
+\item[{}]{\$i = {\ttfamily null}, }
+\item[{}]{\$j = {\ttfamily null}, }
+\item[{}]{\$c = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___shared___j_a_m_a___matrix_a060ffcb322863b37e2f831178bb33129}
+set
+
+Set the i,j-\/th element of the matrix. 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$i} & Row position \\
+\hline
+int & {\em \$j} & Column position \\
+\hline
+mixed & {\em \$c} & Int/float/double value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed Element (int/float/double) 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix}!solve@{solve}}
+\index{solve@{solve}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix}}
+\subsubsection[{solve}]{\setlength{\rightskip}{0pt plus 5cm}solve (
+\begin{DoxyParamCaption}
+\item[{}]{\$\+B}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___shared___j_a_m_a___matrix_a5a4256f98c419479eebe38f2ad232793}
+Solve A$\ast$\+X = B.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Matrix & {\em \$\+B} & Right hand side \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Matrix ... Solution if A is square, least squares solution otherwise 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix}!times@{times}}
+\index{times@{times}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix}}
+\subsubsection[{times}]{\setlength{\rightskip}{0pt plus 5cm}times (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___shared___j_a_m_a___matrix_a5d998200a799a98b641d44ce0576a33d}
+times
+
+Matrix multiplication 
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$n} & Matrix/\+Array/\+Scalar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Matrix Product 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix}!trace@{trace}}
+\index{trace@{trace}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix}}
+\subsubsection[{trace}]{\setlength{\rightskip}{0pt plus 5cm}trace (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___shared___j_a_m_a___matrix_adf6e151f76b1209e675d2f0e7c506397}
+trace
+
+Sum of diagonal elements \begin{DoxyReturn}{Returns}
+float Sum of diagonal elements 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix}!transpose@{transpose}}
+\index{transpose@{transpose}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix}}
+\subsubsection[{transpose}]{\setlength{\rightskip}{0pt plus 5cm}transpose (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___shared___j_a_m_a___matrix_a66491f281b2dea60b17f584178c62a8b}
+transpose
+
+Tranpose matrix \begin{DoxyReturn}{Returns}
+Matrix Transposed matrix 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix}!uminus@{uminus}}
+\index{uminus@{uminus}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Matrix}}
+\subsubsection[{uminus}]{\setlength{\rightskip}{0pt plus 5cm}uminus (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___shared___j_a_m_a___matrix_a00e20af4f3c2b8d5ee3177f162da8791}
+uminus
+
+Unary minus matrix -\/\+A \begin{DoxyReturn}{Returns}
+Matrix Unary minus matrix 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/var/www/workspace/\+O\+D\+I-\/\+P\+R\+O\+J\+E\+C\+T/model/\+P\+H\+P\+Excel/\+Classes/\+P\+H\+P\+Excel/\+Shared/\+J\+A\+M\+A/Matrix.\+php\end{DoxyCompactItemize}

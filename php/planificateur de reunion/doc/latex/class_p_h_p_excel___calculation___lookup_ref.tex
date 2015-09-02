@@ -1,0 +1,385 @@
+\section{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Lookup\+Ref Class Reference}
+\label{class_p_h_p_excel___calculation___lookup_ref}\index{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Lookup\+Ref@{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Lookup\+Ref}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static {\bf C\+E\+L\+L\+\_\+\+A\+D\+D\+R\+E\+S\+S} (\$row, \$column, \$relativity=1, \$reference\+Style=True, \$sheet\+Text='')
+\item 
+static {\bf C\+O\+L\+U\+M\+N} (\$cell\+Address=Null)
+\item 
+static {\bf C\+O\+L\+U\+M\+N\+S} (\$cell\+Address=Null)
+\item 
+static {\bf R\+O\+W} (\$cell\+Address=Null)
+\item 
+static {\bf R\+O\+W\+S} (\$cell\+Address=Null)
+\item 
+static {\bfseries H\+Y\+P\+E\+R\+L\+I\+N\+K} (\$link\+U\+R\+L= '', \$display\+Name=null, {\bf P\+H\+P\+Excel\+\_\+\+Cell} \$p\+Cell=null)\label{class_p_h_p_excel___calculation___lookup_ref_adef798b32097cf0f3dc68abdcc401864}
+
+\item 
+static {\bf I\+N\+D\+I\+R\+E\+C\+T} (\$cell\+Address=N\+U\+L\+L, {\bf P\+H\+P\+Excel\+\_\+\+Cell} \$p\+Cell=N\+U\+L\+L)
+\item 
+static {\bf O\+F\+F\+S\+E\+T} (\$cell\+Address=Null, \$rows=0, \$columns=0, \$height=null, \$width=null)
+\item 
+static {\bf C\+H\+O\+O\+S\+E} ()
+\item 
+static {\bf M\+A\+T\+C\+H} (\$lookup\+\_\+value, \$lookup\+\_\+array, \$match\+\_\+type=1)
+\item 
+static {\bf I\+N\+D\+E\+X} (\$array\+Values, \$row\+Num=0, \$column\+Num=0)
+\item 
+static {\bf T\+R\+A\+N\+S\+P\+O\+S\+E} (\$matrix\+Data)
+\item 
+static {\bf V\+L\+O\+O\+K\+U\+P} (\$lookup\+\_\+value, \$lookup\+\_\+array, \$index\+\_\+number, \$not\+\_\+exact\+\_\+match=true)
+\item 
+static {\bf H\+L\+O\+O\+K\+U\+P} (\$lookup\+\_\+value, \$lookup\+\_\+array, \$index\+\_\+number, \$not\+\_\+exact\+\_\+match=true)
+\item 
+static {\bf L\+O\+O\+K\+U\+P} (\$lookup\+\_\+value, \$lookup\+\_\+vector, \$result\+\_\+vector=null)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Lookup\+Ref@{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Lookup\+Ref}!C\+E\+L\+L\+\_\+\+A\+D\+D\+R\+E\+S\+S@{C\+E\+L\+L\+\_\+\+A\+D\+D\+R\+E\+S\+S}}
+\index{C\+E\+L\+L\+\_\+\+A\+D\+D\+R\+E\+S\+S@{C\+E\+L\+L\+\_\+\+A\+D\+D\+R\+E\+S\+S}!P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Lookup\+Ref@{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Lookup\+Ref}}
+\subsubsection[{C\+E\+L\+L\+\_\+\+A\+D\+D\+R\+E\+S\+S}]{\setlength{\rightskip}{0pt plus 5cm}static C\+E\+L\+L\+\_\+\+A\+D\+D\+R\+E\+S\+S (
+\begin{DoxyParamCaption}
+\item[{}]{\$row, }
+\item[{}]{\$column, }
+\item[{}]{\$relativity = {\ttfamily 1}, }
+\item[{}]{\$reference\+Style = {\ttfamily True}, }
+\item[{}]{\$sheet\+Text = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___calculation___lookup_ref_a7d1707b3b6f5e931827d0fe1a2c19f67}
+C\+E\+L\+L\+\_\+\+A\+D\+D\+R\+E\+S\+S
+
+Creates a cell address as text, given specified row and column numbers.
+
+Excel Function\+: =A\+D\+D\+R\+E\+S\+S(row, column, [relativity], [reference\+Style], [sheet\+Text])
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & Row number to use in the cell reference \\
+\hline
+{\em column} & Column number to use in the cell reference \\
+\hline
+{\em relativity} & Flag indicating the type of reference to return 1 or omitted Absolute 2 Absolute row; relative column 3 Relative row; absolute column 4 Relative \\
+\hline
+{\em reference\+Style} & A logical value that specifies the A1 or R1\+C1 reference style. T\+R\+U\+E or omitted C\+E\+L\+L\+\_\+\+A\+D\+D\+R\+E\+S\+S returns an A1-\/style reference F\+A\+L\+S\+E C\+E\+L\+L\+\_\+\+A\+D\+D\+R\+E\+S\+S returns an R1\+C1-\/style reference \\
+\hline
+{\em sheet\+Text} & Optional Name of worksheet to use \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Lookup\+Ref@{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Lookup\+Ref}!C\+H\+O\+O\+S\+E@{C\+H\+O\+O\+S\+E}}
+\index{C\+H\+O\+O\+S\+E@{C\+H\+O\+O\+S\+E}!P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Lookup\+Ref@{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Lookup\+Ref}}
+\subsubsection[{C\+H\+O\+O\+S\+E}]{\setlength{\rightskip}{0pt plus 5cm}static C\+H\+O\+O\+S\+E (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___calculation___lookup_ref_ad4f20021414de285751c2aad36892de6}
+C\+H\+O\+O\+S\+E
+
+Uses lookup\+\_\+value to return a value from the list of value arguments. Use C\+H\+O\+O\+S\+E to select one of up to 254 values based on the lookup\+\_\+value.
+
+Excel Function\+: =C\+H\+O\+O\+S\+E(index\+\_\+num, value1, [value2], ...)
+
+
+\begin{DoxyParams}{Parameters}
+{\em index\+\_\+num} & Specifies which value argument is selected. Index\+\_\+num must be a number between 1 and 254, or a formula or reference to a cell containing a number between 1 and 254. \\
+\hline
+{\em value1...} & Value1 is required, subsequent values are optional. Between 1 to 254 value arguments from which C\+H\+O\+O\+S\+E selects a value or an action to perform based on index\+\_\+num. The arguments can be numbers, cell references, defined names, formulas, functions, or text. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed The selected value 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Lookup\+Ref@{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Lookup\+Ref}!C\+O\+L\+U\+M\+N@{C\+O\+L\+U\+M\+N}}
+\index{C\+O\+L\+U\+M\+N@{C\+O\+L\+U\+M\+N}!P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Lookup\+Ref@{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Lookup\+Ref}}
+\subsubsection[{C\+O\+L\+U\+M\+N}]{\setlength{\rightskip}{0pt plus 5cm}static C\+O\+L\+U\+M\+N (
+\begin{DoxyParamCaption}
+\item[{}]{\$cell\+Address = {\ttfamily Null}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___calculation___lookup_ref_ab73cffdd79b8b955fabc9b666a8d73b1}
+C\+O\+L\+U\+M\+N
+
+Returns the column number of the given cell reference If the cell reference is a range of cells, C\+O\+L\+U\+M\+N returns the column numbers of each column in the reference as a horizontal array. If cell reference is omitted, and the function is being called through the calculation engine, then it is assumed to be the reference of the cell in which the C\+O\+L\+U\+M\+N function appears; otherwise this function returns 0.
+
+Excel Function\+: =C\+O\+L\+U\+M\+N([cell\+Address])
+
+
+\begin{DoxyParams}{Parameters}
+{\em cell\+Address} & A reference to a range of cells for which you want the column numbers \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+integer or array of integer 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Lookup\+Ref@{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Lookup\+Ref}!C\+O\+L\+U\+M\+N\+S@{C\+O\+L\+U\+M\+N\+S}}
+\index{C\+O\+L\+U\+M\+N\+S@{C\+O\+L\+U\+M\+N\+S}!P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Lookup\+Ref@{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Lookup\+Ref}}
+\subsubsection[{C\+O\+L\+U\+M\+N\+S}]{\setlength{\rightskip}{0pt plus 5cm}static C\+O\+L\+U\+M\+N\+S (
+\begin{DoxyParamCaption}
+\item[{}]{\$cell\+Address = {\ttfamily Null}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___calculation___lookup_ref_a09080f043343a62b5cd2d082c5cefff5}
+C\+O\+L\+U\+M\+N\+S
+
+Returns the number of columns in an array or reference.
+
+Excel Function\+: =C\+O\+L\+U\+M\+N\+S(cell\+Address)
+
+
+\begin{DoxyParams}{Parameters}
+{\em cell\+Address} & An array or array formula, or a reference to a range of cells for which you want the number of columns \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+integer The number of columns in cell\+Address 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Lookup\+Ref@{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Lookup\+Ref}!H\+L\+O\+O\+K\+U\+P@{H\+L\+O\+O\+K\+U\+P}}
+\index{H\+L\+O\+O\+K\+U\+P@{H\+L\+O\+O\+K\+U\+P}!P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Lookup\+Ref@{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Lookup\+Ref}}
+\subsubsection[{H\+L\+O\+O\+K\+U\+P}]{\setlength{\rightskip}{0pt plus 5cm}static H\+L\+O\+O\+K\+U\+P (
+\begin{DoxyParamCaption}
+\item[{}]{\$lookup\+\_\+value, }
+\item[{}]{\$lookup\+\_\+array, }
+\item[{}]{\$index\+\_\+number, }
+\item[{}]{\$not\+\_\+exact\+\_\+match = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___calculation___lookup_ref_aebfe721a041b2e741426ea75625c7cd3}
+H\+L\+O\+O\+K\+U\+P The H\+L\+O\+O\+K\+U\+P function searches for value in the top-\/most row of lookup\+\_\+array and returns the value in the same column based on the index\+\_\+number. 
+\begin{DoxyParams}{Parameters}
+{\em lookup\+\_\+value} & The value that you want to match in lookup\+\_\+array \\
+\hline
+{\em lookup\+\_\+array} & The range of cells being searched \\
+\hline
+{\em index\+\_\+number} & The row number in table\+\_\+array from which the matching value must be returned. The first row is 1. \\
+\hline
+{\em not\+\_\+exact\+\_\+match} & Determines if you are looking for an exact match based on lookup\+\_\+value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed The value of the found cell 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Lookup\+Ref@{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Lookup\+Ref}!I\+N\+D\+E\+X@{I\+N\+D\+E\+X}}
+\index{I\+N\+D\+E\+X@{I\+N\+D\+E\+X}!P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Lookup\+Ref@{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Lookup\+Ref}}
+\subsubsection[{I\+N\+D\+E\+X}]{\setlength{\rightskip}{0pt plus 5cm}static I\+N\+D\+E\+X (
+\begin{DoxyParamCaption}
+\item[{}]{\$array\+Values, }
+\item[{}]{\$row\+Num = {\ttfamily 0}, }
+\item[{}]{\$column\+Num = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___calculation___lookup_ref_a116cb4f54b6a37c84ce5da8493eed966}
+I\+N\+D\+E\+X
+
+Uses an index to choose a value from a reference or array
+
+Excel Function\+: =I\+N\+D\+E\+X(range\+\_\+array, row\+\_\+num, [column\+\_\+num])
+
+
+\begin{DoxyParams}{Parameters}
+{\em range\+\_\+array} & A range of cells or an array constant \\
+\hline
+{\em row\+\_\+num} & The row in array from which to return a value. If row\+\_\+num is omitted, column\+\_\+num is required. \\
+\hline
+{\em column\+\_\+num} & The column in array from which to return a value. If column\+\_\+num is omitted, row\+\_\+num is required. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed the value of a specified cell or array of cells 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Lookup\+Ref@{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Lookup\+Ref}!I\+N\+D\+I\+R\+E\+C\+T@{I\+N\+D\+I\+R\+E\+C\+T}}
+\index{I\+N\+D\+I\+R\+E\+C\+T@{I\+N\+D\+I\+R\+E\+C\+T}!P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Lookup\+Ref@{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Lookup\+Ref}}
+\subsubsection[{I\+N\+D\+I\+R\+E\+C\+T}]{\setlength{\rightskip}{0pt plus 5cm}static I\+N\+D\+I\+R\+E\+C\+T (
+\begin{DoxyParamCaption}
+\item[{}]{\$cell\+Address = {\ttfamily NULL}, }
+\item[{{\bf P\+H\+P\+Excel\+\_\+\+Cell}}]{\$p\+Cell = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___calculation___lookup_ref_ac1bdbc5c799ec94c30166edeb7027653}
+I\+N\+D\+I\+R\+E\+C\+T
+
+Returns the reference specified by a text string. References are immediately evaluated to display their contents.
+
+Excel Function\+: =I\+N\+D\+I\+R\+E\+C\+T(cell\+Address)
+
+N\+O\+T\+E -\/ \doxyref{I\+N\+D\+I\+R\+E\+C\+T()}{p.}{class_p_h_p_excel___calculation___lookup_ref_ac1bdbc5c799ec94c30166edeb7027653} does not yet support the optional a1 parameter introduced in Excel 2010
+
+
+\begin{DoxyParams}[1]{Parameters}
+cell\+Address & {\em \$cell\+Address} & The cell address of the current cell (containing this formula) \\
+\hline
+\doxyref{P\+H\+P\+Excel\+\_\+\+Cell}{p.}{class_p_h_p_excel___cell} & {\em \$p\+Cell} & The current cell (containing this formula) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed The cells referenced by cell\+Address
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Todo}
+\item[{\bf Todo}]Support for the optional a1 parameter introduced in Excel 2010\end{DoxyRefDesc}
+\index{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Lookup\+Ref@{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Lookup\+Ref}!L\+O\+O\+K\+U\+P@{L\+O\+O\+K\+U\+P}}
+\index{L\+O\+O\+K\+U\+P@{L\+O\+O\+K\+U\+P}!P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Lookup\+Ref@{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Lookup\+Ref}}
+\subsubsection[{L\+O\+O\+K\+U\+P}]{\setlength{\rightskip}{0pt plus 5cm}static L\+O\+O\+K\+U\+P (
+\begin{DoxyParamCaption}
+\item[{}]{\$lookup\+\_\+value, }
+\item[{}]{\$lookup\+\_\+vector, }
+\item[{}]{\$result\+\_\+vector = {\ttfamily null}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___calculation___lookup_ref_a53e2515775bc047c891c3deeca987f73}
+L\+O\+O\+K\+U\+P The L\+O\+O\+K\+U\+P function searches for value either from a one-\/row or one-\/column range or from an array. 
+\begin{DoxyParams}{Parameters}
+{\em lookup\+\_\+value} & The value that you want to match in lookup\+\_\+array \\
+\hline
+{\em lookup\+\_\+vector} & The range of cells being searched \\
+\hline
+{\em result\+\_\+vector} & The column from which the matching value must be returned \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed The value of the found cell 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Lookup\+Ref@{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Lookup\+Ref}!M\+A\+T\+C\+H@{M\+A\+T\+C\+H}}
+\index{M\+A\+T\+C\+H@{M\+A\+T\+C\+H}!P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Lookup\+Ref@{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Lookup\+Ref}}
+\subsubsection[{M\+A\+T\+C\+H}]{\setlength{\rightskip}{0pt plus 5cm}static M\+A\+T\+C\+H (
+\begin{DoxyParamCaption}
+\item[{}]{\$lookup\+\_\+value, }
+\item[{}]{\$lookup\+\_\+array, }
+\item[{}]{\$match\+\_\+type = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___calculation___lookup_ref_a40ccfb0fe9e2628ac25bb3eb41c0c6ad}
+M\+A\+T\+C\+H
+
+The M\+A\+T\+C\+H function searches for a specified item in a range of cells
+
+Excel Function\+: =M\+A\+T\+C\+H(lookup\+\_\+value, lookup\+\_\+array, [match\+\_\+type])
+
+
+\begin{DoxyParams}{Parameters}
+{\em lookup\+\_\+value} & The value that you want to match in lookup\+\_\+array \\
+\hline
+{\em lookup\+\_\+array} & The range of cells being searched \\
+\hline
+{\em match\+\_\+type} & The number -\/1, 0, or 1. -\/1 means above, 0 means exact match, 1 means below. If match\+\_\+type is 1 or -\/1, the list has to be ordered. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+integer The relative position of the found item 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Lookup\+Ref@{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Lookup\+Ref}!O\+F\+F\+S\+E\+T@{O\+F\+F\+S\+E\+T}}
+\index{O\+F\+F\+S\+E\+T@{O\+F\+F\+S\+E\+T}!P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Lookup\+Ref@{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Lookup\+Ref}}
+\subsubsection[{O\+F\+F\+S\+E\+T}]{\setlength{\rightskip}{0pt plus 5cm}static O\+F\+F\+S\+E\+T (
+\begin{DoxyParamCaption}
+\item[{}]{\$cell\+Address = {\ttfamily Null}, }
+\item[{}]{\$rows = {\ttfamily 0}, }
+\item[{}]{\$columns = {\ttfamily 0}, }
+\item[{}]{\$height = {\ttfamily null}, }
+\item[{}]{\$width = {\ttfamily null}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___calculation___lookup_ref_ac08fa0a04eb126d8518ae48d02556014}
+O\+F\+F\+S\+E\+T
+
+Returns a reference to a range that is a specified number of rows and columns from a cell or range of cells. The reference that is returned can be a single cell or a range of cells. You can specify the number of rows and the number of columns to be returned.
+
+Excel Function\+: =O\+F\+F\+S\+E\+T(cell\+Address, rows, cols, [height], [width])
+
+
+\begin{DoxyParams}{Parameters}
+{\em cell\+Address} & The reference from which you want to base the offset. Reference must refer to a cell or range of adjacent cells; otherwise, O\+F\+F\+S\+E\+T returns the \#\+V\+A\+L\+U\+E! error value. \\
+\hline
+{\em rows} & The number of rows, up or down, that you want the upper-\/left cell to refer to. Using 5 as the rows argument specifies that the upper-\/left cell in the reference is five rows below reference. Rows can be positive (which means below the starting reference) or negative (which means above the starting reference). \\
+\hline
+{\em cols} & The number of columns, to the left or right, that you want the upper-\/left cell of the result to refer to. Using 5 as the cols argument specifies that the upper-\/left cell in the reference is five columns to the right of reference. Cols can be positive (which means to the right of the starting reference) or negative (which means to the left of the starting reference). \\
+\hline
+{\em height} & The height, in number of rows, that you want the returned reference to be. Height must be a positive number. \\
+\hline
+{\em width} & The width, in number of columns, that you want the returned reference to be. Width must be a positive number. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string A reference to a cell or range of cells 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Lookup\+Ref@{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Lookup\+Ref}!R\+O\+W@{R\+O\+W}}
+\index{R\+O\+W@{R\+O\+W}!P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Lookup\+Ref@{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Lookup\+Ref}}
+\subsubsection[{R\+O\+W}]{\setlength{\rightskip}{0pt plus 5cm}static R\+O\+W (
+\begin{DoxyParamCaption}
+\item[{}]{\$cell\+Address = {\ttfamily Null}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___calculation___lookup_ref_a9a21d30df79a1ba7f9c1a9956c36a038}
+R\+O\+W
+
+Returns the row number of the given cell reference If the cell reference is a range of cells, R\+O\+W returns the row numbers of each row in the reference as a vertical array. If cell reference is omitted, and the function is being called through the calculation engine, then it is assumed to be the reference of the cell in which the R\+O\+W function appears; otherwise this function returns 0.
+
+Excel Function\+: =R\+O\+W([cell\+Address])
+
+
+\begin{DoxyParams}{Parameters}
+{\em cell\+Address} & A reference to a range of cells for which you want the row numbers \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+integer or array of integer 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Lookup\+Ref@{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Lookup\+Ref}!R\+O\+W\+S@{R\+O\+W\+S}}
+\index{R\+O\+W\+S@{R\+O\+W\+S}!P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Lookup\+Ref@{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Lookup\+Ref}}
+\subsubsection[{R\+O\+W\+S}]{\setlength{\rightskip}{0pt plus 5cm}static R\+O\+W\+S (
+\begin{DoxyParamCaption}
+\item[{}]{\$cell\+Address = {\ttfamily Null}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___calculation___lookup_ref_a85cf506096b3ac36d529be2eb959e732}
+R\+O\+W\+S
+
+Returns the number of rows in an array or reference.
+
+Excel Function\+: =R\+O\+W\+S(cell\+Address)
+
+
+\begin{DoxyParams}{Parameters}
+{\em cell\+Address} & An array or array formula, or a reference to a range of cells for which you want the number of rows \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+integer The number of rows in cell\+Address 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Lookup\+Ref@{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Lookup\+Ref}!T\+R\+A\+N\+S\+P\+O\+S\+E@{T\+R\+A\+N\+S\+P\+O\+S\+E}}
+\index{T\+R\+A\+N\+S\+P\+O\+S\+E@{T\+R\+A\+N\+S\+P\+O\+S\+E}!P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Lookup\+Ref@{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Lookup\+Ref}}
+\subsubsection[{T\+R\+A\+N\+S\+P\+O\+S\+E}]{\setlength{\rightskip}{0pt plus 5cm}static T\+R\+A\+N\+S\+P\+O\+S\+E (
+\begin{DoxyParamCaption}
+\item[{}]{\$matrix\+Data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___calculation___lookup_ref_ad3bcc327a2fc8a6678d8ecfe2ffdb896}
+T\+R\+A\+N\+S\+P\+O\+S\+E
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$matrix\+Data} & A matrix of values \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array
+\end{DoxyReturn}
+Unlike the Excel T\+R\+A\+N\+S\+P\+O\+S\+E function, which will only work on a single row or column, this function will transpose a full matrix. \index{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Lookup\+Ref@{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Lookup\+Ref}!V\+L\+O\+O\+K\+U\+P@{V\+L\+O\+O\+K\+U\+P}}
+\index{V\+L\+O\+O\+K\+U\+P@{V\+L\+O\+O\+K\+U\+P}!P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Lookup\+Ref@{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Lookup\+Ref}}
+\subsubsection[{V\+L\+O\+O\+K\+U\+P}]{\setlength{\rightskip}{0pt plus 5cm}static V\+L\+O\+O\+K\+U\+P (
+\begin{DoxyParamCaption}
+\item[{}]{\$lookup\+\_\+value, }
+\item[{}]{\$lookup\+\_\+array, }
+\item[{}]{\$index\+\_\+number, }
+\item[{}]{\$not\+\_\+exact\+\_\+match = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___calculation___lookup_ref_aaa480030ee77f2b3d2150b89cc33a9b1}
+V\+L\+O\+O\+K\+U\+P The V\+L\+O\+O\+K\+U\+P function searches for value in the left-\/most column of lookup\+\_\+array and returns the value in the same row based on the index\+\_\+number. 
+\begin{DoxyParams}{Parameters}
+{\em lookup\+\_\+value} & The value that you want to match in lookup\+\_\+array \\
+\hline
+{\em lookup\+\_\+array} & The range of cells being searched \\
+\hline
+{\em index\+\_\+number} & The column number in table\+\_\+array from which the matching value must be returned. The first column is 1. \\
+\hline
+{\em not\+\_\+exact\+\_\+match} & Determines if you are looking for an exact match based on lookup\+\_\+value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed The value of the found cell 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/var/www/workspace/\+O\+D\+I-\/\+P\+R\+O\+J\+E\+C\+T/model/\+P\+H\+P\+Excel/\+Classes/\+P\+H\+P\+Excel/\+Calculation/Lookup\+Ref.\+php\end{DoxyCompactItemize}

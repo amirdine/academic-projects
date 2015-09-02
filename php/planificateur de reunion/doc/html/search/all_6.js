@@ -1,0 +1,24 @@
+var searchData=
+[
+  ['failurecallback',['failureCallback',['../class_p_h_p_excel___cached_object_storage___memcache.html#ac824f328db254efeb7415aa7a0fd4aa2',1,'PHPExcel_CachedObjectStorage_Memcache']]],
+  ['file_5fexists',['file_exists',['../class_p_h_p_excel___shared___file.html#a065720635f19b64912db08f72cb13c4a',1,'PHPExcel_Shared_File']]],
+  ['finalize',['finalize',['../class_p_h_p_excel___cached_object_storage_factory.html#a3bc8d731859422591e2ceb02eb92b1b0',1,'PHPExcel_CachedObjectStorageFactory']]],
+  ['fisher',['FISHER',['../class_p_h_p_excel___calculation___statistical.html#af9d6392d7f3d3b4f3c5487a41d312b1f',1,'PHPExcel_Calculation_Statistical']]],
+  ['fisherinv',['FISHERINV',['../class_p_h_p_excel___calculation___statistical.html#a52afb6e283fac78f85832851ef4ed52a',1,'PHPExcel_Calculation_Statistical']]],
+  ['fixedformat',['FIXEDFORMAT',['../class_p_h_p_excel___calculation___text_data.html#a575539e9e4524cd672559bd8ac3da54e',1,'PHPExcel_Calculation_TextData']]],
+  ['flattenarray',['flattenArray',['../class_p_h_p_excel___calculation___functions.html#a727bb3f815b719448bf2e7fd464c4542',1,'PHPExcel_Calculation_Functions']]],
+  ['flattenarrayindexed',['flattenArrayIndexed',['../class_p_h_p_excel___calculation___functions.html#a2f612e5daa00e1549da5ba44112329ca',1,'PHPExcel_Calculation_Functions']]],
+  ['flattensinglevalue',['flattenSingleValue',['../class_p_h_p_excel___calculation___functions.html#a952a241a69c2ae78cd30401d1ccd5f55',1,'PHPExcel_Calculation_Functions']]],
+  ['flipstringtable',['flipStringTable',['../class_p_h_p_excel___writer___excel2007___string_table.html#a9a935f24a312569521783c1484b2a6a2',1,'PHPExcel_Writer_Excel2007_StringTable']]],
+  ['flushinstance',['flushInstance',['../class_p_h_p_excel___calculation.html#a4e879d50318875eb5a506a8a16d72a15',1,'PHPExcel_Calculation']]],
+  ['fontsizetopixels',['fontSizeToPixels',['../class_p_h_p_excel___shared___font.html#a0b1206e538e39a51c4c2a029b2f70b5b',1,'PHPExcel_Shared_Font']]],
+  ['forecast',['FORECAST',['../class_p_h_p_excel___calculation___statistical.html#ae6004f0ccecbd138e2f4313f194e38db',1,'PHPExcel_Calculation_Statistical']]],
+  ['formatcolor',['formatColor',['../class_p_h_p_excel___writer___h_t_m_l.html#af27ebb46f8805f393438ce2230de1984',1,'PHPExcel_Writer_HTML']]],
+  ['formatnumber',['FormatNumber',['../class_p_h_p_excel___shared___string.html#aae880322b8d5807f7b5400da2e6d2be2',1,'PHPExcel_Shared_String']]],
+  ['formattedphptoexcel',['FormattedPHPToExcel',['../class_p_h_p_excel___shared___date.html#aeb2d46bebfaf3257ae36c6799d2c28dd',1,'PHPExcel_Shared_Date']]],
+  ['fpdf',['FPDF',['../class_f_p_d_f.html',1,'']]],
+  ['freezepane',['freezePane',['../class_p_h_p_excel___worksheet.html#a317130f127e1e484df097fad9032a2bf',1,'PHPExcel_Worksheet']]],
+  ['freezepanebycolumnandrow',['freezePaneByColumnAndRow',['../class_p_h_p_excel___worksheet.html#addcc3d3494083a30f68edca47339708d',1,'PHPExcel_Worksheet']]],
+  ['fromarray',['fromArray',['../class_p_h_p_excel___worksheet.html#aa4bbb4328e686e9c3476294a615e8070',1,'PHPExcel_Worksheet']]],
+  ['fvschedule',['FVSCHEDULE',['../class_p_h_p_excel___calculation___financial.html#a7edb6f1ac5d380156a4c04230b4ae037',1,'PHPExcel_Calculation_Financial']]]
+];

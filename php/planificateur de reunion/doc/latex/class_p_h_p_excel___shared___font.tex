@@ -1,0 +1,514 @@
+\section{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font Class Reference}
+\label{class_p_h_p_excel___shared___font}\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static {\bf set\+Auto\+Size\+Method} (\$p\+Value=self\+::\+A\+U\+T\+O\+S\+I\+Z\+E\+\_\+\+M\+E\+T\+H\+O\+D\+\_\+\+A\+P\+P\+R\+O\+X)
+\item 
+static {\bf get\+Auto\+Size\+Method} ()
+\item 
+static {\bf set\+True\+Type\+Font\+Path} (\$p\+Value= '')
+\item 
+static {\bf get\+True\+Type\+Font\+Path} ()
+\item 
+static {\bf calculate\+Column\+Width} ({\bf P\+H\+P\+Excel\+\_\+\+Style\+\_\+\+Font} \$font, \$cell\+Text= '', \$rotation=0, {\bf P\+H\+P\+Excel\+\_\+\+Style\+\_\+\+Font} \$default\+Font=null)
+\item 
+static {\bf get\+Text\+Width\+Pixels\+Exact} (\$text, {\bf P\+H\+P\+Excel\+\_\+\+Style\+\_\+\+Font} \$font, \$rotation=0)
+\item 
+static {\bf get\+Text\+Width\+Pixels\+Approx} (\$column\+Text, {\bf P\+H\+P\+Excel\+\_\+\+Style\+\_\+\+Font} \$font=null, \$rotation=0)
+\item 
+static {\bf font\+Size\+To\+Pixels} (\$font\+Size\+In\+Points=11)
+\item 
+static {\bf inch\+Size\+To\+Pixels} (\$size\+In\+Inch=1)
+\item 
+static {\bf centimeter\+Size\+To\+Pixels} (\$size\+In\+Cm=1)
+\item 
+static {\bf get\+True\+Type\+Font\+File\+From\+Font} (\$font)
+\item 
+static {\bf get\+Charset\+From\+Font\+Name} (\$name)
+\item 
+static {\bf get\+Default\+Column\+Width\+By\+Font} ({\bf P\+H\+P\+Excel\+\_\+\+Style\+\_\+\+Font} \$font, \$p\+Pixels=false)
+\item 
+static {\bf get\+Default\+Row\+Height\+By\+Font} ({\bf P\+H\+P\+Excel\+\_\+\+Style\+\_\+\+Font} \$font)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const {\bfseries A\+U\+T\+O\+S\+I\+Z\+E\+\_\+\+M\+E\+T\+H\+O\+D\+\_\+\+A\+P\+P\+R\+O\+X} = 'approx'\label{class_p_h_p_excel___shared___font_aaba252a1a71d7236d7f0576d3edd7a79}
+
+\item 
+const {\bfseries A\+U\+T\+O\+S\+I\+Z\+E\+\_\+\+M\+E\+T\+H\+O\+D\+\_\+\+E\+X\+A\+C\+T} = 'exact'\label{class_p_h_p_excel___shared___font_a752017333e6c73a74a40e2e3d399f383}
+
+\item 
+const {\bf C\+H\+A\+R\+S\+E\+T\+\_\+\+A\+N\+S\+I\+\_\+\+L\+A\+T\+I\+N} = 0x00
+\item 
+const {\bfseries C\+H\+A\+R\+S\+E\+T\+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+\+D\+E\+F\+A\+U\+L\+T} = 0x01\label{class_p_h_p_excel___shared___font_a3bcfe083c190fbe84e0bcedb65be0960}
+
+\item 
+const {\bfseries C\+H\+A\+R\+S\+E\+T\+\_\+\+S\+Y\+M\+B\+O\+L} = 0x02\label{class_p_h_p_excel___shared___font_a3b97fd8aa84884f47859b7cebbe18f9c}
+
+\item 
+const {\bfseries C\+H\+A\+R\+S\+E\+T\+\_\+\+A\+P\+P\+L\+E\+\_\+\+R\+O\+M\+A\+N} = 0x4\+D\label{class_p_h_p_excel___shared___font_aef8202e4d400b68d71ac6e504a4f5e89}
+
+\item 
+const {\bfseries C\+H\+A\+R\+S\+E\+T\+\_\+\+A\+N\+S\+I\+\_\+\+J\+A\+P\+A\+N\+E\+S\+E\+\_\+\+S\+H\+I\+F\+T\+J\+I\+S} = 0x80\label{class_p_h_p_excel___shared___font_a788b33d2b93b075b00f676d0ba83a415}
+
+\item 
+const {\bfseries C\+H\+A\+R\+S\+E\+T\+\_\+\+A\+N\+S\+I\+\_\+\+K\+O\+R\+E\+A\+N\+\_\+\+H\+A\+N\+G\+U\+L} = 0x81\label{class_p_h_p_excel___shared___font_aa9a82a0f0f6fef1b278ce9c57827711d}
+
+\item 
+const {\bfseries C\+H\+A\+R\+S\+E\+T\+\_\+\+A\+N\+S\+I\+\_\+\+K\+O\+R\+E\+A\+N\+\_\+\+J\+O\+H\+A\+B} = 0x82\label{class_p_h_p_excel___shared___font_a90d4dcf6327f70edb8b9968d874be8cc}
+
+\item 
+const {\bfseries C\+H\+A\+R\+S\+E\+T\+\_\+\+A\+N\+S\+I\+\_\+\+C\+H\+I\+N\+E\+S\+E\+\_\+\+S\+I\+M\+I\+P\+L\+I\+F\+I\+E\+D} = 0x86\label{class_p_h_p_excel___shared___font_a8a3ba26cd2e06d345654b69d15ed7fb8}
+
+\item 
+const {\bfseries C\+H\+A\+R\+S\+E\+T\+\_\+\+A\+N\+S\+I\+\_\+\+C\+H\+I\+N\+E\+S\+E\+\_\+\+T\+R\+A\+D\+I\+T\+I\+O\+N\+A\+L} = 0x88\label{class_p_h_p_excel___shared___font_a30b052d36353bc27f60a0ef8648d0781}
+
+\item 
+const {\bfseries C\+H\+A\+R\+S\+E\+T\+\_\+\+A\+N\+S\+I\+\_\+\+G\+R\+E\+E\+K} = 0x\+A1\label{class_p_h_p_excel___shared___font_a0ef589451e844bb539b6f1c87cbd7578}
+
+\item 
+const {\bfseries C\+H\+A\+R\+S\+E\+T\+\_\+\+A\+N\+S\+I\+\_\+\+T\+U\+R\+K\+I\+S\+H} = 0x\+A2\label{class_p_h_p_excel___shared___font_aa5b17b02d6215f18526570b948facdc7}
+
+\item 
+const {\bfseries C\+H\+A\+R\+S\+E\+T\+\_\+\+A\+N\+S\+I\+\_\+\+V\+I\+E\+T\+N\+A\+M\+E\+S\+E} = 0x\+A3\label{class_p_h_p_excel___shared___font_ab4649e1101dd5234712f33aef7359377}
+
+\item 
+const {\bfseries C\+H\+A\+R\+S\+E\+T\+\_\+\+A\+N\+S\+I\+\_\+\+H\+E\+B\+R\+E\+W} = 0x\+B1\label{class_p_h_p_excel___shared___font_a6e2c20dc092799fd39daa78d65165c5c}
+
+\item 
+const {\bfseries C\+H\+A\+R\+S\+E\+T\+\_\+\+A\+N\+S\+I\+\_\+\+A\+R\+A\+B\+I\+C} = 0x\+B2\label{class_p_h_p_excel___shared___font_a896ad897e9989ec35d14d1513cfe93b0}
+
+\item 
+const {\bfseries C\+H\+A\+R\+S\+E\+T\+\_\+\+A\+N\+S\+I\+\_\+\+B\+A\+L\+T\+I\+C} = 0x\+B\+A\label{class_p_h_p_excel___shared___font_aaf176daec120249b05ec097de9654da6}
+
+\item 
+const {\bfseries C\+H\+A\+R\+S\+E\+T\+\_\+\+A\+N\+S\+I\+\_\+\+C\+Y\+R\+I\+L\+L\+I\+C} = 0x\+C\+C\label{class_p_h_p_excel___shared___font_ad4c30067fd5acce4c7571d5a571bd0af}
+
+\item 
+const {\bfseries C\+H\+A\+R\+S\+E\+T\+\_\+\+A\+N\+S\+I\+\_\+\+T\+H\+A\+I} = 0x\+D\+D\label{class_p_h_p_excel___shared___font_a5ad4bf1e7f975e4ea4d493b8c576543e}
+
+\item 
+const {\bfseries C\+H\+A\+R\+S\+E\+T\+\_\+\+A\+N\+S\+I\+\_\+\+L\+A\+T\+I\+N\+\_\+\+I\+I} = 0x\+E\+E\label{class_p_h_p_excel___shared___font_ae63b0cf1b7544a39724c792a836af8a9}
+
+\item 
+const {\bfseries C\+H\+A\+R\+S\+E\+T\+\_\+\+O\+E\+M\+\_\+\+L\+A\+T\+I\+N\+\_\+\+I} = 0x\+F\+F\label{class_p_h_p_excel___shared___font_ac15a387e04badd661e12010e8a6ad5c1}
+
+\item 
+const {\bf A\+R\+I\+A\+L} = 'arial.\+ttf'
+\item 
+const {\bfseries A\+R\+I\+A\+L\+\_\+\+B\+O\+L\+D} = 'arialbd.\+ttf'\label{class_p_h_p_excel___shared___font_a9e59507df01d8c969b6c567c70432d3c}
+
+\item 
+const {\bfseries A\+R\+I\+A\+L\+\_\+\+I\+T\+A\+L\+I\+C} = 'ariali.\+ttf'\label{class_p_h_p_excel___shared___font_a3cdc91ec5aa2298eebdbed4b4f996b08}
+
+\item 
+const {\bfseries A\+R\+I\+A\+L\+\_\+\+B\+O\+L\+D\+\_\+\+I\+T\+A\+L\+I\+C} = 'arialbi.\+ttf'\label{class_p_h_p_excel___shared___font_a91b55d6f03ffd0b019afdfb78a8d02dc}
+
+\item 
+const {\bfseries C\+A\+L\+I\+B\+R\+I} = 'C\+A\+L\+I\+B\+R\+I.\+T\+T\+F'\label{class_p_h_p_excel___shared___font_a3532f62bcfbdc126a337c9ff34cd8325}
+
+\item 
+const {\bfseries C\+A\+L\+I\+B\+R\+I\+\_\+\+B\+O\+L\+D} = 'C\+A\+L\+I\+B\+R\+I\+B.\+T\+T\+F'\label{class_p_h_p_excel___shared___font_a3d4b6db885e433ef71bcc4cd2d49240b}
+
+\item 
+const {\bfseries C\+A\+L\+I\+B\+R\+I\+\_\+\+I\+T\+A\+L\+I\+C} = 'C\+A\+L\+I\+B\+R\+I\+I.\+T\+T\+F'\label{class_p_h_p_excel___shared___font_a144d92900e9fcfa160f90a976e19c5fd}
+
+\item 
+const {\bfseries C\+A\+L\+I\+B\+R\+I\+\_\+\+B\+O\+L\+D\+\_\+\+I\+T\+A\+L\+I\+C} = 'C\+A\+L\+I\+B\+R\+I\+Z.\+T\+T\+F'\label{class_p_h_p_excel___shared___font_a89f1ffce5d0e5006a7412b2a342b04a8}
+
+\item 
+const {\bfseries C\+O\+M\+I\+C\+\_\+\+S\+A\+N\+S\+\_\+\+M\+S} = 'comic.\+ttf'\label{class_p_h_p_excel___shared___font_aa821af609b54a9ba57028dcb0aa9ee6e}
+
+\item 
+const {\bfseries C\+O\+M\+I\+C\+\_\+\+S\+A\+N\+S\+\_\+\+M\+S\+\_\+\+B\+O\+L\+D} = 'comicbd.\+ttf'\label{class_p_h_p_excel___shared___font_a891d47130993585d3d9265813365c6df}
+
+\item 
+const {\bfseries C\+O\+U\+R\+I\+E\+R\+\_\+\+N\+E\+W} = 'cour.\+ttf'\label{class_p_h_p_excel___shared___font_a405b6159ee0aa6ac2cb99b1197fe9371}
+
+\item 
+const {\bfseries C\+O\+U\+R\+I\+E\+R\+\_\+\+N\+E\+W\+\_\+\+B\+O\+L\+D} = 'courbd.\+ttf'\label{class_p_h_p_excel___shared___font_ac3a8508b222360358f7ebe4ff8640b18}
+
+\item 
+const {\bfseries C\+O\+U\+R\+I\+E\+R\+\_\+\+N\+E\+W\+\_\+\+I\+T\+A\+L\+I\+C} = 'couri.\+ttf'\label{class_p_h_p_excel___shared___font_a2859997c50a4b7f8acc9538cccf90506}
+
+\item 
+const {\bfseries C\+O\+U\+R\+I\+E\+R\+\_\+\+N\+E\+W\+\_\+\+B\+O\+L\+D\+\_\+\+I\+T\+A\+L\+I\+C} = 'courbi.\+ttf'\label{class_p_h_p_excel___shared___font_a7648971f1e49d525b7ddc5652b783073}
+
+\item 
+const {\bfseries G\+E\+O\+R\+G\+I\+A} = 'georgia.\+ttf'\label{class_p_h_p_excel___shared___font_a415a2f9b215a468822961e7cbe5180e2}
+
+\item 
+const {\bfseries G\+E\+O\+R\+G\+I\+A\+\_\+\+B\+O\+L\+D} = 'georgiab.\+ttf'\label{class_p_h_p_excel___shared___font_abec82559feb9d6b22f1b33536c7c8c37}
+
+\item 
+const {\bfseries G\+E\+O\+R\+G\+I\+A\+\_\+\+I\+T\+A\+L\+I\+C} = 'georgiai.\+ttf'\label{class_p_h_p_excel___shared___font_ac56aac9d91348a25502d5dd111b079c8}
+
+\item 
+const {\bfseries G\+E\+O\+R\+G\+I\+A\+\_\+\+B\+O\+L\+D\+\_\+\+I\+T\+A\+L\+I\+C} = 'georgiaz.\+ttf'\label{class_p_h_p_excel___shared___font_a06ece5fbd8ebea312750d7926b54796a}
+
+\item 
+const {\bfseries I\+M\+P\+A\+C\+T} = 'impact.\+ttf'\label{class_p_h_p_excel___shared___font_ae8fd631df9558cb532d43a3a3112a23b}
+
+\item 
+const {\bfseries L\+I\+B\+E\+R\+A\+T\+I\+O\+N\+\_\+\+S\+A\+N\+S} = 'Liberation\+Sans-\/Regular.\+ttf'\label{class_p_h_p_excel___shared___font_a280b24bcc37bd54d252fc3d4a8dfa8de}
+
+\item 
+const {\bfseries L\+I\+B\+E\+R\+A\+T\+I\+O\+N\+\_\+\+S\+A\+N\+S\+\_\+\+B\+O\+L\+D} = 'Liberation\+Sans-\/Bold.\+ttf'\label{class_p_h_p_excel___shared___font_a17f905a5546be93a5df8a54d9b84ab1f}
+
+\item 
+const {\bfseries L\+I\+B\+E\+R\+A\+T\+I\+O\+N\+\_\+\+S\+A\+N\+S\+\_\+\+I\+T\+A\+L\+I\+C} = 'Liberation\+Sans-\/Italic.\+ttf'\label{class_p_h_p_excel___shared___font_a171e2a8471293b2a6355ad3d2a7cfb65}
+
+\item 
+const {\bfseries L\+I\+B\+E\+R\+A\+T\+I\+O\+N\+\_\+\+S\+A\+N\+S\+\_\+\+B\+O\+L\+D\+\_\+\+I\+T\+A\+L\+I\+C} = 'Liberation\+Sans-\/Bold\+Italic.\+ttf'\label{class_p_h_p_excel___shared___font_a60789718d74ad6207fe9d8b78331f020}
+
+\item 
+const {\bfseries L\+U\+C\+I\+D\+A\+\_\+\+C\+O\+N\+S\+O\+L\+E} = 'lucon.\+ttf'\label{class_p_h_p_excel___shared___font_a8b19655f8f20fb0a2dbbafb17913d2bd}
+
+\item 
+const {\bfseries L\+U\+C\+I\+D\+A\+\_\+\+S\+A\+N\+S\+\_\+\+U\+N\+I\+C\+O\+D\+E} = 'l\+\_\+10646.\+ttf'\label{class_p_h_p_excel___shared___font_a2540c68a772f493a04c3148ec0d480ee}
+
+\item 
+const {\bfseries M\+I\+C\+R\+O\+S\+O\+F\+T\+\_\+\+S\+A\+N\+S\+\_\+\+S\+E\+R\+I\+F} = 'micross.\+ttf'\label{class_p_h_p_excel___shared___font_a8261d5cc557c38f52f53dfd3d4d16303}
+
+\item 
+const {\bfseries P\+A\+L\+A\+T\+I\+N\+O\+\_\+\+L\+I\+N\+O\+T\+Y\+P\+E} = 'pala.\+ttf'\label{class_p_h_p_excel___shared___font_a6330490134cecc2c74f6f7194c977cd5}
+
+\item 
+const {\bfseries P\+A\+L\+A\+T\+I\+N\+O\+\_\+\+L\+I\+N\+O\+T\+Y\+P\+E\+\_\+\+B\+O\+L\+D} = 'palab.\+ttf'\label{class_p_h_p_excel___shared___font_a8af161f19ff62b59233d097c90e8090b}
+
+\item 
+const {\bfseries P\+A\+L\+A\+T\+I\+N\+O\+\_\+\+L\+I\+N\+O\+T\+Y\+P\+E\+\_\+\+I\+T\+A\+L\+I\+C} = 'palai.\+ttf'\label{class_p_h_p_excel___shared___font_a03457db298668b4d74cebf890c84eca4}
+
+\item 
+const {\bfseries P\+A\+L\+A\+T\+I\+N\+O\+\_\+\+L\+I\+N\+O\+T\+Y\+P\+E\+\_\+\+B\+O\+L\+D\+\_\+\+I\+T\+A\+L\+I\+C} = 'palabi.\+ttf'\label{class_p_h_p_excel___shared___font_ae8338a543e27a4dc6c72b0beabd1a0fb}
+
+\item 
+const {\bfseries S\+Y\+M\+B\+O\+L} = 'symbol.\+ttf'\label{class_p_h_p_excel___shared___font_a81bc62fdc1fe1933a223ee008c672768}
+
+\item 
+const {\bfseries T\+A\+H\+O\+M\+A} = 'tahoma.\+ttf'\label{class_p_h_p_excel___shared___font_ad7dfe04537c73e96eb3ef5d59138d776}
+
+\item 
+const {\bfseries T\+A\+H\+O\+M\+A\+\_\+\+B\+O\+L\+D} = 'tahomabd.\+ttf'\label{class_p_h_p_excel___shared___font_ac5e7dae00effc7263edb4c0ed316cde8}
+
+\item 
+const {\bfseries T\+I\+M\+E\+S\+\_\+\+N\+E\+W\+\_\+\+R\+O\+M\+A\+N} = 'times.\+ttf'\label{class_p_h_p_excel___shared___font_af7539d74f4fedd3a5d252d596053bceb}
+
+\item 
+const {\bfseries T\+I\+M\+E\+S\+\_\+\+N\+E\+W\+\_\+\+R\+O\+M\+A\+N\+\_\+\+B\+O\+L\+D} = 'timesbd.\+ttf'\label{class_p_h_p_excel___shared___font_a124b64f2cac40618d309407ae7bd74cc}
+
+\item 
+const {\bfseries T\+I\+M\+E\+S\+\_\+\+N\+E\+W\+\_\+\+R\+O\+M\+A\+N\+\_\+\+I\+T\+A\+L\+I\+C} = 'timesi.\+ttf'\label{class_p_h_p_excel___shared___font_a13dbed1a8fd4d5d8f928cdda4d8949c1}
+
+\item 
+const {\bfseries T\+I\+M\+E\+S\+\_\+\+N\+E\+W\+\_\+\+R\+O\+M\+A\+N\+\_\+\+B\+O\+L\+D\+\_\+\+I\+T\+A\+L\+I\+C} = 'timesbi.\+ttf'\label{class_p_h_p_excel___shared___font_ae12d7d3bfab2ecc443afd5d80aa80567}
+
+\item 
+const {\bfseries T\+R\+E\+B\+U\+C\+H\+E\+T\+\_\+\+M\+S} = 'trebuc.\+ttf'\label{class_p_h_p_excel___shared___font_a99f578163526e35cfea09db30d1a5156}
+
+\item 
+const {\bfseries T\+R\+E\+B\+U\+C\+H\+E\+T\+\_\+\+M\+S\+\_\+\+B\+O\+L\+D} = 'trebucbd.\+ttf'\label{class_p_h_p_excel___shared___font_a234948d21c266398d62618155d30f95f}
+
+\item 
+const {\bfseries T\+R\+E\+B\+U\+C\+H\+E\+T\+\_\+\+M\+S\+\_\+\+I\+T\+A\+L\+I\+C} = 'trebucit.\+ttf'\label{class_p_h_p_excel___shared___font_a8cc5d0f7a76e0753f1c491175507cb21}
+
+\item 
+const {\bfseries T\+R\+E\+B\+U\+C\+H\+E\+T\+\_\+\+M\+S\+\_\+\+B\+O\+L\+D\+\_\+\+I\+T\+A\+L\+I\+C} = 'trebucbi.\+ttf'\label{class_p_h_p_excel___shared___font_a5d7ed01dda807ebe665d11eb803e9460}
+
+\item 
+const {\bfseries V\+E\+R\+D\+A\+N\+A} = 'verdana.\+ttf'\label{class_p_h_p_excel___shared___font_a20d5bf32b63e1bc2093d9b94fb1d5d8a}
+
+\item 
+const {\bfseries V\+E\+R\+D\+A\+N\+A\+\_\+\+B\+O\+L\+D} = 'verdanab.\+ttf'\label{class_p_h_p_excel___shared___font_a9404839d6ac6c98e8c5129a79fc9ac8f}
+
+\item 
+const {\bfseries V\+E\+R\+D\+A\+N\+A\+\_\+\+I\+T\+A\+L\+I\+C} = 'verdanai.\+ttf'\label{class_p_h_p_excel___shared___font_a7b016083baf49e62bac55c9c7fda2d59}
+
+\item 
+const {\bfseries V\+E\+R\+D\+A\+N\+A\+\_\+\+B\+O\+L\+D\+\_\+\+I\+T\+A\+L\+I\+C} = 'verdanaz.\+ttf'\label{class_p_h_p_excel___shared___font_a5c56dc6638b064c783682ae49532b228}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static {\bfseries \$default\+Column\+Widths}\label{class_p_h_p_excel___shared___font_a1efbab4d682a925a771b4e0b5402c322}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font}!calculate\+Column\+Width@{calculate\+Column\+Width}}
+\index{calculate\+Column\+Width@{calculate\+Column\+Width}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font}}
+\subsubsection[{calculate\+Column\+Width}]{\setlength{\rightskip}{0pt plus 5cm}static calculate\+Column\+Width (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+H\+P\+Excel\+\_\+\+Style\+\_\+\+Font}}]{\$font, }
+\item[{}]{\$cell\+Text = {\ttfamily ''}, }
+\item[{}]{\$rotation = {\ttfamily 0}, }
+\item[{{\bf P\+H\+P\+Excel\+\_\+\+Style\+\_\+\+Font}}]{\$default\+Font = {\ttfamily null}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___font_af2a6129d48e9c6282e65d178f2f43bbb}
+Calculate an (approximate) Open\+X\+M\+L column width, based on font size and text contained
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Style\+\_\+\+Font}{p.}{class_p_h_p_excel___style___font} & {\em \$font} & Font object \\
+\hline
+\doxyref{P\+H\+P\+Excel\+\_\+\+Rich\+Text}{p.}{class_p_h_p_excel___rich_text} | string & {\em \$cell\+Text} & Text to calculate width \\
+\hline
+integer & {\em \$rotation} & Rotation angle \\
+\hline
+\doxyref{P\+H\+P\+Excel\+\_\+\+Style\+\_\+\+Font}{p.}{class_p_h_p_excel___style___font} | N\+U\+L\+L & {\em \$default\+Font} & Font object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+integer Column width 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font}!centimeter\+Size\+To\+Pixels@{centimeter\+Size\+To\+Pixels}}
+\index{centimeter\+Size\+To\+Pixels@{centimeter\+Size\+To\+Pixels}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font}}
+\subsubsection[{centimeter\+Size\+To\+Pixels}]{\setlength{\rightskip}{0pt plus 5cm}static centimeter\+Size\+To\+Pixels (
+\begin{DoxyParamCaption}
+\item[{}]{\$size\+In\+Cm = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___font_a4e092fc27dd413c753a043bb59fe014d}
+Calculate an (approximate) pixel size, based on centimeter size
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$size\+In\+Cm} & Font size (in centimeters) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Size (in pixels) 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font}!font\+Size\+To\+Pixels@{font\+Size\+To\+Pixels}}
+\index{font\+Size\+To\+Pixels@{font\+Size\+To\+Pixels}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font}}
+\subsubsection[{font\+Size\+To\+Pixels}]{\setlength{\rightskip}{0pt plus 5cm}static font\+Size\+To\+Pixels (
+\begin{DoxyParamCaption}
+\item[{}]{\$font\+Size\+In\+Points = {\ttfamily 11}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___font_a0b1206e538e39a51c4c2a029b2f70b5b}
+Calculate an (approximate) pixel size, based on a font points size
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$font\+Size\+In\+Points} & Font size (in points) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Font size (in pixels) 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font}!get\+Auto\+Size\+Method@{get\+Auto\+Size\+Method}}
+\index{get\+Auto\+Size\+Method@{get\+Auto\+Size\+Method}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font}}
+\subsubsection[{get\+Auto\+Size\+Method}]{\setlength{\rightskip}{0pt plus 5cm}static get\+Auto\+Size\+Method (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___font_a6a88982ca846ca5222e8609fee1eea4d}
+Get auto\+Size method
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font}!get\+Charset\+From\+Font\+Name@{get\+Charset\+From\+Font\+Name}}
+\index{get\+Charset\+From\+Font\+Name@{get\+Charset\+From\+Font\+Name}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font}}
+\subsubsection[{get\+Charset\+From\+Font\+Name}]{\setlength{\rightskip}{0pt plus 5cm}static get\+Charset\+From\+Font\+Name (
+\begin{DoxyParamCaption}
+\item[{}]{\$name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___font_a57d2d3e90281c23241b7547992735aa5}
+Returns the associated charset for the font name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & Font name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Character set code 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font}!get\+Default\+Column\+Width\+By\+Font@{get\+Default\+Column\+Width\+By\+Font}}
+\index{get\+Default\+Column\+Width\+By\+Font@{get\+Default\+Column\+Width\+By\+Font}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font}}
+\subsubsection[{get\+Default\+Column\+Width\+By\+Font}]{\setlength{\rightskip}{0pt plus 5cm}static get\+Default\+Column\+Width\+By\+Font (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+H\+P\+Excel\+\_\+\+Style\+\_\+\+Font}}]{\$font, }
+\item[{}]{\$p\+Pixels = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___font_abf49e61a47fd4c20528ec44cac7c3447}
+Get the effective column width for columns without a column dimension or column with width -\/1 For example, for Calibri 11 this is 9.\+140625 (64 px)
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Style\+\_\+\+Font}{p.}{class_p_h_p_excel___style___font} & {\em \$font} & The workbooks default font \\
+\hline
+boolean & {\em \$p\+Pixels} & true = return column width in pixels, false = return in O\+O\+X\+M\+L units \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed Column width 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font}!get\+Default\+Row\+Height\+By\+Font@{get\+Default\+Row\+Height\+By\+Font}}
+\index{get\+Default\+Row\+Height\+By\+Font@{get\+Default\+Row\+Height\+By\+Font}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font}}
+\subsubsection[{get\+Default\+Row\+Height\+By\+Font}]{\setlength{\rightskip}{0pt plus 5cm}static get\+Default\+Row\+Height\+By\+Font (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+H\+P\+Excel\+\_\+\+Style\+\_\+\+Font}}]{\$font}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___font_a7fdb715cc4d872ef8b3fd2a633ff4876}
+Get the effective row height for rows without a row dimension or rows with height -\/1 For example, for Calibri 11 this is 15 points
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Style\+\_\+\+Font}{p.}{class_p_h_p_excel___style___font} & {\em \$font} & The workbooks default font \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float Row height in points 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font}!get\+Text\+Width\+Pixels\+Approx@{get\+Text\+Width\+Pixels\+Approx}}
+\index{get\+Text\+Width\+Pixels\+Approx@{get\+Text\+Width\+Pixels\+Approx}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font}}
+\subsubsection[{get\+Text\+Width\+Pixels\+Approx}]{\setlength{\rightskip}{0pt plus 5cm}static get\+Text\+Width\+Pixels\+Approx (
+\begin{DoxyParamCaption}
+\item[{}]{\$column\+Text, }
+\item[{{\bf P\+H\+P\+Excel\+\_\+\+Style\+\_\+\+Font}}]{\$font = {\ttfamily null}, }
+\item[{}]{\$rotation = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___font_a4e43780de673d6ec4d30ce569bf52d85}
+Get approximate width in pixels for a string of text in a certain font at a certain rotation angle
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column\+Text} & \\
+\hline
+\doxyref{P\+H\+P\+Excel\+\_\+\+Style\+\_\+\+Font}{p.}{class_p_h_p_excel___style___font} & {\em \$font} & \\
+\hline
+int & {\em \$rotation} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Text width in pixels (no padding added) 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font}!get\+Text\+Width\+Pixels\+Exact@{get\+Text\+Width\+Pixels\+Exact}}
+\index{get\+Text\+Width\+Pixels\+Exact@{get\+Text\+Width\+Pixels\+Exact}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font}}
+\subsubsection[{get\+Text\+Width\+Pixels\+Exact}]{\setlength{\rightskip}{0pt plus 5cm}static get\+Text\+Width\+Pixels\+Exact (
+\begin{DoxyParamCaption}
+\item[{}]{\$text, }
+\item[{{\bf P\+H\+P\+Excel\+\_\+\+Style\+\_\+\+Font}}]{\$font, }
+\item[{}]{\$rotation = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___font_aa04a1c48a1699936286cca6e7a2725a3}
+Get G\+D text width in pixels for a string of text in a certain font at a certain rotation angle
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$text} & \\
+\hline
+ & {\em \doxyref{P\+H\+P\+Excel\+\_\+\+Style\+\_\+\+Font}{p.}{class_p_h_p_excel___style___font}} & \\
+\hline
+int & {\em \$rotation} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font}!get\+True\+Type\+Font\+File\+From\+Font@{get\+True\+Type\+Font\+File\+From\+Font}}
+\index{get\+True\+Type\+Font\+File\+From\+Font@{get\+True\+Type\+Font\+File\+From\+Font}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font}}
+\subsubsection[{get\+True\+Type\+Font\+File\+From\+Font}]{\setlength{\rightskip}{0pt plus 5cm}static get\+True\+Type\+Font\+File\+From\+Font (
+\begin{DoxyParamCaption}
+\item[{}]{\$font}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___font_a895c7b601b9749914a3a4028ce042f74}
+Returns the font path given the font
+
+
+\begin{DoxyParams}{Parameters}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Style\+\_\+\+Font}{p.}{class_p_h_p_excel___style___font}} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Path to True\+Type font file 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font}!get\+True\+Type\+Font\+Path@{get\+True\+Type\+Font\+Path}}
+\index{get\+True\+Type\+Font\+Path@{get\+True\+Type\+Font\+Path}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font}}
+\subsubsection[{get\+True\+Type\+Font\+Path}]{\setlength{\rightskip}{0pt plus 5cm}static get\+True\+Type\+Font\+Path (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___font_abe27a5c22b760f739a7b7eab032f2dd1}
+Get the path to the folder containing .ttf files.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font}!inch\+Size\+To\+Pixels@{inch\+Size\+To\+Pixels}}
+\index{inch\+Size\+To\+Pixels@{inch\+Size\+To\+Pixels}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font}}
+\subsubsection[{inch\+Size\+To\+Pixels}]{\setlength{\rightskip}{0pt plus 5cm}static inch\+Size\+To\+Pixels (
+\begin{DoxyParamCaption}
+\item[{}]{\$size\+In\+Inch = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___font_a1dafcbc82056b650bfd8b0ae7b8ed232}
+Calculate an (approximate) pixel size, based on inch size
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$size\+In\+Inch} & Font size (in inch) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Size (in pixels) 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font}!set\+Auto\+Size\+Method@{set\+Auto\+Size\+Method}}
+\index{set\+Auto\+Size\+Method@{set\+Auto\+Size\+Method}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font}}
+\subsubsection[{set\+Auto\+Size\+Method}]{\setlength{\rightskip}{0pt plus 5cm}static set\+Auto\+Size\+Method (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Value = {\ttfamily self\+:\+:AUTOSIZE\+\_\+METHOD\+\_\+APPROX}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___font_a438d0d9f1772920afe4f22b47abe135d}
+Set auto\+Size method
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean Success or failure 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font}!set\+True\+Type\+Font\+Path@{set\+True\+Type\+Font\+Path}}
+\index{set\+True\+Type\+Font\+Path@{set\+True\+Type\+Font\+Path}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font}}
+\subsubsection[{set\+True\+Type\+Font\+Path}]{\setlength{\rightskip}{0pt plus 5cm}static set\+True\+Type\+Font\+Path (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Value = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___font_a1a6049d207877f90cfa68fd49a77f91e}
+Set the path to the folder containing .ttf files. There should be a trailing slash. Typical locations on variout some platforms\+: 
+\begin{DoxyItemize}
+\item C\+:/\+Windows/\+Fonts/ 
+\item /usr/share/fonts/truetype/ 
+\item $\sim$/.fonts/ 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Value} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Field Documentation}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font}!A\+R\+I\+A\+L@{A\+R\+I\+A\+L}}
+\index{A\+R\+I\+A\+L@{A\+R\+I\+A\+L}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font}}
+\subsubsection[{A\+R\+I\+A\+L}]{\setlength{\rightskip}{0pt plus 5cm}const A\+R\+I\+A\+L = 'arial.\+ttf'}\label{class_p_h_p_excel___shared___font_a34c06be124901443d9ff95ad64d68666}
+Font filenames \index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font}!C\+H\+A\+R\+S\+E\+T\+\_\+\+A\+N\+S\+I\+\_\+\+L\+A\+T\+I\+N@{C\+H\+A\+R\+S\+E\+T\+\_\+\+A\+N\+S\+I\+\_\+\+L\+A\+T\+I\+N}}
+\index{C\+H\+A\+R\+S\+E\+T\+\_\+\+A\+N\+S\+I\+\_\+\+L\+A\+T\+I\+N@{C\+H\+A\+R\+S\+E\+T\+\_\+\+A\+N\+S\+I\+\_\+\+L\+A\+T\+I\+N}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Font}}
+\subsubsection[{C\+H\+A\+R\+S\+E\+T\+\_\+\+A\+N\+S\+I\+\_\+\+L\+A\+T\+I\+N}]{\setlength{\rightskip}{0pt plus 5cm}const C\+H\+A\+R\+S\+E\+T\+\_\+\+A\+N\+S\+I\+\_\+\+L\+A\+T\+I\+N = 0x00}\label{class_p_h_p_excel___shared___font_a562f1b703e22a0e2269d949be8e0706f}
+Character set codes used by B\+I\+F\+F5-\/8 in Font records 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/var/www/workspace/\+O\+D\+I-\/\+P\+R\+O\+J\+E\+C\+T/model/\+P\+H\+P\+Excel/\+Classes/\+P\+H\+P\+Excel/\+Shared/Font.\+php\end{DoxyCompactItemize}

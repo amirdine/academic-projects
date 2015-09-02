@@ -1,0 +1,403 @@
+\section{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column Class Reference}
+\label{class_p_h_p_excel___worksheet___auto_filter___column}\index{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column@{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf \+\_\+\+\_\+construct} (\$p\+Column, {\bf P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter} \$p\+Parent=N\+U\+L\+L)
+\item 
+{\bf get\+Column\+Index} ()
+\item 
+{\bf set\+Column\+Index} (\$p\+Column)
+\item 
+{\bf get\+Parent} ()
+\item 
+{\bf set\+Parent} ({\bf P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter} \$p\+Parent=N\+U\+L\+L)
+\item 
+{\bf get\+Filter\+Type} ()
+\item 
+{\bf set\+Filter\+Type} (\$p\+Filter\+Type=self\+::\+A\+U\+T\+O\+F\+I\+L\+T\+E\+R\+\_\+\+F\+I\+L\+T\+E\+R\+T\+Y\+P\+E\+\_\+\+F\+I\+L\+T\+E\+R)
+\item 
+{\bf get\+Join} ()
+\item 
+{\bf set\+Join} (\$p\+Join=self\+::\+A\+U\+T\+O\+F\+I\+L\+T\+E\+R\+\_\+\+C\+O\+L\+U\+M\+N\+\_\+\+J\+O\+I\+N\+\_\+\+O\+R)
+\item 
+{\bf set\+Attributes} (\$p\+Attributes=array())
+\item 
+{\bf set\+Attribute} (\$p\+Name, \$p\+Value)
+\item 
+{\bf get\+Attributes} ()
+\item 
+{\bf get\+Attribute} (\$p\+Name)
+\item 
+{\bf get\+Rules} ()
+\item 
+{\bf get\+Rule} (\$p\+Index)
+\item 
+{\bf create\+Rule} ()
+\item 
+{\bf add\+Rule} ({\bf P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column\+\_\+\+Rule} \$p\+Rule, \$return\+Rule=T\+R\+U\+E)
+\item 
+{\bf delete\+Rule} (\$p\+Index)
+\item 
+{\bf clear\+Rules} ()
+\item 
+{\bf \+\_\+\+\_\+clone} ()
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const {\bfseries A\+U\+T\+O\+F\+I\+L\+T\+E\+R\+\_\+\+F\+I\+L\+T\+E\+R\+T\+Y\+P\+E\+\_\+\+F\+I\+L\+T\+E\+R} = 'filters'\label{class_p_h_p_excel___worksheet___auto_filter___column_a57432bbfef045ae2fd1414c6dcad20ac}
+
+\item 
+const {\bfseries A\+U\+T\+O\+F\+I\+L\+T\+E\+R\+\_\+\+F\+I\+L\+T\+E\+R\+T\+Y\+P\+E\+\_\+\+C\+U\+S\+T\+O\+M\+F\+I\+L\+T\+E\+R} = 'custom\+Filters'\label{class_p_h_p_excel___worksheet___auto_filter___column_aee5e44ac975f331299973ee444e26320}
+
+\item 
+const {\bfseries A\+U\+T\+O\+F\+I\+L\+T\+E\+R\+\_\+\+F\+I\+L\+T\+E\+R\+T\+Y\+P\+E\+\_\+\+D\+Y\+N\+A\+M\+I\+C\+F\+I\+L\+T\+E\+R} = 'dynamic\+Filter'\label{class_p_h_p_excel___worksheet___auto_filter___column_a3db3445b75694f4d27443be67923ef18}
+
+\item 
+const {\bfseries A\+U\+T\+O\+F\+I\+L\+T\+E\+R\+\_\+\+F\+I\+L\+T\+E\+R\+T\+Y\+P\+E\+\_\+\+T\+O\+P\+T\+E\+N\+F\+I\+L\+T\+E\+R} = 'top10'\label{class_p_h_p_excel___worksheet___auto_filter___column_afe700459165cd2f29e068ff5a9282940}
+
+\item 
+const {\bfseries A\+U\+T\+O\+F\+I\+L\+T\+E\+R\+\_\+\+C\+O\+L\+U\+M\+N\+\_\+\+J\+O\+I\+N\+\_\+\+A\+N\+D} = 'and'\label{class_p_h_p_excel___worksheet___auto_filter___column_ac5effe4a4677401914817fe1c456327c}
+
+\item 
+const {\bfseries A\+U\+T\+O\+F\+I\+L\+T\+E\+R\+\_\+\+C\+O\+L\+U\+M\+N\+\_\+\+J\+O\+I\+N\+\_\+\+O\+R} = 'or'\label{class_p_h_p_excel___worksheet___auto_filter___column_a52bfaa57e462a2f85c4788264a4f7c20}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column@{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column@{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column}}
+\subsubsection[{\+\_\+\+\_\+construct}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Column, }
+\item[{{\bf P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter}}]{\$p\+Parent = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet___auto_filter___column_a304a5dbc67a51c04319d29cf0d2d7d60}
+Create a new \doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column}{p.}{class_p_h_p_excel___worksheet___auto_filter___column}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Column} & Column (e.\+g. A) \\
+\hline
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter}{p.}{class_p_h_p_excel___worksheet___auto_filter} & {\em \$p\+Parent} & Autofilter for this column \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column@{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column}!\+\_\+\+\_\+clone@{\+\_\+\+\_\+clone}}
+\index{\+\_\+\+\_\+clone@{\+\_\+\+\_\+clone}!P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column@{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column}}
+\subsubsection[{\+\_\+\+\_\+clone}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+clone (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet___auto_filter___column_ad0cb87b388bc74d63dc884accdca8713}
+Implement P\+H\+P \+\_\+\+\_\+clone to create a deep clone, not just a shallow copy. \index{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column@{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column}!add\+Rule@{add\+Rule}}
+\index{add\+Rule@{add\+Rule}!P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column@{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column}}
+\subsubsection[{add\+Rule}]{\setlength{\rightskip}{0pt plus 5cm}add\+Rule (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column\+\_\+\+Rule}}]{\$p\+Rule, }
+\item[{}]{\$return\+Rule = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet___auto_filter___column_ad59647ed7fa195f571611dca90ff7b74}
+Add a new Auto\+Filter Column Rule to the ruleset
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column\+\_\+\+Rule}{p.}{class_p_h_p_excel___worksheet___auto_filter___column___rule} & {\em \$p\+Rule} & \\
+\hline
+boolean & {\em \$return\+Rule} & Flag indicating whether the rule object or the column object should be returned \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column$\vert$\+P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column\+\_\+\+Rule 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column@{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column}!clear\+Rules@{clear\+Rules}}
+\index{clear\+Rules@{clear\+Rules}!P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column@{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column}}
+\subsubsection[{clear\+Rules}]{\setlength{\rightskip}{0pt plus 5cm}clear\+Rules (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet___auto_filter___column_a16bb5800ac12226f2d8ea30886351117}
+Delete all Auto\+Filter Column Rules
+
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column}{p.}{class_p_h_p_excel___worksheet___auto_filter___column} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column@{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column}!create\+Rule@{create\+Rule}}
+\index{create\+Rule@{create\+Rule}!P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column@{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column}}
+\subsubsection[{create\+Rule}]{\setlength{\rightskip}{0pt plus 5cm}create\+Rule (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet___auto_filter___column_a85bc39aff080d90843ecaf26c36c8d01}
+Create a new Auto\+Filter Column Rule in the ruleset
+
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column\+\_\+\+Rule}{p.}{class_p_h_p_excel___worksheet___auto_filter___column___rule} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column@{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column}!delete\+Rule@{delete\+Rule}}
+\index{delete\+Rule@{delete\+Rule}!P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column@{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column}}
+\subsubsection[{delete\+Rule}]{\setlength{\rightskip}{0pt plus 5cm}delete\+Rule (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Index}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet___auto_filter___column_ac9f1237f7130787048cd54bd520d0c9a}
+Delete a specified Auto\+Filter Column Rule If the number of rules is reduced to 1, then we reset And/\+Or logic to Or
+
+
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$p\+Index} & Rule index in the ruleset array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column}{p.}{class_p_h_p_excel___worksheet___auto_filter___column} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column@{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column}!get\+Attribute@{get\+Attribute}}
+\index{get\+Attribute@{get\+Attribute}!P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column@{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column}}
+\subsubsection[{get\+Attribute}]{\setlength{\rightskip}{0pt plus 5cm}get\+Attribute (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Name}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet___auto_filter___column_a1d1e963c23b0e9010d0739e30b8be980}
+Get specific Auto\+Filter Column Attribute
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Name} & Attribute Name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column@{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column}!get\+Attributes@{get\+Attributes}}
+\index{get\+Attributes@{get\+Attributes}!P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column@{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column}}
+\subsubsection[{get\+Attributes}]{\setlength{\rightskip}{0pt plus 5cm}get\+Attributes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet___auto_filter___column_afbe85ec4b9947cc951c67d63911cf0a4}
+Get Auto\+Filter Column Attributes
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column@{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column}!get\+Column\+Index@{get\+Column\+Index}}
+\index{get\+Column\+Index@{get\+Column\+Index}!P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column@{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column}}
+\subsubsection[{get\+Column\+Index}]{\setlength{\rightskip}{0pt plus 5cm}get\+Column\+Index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet___auto_filter___column_a02b068f7f0a1259d81fde19db78ebb62}
+Get Auto\+Filter Column Index
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column@{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column}!get\+Filter\+Type@{get\+Filter\+Type}}
+\index{get\+Filter\+Type@{get\+Filter\+Type}!P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column@{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column}}
+\subsubsection[{get\+Filter\+Type}]{\setlength{\rightskip}{0pt plus 5cm}get\+Filter\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet___auto_filter___column_ad1c8046e6b5063957a953616b2bbae51}
+Get Auto\+Filter Type
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column@{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column}!get\+Join@{get\+Join}}
+\index{get\+Join@{get\+Join}!P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column@{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column}}
+\subsubsection[{get\+Join}]{\setlength{\rightskip}{0pt plus 5cm}get\+Join (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet___auto_filter___column_afa97f7ac7533f4cf61450dff4b6ff84d}
+Get Auto\+Filter Multiple Rules And/\+Or Join
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column@{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column}!get\+Parent@{get\+Parent}}
+\index{get\+Parent@{get\+Parent}!P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column@{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column}}
+\subsubsection[{get\+Parent}]{\setlength{\rightskip}{0pt plus 5cm}get\+Parent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet___auto_filter___column_a95ecaee3537b1ad29b04ef383a57bbae}
+Get this Column's Auto\+Filter Parent
+
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter}{p.}{class_p_h_p_excel___worksheet___auto_filter} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column@{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column}!get\+Rule@{get\+Rule}}
+\index{get\+Rule@{get\+Rule}!P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column@{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column}}
+\subsubsection[{get\+Rule}]{\setlength{\rightskip}{0pt plus 5cm}get\+Rule (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Index}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet___auto_filter___column_ab136bfed839bee7fc626946f74a35d2a}
+Get a specified Auto\+Filter Column Rule
+
+
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$p\+Index} & Rule index in the ruleset array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column\+\_\+\+Rule}{p.}{class_p_h_p_excel___worksheet___auto_filter___column___rule} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column@{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column}!get\+Rules@{get\+Rules}}
+\index{get\+Rules@{get\+Rules}!P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column@{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column}}
+\subsubsection[{get\+Rules}]{\setlength{\rightskip}{0pt plus 5cm}get\+Rules (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet___auto_filter___column_a85c15a4eb3192c0e23b1a7355052ba18}
+Get all Auto\+Filter Column Rules
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+array of \doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column\+\_\+\+Rule}{p.}{class_p_h_p_excel___worksheet___auto_filter___column___rule} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column@{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column}!set\+Attribute@{set\+Attribute}}
+\index{set\+Attribute@{set\+Attribute}!P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column@{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column}}
+\subsubsection[{set\+Attribute}]{\setlength{\rightskip}{0pt plus 5cm}set\+Attribute (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Name, }
+\item[{}]{\$p\+Value}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet___auto_filter___column_a54a67564d8ce5f20d33fa425f9bcecc9}
+Set An Auto\+Filter Attribute
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Name} & Attribute Name \\
+\hline
+string & {\em \$p\+Value} & Attribute Value \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column}{p.}{class_p_h_p_excel___worksheet___auto_filter___column} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column@{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column}!set\+Attributes@{set\+Attributes}}
+\index{set\+Attributes@{set\+Attributes}!P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column@{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column}}
+\subsubsection[{set\+Attributes}]{\setlength{\rightskip}{0pt plus 5cm}set\+Attributes (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Attributes = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet___auto_filter___column_adfa6832f5d32b69655e06ebb280afece}
+Set Auto\+Filter Attributes
+
+
+\begin{DoxyParams}{Parameters}
+{\em string\mbox{[}$\,$\mbox{]}} & \$p\+Attributes \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column}{p.}{class_p_h_p_excel___worksheet___auto_filter___column} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column@{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column}!set\+Column\+Index@{set\+Column\+Index}}
+\index{set\+Column\+Index@{set\+Column\+Index}!P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column@{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column}}
+\subsubsection[{set\+Column\+Index}]{\setlength{\rightskip}{0pt plus 5cm}set\+Column\+Index (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Column}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet___auto_filter___column_a626a1ba83b486a0e2ae6473b7fcd7d95}
+Set Auto\+Filter Column Index
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Column} & Column (e.\+g. A) \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column}{p.}{class_p_h_p_excel___worksheet___auto_filter___column} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column@{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column}!set\+Filter\+Type@{set\+Filter\+Type}}
+\index{set\+Filter\+Type@{set\+Filter\+Type}!P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column@{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column}}
+\subsubsection[{set\+Filter\+Type}]{\setlength{\rightskip}{0pt plus 5cm}set\+Filter\+Type (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Filter\+Type = {\ttfamily self\+:\+:AUTOFILTER\+\_\+FILTERTYPE\+\_\+FILTER}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet___auto_filter___column_ac4f4f1f3b8e7af67921d1f827cf714b7}
+Set Auto\+Filter Type
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Filter\+Type} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column}{p.}{class_p_h_p_excel___worksheet___auto_filter___column} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column@{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column}!set\+Join@{set\+Join}}
+\index{set\+Join@{set\+Join}!P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column@{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column}}
+\subsubsection[{set\+Join}]{\setlength{\rightskip}{0pt plus 5cm}set\+Join (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Join = {\ttfamily self\+:\+:AUTOFILTER\+\_\+COLUMN\+\_\+JOIN\+\_\+OR}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet___auto_filter___column_a9ad6a0a996b60152780f6d50d6484fff}
+Set Auto\+Filter Multiple Rules And/\+Or
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Join} & And/\+Or \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column}{p.}{class_p_h_p_excel___worksheet___auto_filter___column} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column@{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column}!set\+Parent@{set\+Parent}}
+\index{set\+Parent@{set\+Parent}!P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column@{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column}}
+\subsubsection[{set\+Parent}]{\setlength{\rightskip}{0pt plus 5cm}set\+Parent (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter}}]{\$p\+Parent = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet___auto_filter___column_abc4880ef70936f85714cbb9d4ced3271}
+Set this Column's Auto\+Filter Parent
+
+
+\begin{DoxyParams}{Parameters}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter}{p.}{class_p_h_p_excel___worksheet___auto_filter}} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter\+\_\+\+Column}{p.}{class_p_h_p_excel___worksheet___auto_filter___column} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/var/www/workspace/\+O\+D\+I-\/\+P\+R\+O\+J\+E\+C\+T/model/\+P\+H\+P\+Excel/\+Classes/\+P\+H\+P\+Excel/\+Worksheet/\+Auto\+Filter/Column.\+php\end{DoxyCompactItemize}

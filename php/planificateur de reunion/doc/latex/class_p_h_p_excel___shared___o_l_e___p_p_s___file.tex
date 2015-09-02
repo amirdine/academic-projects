@@ -1,0 +1,96 @@
+\section{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+O\+L\+E\+\_\+\+P\+P\+S\+\_\+\+File Class Reference}
+\label{class_p_h_p_excel___shared___o_l_e___p_p_s___file}\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+O\+L\+E\+\_\+\+P\+P\+S\+\_\+\+File@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+O\+L\+E\+\_\+\+P\+P\+S\+\_\+\+File}}
+
+
+Inheritance diagram for P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+O\+L\+E\+\_\+\+P\+P\+S\+\_\+\+File\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{class_p_h_p_excel___shared___o_l_e___p_p_s___file__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+O\+L\+E\+\_\+\+P\+P\+S\+\_\+\+File\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{class_p_h_p_excel___shared___o_l_e___p_p_s___file__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf \+\_\+\+\_\+construct} (\$name)
+\item 
+{\bf init} ()
+\item 
+{\bf append} (\$data)
+\item 
+{\bf get\+Stream} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+O\+L\+E\+\_\+\+P\+P\+S\+\_\+\+File@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+O\+L\+E\+\_\+\+P\+P\+S\+\_\+\+File}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+O\+L\+E\+\_\+\+P\+P\+S\+\_\+\+File@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+O\+L\+E\+\_\+\+P\+P\+S\+\_\+\+File}}
+\subsubsection[{\+\_\+\+\_\+construct}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+\item[{}]{\$name}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___shared___o_l_e___p_p_s___file_a4717bbfc70a40a57ee741ed70766c309}
+The constructor
+
+public 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & The name of the file (in Unicode) \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+O\+L\+E\+::\+Asc2\+Ucs() 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Function Documentation}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+O\+L\+E\+\_\+\+P\+P\+S\+\_\+\+File@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+O\+L\+E\+\_\+\+P\+P\+S\+\_\+\+File}!append@{append}}
+\index{append@{append}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+O\+L\+E\+\_\+\+P\+P\+S\+\_\+\+File@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+O\+L\+E\+\_\+\+P\+P\+S\+\_\+\+File}}
+\subsubsection[{append}]{\setlength{\rightskip}{0pt plus 5cm}append (
+\begin{DoxyParamCaption}
+\item[{}]{\$data}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___shared___o_l_e___p_p_s___file_ad117ad2ab651e4adbdced2fdae4116b8}
+Append data to P\+P\+S
+
+public 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$data} & The data to append \\
+\hline
+\end{DoxyParams}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+O\+L\+E\+\_\+\+P\+P\+S\+\_\+\+File@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+O\+L\+E\+\_\+\+P\+P\+S\+\_\+\+File}!get\+Stream@{get\+Stream}}
+\index{get\+Stream@{get\+Stream}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+O\+L\+E\+\_\+\+P\+P\+S\+\_\+\+File@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+O\+L\+E\+\_\+\+P\+P\+S\+\_\+\+File}}
+\subsubsection[{get\+Stream}]{\setlength{\rightskip}{0pt plus 5cm}get\+Stream (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___shared___o_l_e___p_p_s___file_a3e5834ff3daeecd091712270886a16fb}
+Returns a stream for reading this file using fread() etc. \begin{DoxyReturn}{Returns}
+resource a read-\/only stream 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+O\+L\+E\+\_\+\+P\+P\+S\+\_\+\+File@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+O\+L\+E\+\_\+\+P\+P\+S\+\_\+\+File}!init@{init}}
+\index{init@{init}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+O\+L\+E\+\_\+\+P\+P\+S\+\_\+\+File@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+O\+L\+E\+\_\+\+P\+P\+S\+\_\+\+File}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___shared___o_l_e___p_p_s___file_a4be4055f3361d4800e16bc2e2e38cda6}
+Initialization method. Has to be called right after O\+L\+E\+\_\+\+P\+P\+S\+\_\+\+File().
+
+public \begin{DoxyReturn}{Returns}
+mixed true on success 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/var/www/workspace/\+O\+D\+I-\/\+P\+R\+O\+J\+E\+C\+T/model/\+P\+H\+P\+Excel/\+Classes/\+P\+H\+P\+Excel/\+Shared/\+O\+L\+E/\+P\+P\+S/File.\+php\end{DoxyCompactItemize}

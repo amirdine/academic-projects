@@ -1,0 +1,116 @@
+\section{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Q\+R\+Decomposition Class Reference}
+\label{class_p_h_p_excel___shared___j_a_m_a___q_r_decomposition}\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Q\+R\+Decomposition@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Q\+R\+Decomposition}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf \+\_\+\+\_\+construct} (\$A)
+\item 
+{\bf is\+Full\+Rank} ()
+\item 
+{\bf get\+H} ()
+\item 
+{\bf get\+R} ()
+\item 
+{\bf get\+Q} ()
+\item 
+{\bf solve} (\$B)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const {\bfseries Matrix\+Rank\+Exception} = \char`\"{}Can only perform operation on full-\/rank matrix.\char`\"{}\label{class_p_h_p_excel___shared___j_a_m_a___q_r_decomposition_a9f9f32891d3c293a59b45e0168a87483}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Q\+R\+Decomposition@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Q\+R\+Decomposition}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Q\+R\+Decomposition@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Q\+R\+Decomposition}}
+\subsubsection[{\+\_\+\+\_\+construct}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+\item[{}]{\$\+A}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___shared___j_a_m_a___q_r_decomposition_a27ac1dba7207e8cb7d783fcb4cccd500}
+Q\+R Decomposition computed by Householder reflections.
+
+
+\begin{DoxyParams}[1]{Parameters}
+matrix & {\em \$\+A} & Rectangular matrix \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Structure to access R and the Householder vectors and compute Q. 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Q\+R\+Decomposition@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Q\+R\+Decomposition}!get\+H@{get\+H}}
+\index{get\+H@{get\+H}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Q\+R\+Decomposition@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Q\+R\+Decomposition}}
+\subsubsection[{get\+H}]{\setlength{\rightskip}{0pt plus 5cm}get\+H (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___shared___j_a_m_a___q_r_decomposition_a23dabb5d0820ea24068e2123db5c7a30}
+Return the Householder vectors
+
+\begin{DoxyReturn}{Returns}
+Matrix Lower trapezoidal matrix whose columns define the reflections 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Q\+R\+Decomposition@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Q\+R\+Decomposition}!get\+Q@{get\+Q}}
+\index{get\+Q@{get\+Q}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Q\+R\+Decomposition@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Q\+R\+Decomposition}}
+\subsubsection[{get\+Q}]{\setlength{\rightskip}{0pt plus 5cm}get\+Q (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___shared___j_a_m_a___q_r_decomposition_a53c6e9fd4632a848486d1a38f1b035cc}
+Generate and return the (economy-\/sized) orthogonal factor
+
+\begin{DoxyReturn}{Returns}
+Matrix orthogonal factor 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Q\+R\+Decomposition@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Q\+R\+Decomposition}!get\+R@{get\+R}}
+\index{get\+R@{get\+R}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Q\+R\+Decomposition@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Q\+R\+Decomposition}}
+\subsubsection[{get\+R}]{\setlength{\rightskip}{0pt plus 5cm}get\+R (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___shared___j_a_m_a___q_r_decomposition_ae4958049717c0d0ae305a9fc8161b446}
+Return the upper triangular factor
+
+\begin{DoxyReturn}{Returns}
+Matrix upper triangular factor 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Q\+R\+Decomposition@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Q\+R\+Decomposition}!is\+Full\+Rank@{is\+Full\+Rank}}
+\index{is\+Full\+Rank@{is\+Full\+Rank}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Q\+R\+Decomposition@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Q\+R\+Decomposition}}
+\subsubsection[{is\+Full\+Rank}]{\setlength{\rightskip}{0pt plus 5cm}is\+Full\+Rank (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___shared___j_a_m_a___q_r_decomposition_a2ad76f1f3372e997657780b7c9f31f5f}
+Is the matrix full rank?
+
+\begin{DoxyReturn}{Returns}
+boolean true if R, and hence A, has full rank, else false. 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Q\+R\+Decomposition@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Q\+R\+Decomposition}!solve@{solve}}
+\index{solve@{solve}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Q\+R\+Decomposition@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+J\+A\+M\+A\+\_\+\+Q\+R\+Decomposition}}
+\subsubsection[{solve}]{\setlength{\rightskip}{0pt plus 5cm}solve (
+\begin{DoxyParamCaption}
+\item[{}]{\$\+B}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___shared___j_a_m_a___q_r_decomposition_a5a4256f98c419479eebe38f2ad232793}
+Least squares solution of A$\ast$\+X = B
+
+
+\begin{DoxyParams}[1]{Parameters}
+Matrix & {\em \$\+B} & A Matrix with as many rows as A and any number of columns. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Matrix Matrix that minimizes the two norm of Q$\ast$\+R$\ast$\+X-\/\+B. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/var/www/workspace/\+O\+D\+I-\/\+P\+R\+O\+J\+E\+C\+T/model/\+P\+H\+P\+Excel/\+Classes/\+P\+H\+P\+Excel/\+Shared/\+J\+A\+M\+A/Q\+R\+Decomposition.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,6 @@
+<map id="PHPExcel_Exception" name="PHPExcel_Exception">
+<area shape="rect" id="node5" href="$class_p_h_p_excel___calculation___exception.html" title="PHPExcel_Calculation\l_Exception" alt="" coords="367,5,527,51"/>
+<area shape="rect" id="node7" href="$class_p_h_p_excel___chart___exception.html" title="PHPExcel_Chart_Exception" alt="" coords="348,75,545,104"/>
+<area shape="rect" id="node9" href="$class_p_h_p_excel___reader___exception.html" title="PHPExcel_Reader_Exception" alt="" coords="343,128,551,157"/>
+<area shape="rect" id="node11" href="$class_p_h_p_excel___writer___exception.html" title="PHPExcel_Writer_Exception" alt="" coords="347,181,547,211"/>
+</map>
