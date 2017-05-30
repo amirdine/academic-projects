@@ -1,0 +1,233 @@
+/* ===================================================================
+     FEUILLE DE STYLES DES GABARITS HTML/CSS --- 04
+     � Elephorm & Alsacreations.com
+     Conditions d'utilisation:
+     http://creativecommons.org/licenses/by/2.0/fr/
+     ---------------------------------------------------------------
+     ADAPTATION par Charly C�L�REAU, 2015
+     �tudiant - Aix Marseille Universit�
+   =================================================================== */
+
+
+/**
+ * Ce fichier d�finit les styles sp�cifiques aux diverses parties qui
+ * composent la page.
+ */
+
+
+
+
+/* --- EN-T�TE --- */
+
+div#header {
+    padding: 20px 20px;
+    margin-bottom: 20px;
+    
+    background: /*#DFEFFC*/ url("../img/ui-bg_glass_85_dfeffc_1x400.png") repeat-x
+    			scroll 50% 50%;
+    border: 1px solid #C0C0C0;
+    border-radius: 5px;
+}
+
+div#header h1 {
+    margin: 0;
+}
+
+div#header h1 img {
+    float: left;
+    margin: 7px 20px 10px 0;
+}
+
+div#header h2 {
+    margin: 4px 0 15px 0;
+
+    color: black;
+    line-height: 1.25;
+    font-family: Verdana, "Bitstream Vera Sans", "Lucida Grande",
+                 sans-serif;
+    font-size: 1em;
+}
+
+div#header a {
+    color: #5C9BCB;
+    text-decoration : none;
+}
+
+
+/* --- CORPS DE LA PAGE --- */
+
+div#side_panel, div#contents {
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+/* --- PANNEAU LAT�RAL --- */
+
+div#side_panel {
+    width: 17%;
+    border: solid 1px #C0C0C0;
+}
+
+div#side_panel div {
+    background: #F0F0F0;
+}
+
+/* --- Menu de Navigation --- */
+
+div#navigation ul {
+    padding: 15px 10px;
+    margin: 0;
+
+    list-style: none;
+}
+
+div#navigation a {
+    display: block;
+    /*height: 1%;*/ /* [1] (c.f notes en fin de fichier) */
+    margin: 5px 0 5px 0;
+    padding: 6px 6px 6px 10px;
+
+    color: white;    
+    line-height: 1.5;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
+    text-decoration: none;
+    background: #5C9BCB;
+}
+
+div#navigation a:hover, div#navigation a:focus {
+    background: #5087B1;
+}
+
+/* --- Bloc Contact --- */
+
+div#contact {
+    padding: 15px;
+    margin-top: 15px;
+    border: 1px solid #000000;
+}
+
+div#contact h1 {
+    margin: 0;
+    margin-bottom: 15px; 
+
+    line-height: 1.25;
+    font-size: 1.05em;
+    font-weight: bold;
+    font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
+    font-style: normal;
+}
+
+div#contact p, div#contact h2 {
+    font-size: 0.85em;
+    font-family: Verdana, "Bitstream Vera Sans", "Lucida Grande", 
+                 sans-serif;
+}
+
+
+/* --- CONTENU PRINCIPAL --- */
+
+div#contents {
+    margin-left: 2%; /* [2] */
+    width: 76.4%;
+    padding: 10px 20px;
+
+    color: black;
+    background: #F0F0F0;
+    border: solid 1px #C0C0C0;
+}
+
+div#contents > :first-child {
+    margin-top: 10px;
+}
+
+div#contents h2  {
+    border-bottom: 1px solid black;
+}
+
+div#contents p {
+    text-indent: 40px;
+    text-align: justify;
+}
+
+div#contents p, div#contents li {
+    line-height: 1.5;
+}
+
+div#contents a {
+    color: #5C9BCB;
+}
+
+div#contents a:hover, div#contents a:focus {
+    color: blue;
+}
+
+div#contents strong {
+    color: black;
+}
+
+div#contents pre span.comment {
+    font-weight: bold;
+}
+
+img.floatl_img {
+    float: left;
+    margin-right: 10px;
+}
+
+
+/* --- PIED DE PAGE ---*/
+
+p#footer {
+    margin: 20px 0 5px 0;
+    padding : 5px 0 5px 0;
+  
+    color: #8C8C8C;
+    font-size: .8em;
+    text-align: center;
+    border-top: solid 1px #8C8C8C;
+}
+
+p#footer a {
+    color: #5C9BCB;
+    text-decoration: none;
+}
+
+p#footer a:hover, p#footer a:focus {
+    text-decoration: underline;
+}
+
+
+.error {
+    color: #ff0000;
+}
+.errorblock{
+    color: #000;
+    background-color: #ffEEEE;
+    border: 3px solid #ff0000;
+    padding:8px;
+    margin:16px;
+}
+
+
+/* --- NOTES GABARITS HTML/CSS --- 04
+   par Elephorm & Alsacreations.com
+      
+   1.	Correction d'un bug d'Internet Explorer 6. Voir la derni�re
+   partie de : http://blog.alsacreations.com/2006/10/20/294-impact-sur-
+   le-rendu-de-la-mise-en-forme-du-code-html.
+   Dans l'id�al, on placera ce correctif dans une feuille s�par�e,
+   appel�e via un commentaire conditionnel visant IE6.
+   
+   2.	Les �l�ments flottants ne repoussent pas les blocs, mais
+   repoussent uniquement leur contenu. Pour que notre bloc de contenu
+   principal forme une colonne distincte du menu, on lui donne donc une
+   marge � gauche de 20%.
+   Il existe une autre technique pour adapter la largeur d'un bloc aux
+   flottants qui le pr�c�dent. On pourra lire l'article suivant:
+   http://css.alsacreations.com/Faire-une-mise-en-page-sans-tableaux/
+   design-trois-colonnes-positionnement-flottant
+*/
+

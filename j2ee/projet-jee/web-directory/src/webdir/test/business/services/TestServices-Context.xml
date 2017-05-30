@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	 xmlns:tx="http://www.springframework.org/schema/tx"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="
+       http://www.springframework.org/schema/beans     
+       http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context-4.2.xsd
+       http://www.springframework.org/schema/tx
+       http://www.springframework.org/schema/tx/spring-tx-4.2.xsd
+       http://www.springframework.org/schema/tx
+       http://www.springframework.org/schema/tx/spring-tx-4.2.xsd">
+
+	<!-- CONTEXT -->
+	<context:component-scan base-package="webdir.main.web" />
+	<context:component-scan base-package="webdir.main.web.imp" />
+	<context:component-scan base-package="webdir.main.business.dao.imp" />
+	<context:component-scan base-package="webdir.main.business.services.imp" />
+	<context:component-scan base-package="webdir.main.business.services" />
+	
+	<!-- BEANS -->
+	<bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+    	<property name="viewClass" value="org.springframework.web.servlet.view.JstlView"></property>
+    	
+    	<property name="prefix" value="/WEB-INF/jsp/"></property>
+    	<property name="suffix" value=".jsp"></property>
+	</bean>
+	
+	<bean id="personServ" class="webdir.main.business.services.imp.PersonService" />
+	
+	<bean id="groupServ" class="webdir.main.business.services.imp.GroupService" />
+	
+	<bean id="homeController" class="webdir.main.web.imp.HomeController" />
+	
+	<bean id="emailService" class="webdir.main.business.services.imp.EmailService" >
+		<property name="username" value="secu.webdirectory.luminy@gmail.com" />
+		<property name="password" value="Masterfsi" />
+		
+		<property name="prop">
+			<props>
+				<prop key="mail.smtp.auth">true</prop>
+				<prop key="mail.smtp.starttls.enable">true</prop>
+				<prop key="mail.smtp.host">smtp.gmail.com</prop>
+				<prop key="mail.smtp.port">587</prop>
+			</props>
+		</property>
+	</bean>
+	
+	
+	
+	 <!-- Usine à fabriquer les EntityManager -->
+    <bean id="myEntityManagerFactory"
+        class="org.springframework.orm.jpa.LocalEntityManagerFactoryBean">
+        <property name="persistenceUnitName" value="myData" />
+    </bean>
+
+    <!-- Mon gestionnaire de transactions -->
+    <bean id="txManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+        <property name="entityManagerFactory" ref="myEntityManagerFactory" />
+    </bean>
+    
+    <!-- Prise en compte des annotations @Transactional -->
+    <tx:annotation-driven transaction-manager="txManager" />
+    
+	
+</beans>

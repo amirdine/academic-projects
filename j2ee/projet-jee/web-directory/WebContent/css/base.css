@@ -1,0 +1,231 @@
+/* ===================================================================
+     FEUILLE DE STYLES DES GABARITS HTML/CSS
+     � Elephorm & Alsacreations.com
+     Conditions d'utilisation:
+     http://creativecommons.org/licenses/by/2.0/fr/
+     ---------------------------------------------------------------
+     ADAPTATION par Charly C�L�REAU, 2015
+     �tudiant - Aix Marseille Universit�
+   =================================================================== */
+
+
+/**
+ * Ce fichier d�finit les styles de base pour les textes et les
+ * principaux �l�ments de la page.
+ */
+
+
+
+
+/* --- PAGE EN G�N�RAL --- */
+
+html {
+    font-size: 100%; /* [1] (c.f notes en fin de fichier) */
+}
+
+body {
+    margin: 0;
+    padding: 20px 50px;
+    
+    color: #000000;
+    line-height: 1.25;
+    font-family: Verdana, "Bitstream Vera Sans", "Lucida Grande",
+                 sans-serif; /* [2] */
+    font-size: .8em; /* [3] */
+    background: #FFFFFF;
+}
+
+
+/* --- TITRES --- */
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 1em 0 .5em 0;
+}
+
+h1, h2 {
+    font-family: Georgia, "Bitstream Vera Serif", Norasi, serif;
+    font-weight: normal; /* [4] */
+}
+
+h1 {
+    font-size: 3em; /* [5] */
+    font-style: italic;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+h4 {
+    font-size: 1em;
+}
+
+
+/* --- TABLEAUX --- */
+
+table {
+	border-collapse: collapse;
+}
+
+th {
+	color: black;
+	font-variant: small-caps;
+	background: gray;
+	border: solid 1px black;
+	padding: 5px;
+	text-align: left;
+	font-weight: bold;
+}
+
+td {
+	color: black;
+    border: solid 1px;
+    padding: 5px;
+}
+
+
+/* --- LISTES --- */
+
+ul, ol {
+    margin: .75em 0 .75em 24px;
+    padding: 0; /* [6] */
+}
+
+ul {
+    list-style: square;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* --- PARAGRAPHES --- */
+
+p {
+    margin: .75em 0;
+}
+
+li p, blockquote p {
+    margin: .5em 0;
+}
+
+
+/* --- CITATIONS --- */
+
+blockquote, q {
+    font-size: 1.1em;
+    font-style: italic;
+    font-family: Georgia, "Bitstream Vera Serif", Norasi, serif;
+}
+
+blockquote {
+    margin: .75em 0 .75em 24px;
+}
+
+cite {
+    font-style: italic;
+}
+
+
+/* --- LIENS --- */
+
+a {
+    color: #5C9BCB;
+    text-decoration: underline;
+}
+
+a:hover, a:focus {
+    color: blue;
+}
+
+a img {
+    border: none; /* [7] */
+}
+
+
+/* --- �L�MENTS DE TYPE INLINE --- */
+
+em {
+    font-style: italic;
+}
+
+strong {
+    font-weight: bold;
+    color: black;
+}
+
+
+/* --- BLOCS DE CODE ---*/
+
+pre, code {
+    font-size: 100%;
+    font-family: "Bitstream Vera Mono", "Lucida Console", "Courier New",
+                 monospace;
+}
+
+pre {
+    width: 90%;
+    overflow: auto;
+    overflow-y: hidden;
+    margin: .75em 0;
+    padding: 12px;
+
+    color: #555;
+    background: #eee;
+}
+
+pre strong {
+    font-weight: normal;
+    color: black;
+}
+
+
+
+
+/* --- NOTES GABARITS HTML/CSS --- 04
+   par Elephorm & Alsacreations.com
+   
+   1.	Ce "font-size: 100%" est normalement inutile. On l'utilise
+   uniquement pour �viter un bug de redimensionnement du texte dans
+   Internet Explorer.
+   
+   2.	Voici quelques exemples de collections coh�rentes de fontes
+   (propri�t� CSS "font-family"):
+   font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
+   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+   font-family: Georgia, "Bitstream Vera Serif", Norasi, serif;
+   font-family: "Times New Roman", Times, "Nimbus Roman No9 L", serif;
+   
+   3.	Taille du texte de base de la page. D�pend de la taille du texte
+   par d�faut du navigateur (souvent 16px), et des r�glages de
+   l'utilisateur. � adapter en fonction de la fonte choisie, et du rendu
+   souhait�. En g�n�ral, on utilisera une valeur de base entre .65em et
+   1em (ou 65% et 100%).
+      
+   4.	Les styles par d�faut des navigateurs mettent les titres en gras.
+   Si on souhaite passer � des caract�res �normaux�, on doit utiliser
+   font-size: normal.
+   
+   5.	Pour un �l�ment en "font-size: 3em", la taille du texte sera le
+   triple de la taille du texte de l'�l�ment parent.
+   � noter: on aurait pu �crire "font-size: 300%" pour le m�me r�sultat.
+   
+   6.	Par d�faut, les listes UL et OL ont un retrait � gauche qui peut
+   �tre, suivant les navigateurs:
+   - un padding-left de 40px;
+   - ou bien un margin-left de 40px.
+   On met tout le monde d'accord avec une marge � gauche de 24px, et pas
+   de padding.
+   
+   7.	Les navigateurs donnent souvent aux images plac�es dans des liens
+   une bordure disgracieuse. On annule ce style souvent g�nant en
+   appliquant un "border: none" aux images qui se trouvent � l'int�rieur
+   d'un lien.
+   
+*/
