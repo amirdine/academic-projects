@@ -1,0 +1,399 @@
+\section{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L Class Reference}
+\label{class_p_h_p_excel___writer___h_t_m_l}\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L}}
+
+
+Inheritance diagram for P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_p_h_p_excel___writer___h_t_m_l__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{class_p_h_p_excel___writer___h_t_m_l__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf \+\_\+\+\_\+construct} ({\bf P\+H\+P\+Excel} \$php\+Excel)
+\item 
+{\bf save} (\$p\+Filename=null)
+\item 
+{\bf get\+Sheet\+Index} ()
+\item 
+{\bf set\+Sheet\+Index} (\$p\+Value=0)
+\item 
+{\bf get\+Generate\+Sheet\+Navigation\+Block} ()
+\item 
+{\bf set\+Generate\+Sheet\+Navigation\+Block} (\$p\+Value=true)
+\item 
+{\bf write\+All\+Sheets} ()
+\item 
+{\bf generate\+H\+T\+M\+L\+Header} (\$p\+Include\+Styles=false)
+\item 
+{\bf generate\+Sheet\+Data} ()
+\item 
+{\bf generate\+Navigation} ()
+\item 
+{\bf generate\+Styles} (\$generate\+Surrounding\+H\+T\+M\+L=true)
+\item 
+{\bf build\+C\+S\+S} (\$generate\+Surrounding\+H\+T\+M\+L=true)
+\item 
+{\bf generate\+H\+T\+M\+L\+Footer} ()
+\item 
+{\bf get\+Images\+Root} ()
+\item 
+{\bf set\+Images\+Root} (\$p\+Value= '.')
+\item 
+{\bf get\+Embed\+Images} ()
+\item 
+{\bf set\+Embed\+Images} (\$p\+Value= '.')
+\item 
+{\bf get\+Use\+Inline\+Css} ()
+\item 
+{\bf set\+Use\+Inline\+Css} (\$p\+Value=false)
+\item 
+{\bf format\+Color} (\$p\+Value, \$p\+Format)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$\+\_\+php\+Excel}\label{class_p_h_p_excel___writer___h_t_m_l_af4535e422acd8451711a876abb8290c9}
+
+\item 
+{\bfseries \$\+\_\+is\+Pdf} = false\label{class_p_h_p_excel___writer___h_t_m_l_a3526d0575b7502334372ddc3c540875b}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L}}
+\subsubsection[{\+\_\+\+\_\+construct}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+H\+P\+Excel}}]{\$php\+Excel}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___h_t_m_l_a4e5deaf4592bef642360c431317b4811}
+Create a new \doxyref{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L}{p.}{class_p_h_p_excel___writer___h_t_m_l}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxyref{P\+H\+P\+Excel}{p.}{class_p_h_p_excel} & {\em \$php\+Excel} & \doxyref{P\+H\+P\+Excel}{p.}{class_p_h_p_excel} object \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L}!build\+C\+S\+S@{build\+C\+S\+S}}
+\index{build\+C\+S\+S@{build\+C\+S\+S}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L}}
+\subsubsection[{build\+C\+S\+S}]{\setlength{\rightskip}{0pt plus 5cm}build\+C\+S\+S (
+\begin{DoxyParamCaption}
+\item[{}]{\$generate\+Surrounding\+H\+T\+M\+L = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___h_t_m_l_a3f8fdb7ac7b7089f7b8ca365afbba79f}
+Build C\+S\+S styles
+
+
+\begin{DoxyParams}[1]{Parameters}
+boolean & {\em \$generate\+Surrounding\+H\+T\+M\+L} & Generate surrounding H\+T\+M\+L style? (html \{ \}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Exception}{p.}{class_p_h_p_excel___writer___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L}!format\+Color@{format\+Color}}
+\index{format\+Color@{format\+Color}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L}}
+\subsubsection[{format\+Color}]{\setlength{\rightskip}{0pt plus 5cm}format\+Color (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Value, }
+\item[{}]{\$p\+Format}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___h_t_m_l_af27ebb46f8805f393438ce2230de1984}
+Add color to formatted string as inline style
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Value} & Plain formatted value without color \\
+\hline
+string & {\em \$p\+Format} & Format code \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L}!generate\+H\+T\+M\+L\+Footer@{generate\+H\+T\+M\+L\+Footer}}
+\index{generate\+H\+T\+M\+L\+Footer@{generate\+H\+T\+M\+L\+Footer}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L}}
+\subsubsection[{generate\+H\+T\+M\+L\+Footer}]{\setlength{\rightskip}{0pt plus 5cm}generate\+H\+T\+M\+L\+Footer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___h_t_m_l_a388332afad5cf5a153a179c4a83e4bae}
+Generate H\+T\+M\+L footer \index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L}!generate\+H\+T\+M\+L\+Header@{generate\+H\+T\+M\+L\+Header}}
+\index{generate\+H\+T\+M\+L\+Header@{generate\+H\+T\+M\+L\+Header}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L}}
+\subsubsection[{generate\+H\+T\+M\+L\+Header}]{\setlength{\rightskip}{0pt plus 5cm}generate\+H\+T\+M\+L\+Header (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Include\+Styles = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___h_t_m_l_a4290ffdb5e8165cee74ba333620f56e9}
+Generate H\+T\+M\+L header
+
+
+\begin{DoxyParams}[1]{Parameters}
+boolean & {\em \$p\+Include\+Styles} & Include styles? \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Exception}{p.}{class_p_h_p_excel___writer___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L}!generate\+Navigation@{generate\+Navigation}}
+\index{generate\+Navigation@{generate\+Navigation}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L}}
+\subsubsection[{generate\+Navigation}]{\setlength{\rightskip}{0pt plus 5cm}generate\+Navigation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___h_t_m_l_a61213550a8fd19e7e725f481b22a8dd9}
+Generate sheet tabs
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Exception}{p.}{class_p_h_p_excel___writer___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L}!generate\+Sheet\+Data@{generate\+Sheet\+Data}}
+\index{generate\+Sheet\+Data@{generate\+Sheet\+Data}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L}}
+\subsubsection[{generate\+Sheet\+Data}]{\setlength{\rightskip}{0pt plus 5cm}generate\+Sheet\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___h_t_m_l_a134e02ed76c4af08a9a21cc222bf6636}
+Generate sheet data
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Exception}{p.}{class_p_h_p_excel___writer___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L}!generate\+Styles@{generate\+Styles}}
+\index{generate\+Styles@{generate\+Styles}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L}}
+\subsubsection[{generate\+Styles}]{\setlength{\rightskip}{0pt plus 5cm}generate\+Styles (
+\begin{DoxyParamCaption}
+\item[{}]{\$generate\+Surrounding\+H\+T\+M\+L = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___h_t_m_l_ae6002be0e346a33c8f65d034dc93158e}
+Generate C\+S\+S styles
+
+
+\begin{DoxyParams}[1]{Parameters}
+boolean & {\em \$generate\+Surrounding\+H\+T\+M\+L} & Generate surrounding H\+T\+M\+L tags? ($<$style$>$ and $<$/style$>$) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Exception}{p.}{class_p_h_p_excel___writer___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L}!get\+Embed\+Images@{get\+Embed\+Images}}
+\index{get\+Embed\+Images@{get\+Embed\+Images}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L}}
+\subsubsection[{get\+Embed\+Images}]{\setlength{\rightskip}{0pt plus 5cm}get\+Embed\+Images (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___h_t_m_l_a02c57f0b8929cbf536e1e51f69e369c1}
+Get embed images
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L}!get\+Generate\+Sheet\+Navigation\+Block@{get\+Generate\+Sheet\+Navigation\+Block}}
+\index{get\+Generate\+Sheet\+Navigation\+Block@{get\+Generate\+Sheet\+Navigation\+Block}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L}}
+\subsubsection[{get\+Generate\+Sheet\+Navigation\+Block}]{\setlength{\rightskip}{0pt plus 5cm}get\+Generate\+Sheet\+Navigation\+Block (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___h_t_m_l_a0491ce7c5c1051f0ae7463ecf9345acc}
+Get sheet index
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L}!get\+Images\+Root@{get\+Images\+Root}}
+\index{get\+Images\+Root@{get\+Images\+Root}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L}}
+\subsubsection[{get\+Images\+Root}]{\setlength{\rightskip}{0pt plus 5cm}get\+Images\+Root (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___h_t_m_l_abfe43f157ae79b2413a95a6e98caa6ab}
+Get images root
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L}!get\+Sheet\+Index@{get\+Sheet\+Index}}
+\index{get\+Sheet\+Index@{get\+Sheet\+Index}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L}}
+\subsubsection[{get\+Sheet\+Index}]{\setlength{\rightskip}{0pt plus 5cm}get\+Sheet\+Index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___h_t_m_l_ad6ab5d9cc60854c7ce99f597ba685d4f}
+Get sheet index
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L}!get\+Use\+Inline\+Css@{get\+Use\+Inline\+Css}}
+\index{get\+Use\+Inline\+Css@{get\+Use\+Inline\+Css}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L}}
+\subsubsection[{get\+Use\+Inline\+Css}]{\setlength{\rightskip}{0pt plus 5cm}get\+Use\+Inline\+Css (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___h_t_m_l_a59bc3ad2082b852e49fd1a41022fbe15}
+Get use inline C\+S\+S?
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L}!save@{save}}
+\index{save@{save}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L}}
+\subsubsection[{save}]{\setlength{\rightskip}{0pt plus 5cm}save (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Filename = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___h_t_m_l_a47cf44d053426c59c85d31f37744687c}
+Save \doxyref{P\+H\+P\+Excel}{p.}{class_p_h_p_excel} to file
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Filename} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Exception}{p.}{class_p_h_p_excel___writer___exception}} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements {\bf P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+I\+Writer} \doxyref{}{p.}{interface_p_h_p_excel___writer___i_writer_a92359d98665c22034311d08d1f9de74a}.
+
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L}!set\+Embed\+Images@{set\+Embed\+Images}}
+\index{set\+Embed\+Images@{set\+Embed\+Images}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L}}
+\subsubsection[{set\+Embed\+Images}]{\setlength{\rightskip}{0pt plus 5cm}set\+Embed\+Images (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Value = {\ttfamily '.'}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___h_t_m_l_a1a47bdf79a3cb5ba92d1587e8fe379ea}
+Set embed images
+
+
+\begin{DoxyParams}[1]{Parameters}
+boolean & {\em \$p\+Value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L}{p.}{class_p_h_p_excel___writer___h_t_m_l} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L}!set\+Generate\+Sheet\+Navigation\+Block@{set\+Generate\+Sheet\+Navigation\+Block}}
+\index{set\+Generate\+Sheet\+Navigation\+Block@{set\+Generate\+Sheet\+Navigation\+Block}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L}}
+\subsubsection[{set\+Generate\+Sheet\+Navigation\+Block}]{\setlength{\rightskip}{0pt plus 5cm}set\+Generate\+Sheet\+Navigation\+Block (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Value = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___h_t_m_l_af7daa33be1d31602f7a00660563d7890}
+Set sheet index
+
+
+\begin{DoxyParams}[1]{Parameters}
+boolean & {\em \$p\+Value} & Flag indicating whether the sheet navigation block should be generated or not \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L}{p.}{class_p_h_p_excel___writer___h_t_m_l} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L}!set\+Images\+Root@{set\+Images\+Root}}
+\index{set\+Images\+Root@{set\+Images\+Root}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L}}
+\subsubsection[{set\+Images\+Root}]{\setlength{\rightskip}{0pt plus 5cm}set\+Images\+Root (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Value = {\ttfamily '.'}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___h_t_m_l_adbb74fba442717b11730d05d247d60a7}
+Set images root
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L}{p.}{class_p_h_p_excel___writer___h_t_m_l} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L}!set\+Sheet\+Index@{set\+Sheet\+Index}}
+\index{set\+Sheet\+Index@{set\+Sheet\+Index}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L}}
+\subsubsection[{set\+Sheet\+Index}]{\setlength{\rightskip}{0pt plus 5cm}set\+Sheet\+Index (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Value = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___h_t_m_l_aa6b8f1d85e3941cde661a9e95b1decfc}
+Set sheet index
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$p\+Value} & Sheet index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L}{p.}{class_p_h_p_excel___writer___h_t_m_l} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L}!set\+Use\+Inline\+Css@{set\+Use\+Inline\+Css}}
+\index{set\+Use\+Inline\+Css@{set\+Use\+Inline\+Css}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L}}
+\subsubsection[{set\+Use\+Inline\+Css}]{\setlength{\rightskip}{0pt plus 5cm}set\+Use\+Inline\+Css (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Value = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___h_t_m_l_aaa12252482483363ec87adb4add0a4e1}
+Set use inline C\+S\+S?
+
+
+\begin{DoxyParams}[1]{Parameters}
+boolean & {\em \$p\+Value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L}{p.}{class_p_h_p_excel___writer___h_t_m_l} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L}!write\+All\+Sheets@{write\+All\+Sheets}}
+\index{write\+All\+Sheets@{write\+All\+Sheets}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L}}
+\subsubsection[{write\+All\+Sheets}]{\setlength{\rightskip}{0pt plus 5cm}write\+All\+Sheets (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___h_t_m_l_a9f34a6d82c650624bac487640cad40de}
+Write all sheets (resets sheet\+Index to N\+U\+L\+L) 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/var/www/workspace/\+O\+D\+I-\/\+P\+R\+O\+J\+E\+C\+T/model/\+P\+H\+P\+Excel/\+Classes/\+P\+H\+P\+Excel/\+Writer/H\+T\+M\+L.\+php\end{DoxyCompactItemize}

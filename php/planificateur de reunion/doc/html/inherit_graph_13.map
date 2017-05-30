@@ -1,0 +1,15 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$class_p_h_p_excel___cached_object_storage___cache_base.html" title="PHPExcel_CachedObjectStorage\l_CacheBase" alt="" coords="7,313,236,359"/>
+<area shape="rect" id="node3" href="$class_p_h_p_excel___cached_object_storage___a_p_c.html" title="PHPExcel_CachedObjectStorage_APC" alt="" coords="285,421,552,451"/>
+<area shape="rect" id="node5" href="$class_p_h_p_excel___cached_object_storage___disc_i_s_a_m.html" title="PHPExcel_CachedObjectStorage\l_DiscISAM" alt="" coords="304,474,533,521"/>
+<area shape="rect" id="node7" href="$class_p_h_p_excel___cached_object_storage___igbinary.html" title="PHPExcel_CachedObjectStorage\l_Igbinary" alt="" coords="304,543,533,590"/>
+<area shape="rect" id="node9" href="$class_p_h_p_excel___cached_object_storage___memcache.html" title="PHPExcel_CachedObjectStorage\l_Memcache" alt="" coords="304,613,533,659"/>
+<area shape="rect" id="node11" href="$class_p_h_p_excel___cached_object_storage___memory.html" title="PHPExcel_CachedObjectStorage\l_Memory" alt="" coords="304,682,533,729"/>
+<area shape="rect" id="node13" href="$class_p_h_p_excel___cached_object_storage___memory_g_zip.html" title="PHPExcel_CachedObjectStorage\l_MemoryGZip" alt="" coords="304,5,533,51"/>
+<area shape="rect" id="node15" href="$class_p_h_p_excel___cached_object_storage___memory_serialized.html" title="PHPExcel_CachedObjectStorage\l_MemorySerialized" alt="" coords="304,74,533,121"/>
+<area shape="rect" id="node17" href="$class_p_h_p_excel___cached_object_storage___p_h_p_temp.html" title="PHPExcel_CachedObjectStorage\l_PHPTemp" alt="" coords="304,143,533,190"/>
+<area shape="rect" id="node19" href="$class_p_h_p_excel___cached_object_storage___s_q_lite.html" title="PHPExcel_CachedObjectStorage\l_SQLite" alt="" coords="304,213,533,259"/>
+<area shape="rect" id="node21" href="$class_p_h_p_excel___cached_object_storage___s_q_lite3.html" title="PHPExcel_CachedObjectStorage\l_SQLite3" alt="" coords="304,282,533,329"/>
+<area shape="rect" id="node23" href="$class_p_h_p_excel___cached_object_storage___wincache.html" title="PHPExcel_CachedObjectStorage\l_Wincache" alt="" coords="304,351,533,398"/>
+<area shape="rect" id="node24" href="$interface_p_h_p_excel___cached_object_storage___i_cache.html" title="PHPExcel_CachedObjectStorage\l_ICache" alt="" coords="7,382,236,429"/>
+</map>

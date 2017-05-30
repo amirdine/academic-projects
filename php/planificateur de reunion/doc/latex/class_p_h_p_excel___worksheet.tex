@@ -1,0 +1,2913 @@
+\section{P\+H\+P\+Excel\+\_\+\+Worksheet Class Reference}
+\label{class_p_h_p_excel___worksheet}\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+
+
+Inheritance diagram for P\+H\+P\+Excel\+\_\+\+Worksheet\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{class_p_h_p_excel___worksheet__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for P\+H\+P\+Excel\+\_\+\+Worksheet\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{class_p_h_p_excel___worksheet__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf \+\_\+\+\_\+construct} ({\bf P\+H\+P\+Excel} \$p\+Parent=null, \$p\+Title= 'Worksheet')
+\item 
+{\bf disconnect\+Cells} ()
+\item 
+{\bf \+\_\+\+\_\+destruct} ()
+\item 
+{\bf get\+Cell\+Cache\+Controller} ()
+\item 
+{\bf get\+Cell\+Collection} (\$p\+Sorted=true)
+\item 
+{\bf sort\+Cell\+Collection} ()
+\item 
+{\bf get\+Row\+Dimensions} ()
+\item 
+{\bf get\+Default\+Row\+Dimension} ()
+\item 
+{\bf get\+Column\+Dimensions} ()
+\item 
+{\bf get\+Default\+Column\+Dimension} ()
+\item 
+{\bf get\+Drawing\+Collection} ()
+\item 
+{\bf get\+Chart\+Collection} ()
+\item 
+{\bf add\+Chart} ({\bf P\+H\+P\+Excel\+\_\+\+Chart} \$p\+Chart=null, \$i\+Chart\+Index=null)
+\item 
+{\bf get\+Chart\+Count} ()
+\item 
+{\bf get\+Chart\+By\+Index} (\$index=null)
+\item 
+{\bf get\+Chart\+Names} ()
+\item 
+{\bf get\+Chart\+By\+Name} (\$chart\+Name= '')
+\item 
+{\bf refresh\+Column\+Dimensions} ()
+\item 
+{\bf refresh\+Row\+Dimensions} ()
+\item 
+{\bf calculate\+Worksheet\+Dimension} ()
+\item 
+{\bf calculate\+Worksheet\+Data\+Dimension} ()
+\item 
+{\bf calculate\+Column\+Widths} (\$calculate\+Merge\+Cells=false)
+\item 
+{\bf get\+Parent} ()
+\item 
+{\bf rebind\+Parent} ({\bf P\+H\+P\+Excel} \$parent)
+\item 
+{\bf get\+Title} ()
+\item 
+{\bf set\+Title} (\$p\+Value= 'Worksheet', \$update\+Formula\+Cell\+References=true)
+\item 
+{\bf get\+Sheet\+State} ()
+\item 
+{\bf set\+Sheet\+State} (\$value=P\+H\+P\+Excel\+\_\+\+Worksheet\+::\+S\+H\+E\+E\+T\+S\+T\+A\+T\+E\+\_\+\+V\+I\+S\+I\+B\+L\+E)
+\item 
+{\bf get\+Page\+Setup} ()
+\item 
+{\bf set\+Page\+Setup} ({\bf P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Page\+Setup} \$p\+Value)
+\item 
+{\bf get\+Page\+Margins} ()
+\item 
+{\bf set\+Page\+Margins} ({\bf P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Page\+Margins} \$p\+Value)
+\item 
+{\bf get\+Header\+Footer} ()
+\item 
+{\bf set\+Header\+Footer} ({\bf P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Header\+Footer} \$p\+Value)
+\item 
+{\bf get\+Sheet\+View} ()
+\item 
+{\bf set\+Sheet\+View} ({\bf P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Sheet\+View} \$p\+Value)
+\item 
+{\bf get\+Protection} ()
+\item 
+{\bf set\+Protection} ({\bf P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Protection} \$p\+Value)
+\item 
+{\bf get\+Highest\+Column} (\$row=null)
+\item 
+{\bf get\+Highest\+Data\+Column} (\$row=null)
+\item 
+{\bf get\+Highest\+Row} (\$column=null)
+\item 
+{\bf get\+Highest\+Data\+Row} (\$column=null)
+\item 
+{\bf get\+Highest\+Row\+And\+Column} ()
+\item 
+{\bf set\+Cell\+Value} (\$p\+Coordinate= 'A1', \$p\+Value=null, \$return\+Cell=false)
+\item 
+{\bf set\+Cell\+Value\+By\+Column\+And\+Row} (\$p\+Column=0, \$p\+Row=1, \$p\+Value=null, \$return\+Cell=false)
+\item 
+{\bf set\+Cell\+Value\+Explicit} (\$p\+Coordinate= 'A1', \$p\+Value=null, \$p\+Data\+Type=P\+H\+P\+Excel\+\_\+\+Cell\+\_\+\+Data\+Type\+::\+T\+Y\+P\+E\+\_\+\+S\+T\+R\+I\+N\+G, \$return\+Cell=false)
+\item 
+{\bf set\+Cell\+Value\+Explicit\+By\+Column\+And\+Row} (\$p\+Column=0, \$p\+Row=1, \$p\+Value=null, \$p\+Data\+Type=P\+H\+P\+Excel\+\_\+\+Cell\+\_\+\+Data\+Type\+::\+T\+Y\+P\+E\+\_\+\+S\+T\+R\+I\+N\+G, \$return\+Cell=false)
+\item 
+{\bf get\+Cell} (\$p\+Coordinate= 'A1')
+\item 
+{\bf get\+Cell\+By\+Column\+And\+Row} (\$p\+Column=0, \$p\+Row=1)
+\item 
+{\bf cell\+Exists} (\$p\+Coordinate= 'A1')
+\item 
+{\bf cell\+Exists\+By\+Column\+And\+Row} (\$p\+Column=0, \$p\+Row=1)
+\item 
+{\bf get\+Row\+Dimension} (\$p\+Row=1, \$create=T\+R\+U\+E)
+\item 
+{\bf get\+Column\+Dimension} (\$p\+Column= 'A', \$create=T\+R\+U\+E)
+\item 
+{\bf get\+Column\+Dimension\+By\+Column} (\$p\+Column=0)
+\item 
+{\bf get\+Styles} ()
+\item 
+{\bf get\+Default\+Style} ()
+\item 
+{\bf set\+Default\+Style} ({\bf P\+H\+P\+Excel\+\_\+\+Style} \$p\+Value)
+\item 
+{\bf get\+Style} (\$p\+Cell\+Coordinate= 'A1')
+\item 
+{\bf get\+Conditional\+Styles} (\$p\+Coordinate= 'A1')
+\item 
+{\bf conditional\+Styles\+Exists} (\$p\+Coordinate= 'A1')
+\item 
+{\bf remove\+Conditional\+Styles} (\$p\+Coordinate= 'A1')
+\item 
+{\bf get\+Conditional\+Styles\+Collection} ()
+\item 
+{\bf set\+Conditional\+Styles} (\$p\+Coordinate= 'A1', \$p\+Value)
+\item 
+{\bf get\+Style\+By\+Column\+And\+Row} (\$p\+Column=0, \$p\+Row=1)
+\item 
+{\bf set\+Shared\+Style} ({\bf P\+H\+P\+Excel\+\_\+\+Style} \$p\+Shared\+Cell\+Style=null, \$p\+Range= '')
+\item 
+{\bf duplicate\+Style} ({\bf P\+H\+P\+Excel\+\_\+\+Style} \$p\+Cell\+Style=null, \$p\+Range= '')
+\item 
+{\bf duplicate\+Conditional\+Style} (array \$p\+Cell\+Style=null, \$p\+Range= '')
+\item 
+{\bf duplicate\+Style\+Array} (\$p\+Styles=null, \$p\+Range= '', \$p\+Advanced=true)
+\item 
+{\bf set\+Break} (\$p\+Cell= 'A1', \$p\+Break=P\+H\+P\+Excel\+\_\+\+Worksheet\+::\+B\+R\+E\+A\+K\+\_\+\+N\+O\+N\+E)
+\item 
+{\bf set\+Break\+By\+Column\+And\+Row} (\$p\+Column=0, \$p\+Row=1, \$p\+Break=P\+H\+P\+Excel\+\_\+\+Worksheet\+::\+B\+R\+E\+A\+K\+\_\+\+N\+O\+N\+E)
+\item 
+{\bf get\+Breaks} ()
+\item 
+{\bf merge\+Cells} (\$p\+Range= 'A1\+:\+A1')
+\item 
+{\bf merge\+Cells\+By\+Column\+And\+Row} (\$p\+Column1=0, \$p\+Row1=1, \$p\+Column2=0, \$p\+Row2=1)
+\item 
+{\bf unmerge\+Cells} (\$p\+Range= 'A1\+:\+A1')
+\item 
+{\bf unmerge\+Cells\+By\+Column\+And\+Row} (\$p\+Column1=0, \$p\+Row1=1, \$p\+Column2=0, \$p\+Row2=1)
+\item 
+{\bf get\+Merge\+Cells} ()
+\item 
+{\bf set\+Merge\+Cells} (\$p\+Value=array())
+\item 
+{\bf protect\+Cells} (\$p\+Range= 'A1', \$p\+Password= '', \$p\+Already\+Hashed=false)
+\item 
+{\bf protect\+Cells\+By\+Column\+And\+Row} (\$p\+Column1=0, \$p\+Row1=1, \$p\+Column2=0, \$p\+Row2=1, \$p\+Password= '', \$p\+Already\+Hashed=false)
+\item 
+{\bf unprotect\+Cells} (\$p\+Range= 'A1')
+\item 
+{\bf unprotect\+Cells\+By\+Column\+And\+Row} (\$p\+Column1=0, \$p\+Row1=1, \$p\+Column2=0, \$p\+Row2=1, \$p\+Password= '', \$p\+Already\+Hashed=false)
+\item 
+{\bf get\+Protected\+Cells} ()
+\item 
+{\bf get\+Auto\+Filter} ()
+\item 
+{\bf set\+Auto\+Filter} (\$p\+Value)
+\item 
+{\bf set\+Auto\+Filter\+By\+Column\+And\+Row} (\$p\+Column1=0, \$p\+Row1=1, \$p\+Column2=0, \$p\+Row2=1)
+\item 
+{\bf remove\+Auto\+Filter} ()
+\item 
+{\bf get\+Freeze\+Pane} ()
+\item 
+{\bf freeze\+Pane} (\$p\+Cell= '')
+\item 
+{\bf freeze\+Pane\+By\+Column\+And\+Row} (\$p\+Column=0, \$p\+Row=1)
+\item 
+{\bf unfreeze\+Pane} ()
+\item 
+{\bf insert\+New\+Row\+Before} (\$p\+Before=1, \$p\+Num\+Rows=1)
+\item 
+{\bf insert\+New\+Column\+Before} (\$p\+Before= 'A', \$p\+Num\+Cols=1)
+\item 
+{\bf insert\+New\+Column\+Before\+By\+Index} (\$p\+Before=0, \$p\+Num\+Cols=1)
+\item 
+{\bf remove\+Row} (\$p\+Row=1, \$p\+Num\+Rows=1)
+\item 
+{\bf remove\+Column} (\$p\+Column= 'A', \$p\+Num\+Cols=1)
+\item 
+{\bf remove\+Column\+By\+Index} (\$p\+Column=0, \$p\+Num\+Cols=1)
+\item 
+{\bf get\+Show\+Gridlines} ()
+\item 
+{\bf set\+Show\+Gridlines} (\$p\+Value=false)
+\item 
+{\bf get\+Print\+Gridlines} ()
+\item 
+{\bf set\+Print\+Gridlines} (\$p\+Value=false)
+\item 
+{\bf get\+Show\+Row\+Col\+Headers} ()
+\item 
+{\bf set\+Show\+Row\+Col\+Headers} (\$p\+Value=false)
+\item 
+{\bf get\+Show\+Summary\+Below} ()
+\item 
+{\bf set\+Show\+Summary\+Below} (\$p\+Value=true)
+\item 
+{\bf get\+Show\+Summary\+Right} ()
+\item 
+{\bf set\+Show\+Summary\+Right} (\$p\+Value=true)
+\item 
+{\bf get\+Comments} ()
+\item 
+{\bf set\+Comments} (\$p\+Value=array())
+\item 
+{\bf get\+Comment} (\$p\+Cell\+Coordinate= 'A1')
+\item 
+{\bf get\+Comment\+By\+Column\+And\+Row} (\$p\+Column=0, \$p\+Row=1)
+\item 
+{\bf get\+Selected\+Cell} ()
+\item 
+{\bf get\+Active\+Cell} ()
+\item 
+{\bf get\+Selected\+Cells} ()
+\item 
+{\bf set\+Selected\+Cell} (\$p\+Coordinate= 'A1')
+\item 
+{\bf set\+Selected\+Cells} (\$p\+Coordinate= 'A1')
+\item 
+{\bf set\+Selected\+Cell\+By\+Column\+And\+Row} (\$p\+Column=0, \$p\+Row=1)
+\item 
+{\bf get\+Right\+To\+Left} ()
+\item 
+{\bf set\+Right\+To\+Left} (\$value=false)
+\item 
+{\bf from\+Array} (\$source=null, \$null\+Value=null, \$start\+Cell= 'A1', \$strict\+Null\+Comparison=false)
+\item 
+{\bf range\+To\+Array} (\$p\+Range= 'A1', \$null\+Value=null, \$calculate\+Formulas=true, \$format\+Data=true, \$return\+Cell\+Ref=false)
+\item 
+{\bf named\+Range\+To\+Array} (\$p\+Named\+Range= '', \$null\+Value=null, \$calculate\+Formulas=true, \$format\+Data=true, \$return\+Cell\+Ref=false)
+\item 
+{\bf to\+Array} (\$null\+Value=null, \$calculate\+Formulas=true, \$format\+Data=true, \$return\+Cell\+Ref=false)
+\item 
+{\bf get\+Row\+Iterator} (\$start\+Row=1)
+\item 
+{\bf garbage\+Collect} ()
+\item 
+{\bf get\+Hash\+Code} ()
+\item 
+{\bf get\+Hyperlink} (\$p\+Cell\+Coordinate= 'A1')
+\item 
+{\bf set\+Hyperlink} (\$p\+Cell\+Coordinate= 'A1', {\bf P\+H\+P\+Excel\+\_\+\+Cell\+\_\+\+Hyperlink} \$p\+Hyperlink=null)
+\item 
+{\bf hyperlink\+Exists} (\$p\+Coordinate= 'A1')
+\item 
+{\bf get\+Hyperlink\+Collection} ()
+\item 
+{\bf get\+Data\+Validation} (\$p\+Cell\+Coordinate= 'A1')
+\item 
+{\bf set\+Data\+Validation} (\$p\+Cell\+Coordinate= 'A1', {\bf P\+H\+P\+Excel\+\_\+\+Cell\+\_\+\+Data\+Validation} \$p\+Data\+Validation=null)
+\item 
+{\bf data\+Validation\+Exists} (\$p\+Coordinate= 'A1')
+\item 
+{\bf get\+Data\+Validation\+Collection} ()
+\item 
+{\bf shrink\+Range\+To\+Fit} (\$range)
+\item 
+{\bf get\+Tab\+Color} ()
+\item 
+{\bf reset\+Tab\+Color} ()
+\item 
+{\bf is\+Tab\+Color\+Set} ()
+\item 
+{\bf copy} ()
+\item 
+{\bf \+\_\+\+\_\+clone} ()
+\item 
+{\bf set\+Code\+Name} (\$p\+Value=null)
+\item 
+{\bf get\+Code\+Name} ()
+\item 
+{\bf has\+Code\+Name} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static {\bf get\+Invalid\+Characters} ()
+\item 
+static {\bf extract\+Sheet\+Title} (\$p\+Range, \$return\+Range=false)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const {\bfseries B\+R\+E\+A\+K\+\_\+\+N\+O\+N\+E} = 0\label{class_p_h_p_excel___worksheet_a5a09b24652a59cf66429e902aba039d5}
+
+\item 
+const {\bfseries B\+R\+E\+A\+K\+\_\+\+R\+O\+W} = 1\label{class_p_h_p_excel___worksheet_a06157d09e4fa43552c093e35ada1931d}
+
+\item 
+const {\bfseries B\+R\+E\+A\+K\+\_\+\+C\+O\+L\+U\+M\+N} = 2\label{class_p_h_p_excel___worksheet_abb064401756601d99b5a6def5c038630}
+
+\item 
+const {\bfseries S\+H\+E\+E\+T\+S\+T\+A\+T\+E\+\_\+\+V\+I\+S\+I\+B\+L\+E} = 'visible'\label{class_p_h_p_excel___worksheet_ad971fcc72dff6cb0d8f35f27f5e2ef01}
+
+\item 
+const {\bfseries S\+H\+E\+E\+T\+S\+T\+A\+T\+E\+\_\+\+H\+I\+D\+D\+E\+N} = 'hidden'\label{class_p_h_p_excel___worksheet_af1601a93bdabbeac836ff05e08a4db11}
+
+\item 
+const {\bfseries S\+H\+E\+E\+T\+S\+T\+A\+T\+E\+\_\+\+V\+E\+R\+Y\+H\+I\+D\+D\+E\+N} = 'very\+Hidden'\label{class_p_h_p_excel___worksheet_ad4676f7887662f18f387ec013461d99c}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{\+\_\+\+\_\+construct}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+H\+P\+Excel}}]{\$p\+Parent = {\ttfamily null}, }
+\item[{}]{\$p\+Title = {\ttfamily 'Worksheet'}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a636e7bb72314912ef63e1e3484ee1852}
+Create a new worksheet
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxyref{P\+H\+P\+Excel}{p.}{class_p_h_p_excel} & {\em \$p\+Parent} & \\
+\hline
+string & {\em \$p\+Title} & \\
+\hline
+\end{DoxyParams}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!\+\_\+\+\_\+destruct@{\+\_\+\+\_\+destruct}}
+\index{\+\_\+\+\_\+destruct@{\+\_\+\+\_\+destruct}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{\+\_\+\+\_\+destruct}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+destruct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a421831a265621325e1fdd19aace0c758}
+Code to execute when this worksheet is unset() 
+
+\subsection{Member Function Documentation}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!\+\_\+\+\_\+clone@{\+\_\+\+\_\+clone}}
+\index{\+\_\+\+\_\+clone@{\+\_\+\+\_\+clone}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{\+\_\+\+\_\+clone}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+clone (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_ad0cb87b388bc74d63dc884accdca8713}
+Implement P\+H\+P \+\_\+\+\_\+clone to create a deep clone, not just a shallow copy. \index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!add\+Chart@{add\+Chart}}
+\index{add\+Chart@{add\+Chart}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{add\+Chart}]{\setlength{\rightskip}{0pt plus 5cm}add\+Chart (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+H\+P\+Excel\+\_\+\+Chart}}]{\$p\+Chart = {\ttfamily null}, }
+\item[{}]{\$i\+Chart\+Index = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a0d43c1c47de6f1bbbfba08b1319873e2}
+Add chart
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Chart}{p.}{class_p_h_p_excel___chart} & {\em \$p\+Chart} & \\
+\hline
+int | null & {\em \$i\+Chart\+Index} & Index where chart should go (0,1,..., or null for last) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Chart}{p.}{class_p_h_p_excel___chart} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!calculate\+Column\+Widths@{calculate\+Column\+Widths}}
+\index{calculate\+Column\+Widths@{calculate\+Column\+Widths}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{calculate\+Column\+Widths}]{\setlength{\rightskip}{0pt plus 5cm}calculate\+Column\+Widths (
+\begin{DoxyParamCaption}
+\item[{}]{\$calculate\+Merge\+Cells = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a13405e40aeb58da79a313d50d177c803}
+Calculate widths for auto-\/size columns
+
+
+\begin{DoxyParams}[1]{Parameters}
+boolean & {\em \$calculate\+Merge\+Cells} & Calculate merge cell width \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet}; 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!calculate\+Worksheet\+Data\+Dimension@{calculate\+Worksheet\+Data\+Dimension}}
+\index{calculate\+Worksheet\+Data\+Dimension@{calculate\+Worksheet\+Data\+Dimension}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{calculate\+Worksheet\+Data\+Dimension}]{\setlength{\rightskip}{0pt plus 5cm}calculate\+Worksheet\+Data\+Dimension (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_ae5db495551fbade4558a343aba4d52cb}
+Calculate worksheet data dimension
+
+\begin{DoxyReturn}{Returns}
+string String containing the dimension of this worksheet that actually contain data 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!calculate\+Worksheet\+Dimension@{calculate\+Worksheet\+Dimension}}
+\index{calculate\+Worksheet\+Dimension@{calculate\+Worksheet\+Dimension}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{calculate\+Worksheet\+Dimension}]{\setlength{\rightskip}{0pt plus 5cm}calculate\+Worksheet\+Dimension (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a732c887e9481aebcc5938a7458ae038a}
+Calculate worksheet dimension
+
+\begin{DoxyReturn}{Returns}
+string String containing the dimension of this worksheet 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!cell\+Exists@{cell\+Exists}}
+\index{cell\+Exists@{cell\+Exists}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{cell\+Exists}]{\setlength{\rightskip}{0pt plus 5cm}cell\+Exists (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Coordinate = {\ttfamily 'A1'}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_adfee7b4ab887b4fe3bc502a6a693feac}
+Does the cell at a specific coordinate exist?
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Coordinate} & Coordinate of the cell \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!cell\+Exists\+By\+Column\+And\+Row@{cell\+Exists\+By\+Column\+And\+Row}}
+\index{cell\+Exists\+By\+Column\+And\+Row@{cell\+Exists\+By\+Column\+And\+Row}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{cell\+Exists\+By\+Column\+And\+Row}]{\setlength{\rightskip}{0pt plus 5cm}cell\+Exists\+By\+Column\+And\+Row (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Column = {\ttfamily 0}, }
+\item[{}]{\$p\+Row = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_ab5d602a7afd37d830605d2cdcbb31c6e}
+Cell at a specific coordinate by using numeric cell coordinates exists?
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Column} & Numeric column coordinate of the cell \\
+\hline
+string & {\em \$p\+Row} & Numeric row coordinate of the cell \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!conditional\+Styles\+Exists@{conditional\+Styles\+Exists}}
+\index{conditional\+Styles\+Exists@{conditional\+Styles\+Exists}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{conditional\+Styles\+Exists}]{\setlength{\rightskip}{0pt plus 5cm}conditional\+Styles\+Exists (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Coordinate = {\ttfamily 'A1'}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a0e7c47b1c852454fbe05b49484c2852d}
+Do conditional styles exist for this cell?
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Coordinate} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!copy@{copy}}
+\index{copy@{copy}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{copy}]{\setlength{\rightskip}{0pt plus 5cm}copy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_af2ee38d1ce36008491d935c9431afc7b}
+Copy worksheet (!= clone!)
+
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!data\+Validation\+Exists@{data\+Validation\+Exists}}
+\index{data\+Validation\+Exists@{data\+Validation\+Exists}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{data\+Validation\+Exists}]{\setlength{\rightskip}{0pt plus 5cm}data\+Validation\+Exists (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Coordinate = {\ttfamily 'A1'}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a42c56c20daf7bc0f731903bdfd59c4df}
+Data validation at a specific coordinate exists?
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Coordinate} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!disconnect\+Cells@{disconnect\+Cells}}
+\index{disconnect\+Cells@{disconnect\+Cells}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{disconnect\+Cells}]{\setlength{\rightskip}{0pt plus 5cm}disconnect\+Cells (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_aa2ad31cf6133a8e0b7bf49c6d4d99911}
+Disconnect all cells from this \doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} object, typically so that the worksheet object can be unset \index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!duplicate\+Conditional\+Style@{duplicate\+Conditional\+Style}}
+\index{duplicate\+Conditional\+Style@{duplicate\+Conditional\+Style}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{duplicate\+Conditional\+Style}]{\setlength{\rightskip}{0pt plus 5cm}duplicate\+Conditional\+Style (
+\begin{DoxyParamCaption}
+\item[{array}]{\$p\+Cell\+Style = {\ttfamily null}, }
+\item[{}]{\$p\+Range = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_ab5af3183901d296dcfbd0ce373c653e3}
+Duplicate conditional style to a range of cells
+
+Please note that this will overwrite existing cell styles for cells in range!
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em array} & of \doxyref{P\+H\+P\+Excel\+\_\+\+Style\+\_\+\+Conditional}{p.}{class_p_h_p_excel___style___conditional} \$p\+Cell\+Style Cell style to duplicate \\
+\hline
+string & {\em \$p\+Range} & Range of cells (i.\+e. \char`\"{}\+A1\+:\+B10\char`\"{}), or just one cell (i.\+e. \char`\"{}\+A1\char`\"{}) \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!duplicate\+Style@{duplicate\+Style}}
+\index{duplicate\+Style@{duplicate\+Style}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{duplicate\+Style}]{\setlength{\rightskip}{0pt plus 5cm}duplicate\+Style (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+H\+P\+Excel\+\_\+\+Style}}]{\$p\+Cell\+Style = {\ttfamily null}, }
+\item[{}]{\$p\+Range = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a8b603df2f0b777f4fa77890d0ae67269}
+Duplicate cell style to a range of cells
+
+Please note that this will overwrite existing cell styles for cells in range!
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Style}{p.}{class_p_h_p_excel___style} & {\em \$p\+Cell\+Style} & Cell style to duplicate \\
+\hline
+string & {\em \$p\+Range} & Range of cells (i.\+e. \char`\"{}\+A1\+:\+B10\char`\"{}), or just one cell (i.\+e. \char`\"{}\+A1\char`\"{}) \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!duplicate\+Style\+Array@{duplicate\+Style\+Array}}
+\index{duplicate\+Style\+Array@{duplicate\+Style\+Array}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{duplicate\+Style\+Array}]{\setlength{\rightskip}{0pt plus 5cm}duplicate\+Style\+Array (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Styles = {\ttfamily null}, }
+\item[{}]{\$p\+Range = {\ttfamily ''}, }
+\item[{}]{\$p\+Advanced = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a7e3ef822d64758a862d015aa6f99d978}
+Duplicate cell style array to a range of cells
+
+Please note that this will overwrite existing cell styles for cells in range, if they are in the styles array. For example, if you decide to set a range of cells to font bold, only include font bold in the styles array.
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[{\bf Deprecated}]
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$p\+Styles} & Array containing style information \\
+\hline
+string & {\em \$p\+Range} & Range of cells (i.\+e. \char`\"{}\+A1\+:\+B10\char`\"{}), or just one cell (i.\+e. \char`\"{}\+A1\char`\"{}) \\
+\hline
+boolean & {\em \$p\+Advanced} & Advanced mode for setting borders. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+\end{DoxyRefDesc}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!extract\+Sheet\+Title@{extract\+Sheet\+Title}}
+\index{extract\+Sheet\+Title@{extract\+Sheet\+Title}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{extract\+Sheet\+Title}]{\setlength{\rightskip}{0pt plus 5cm}static extract\+Sheet\+Title (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Range, }
+\item[{}]{\$return\+Range = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___worksheet_af647112824779ee4dd97cb9ff63926bd}
+Extract worksheet title from range.
+
+Example\+: extract\+Sheet\+Title(\char`\"{}test\+Sheet!\+A1\char`\"{}) ==$>$ 'A1' Example\+: extract\+Sheet\+Title(\char`\"{}'test\+Sheet 1'!\+A1\char`\"{}, true) ==$>$ array('test\+Sheet 1', 'A1');
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Range} & Range to extract title from \\
+\hline
+bool & {\em \$return\+Range} & Return range? (see example) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!freeze\+Pane@{freeze\+Pane}}
+\index{freeze\+Pane@{freeze\+Pane}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{freeze\+Pane}]{\setlength{\rightskip}{0pt plus 5cm}freeze\+Pane (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Cell = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a317130f127e1e484df097fad9032a2bf}
+Freeze Pane
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Cell} & Cell (i.\+e. A2) Examples\+: A2 will freeze the rows above cell A2 (i.\+e row 1) B1 will freeze the columns to the left of cell B1 (i.\+e column A) B2 will freeze the rows above and to the left of cell A2 (i.\+e row 1 and column A) \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!freeze\+Pane\+By\+Column\+And\+Row@{freeze\+Pane\+By\+Column\+And\+Row}}
+\index{freeze\+Pane\+By\+Column\+And\+Row@{freeze\+Pane\+By\+Column\+And\+Row}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{freeze\+Pane\+By\+Column\+And\+Row}]{\setlength{\rightskip}{0pt plus 5cm}freeze\+Pane\+By\+Column\+And\+Row (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Column = {\ttfamily 0}, }
+\item[{}]{\$p\+Row = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_addcc3d3494083a30f68edca47339708d}
+Freeze Pane by using numeric cell coordinates
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$p\+Column} & Numeric column coordinate of the cell \\
+\hline
+int & {\em \$p\+Row} & Numeric row coordinate of the cell \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!from\+Array@{from\+Array}}
+\index{from\+Array@{from\+Array}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{from\+Array}]{\setlength{\rightskip}{0pt plus 5cm}from\+Array (
+\begin{DoxyParamCaption}
+\item[{}]{\$source = {\ttfamily null}, }
+\item[{}]{\$null\+Value = {\ttfamily null}, }
+\item[{}]{\$start\+Cell = {\ttfamily 'A1'}, }
+\item[{}]{\$strict\+Null\+Comparison = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_aa4bbb4328e686e9c3476294a615e8070}
+Fill worksheet from values in array
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$source} & Source array \\
+\hline
+mixed & {\em \$null\+Value} & Value in source array that stands for blank cell \\
+\hline
+string & {\em \$start\+Cell} & Insert array starting from this cell address as the top left coordinate \\
+\hline
+boolean & {\em \$strict\+Null\+Comparison} & Apply strict comparison when testing for null values in the array \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!garbage\+Collect@{garbage\+Collect}}
+\index{garbage\+Collect@{garbage\+Collect}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{garbage\+Collect}]{\setlength{\rightskip}{0pt plus 5cm}garbage\+Collect (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_ad054aa2be59f850062572eca2d1a7231}
+Run \doxyref{P\+H\+P\+Excel}{p.}{class_p_h_p_excel} garabage collector.
+
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!get\+Active\+Cell@{get\+Active\+Cell}}
+\index{get\+Active\+Cell@{get\+Active\+Cell}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{get\+Active\+Cell}]{\setlength{\rightskip}{0pt plus 5cm}get\+Active\+Cell (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_aab4a3a7e448da9f1b47950783f6fa84f}
+Get active cell
+
+\begin{DoxyReturn}{Returns}
+string Example\+: 'A1' 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!get\+Auto\+Filter@{get\+Auto\+Filter}}
+\index{get\+Auto\+Filter@{get\+Auto\+Filter}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{get\+Auto\+Filter}]{\setlength{\rightskip}{0pt plus 5cm}get\+Auto\+Filter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a3b0951614b16637e431f264acb3a4ef7}
+Get Autofilter
+
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter}{p.}{class_p_h_p_excel___worksheet___auto_filter} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!get\+Breaks@{get\+Breaks}}
+\index{get\+Breaks@{get\+Breaks}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{get\+Breaks}]{\setlength{\rightskip}{0pt plus 5cm}get\+Breaks (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a78b2e2949be23b7c9a4357e0af1768e2}
+Get breaks
+
+\begin{DoxyReturn}{Returns}
+array[] 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!get\+Cell@{get\+Cell}}
+\index{get\+Cell@{get\+Cell}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{get\+Cell}]{\setlength{\rightskip}{0pt plus 5cm}get\+Cell (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Coordinate = {\ttfamily 'A1'}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a21f3486253356ba378f7c91dd55e41a0}
+Get cell at a specific coordinate
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Coordinate} & Coordinate of the cell \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Cell}{p.}{class_p_h_p_excel___cell} Cell that was found 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!get\+Cell\+By\+Column\+And\+Row@{get\+Cell\+By\+Column\+And\+Row}}
+\index{get\+Cell\+By\+Column\+And\+Row@{get\+Cell\+By\+Column\+And\+Row}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{get\+Cell\+By\+Column\+And\+Row}]{\setlength{\rightskip}{0pt plus 5cm}get\+Cell\+By\+Column\+And\+Row (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Column = {\ttfamily 0}, }
+\item[{}]{\$p\+Row = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a3884b41918aa5040d9d8dfb9d3051da1}
+Get cell at a specific coordinate by using numeric cell coordinates
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Column} & Numeric column coordinate of the cell \\
+\hline
+string & {\em \$p\+Row} & Numeric row coordinate of the cell \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Cell}{p.}{class_p_h_p_excel___cell} Cell that was found 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!get\+Cell\+Cache\+Controller@{get\+Cell\+Cache\+Controller}}
+\index{get\+Cell\+Cache\+Controller@{get\+Cell\+Cache\+Controller}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{get\+Cell\+Cache\+Controller}]{\setlength{\rightskip}{0pt plus 5cm}get\+Cell\+Cache\+Controller (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a38cf24dec647493828badc75f23559b2}
+Return the cache controller for the cell collection
+
+\begin{DoxyReturn}{Returns}
+P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+xxx 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!get\+Cell\+Collection@{get\+Cell\+Collection}}
+\index{get\+Cell\+Collection@{get\+Cell\+Collection}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{get\+Cell\+Collection}]{\setlength{\rightskip}{0pt plus 5cm}get\+Cell\+Collection (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Sorted = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_aa5eed7efd2ac9d5d31fbd6158b268803}
+Get collection of cells
+
+
+\begin{DoxyParams}[1]{Parameters}
+boolean & {\em \$p\+Sorted} & Also sort the cell collection? \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Cell}{p.}{class_p_h_p_excel___cell}[] 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!get\+Chart\+By\+Index@{get\+Chart\+By\+Index}}
+\index{get\+Chart\+By\+Index@{get\+Chart\+By\+Index}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{get\+Chart\+By\+Index}]{\setlength{\rightskip}{0pt plus 5cm}get\+Chart\+By\+Index (
+\begin{DoxyParamCaption}
+\item[{}]{\$index = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a9477cfbc1f6fd72d7bd404c7a3bd1145}
+Get a chart by its index position
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$index} & Chart index position \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false$\vert$\+P\+H\+P\+Excel\+\_\+\+Chart 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!get\+Chart\+By\+Name@{get\+Chart\+By\+Name}}
+\index{get\+Chart\+By\+Name@{get\+Chart\+By\+Name}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{get\+Chart\+By\+Name}]{\setlength{\rightskip}{0pt plus 5cm}get\+Chart\+By\+Name (
+\begin{DoxyParamCaption}
+\item[{}]{\$chart\+Name = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a0d598dd8c39c395a504c9981dda5f581}
+Get a chart by name
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$chart\+Name} & Chart name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false$\vert$\+P\+H\+P\+Excel\+\_\+\+Chart 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!get\+Chart\+Collection@{get\+Chart\+Collection}}
+\index{get\+Chart\+Collection@{get\+Chart\+Collection}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{get\+Chart\+Collection}]{\setlength{\rightskip}{0pt plus 5cm}get\+Chart\+Collection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_adc666c82d363da3ff4ccdf6bd7c8378a}
+Get collection of charts
+
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Chart}{p.}{class_p_h_p_excel___chart}[] 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!get\+Chart\+Count@{get\+Chart\+Count}}
+\index{get\+Chart\+Count@{get\+Chart\+Count}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{get\+Chart\+Count}]{\setlength{\rightskip}{0pt plus 5cm}get\+Chart\+Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_ab9e817a33301d5a67f01484e0b388d96}
+Return the count of charts on this worksheet
+
+\begin{DoxyReturn}{Returns}
+int The number of charts 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!get\+Chart\+Names@{get\+Chart\+Names}}
+\index{get\+Chart\+Names@{get\+Chart\+Names}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{get\+Chart\+Names}]{\setlength{\rightskip}{0pt plus 5cm}get\+Chart\+Names (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a68dd226373b8f0f2f351cdc522387d69}
+Return an array of the names of charts on this worksheet
+
+\begin{DoxyReturn}{Returns}
+string[] The names of charts 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!get\+Code\+Name@{get\+Code\+Name}}
+\index{get\+Code\+Name@{get\+Code\+Name}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{get\+Code\+Name}]{\setlength{\rightskip}{0pt plus 5cm}get\+Code\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a174cb231041e2d481323129c774157e6}
+Return the code name of the sheet
+
+\begin{DoxyReturn}{Returns}
+null$\vert$string 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!get\+Column\+Dimension@{get\+Column\+Dimension}}
+\index{get\+Column\+Dimension@{get\+Column\+Dimension}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{get\+Column\+Dimension}]{\setlength{\rightskip}{0pt plus 5cm}get\+Column\+Dimension (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Column = {\ttfamily 'A'}, }
+\item[{}]{\$create = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_aa51e64e6f66a13048465448a008a9055}
+Get column dimension at a specific column
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Column} & String index of the column \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Column\+Dimension}{p.}{class_p_h_p_excel___worksheet___column_dimension} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!get\+Column\+Dimension\+By\+Column@{get\+Column\+Dimension\+By\+Column}}
+\index{get\+Column\+Dimension\+By\+Column@{get\+Column\+Dimension\+By\+Column}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{get\+Column\+Dimension\+By\+Column}]{\setlength{\rightskip}{0pt plus 5cm}get\+Column\+Dimension\+By\+Column (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Column = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_ab9697ead4cf034c7966da1074e5268f3}
+Get column dimension at a specific column by using numeric cell coordinates
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Column} & Numeric column coordinate of the cell \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Column\+Dimension}{p.}{class_p_h_p_excel___worksheet___column_dimension} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!get\+Column\+Dimensions@{get\+Column\+Dimensions}}
+\index{get\+Column\+Dimensions@{get\+Column\+Dimensions}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{get\+Column\+Dimensions}]{\setlength{\rightskip}{0pt plus 5cm}get\+Column\+Dimensions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a5f4b79c83889555aab787bb98df8333c}
+Get collection of column dimensions
+
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Column\+Dimension}{p.}{class_p_h_p_excel___worksheet___column_dimension}[] 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!get\+Comment@{get\+Comment}}
+\index{get\+Comment@{get\+Comment}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{get\+Comment}]{\setlength{\rightskip}{0pt plus 5cm}get\+Comment (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Cell\+Coordinate = {\ttfamily 'A1'}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a6a0f9a8dbaa8e1adc2fd3c24dfa60385}
+Get comment for cell
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Cell\+Coordinate} & Cell coordinate to get comment for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Comment}{p.}{class_p_h_p_excel___comment} 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!get\+Comment\+By\+Column\+And\+Row@{get\+Comment\+By\+Column\+And\+Row}}
+\index{get\+Comment\+By\+Column\+And\+Row@{get\+Comment\+By\+Column\+And\+Row}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{get\+Comment\+By\+Column\+And\+Row}]{\setlength{\rightskip}{0pt plus 5cm}get\+Comment\+By\+Column\+And\+Row (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Column = {\ttfamily 0}, }
+\item[{}]{\$p\+Row = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_aec94b2b872dbda41a3513a22896961ad}
+Get comment for cell by using numeric cell coordinates
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$p\+Column} & Numeric column coordinate of the cell \\
+\hline
+int & {\em \$p\+Row} & Numeric row coordinate of the cell \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Comment}{p.}{class_p_h_p_excel___comment} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!get\+Comments@{get\+Comments}}
+\index{get\+Comments@{get\+Comments}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{get\+Comments}]{\setlength{\rightskip}{0pt plus 5cm}get\+Comments (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_af3034ead082330d2c046a69814009808}
+Get comments
+
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Comment}{p.}{class_p_h_p_excel___comment}[] 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!get\+Conditional\+Styles@{get\+Conditional\+Styles}}
+\index{get\+Conditional\+Styles@{get\+Conditional\+Styles}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{get\+Conditional\+Styles}]{\setlength{\rightskip}{0pt plus 5cm}get\+Conditional\+Styles (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Coordinate = {\ttfamily 'A1'}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_ab0a91585f82c996b9fac74f2f79c752e}
+Get conditional styles for a cell
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Coordinate} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Style\+\_\+\+Conditional}{p.}{class_p_h_p_excel___style___conditional}[] 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!get\+Conditional\+Styles\+Collection@{get\+Conditional\+Styles\+Collection}}
+\index{get\+Conditional\+Styles\+Collection@{get\+Conditional\+Styles\+Collection}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{get\+Conditional\+Styles\+Collection}]{\setlength{\rightskip}{0pt plus 5cm}get\+Conditional\+Styles\+Collection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a8d25b8b59e1d8650e16d9125952b5fd6}
+Get collection of conditional styles
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!get\+Data\+Validation@{get\+Data\+Validation}}
+\index{get\+Data\+Validation@{get\+Data\+Validation}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{get\+Data\+Validation}]{\setlength{\rightskip}{0pt plus 5cm}get\+Data\+Validation (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Cell\+Coordinate = {\ttfamily 'A1'}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_adf9593aa2a501e896345c715a920c29a}
+Get data validation
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Cell\+Coordinate} & Cell coordinate to get data validation for \\
+\hline
+\end{DoxyParams}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!get\+Data\+Validation\+Collection@{get\+Data\+Validation\+Collection}}
+\index{get\+Data\+Validation\+Collection@{get\+Data\+Validation\+Collection}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{get\+Data\+Validation\+Collection}]{\setlength{\rightskip}{0pt plus 5cm}get\+Data\+Validation\+Collection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_aec5930d42ac56cc4e423da1b55f41891}
+Get collection of data validations
+
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Cell\+\_\+\+Data\+Validation}{p.}{class_p_h_p_excel___cell___data_validation}[] 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!get\+Default\+Column\+Dimension@{get\+Default\+Column\+Dimension}}
+\index{get\+Default\+Column\+Dimension@{get\+Default\+Column\+Dimension}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{get\+Default\+Column\+Dimension}]{\setlength{\rightskip}{0pt plus 5cm}get\+Default\+Column\+Dimension (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a0709c92fdbda9fc306f895a7ae8372f9}
+Get default column dimension
+
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Column\+Dimension}{p.}{class_p_h_p_excel___worksheet___column_dimension} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!get\+Default\+Row\+Dimension@{get\+Default\+Row\+Dimension}}
+\index{get\+Default\+Row\+Dimension@{get\+Default\+Row\+Dimension}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{get\+Default\+Row\+Dimension}]{\setlength{\rightskip}{0pt plus 5cm}get\+Default\+Row\+Dimension (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_ab1dae906368bd34e43d47b524d377322}
+Get default row dimension
+
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Row\+Dimension}{p.}{class_p_h_p_excel___worksheet___row_dimension} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!get\+Default\+Style@{get\+Default\+Style}}
+\index{get\+Default\+Style@{get\+Default\+Style}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{get\+Default\+Style}]{\setlength{\rightskip}{0pt plus 5cm}get\+Default\+Style (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a5f5160f2d723f87b0bb763596590dfde}
+Get default style of workbook.
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[{\bf Deprecated}]\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Style}{p.}{class_p_h_p_excel___style} 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\end{DoxyRefDesc}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!get\+Drawing\+Collection@{get\+Drawing\+Collection}}
+\index{get\+Drawing\+Collection@{get\+Drawing\+Collection}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{get\+Drawing\+Collection}]{\setlength{\rightskip}{0pt plus 5cm}get\+Drawing\+Collection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a45715f0e794ca4a0cccd5753f69346f4}
+Get collection of drawings
+
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Base\+Drawing}{p.}{class_p_h_p_excel___worksheet___base_drawing}[] 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!get\+Freeze\+Pane@{get\+Freeze\+Pane}}
+\index{get\+Freeze\+Pane@{get\+Freeze\+Pane}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{get\+Freeze\+Pane}]{\setlength{\rightskip}{0pt plus 5cm}get\+Freeze\+Pane (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a83c27761bb00b25ed7751e6888934fa2}
+Get Freeze Pane
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!get\+Hash\+Code@{get\+Hash\+Code}}
+\index{get\+Hash\+Code@{get\+Hash\+Code}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{get\+Hash\+Code}]{\setlength{\rightskip}{0pt plus 5cm}get\+Hash\+Code (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a565572289c60df45d1198602c6f93a8a}
+Get hash code
+
+\begin{DoxyReturn}{Returns}
+string Hash code 
+\end{DoxyReturn}
+
+
+Implements {\bf P\+H\+P\+Excel\+\_\+\+I\+Comparable} \doxyref{}{p.}{interface_p_h_p_excel___i_comparable_a565572289c60df45d1198602c6f93a8a}.
+
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!get\+Header\+Footer@{get\+Header\+Footer}}
+\index{get\+Header\+Footer@{get\+Header\+Footer}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{get\+Header\+Footer}]{\setlength{\rightskip}{0pt plus 5cm}get\+Header\+Footer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_aefd912d9884acf16cb8776c84d24df74}
+Get page header/footer
+
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Header\+Footer}{p.}{class_p_h_p_excel___worksheet___header_footer} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!get\+Highest\+Column@{get\+Highest\+Column}}
+\index{get\+Highest\+Column@{get\+Highest\+Column}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{get\+Highest\+Column}]{\setlength{\rightskip}{0pt plus 5cm}get\+Highest\+Column (
+\begin{DoxyParamCaption}
+\item[{}]{\$row = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_ad3c18234404cb06b8ee10126a0091aeb}
+Get highest worksheet column
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$row} & Return the data highest column for the specified row, or the highest column of any row if no row number is passed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Highest column name 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!get\+Highest\+Data\+Column@{get\+Highest\+Data\+Column}}
+\index{get\+Highest\+Data\+Column@{get\+Highest\+Data\+Column}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{get\+Highest\+Data\+Column}]{\setlength{\rightskip}{0pt plus 5cm}get\+Highest\+Data\+Column (
+\begin{DoxyParamCaption}
+\item[{}]{\$row = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a4a525e1230b2c33af19870dc22519c21}
+Get highest worksheet column that contains data
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$row} & Return the highest data column for the specified row, or the highest data column of any row if no row number is passed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Highest column name that contains data 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!get\+Highest\+Data\+Row@{get\+Highest\+Data\+Row}}
+\index{get\+Highest\+Data\+Row@{get\+Highest\+Data\+Row}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{get\+Highest\+Data\+Row}]{\setlength{\rightskip}{0pt plus 5cm}get\+Highest\+Data\+Row (
+\begin{DoxyParamCaption}
+\item[{}]{\$column = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a9bd0ce49a7437c507fc6b9ac168224ee}
+Get highest worksheet row that contains data
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & Return the highest data row for the specified column, or the highest data row of any column if no column letter is passed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Highest row number that contains data 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!get\+Highest\+Row@{get\+Highest\+Row}}
+\index{get\+Highest\+Row@{get\+Highest\+Row}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{get\+Highest\+Row}]{\setlength{\rightskip}{0pt plus 5cm}get\+Highest\+Row (
+\begin{DoxyParamCaption}
+\item[{}]{\$column = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_ab1930a4c441cd53616caa55b195bde27}
+Get highest worksheet row
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & Return the highest data row for the specified column, or the highest row of any column if no column letter is passed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Highest row number 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!get\+Highest\+Row\+And\+Column@{get\+Highest\+Row\+And\+Column}}
+\index{get\+Highest\+Row\+And\+Column@{get\+Highest\+Row\+And\+Column}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{get\+Highest\+Row\+And\+Column}]{\setlength{\rightskip}{0pt plus 5cm}get\+Highest\+Row\+And\+Column (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_aa16eaa7ac9c15a90a532560d419f663e}
+Get highest worksheet column and highest row that have cell records
+
+\begin{DoxyReturn}{Returns}
+array Highest column name and highest row number 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!get\+Hyperlink@{get\+Hyperlink}}
+\index{get\+Hyperlink@{get\+Hyperlink}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{get\+Hyperlink}]{\setlength{\rightskip}{0pt plus 5cm}get\+Hyperlink (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Cell\+Coordinate = {\ttfamily 'A1'}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a98403ce47ef3ef1e1ccca8293d96f396}
+Get hyperlink
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Cell\+Coordinate} & Cell coordinate to get hyperlink for \\
+\hline
+\end{DoxyParams}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!get\+Hyperlink\+Collection@{get\+Hyperlink\+Collection}}
+\index{get\+Hyperlink\+Collection@{get\+Hyperlink\+Collection}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{get\+Hyperlink\+Collection}]{\setlength{\rightskip}{0pt plus 5cm}get\+Hyperlink\+Collection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a3218beb5c5026f2e35a3d14a486923b5}
+Get collection of hyperlinks
+
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Cell\+\_\+\+Hyperlink}{p.}{class_p_h_p_excel___cell___hyperlink}[] 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!get\+Invalid\+Characters@{get\+Invalid\+Characters}}
+\index{get\+Invalid\+Characters@{get\+Invalid\+Characters}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{get\+Invalid\+Characters}]{\setlength{\rightskip}{0pt plus 5cm}static get\+Invalid\+Characters (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___worksheet_acfe8d5b9143967cba1475c9811aab5c8}
+Get array of invalid characters for sheet title
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!get\+Merge\+Cells@{get\+Merge\+Cells}}
+\index{get\+Merge\+Cells@{get\+Merge\+Cells}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{get\+Merge\+Cells}]{\setlength{\rightskip}{0pt plus 5cm}get\+Merge\+Cells (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a86c24508d6e25c0f16d342a8845065b9}
+Get merge cells array.
+
+\begin{DoxyReturn}{Returns}
+array[] 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!get\+Page\+Margins@{get\+Page\+Margins}}
+\index{get\+Page\+Margins@{get\+Page\+Margins}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{get\+Page\+Margins}]{\setlength{\rightskip}{0pt plus 5cm}get\+Page\+Margins (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_aff562da1f5276cbe48890a3aa78d05ca}
+Get page margins
+
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Page\+Margins}{p.}{class_p_h_p_excel___worksheet___page_margins} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!get\+Page\+Setup@{get\+Page\+Setup}}
+\index{get\+Page\+Setup@{get\+Page\+Setup}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{get\+Page\+Setup}]{\setlength{\rightskip}{0pt plus 5cm}get\+Page\+Setup (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a9d7988736e98600655bb779f9a9956b2}
+Get page setup
+
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Page\+Setup}{p.}{class_p_h_p_excel___worksheet___page_setup} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!get\+Parent@{get\+Parent}}
+\index{get\+Parent@{get\+Parent}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{get\+Parent}]{\setlength{\rightskip}{0pt plus 5cm}get\+Parent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a95ecaee3537b1ad29b04ef383a57bbae}
+Get parent
+
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel}{p.}{class_p_h_p_excel} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!get\+Print\+Gridlines@{get\+Print\+Gridlines}}
+\index{get\+Print\+Gridlines@{get\+Print\+Gridlines}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{get\+Print\+Gridlines}]{\setlength{\rightskip}{0pt plus 5cm}get\+Print\+Gridlines (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a332d05c511fe745116ba9e34cbd3a8a4}
+Print gridlines?
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!get\+Protected\+Cells@{get\+Protected\+Cells}}
+\index{get\+Protected\+Cells@{get\+Protected\+Cells}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{get\+Protected\+Cells}]{\setlength{\rightskip}{0pt plus 5cm}get\+Protected\+Cells (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_afb35b1e3d4006451339c266edc3336e9}
+Get protected cells
+
+\begin{DoxyReturn}{Returns}
+array[] 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!get\+Protection@{get\+Protection}}
+\index{get\+Protection@{get\+Protection}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{get\+Protection}]{\setlength{\rightskip}{0pt plus 5cm}get\+Protection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_aece8ecd1010c89b2774baf4cab071bef}
+Get Protection
+
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Protection}{p.}{class_p_h_p_excel___worksheet___protection} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!get\+Right\+To\+Left@{get\+Right\+To\+Left}}
+\index{get\+Right\+To\+Left@{get\+Right\+To\+Left}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{get\+Right\+To\+Left}]{\setlength{\rightskip}{0pt plus 5cm}get\+Right\+To\+Left (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a131227adf1318cd29f7e0bac94175207}
+Get right-\/to-\/left
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!get\+Row\+Dimension@{get\+Row\+Dimension}}
+\index{get\+Row\+Dimension@{get\+Row\+Dimension}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{get\+Row\+Dimension}]{\setlength{\rightskip}{0pt plus 5cm}get\+Row\+Dimension (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Row = {\ttfamily 1}, }
+\item[{}]{\$create = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a9e391b679d8f15f749dffae9274a7e9a}
+Get row dimension at a specific row
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$p\+Row} & Numeric index of the row \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Row\+Dimension}{p.}{class_p_h_p_excel___worksheet___row_dimension} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!get\+Row\+Dimensions@{get\+Row\+Dimensions}}
+\index{get\+Row\+Dimensions@{get\+Row\+Dimensions}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{get\+Row\+Dimensions}]{\setlength{\rightskip}{0pt plus 5cm}get\+Row\+Dimensions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a96e800f8dc5e6cda498480c427e86796}
+Get collection of row dimensions
+
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Row\+Dimension}{p.}{class_p_h_p_excel___worksheet___row_dimension}[] 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!get\+Row\+Iterator@{get\+Row\+Iterator}}
+\index{get\+Row\+Iterator@{get\+Row\+Iterator}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{get\+Row\+Iterator}]{\setlength{\rightskip}{0pt plus 5cm}get\+Row\+Iterator (
+\begin{DoxyParamCaption}
+\item[{}]{\$start\+Row = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a82d6124a63df65cef89547b6d0220354}
+Get row iterator
+
+
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$start\+Row} & The row number at which to start iterating \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Row\+Iterator}{p.}{class_p_h_p_excel___worksheet___row_iterator} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!get\+Selected\+Cell@{get\+Selected\+Cell}}
+\index{get\+Selected\+Cell@{get\+Selected\+Cell}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{get\+Selected\+Cell}]{\setlength{\rightskip}{0pt plus 5cm}get\+Selected\+Cell (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_aed7b2c7b96ab5a185a58e4fa4651120c}
+Get selected cell
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[{\bf Deprecated}]\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\end{DoxyRefDesc}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!get\+Selected\+Cells@{get\+Selected\+Cells}}
+\index{get\+Selected\+Cells@{get\+Selected\+Cells}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{get\+Selected\+Cells}]{\setlength{\rightskip}{0pt plus 5cm}get\+Selected\+Cells (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_ab17aa77ef10e750a08120fbf6f965eb2}
+Get selected cells
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!get\+Sheet\+State@{get\+Sheet\+State}}
+\index{get\+Sheet\+State@{get\+Sheet\+State}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{get\+Sheet\+State}]{\setlength{\rightskip}{0pt plus 5cm}get\+Sheet\+State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_aab3de53d19e589165d56d15a2d728570}
+Get sheet state
+
+\begin{DoxyReturn}{Returns}
+string Sheet state (visible, hidden, very\+Hidden) 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!get\+Sheet\+View@{get\+Sheet\+View}}
+\index{get\+Sheet\+View@{get\+Sheet\+View}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{get\+Sheet\+View}]{\setlength{\rightskip}{0pt plus 5cm}get\+Sheet\+View (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a2fab6226cea9bbdd0c376d398497de94}
+Get sheet view
+
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Sheet\+View}{p.}{class_p_h_p_excel___worksheet___sheet_view} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!get\+Show\+Gridlines@{get\+Show\+Gridlines}}
+\index{get\+Show\+Gridlines@{get\+Show\+Gridlines}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{get\+Show\+Gridlines}]{\setlength{\rightskip}{0pt plus 5cm}get\+Show\+Gridlines (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a3d6aee32f8f9567bf787f48c887079d7}
+Show gridlines?
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!get\+Show\+Row\+Col\+Headers@{get\+Show\+Row\+Col\+Headers}}
+\index{get\+Show\+Row\+Col\+Headers@{get\+Show\+Row\+Col\+Headers}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{get\+Show\+Row\+Col\+Headers}]{\setlength{\rightskip}{0pt plus 5cm}get\+Show\+Row\+Col\+Headers (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_aa12253f4ff34ad03c51b6eaf1ff173dd}
+Show row and column headers?
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!get\+Show\+Summary\+Below@{get\+Show\+Summary\+Below}}
+\index{get\+Show\+Summary\+Below@{get\+Show\+Summary\+Below}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{get\+Show\+Summary\+Below}]{\setlength{\rightskip}{0pt plus 5cm}get\+Show\+Summary\+Below (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_ae994a174b083a04c92ef7335db9f364b}
+Show summary below? (Row/\+Column outlining)
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!get\+Show\+Summary\+Right@{get\+Show\+Summary\+Right}}
+\index{get\+Show\+Summary\+Right@{get\+Show\+Summary\+Right}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{get\+Show\+Summary\+Right}]{\setlength{\rightskip}{0pt plus 5cm}get\+Show\+Summary\+Right (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a92a8e5378c5f1b458e6e6fa5b3ab784f}
+Show summary right? (Row/\+Column outlining)
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!get\+Style@{get\+Style}}
+\index{get\+Style@{get\+Style}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{get\+Style}]{\setlength{\rightskip}{0pt plus 5cm}get\+Style (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Cell\+Coordinate = {\ttfamily 'A1'}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a9de5032cca065d9da37f3647a2e18d73}
+Get style for cell
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Cell\+Coordinate} & Cell coordinate to get style for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Style}{p.}{class_p_h_p_excel___style} 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!get\+Style\+By\+Column\+And\+Row@{get\+Style\+By\+Column\+And\+Row}}
+\index{get\+Style\+By\+Column\+And\+Row@{get\+Style\+By\+Column\+And\+Row}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{get\+Style\+By\+Column\+And\+Row}]{\setlength{\rightskip}{0pt plus 5cm}get\+Style\+By\+Column\+And\+Row (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Column = {\ttfamily 0}, }
+\item[{}]{\$p\+Row = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_afd40269cc674615b49b64f28ce7ee3ee}
+Get style for cell by using numeric cell coordinates
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$p\+Column} & Numeric column coordinate of the cell \\
+\hline
+int & {\em \$p\+Row} & Numeric row coordinate of the cell \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Style}{p.}{class_p_h_p_excel___style} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!get\+Styles@{get\+Styles}}
+\index{get\+Styles@{get\+Styles}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{get\+Styles}]{\setlength{\rightskip}{0pt plus 5cm}get\+Styles (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a1c6a7700e11adceb086dece7751ea8d0}
+Get styles
+
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Style}{p.}{class_p_h_p_excel___style}[] 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!get\+Tab\+Color@{get\+Tab\+Color}}
+\index{get\+Tab\+Color@{get\+Tab\+Color}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{get\+Tab\+Color}]{\setlength{\rightskip}{0pt plus 5cm}get\+Tab\+Color (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_af9c1c0f0a29225b48792b358c3defa22}
+Get tab color
+
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Style\+\_\+\+Color}{p.}{class_p_h_p_excel___style___color} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!get\+Title@{get\+Title}}
+\index{get\+Title@{get\+Title}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{get\+Title}]{\setlength{\rightskip}{0pt plus 5cm}get\+Title (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a95e859a4588a39a1824b717378a84c29}
+Get title
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!has\+Code\+Name@{has\+Code\+Name}}
+\index{has\+Code\+Name@{has\+Code\+Name}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{has\+Code\+Name}]{\setlength{\rightskip}{0pt plus 5cm}has\+Code\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a8bf84e3187a418cc69185d32d8c9526e}
+Sheet has a code name ? \begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!hyperlink\+Exists@{hyperlink\+Exists}}
+\index{hyperlink\+Exists@{hyperlink\+Exists}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{hyperlink\+Exists}]{\setlength{\rightskip}{0pt plus 5cm}hyperlink\+Exists (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Coordinate = {\ttfamily 'A1'}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_ab071ebcfa94ba41e97f980d64620ee6c}
+Hyperlink at a specific coordinate exists?
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Coordinate} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!insert\+New\+Column\+Before@{insert\+New\+Column\+Before}}
+\index{insert\+New\+Column\+Before@{insert\+New\+Column\+Before}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{insert\+New\+Column\+Before}]{\setlength{\rightskip}{0pt plus 5cm}insert\+New\+Column\+Before (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Before = {\ttfamily 'A'}, }
+\item[{}]{\$p\+Num\+Cols = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a7c905a0a2bf2c186df36688af8069bed}
+Insert a new column, updating all possible related data
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$p\+Before} & Insert before this one \\
+\hline
+int & {\em \$p\+Num\+Cols} & Number of columns to insert \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!insert\+New\+Column\+Before\+By\+Index@{insert\+New\+Column\+Before\+By\+Index}}
+\index{insert\+New\+Column\+Before\+By\+Index@{insert\+New\+Column\+Before\+By\+Index}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{insert\+New\+Column\+Before\+By\+Index}]{\setlength{\rightskip}{0pt plus 5cm}insert\+New\+Column\+Before\+By\+Index (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Before = {\ttfamily 0}, }
+\item[{}]{\$p\+Num\+Cols = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a9673974c1d82e0babf9f7593876693f1}
+Insert a new column, updating all possible related data
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$p\+Before} & Insert before this one (numeric column coordinate of the cell) \\
+\hline
+int & {\em \$p\+Num\+Cols} & Number of columns to insert \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!insert\+New\+Row\+Before@{insert\+New\+Row\+Before}}
+\index{insert\+New\+Row\+Before@{insert\+New\+Row\+Before}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{insert\+New\+Row\+Before}]{\setlength{\rightskip}{0pt plus 5cm}insert\+New\+Row\+Before (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Before = {\ttfamily 1}, }
+\item[{}]{\$p\+Num\+Rows = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_ae0594b609c055103062d618c72bebde1}
+Insert a new row, updating all possible related data
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$p\+Before} & Insert before this one \\
+\hline
+int & {\em \$p\+Num\+Rows} & Number of rows to insert \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!is\+Tab\+Color\+Set@{is\+Tab\+Color\+Set}}
+\index{is\+Tab\+Color\+Set@{is\+Tab\+Color\+Set}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{is\+Tab\+Color\+Set}]{\setlength{\rightskip}{0pt plus 5cm}is\+Tab\+Color\+Set (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_abdd1420e59e3fad877cf71c582284d50}
+Tab color set?
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!merge\+Cells@{merge\+Cells}}
+\index{merge\+Cells@{merge\+Cells}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{merge\+Cells}]{\setlength{\rightskip}{0pt plus 5cm}merge\+Cells (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Range = {\ttfamily 'A1\+:A1'}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a2a0a29c8b56a3da6208cafc8e1556f49}
+Set merge on a cell range
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Range} & Cell range (e.\+g. A1\+:E1) \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!merge\+Cells\+By\+Column\+And\+Row@{merge\+Cells\+By\+Column\+And\+Row}}
+\index{merge\+Cells\+By\+Column\+And\+Row@{merge\+Cells\+By\+Column\+And\+Row}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{merge\+Cells\+By\+Column\+And\+Row}]{\setlength{\rightskip}{0pt plus 5cm}merge\+Cells\+By\+Column\+And\+Row (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Column1 = {\ttfamily 0}, }
+\item[{}]{\$p\+Row1 = {\ttfamily 1}, }
+\item[{}]{\$p\+Column2 = {\ttfamily 0}, }
+\item[{}]{\$p\+Row2 = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a63e4cc2bb9f697802128fd684a34eed8}
+Set merge on a cell range by using numeric cell coordinates
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$p\+Column1} & Numeric column coordinate of the first cell \\
+\hline
+int & {\em \$p\+Row1} & Numeric row coordinate of the first cell \\
+\hline
+int & {\em \$p\+Column2} & Numeric column coordinate of the last cell \\
+\hline
+int & {\em \$p\+Row2} & Numeric row coordinate of the last cell \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!named\+Range\+To\+Array@{named\+Range\+To\+Array}}
+\index{named\+Range\+To\+Array@{named\+Range\+To\+Array}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{named\+Range\+To\+Array}]{\setlength{\rightskip}{0pt plus 5cm}named\+Range\+To\+Array (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Named\+Range = {\ttfamily ''}, }
+\item[{}]{\$null\+Value = {\ttfamily null}, }
+\item[{}]{\$calculate\+Formulas = {\ttfamily true}, }
+\item[{}]{\$format\+Data = {\ttfamily true}, }
+\item[{}]{\$return\+Cell\+Ref = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a1547d0237b0dcf764f9c07f54ac4308f}
+Create array from a range of cells
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Named\+Range} & Name of the Named Range \\
+\hline
+mixed & {\em \$null\+Value} & Value returned in the array entry if a cell doesn't exist \\
+\hline
+boolean & {\em \$calculate\+Formulas} & Should formulas be calculated? \\
+\hline
+boolean & {\em \$format\+Data} & Should formatting be applied to cell values? \\
+\hline
+boolean & {\em \$return\+Cell\+Ref} & False -\/ Return a simple array of rows and columns indexed by number counting from zero True -\/ Return rows and columns indexed by their actual row and column I\+Ds \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!protect\+Cells@{protect\+Cells}}
+\index{protect\+Cells@{protect\+Cells}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{protect\+Cells}]{\setlength{\rightskip}{0pt plus 5cm}protect\+Cells (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Range = {\ttfamily 'A1'}, }
+\item[{}]{\$p\+Password = {\ttfamily ''}, }
+\item[{}]{\$p\+Already\+Hashed = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a5affc76110ca89cae358b7211f674ea8}
+Set protection on a cell range
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Range} & Cell (e.\+g. A1) or cell range (e.\+g. A1\+:E1) \\
+\hline
+string & {\em \$p\+Password} & Password to unlock the protection \\
+\hline
+boolean & {\em \$p\+Already\+Hashed} & If the password has already been hashed, set this to true \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!protect\+Cells\+By\+Column\+And\+Row@{protect\+Cells\+By\+Column\+And\+Row}}
+\index{protect\+Cells\+By\+Column\+And\+Row@{protect\+Cells\+By\+Column\+And\+Row}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{protect\+Cells\+By\+Column\+And\+Row}]{\setlength{\rightskip}{0pt plus 5cm}protect\+Cells\+By\+Column\+And\+Row (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Column1 = {\ttfamily 0}, }
+\item[{}]{\$p\+Row1 = {\ttfamily 1}, }
+\item[{}]{\$p\+Column2 = {\ttfamily 0}, }
+\item[{}]{\$p\+Row2 = {\ttfamily 1}, }
+\item[{}]{\$p\+Password = {\ttfamily ''}, }
+\item[{}]{\$p\+Already\+Hashed = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a8c837a5b0d5e8f10c5af71ad11560188}
+Set protection on a cell range by using numeric cell coordinates
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$p\+Column1} & Numeric column coordinate of the first cell \\
+\hline
+int & {\em \$p\+Row1} & Numeric row coordinate of the first cell \\
+\hline
+int & {\em \$p\+Column2} & Numeric column coordinate of the last cell \\
+\hline
+int & {\em \$p\+Row2} & Numeric row coordinate of the last cell \\
+\hline
+string & {\em \$p\+Password} & Password to unlock the protection \\
+\hline
+boolean & {\em \$p\+Already\+Hashed} & If the password has already been hashed, set this to true \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!range\+To\+Array@{range\+To\+Array}}
+\index{range\+To\+Array@{range\+To\+Array}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{range\+To\+Array}]{\setlength{\rightskip}{0pt plus 5cm}range\+To\+Array (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Range = {\ttfamily 'A1'}, }
+\item[{}]{\$null\+Value = {\ttfamily null}, }
+\item[{}]{\$calculate\+Formulas = {\ttfamily true}, }
+\item[{}]{\$format\+Data = {\ttfamily true}, }
+\item[{}]{\$return\+Cell\+Ref = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_adae9e90615c473a3a12c34f7f691e44f}
+Create array from a range of cells
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Range} & Range of cells (i.\+e. \char`\"{}\+A1\+:\+B10\char`\"{}), or just one cell (i.\+e. \char`\"{}\+A1\char`\"{}) \\
+\hline
+mixed & {\em \$null\+Value} & Value returned in the array entry if a cell doesn't exist \\
+\hline
+boolean & {\em \$calculate\+Formulas} & Should formulas be calculated? \\
+\hline
+boolean & {\em \$format\+Data} & Should formatting be applied to cell values? \\
+\hline
+boolean & {\em \$return\+Cell\+Ref} & False -\/ Return a simple array of rows and columns indexed by number counting from zero True -\/ Return rows and columns indexed by their actual row and column I\+Ds \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!rebind\+Parent@{rebind\+Parent}}
+\index{rebind\+Parent@{rebind\+Parent}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{rebind\+Parent}]{\setlength{\rightskip}{0pt plus 5cm}rebind\+Parent (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+H\+P\+Excel}}]{\$parent}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_acf9b1d52bcb4107b2a3ae6d3fe05f844}
+Re-\/bind parent
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxyref{P\+H\+P\+Excel}{p.}{class_p_h_p_excel} & {\em \$parent} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!refresh\+Column\+Dimensions@{refresh\+Column\+Dimensions}}
+\index{refresh\+Column\+Dimensions@{refresh\+Column\+Dimensions}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{refresh\+Column\+Dimensions}]{\setlength{\rightskip}{0pt plus 5cm}refresh\+Column\+Dimensions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a2cd9326497a6c4478a0e709d54f78f77}
+Refresh column dimensions
+
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!refresh\+Row\+Dimensions@{refresh\+Row\+Dimensions}}
+\index{refresh\+Row\+Dimensions@{refresh\+Row\+Dimensions}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{refresh\+Row\+Dimensions}]{\setlength{\rightskip}{0pt plus 5cm}refresh\+Row\+Dimensions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a4f1923632e44d963428d816f89221749}
+Refresh row dimensions
+
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!remove\+Auto\+Filter@{remove\+Auto\+Filter}}
+\index{remove\+Auto\+Filter@{remove\+Auto\+Filter}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{remove\+Auto\+Filter}]{\setlength{\rightskip}{0pt plus 5cm}remove\+Auto\+Filter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a313b07544d2c6edfa23e1ca4b87d9f45}
+Remove autofilter
+
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!remove\+Column@{remove\+Column}}
+\index{remove\+Column@{remove\+Column}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{remove\+Column}]{\setlength{\rightskip}{0pt plus 5cm}remove\+Column (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Column = {\ttfamily 'A'}, }
+\item[{}]{\$p\+Num\+Cols = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_af6093c64dddad3c08fa8c50cab771ba3}
+Remove a column, updating all possible related data
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$p\+Column} & Remove starting with this one \\
+\hline
+int & {\em \$p\+Num\+Cols} & Number of columns to remove \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!remove\+Column\+By\+Index@{remove\+Column\+By\+Index}}
+\index{remove\+Column\+By\+Index@{remove\+Column\+By\+Index}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{remove\+Column\+By\+Index}]{\setlength{\rightskip}{0pt plus 5cm}remove\+Column\+By\+Index (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Column = {\ttfamily 0}, }
+\item[{}]{\$p\+Num\+Cols = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a9157768a5a901db6c6c1ce8b81ae9f5c}
+Remove a column, updating all possible related data
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$p\+Column} & Remove starting with this one (numeric column coordinate of the cell) \\
+\hline
+int & {\em \$p\+Num\+Cols} & Number of columns to remove \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!remove\+Conditional\+Styles@{remove\+Conditional\+Styles}}
+\index{remove\+Conditional\+Styles@{remove\+Conditional\+Styles}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{remove\+Conditional\+Styles}]{\setlength{\rightskip}{0pt plus 5cm}remove\+Conditional\+Styles (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Coordinate = {\ttfamily 'A1'}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a059d4a48e020c2ee4a6e21270403d57b}
+Removes conditional styles for a cell
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Coordinate} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!remove\+Row@{remove\+Row}}
+\index{remove\+Row@{remove\+Row}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{remove\+Row}]{\setlength{\rightskip}{0pt plus 5cm}remove\+Row (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Row = {\ttfamily 1}, }
+\item[{}]{\$p\+Num\+Rows = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_ad5ce68ac7d3474b149a97839a91fec08}
+Delete a row, updating all possible related data
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$p\+Row} & Remove starting with this one \\
+\hline
+int & {\em \$p\+Num\+Rows} & Number of rows to remove \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!reset\+Tab\+Color@{reset\+Tab\+Color}}
+\index{reset\+Tab\+Color@{reset\+Tab\+Color}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{reset\+Tab\+Color}]{\setlength{\rightskip}{0pt plus 5cm}reset\+Tab\+Color (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_ad9322a1197c242f9ee93806d124a47e0}
+Reset tab color
+
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!set\+Auto\+Filter@{set\+Auto\+Filter}}
+\index{set\+Auto\+Filter@{set\+Auto\+Filter}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{set\+Auto\+Filter}]{\setlength{\rightskip}{0pt plus 5cm}set\+Auto\+Filter (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Value}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a7a6a77f6c42cc0d66d02d5b6647e6be7}
+Set Auto\+Filter
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Auto\+Filter}{p.}{class_p_h_p_excel___worksheet___auto_filter} | string & {\em \$p\+Value} & A simple string containing a Cell range like 'A1\+:E10' is permitted for backward compatibility \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!set\+Auto\+Filter\+By\+Column\+And\+Row@{set\+Auto\+Filter\+By\+Column\+And\+Row}}
+\index{set\+Auto\+Filter\+By\+Column\+And\+Row@{set\+Auto\+Filter\+By\+Column\+And\+Row}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{set\+Auto\+Filter\+By\+Column\+And\+Row}]{\setlength{\rightskip}{0pt plus 5cm}set\+Auto\+Filter\+By\+Column\+And\+Row (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Column1 = {\ttfamily 0}, }
+\item[{}]{\$p\+Row1 = {\ttfamily 1}, }
+\item[{}]{\$p\+Column2 = {\ttfamily 0}, }
+\item[{}]{\$p\+Row2 = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_ab62464f7233eee742e99eeef2605896b}
+Set Autofilter Range by using numeric cell coordinates
+
+
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$p\+Column1} & Numeric column coordinate of the first cell \\
+\hline
+integer & {\em \$p\+Row1} & Numeric row coordinate of the first cell \\
+\hline
+integer & {\em \$p\+Column2} & Numeric column coordinate of the second cell \\
+\hline
+integer & {\em \$p\+Row2} & Numeric row coordinate of the second cell \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!set\+Break@{set\+Break}}
+\index{set\+Break@{set\+Break}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{set\+Break}]{\setlength{\rightskip}{0pt plus 5cm}set\+Break (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Cell = {\ttfamily 'A1'}, }
+\item[{}]{\$p\+Break = {\ttfamily PHPExcel\+\_\+Worksheet\+:\+:BREAK\+\_\+NONE}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a827f3d502c81a294756ef3503aae34e2}
+Set break on a cell
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Cell} & Cell coordinate (e.\+g. A1) \\
+\hline
+int & {\em \$p\+Break} & Break type (type of P\+H\+P\+Excel\+\_\+\+Worksheet\+::\+B\+R\+E\+A\+K\+\_\+$\ast$) \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!set\+Break\+By\+Column\+And\+Row@{set\+Break\+By\+Column\+And\+Row}}
+\index{set\+Break\+By\+Column\+And\+Row@{set\+Break\+By\+Column\+And\+Row}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{set\+Break\+By\+Column\+And\+Row}]{\setlength{\rightskip}{0pt plus 5cm}set\+Break\+By\+Column\+And\+Row (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Column = {\ttfamily 0}, }
+\item[{}]{\$p\+Row = {\ttfamily 1}, }
+\item[{}]{\$p\+Break = {\ttfamily PHPExcel\+\_\+Worksheet\+:\+:BREAK\+\_\+NONE}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a3200d6148ccb137d6d0e520a0a17a58e}
+Set break on a cell by using numeric cell coordinates
+
+
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$p\+Column} & Numeric column coordinate of the cell \\
+\hline
+integer & {\em \$p\+Row} & Numeric row coordinate of the cell \\
+\hline
+integer & {\em \$p\+Break} & Break type (type of P\+H\+P\+Excel\+\_\+\+Worksheet\+::\+B\+R\+E\+A\+K\+\_\+$\ast$) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!set\+Cell\+Value@{set\+Cell\+Value}}
+\index{set\+Cell\+Value@{set\+Cell\+Value}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{set\+Cell\+Value}]{\setlength{\rightskip}{0pt plus 5cm}set\+Cell\+Value (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Coordinate = {\ttfamily 'A1'}, }
+\item[{}]{\$p\+Value = {\ttfamily null}, }
+\item[{}]{\$return\+Cell = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a32d39fa31894da916b6b574af0109bcf}
+Set a cell value
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Coordinate} & Coordinate of the cell \\
+\hline
+mixed & {\em \$p\+Value} & Value of the cell \\
+\hline
+bool & {\em \$return\+Cell} & Return the worksheet (false, default) or the cell (true) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+P\+H\+P\+Excel\+\_\+\+Worksheet$\vert$\+P\+H\+P\+Excel\+\_\+\+Cell Depending on the last parameter being specified 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!set\+Cell\+Value\+By\+Column\+And\+Row@{set\+Cell\+Value\+By\+Column\+And\+Row}}
+\index{set\+Cell\+Value\+By\+Column\+And\+Row@{set\+Cell\+Value\+By\+Column\+And\+Row}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{set\+Cell\+Value\+By\+Column\+And\+Row}]{\setlength{\rightskip}{0pt plus 5cm}set\+Cell\+Value\+By\+Column\+And\+Row (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Column = {\ttfamily 0}, }
+\item[{}]{\$p\+Row = {\ttfamily 1}, }
+\item[{}]{\$p\+Value = {\ttfamily null}, }
+\item[{}]{\$return\+Cell = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a7f04970c0f367366ec42f137b00f2855}
+Set a cell value by using numeric cell coordinates
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Column} & Numeric column coordinate of the cell (A = 0) \\
+\hline
+string & {\em \$p\+Row} & Numeric row coordinate of the cell \\
+\hline
+mixed & {\em \$p\+Value} & Value of the cell \\
+\hline
+bool & {\em \$return\+Cell} & Return the worksheet (false, default) or the cell (true) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+P\+H\+P\+Excel\+\_\+\+Worksheet$\vert$\+P\+H\+P\+Excel\+\_\+\+Cell Depending on the last parameter being specified 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!set\+Cell\+Value\+Explicit@{set\+Cell\+Value\+Explicit}}
+\index{set\+Cell\+Value\+Explicit@{set\+Cell\+Value\+Explicit}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{set\+Cell\+Value\+Explicit}]{\setlength{\rightskip}{0pt plus 5cm}set\+Cell\+Value\+Explicit (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Coordinate = {\ttfamily 'A1'}, }
+\item[{}]{\$p\+Value = {\ttfamily null}, }
+\item[{}]{\$p\+Data\+Type = {\ttfamily PHPExcel\+\_\+Cell\+\_\+DataType\+:\+:TYPE\+\_\+STRING}, }
+\item[{}]{\$return\+Cell = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a80ae02d10b868e10b49d0c73ea300815}
+Set a cell value
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Coordinate} & Coordinate of the cell \\
+\hline
+mixed & {\em \$p\+Value} & Value of the cell \\
+\hline
+string & {\em \$p\+Data\+Type} & Explicit data type \\
+\hline
+bool & {\em \$return\+Cell} & Return the worksheet (false, default) or the cell (true) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+P\+H\+P\+Excel\+\_\+\+Worksheet$\vert$\+P\+H\+P\+Excel\+\_\+\+Cell Depending on the last parameter being specified 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!set\+Cell\+Value\+Explicit\+By\+Column\+And\+Row@{set\+Cell\+Value\+Explicit\+By\+Column\+And\+Row}}
+\index{set\+Cell\+Value\+Explicit\+By\+Column\+And\+Row@{set\+Cell\+Value\+Explicit\+By\+Column\+And\+Row}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{set\+Cell\+Value\+Explicit\+By\+Column\+And\+Row}]{\setlength{\rightskip}{0pt plus 5cm}set\+Cell\+Value\+Explicit\+By\+Column\+And\+Row (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Column = {\ttfamily 0}, }
+\item[{}]{\$p\+Row = {\ttfamily 1}, }
+\item[{}]{\$p\+Value = {\ttfamily null}, }
+\item[{}]{\$p\+Data\+Type = {\ttfamily PHPExcel\+\_\+Cell\+\_\+DataType\+:\+:TYPE\+\_\+STRING}, }
+\item[{}]{\$return\+Cell = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a87fa06db4e88dad4f302b25da1b5a551}
+Set a cell value by using numeric cell coordinates
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Column} & Numeric column coordinate of the cell \\
+\hline
+string & {\em \$p\+Row} & Numeric row coordinate of the cell \\
+\hline
+mixed & {\em \$p\+Value} & Value of the cell \\
+\hline
+string & {\em \$p\+Data\+Type} & Explicit data type \\
+\hline
+bool & {\em \$return\+Cell} & Return the worksheet (false, default) or the cell (true) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+P\+H\+P\+Excel\+\_\+\+Worksheet$\vert$\+P\+H\+P\+Excel\+\_\+\+Cell Depending on the last parameter being specified 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!set\+Code\+Name@{set\+Code\+Name}}
+\index{set\+Code\+Name@{set\+Code\+Name}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{set\+Code\+Name}]{\setlength{\rightskip}{0pt plus 5cm}set\+Code\+Name (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Value = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_addc3b51bdbcad4fb6f979aa442870138}
+Define the code name of the sheet
+
+
+\begin{DoxyParams}{Parameters}
+{\em null$\vert$string} & Same rule as Title minus space not allowed (but, like Excel, change silently space to underscore) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+obj\+Worksheet 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!set\+Comments@{set\+Comments}}
+\index{set\+Comments@{set\+Comments}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{set\+Comments}]{\setlength{\rightskip}{0pt plus 5cm}set\+Comments (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Value = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a4dbfac89be4e889d988dfaacd43a8eff}
+Set comments array for the entire sheet.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & of \doxyref{P\+H\+P\+Excel\+\_\+\+Comment}{p.}{class_p_h_p_excel___comment} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!set\+Conditional\+Styles@{set\+Conditional\+Styles}}
+\index{set\+Conditional\+Styles@{set\+Conditional\+Styles}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{set\+Conditional\+Styles}]{\setlength{\rightskip}{0pt plus 5cm}set\+Conditional\+Styles (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Coordinate = {\ttfamily 'A1'}, }
+\item[{}]{\$p\+Value}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a181cfb6842d21dc128a7ef56c21426c0}
+Set conditional styles
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$p\+Coordinate} & string E.\+g. 'A1' \\
+\hline
+{\em \$p\+Value} & \doxyref{P\+H\+P\+Excel\+\_\+\+Style\+\_\+\+Conditional}{p.}{class_p_h_p_excel___style___conditional}[] \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!set\+Data\+Validation@{set\+Data\+Validation}}
+\index{set\+Data\+Validation@{set\+Data\+Validation}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{set\+Data\+Validation}]{\setlength{\rightskip}{0pt plus 5cm}set\+Data\+Validation (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Cell\+Coordinate = {\ttfamily 'A1'}, }
+\item[{{\bf P\+H\+P\+Excel\+\_\+\+Cell\+\_\+\+Data\+Validation}}]{\$p\+Data\+Validation = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_abbd2a74c3a4ef60861efb77cdf932450}
+Set data validation
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Cell\+Coordinate} & Cell coordinate to insert data validation \\
+\hline
+\doxyref{P\+H\+P\+Excel\+\_\+\+Cell\+\_\+\+Data\+Validation}{p.}{class_p_h_p_excel___cell___data_validation} & {\em \$p\+Data\+Validation} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!set\+Default\+Style@{set\+Default\+Style}}
+\index{set\+Default\+Style@{set\+Default\+Style}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{set\+Default\+Style}]{\setlength{\rightskip}{0pt plus 5cm}set\+Default\+Style (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+H\+P\+Excel\+\_\+\+Style}}]{\$p\+Value}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_aafa763aa28d05bf58eed021f54604572}
+Set default style -\/ should only be used by P\+H\+P\+Excel\+\_\+\+I\+Reader implementations!
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[{\bf Deprecated}]
+\begin{DoxyParams}[1]{Parameters}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Style}{p.}{class_p_h_p_excel___style} & {\em \$p\+Value} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+\end{DoxyRefDesc}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!set\+Header\+Footer@{set\+Header\+Footer}}
+\index{set\+Header\+Footer@{set\+Header\+Footer}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{set\+Header\+Footer}]{\setlength{\rightskip}{0pt plus 5cm}set\+Header\+Footer (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Header\+Footer}}]{\$p\+Value}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_ad9d92887a9d519f8379bff16f0d6c5f2}
+Set page header/footer
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Header\+Footer}{p.}{class_p_h_p_excel___worksheet___header_footer} & {\em \$p\+Value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!set\+Hyperlink@{set\+Hyperlink}}
+\index{set\+Hyperlink@{set\+Hyperlink}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{set\+Hyperlink}]{\setlength{\rightskip}{0pt plus 5cm}set\+Hyperlink (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Cell\+Coordinate = {\ttfamily 'A1'}, }
+\item[{{\bf P\+H\+P\+Excel\+\_\+\+Cell\+\_\+\+Hyperlink}}]{\$p\+Hyperlink = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a3f84ad3e605e79cdbaa0fc128aea6cbd}
+Set hyperlnk
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Cell\+Coordinate} & Cell coordinate to insert hyperlink \\
+\hline
+\doxyref{P\+H\+P\+Excel\+\_\+\+Cell\+\_\+\+Hyperlink}{p.}{class_p_h_p_excel___cell___hyperlink} & {\em \$p\+Hyperlink} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!set\+Merge\+Cells@{set\+Merge\+Cells}}
+\index{set\+Merge\+Cells@{set\+Merge\+Cells}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{set\+Merge\+Cells}]{\setlength{\rightskip}{0pt plus 5cm}set\+Merge\+Cells (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Value = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a1200ac914342cbb328c96ad1f21d211a}
+Set merge cells array for the entire sheet. Use instead \doxyref{merge\+Cells()}{p.}{class_p_h_p_excel___worksheet_a2a0a29c8b56a3da6208cafc8e1556f49} to merge a single cell range.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & \\
+\hline
+\end{DoxyParams}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!set\+Page\+Margins@{set\+Page\+Margins}}
+\index{set\+Page\+Margins@{set\+Page\+Margins}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{set\+Page\+Margins}]{\setlength{\rightskip}{0pt plus 5cm}set\+Page\+Margins (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Page\+Margins}}]{\$p\+Value}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a47a46f185974d4c30930910db54fe6fd}
+Set page margins
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Page\+Margins}{p.}{class_p_h_p_excel___worksheet___page_margins} & {\em \$p\+Value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!set\+Page\+Setup@{set\+Page\+Setup}}
+\index{set\+Page\+Setup@{set\+Page\+Setup}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{set\+Page\+Setup}]{\setlength{\rightskip}{0pt plus 5cm}set\+Page\+Setup (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Page\+Setup}}]{\$p\+Value}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a3fb4189901f14f5798b6650549913d16}
+Set page setup
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Page\+Setup}{p.}{class_p_h_p_excel___worksheet___page_setup} & {\em \$p\+Value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!set\+Print\+Gridlines@{set\+Print\+Gridlines}}
+\index{set\+Print\+Gridlines@{set\+Print\+Gridlines}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{set\+Print\+Gridlines}]{\setlength{\rightskip}{0pt plus 5cm}set\+Print\+Gridlines (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Value = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a1f43d0e674f6d061291f5fee3f3dd71c}
+Set print gridlines
+
+
+\begin{DoxyParams}[1]{Parameters}
+boolean & {\em \$p\+Value} & Print gridlines (true/false) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!set\+Protection@{set\+Protection}}
+\index{set\+Protection@{set\+Protection}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{set\+Protection}]{\setlength{\rightskip}{0pt plus 5cm}set\+Protection (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Protection}}]{\$p\+Value}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a288e81324ccd6e92dfb1239b256719ae}
+Set Protection
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Protection}{p.}{class_p_h_p_excel___worksheet___protection} & {\em \$p\+Value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!set\+Right\+To\+Left@{set\+Right\+To\+Left}}
+\index{set\+Right\+To\+Left@{set\+Right\+To\+Left}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{set\+Right\+To\+Left}]{\setlength{\rightskip}{0pt plus 5cm}set\+Right\+To\+Left (
+\begin{DoxyParamCaption}
+\item[{}]{\$value = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_acc6d02d0b5420f5d9caacedb36694022}
+Set right-\/to-\/left
+
+
+\begin{DoxyParams}[1]{Parameters}
+boolean & {\em \$value} & Right-\/to-\/left true/false \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!set\+Selected\+Cell@{set\+Selected\+Cell}}
+\index{set\+Selected\+Cell@{set\+Selected\+Cell}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{set\+Selected\+Cell}]{\setlength{\rightskip}{0pt plus 5cm}set\+Selected\+Cell (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Coordinate = {\ttfamily 'A1'}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a5196662c1c2824b57960d60cdb0270ef}
+Selected cell
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Coordinate} & Cell (i.\+e. A1) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!set\+Selected\+Cell\+By\+Column\+And\+Row@{set\+Selected\+Cell\+By\+Column\+And\+Row}}
+\index{set\+Selected\+Cell\+By\+Column\+And\+Row@{set\+Selected\+Cell\+By\+Column\+And\+Row}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{set\+Selected\+Cell\+By\+Column\+And\+Row}]{\setlength{\rightskip}{0pt plus 5cm}set\+Selected\+Cell\+By\+Column\+And\+Row (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Column = {\ttfamily 0}, }
+\item[{}]{\$p\+Row = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a84ce3640c8c7af1589becfab855ff292}
+Selected cell by using numeric cell coordinates
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$p\+Column} & Numeric column coordinate of the cell \\
+\hline
+int & {\em \$p\+Row} & Numeric row coordinate of the cell \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!set\+Selected\+Cells@{set\+Selected\+Cells}}
+\index{set\+Selected\+Cells@{set\+Selected\+Cells}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{set\+Selected\+Cells}]{\setlength{\rightskip}{0pt plus 5cm}set\+Selected\+Cells (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Coordinate = {\ttfamily 'A1'}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a9c7e1becadae2dee36d1c527533dfb73}
+Select a range of cells.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Coordinate} & Cell range, examples\+: 'A1', 'B2\+:G5', 'A\+:C', '3\+:6' \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!set\+Shared\+Style@{set\+Shared\+Style}}
+\index{set\+Shared\+Style@{set\+Shared\+Style}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{set\+Shared\+Style}]{\setlength{\rightskip}{0pt plus 5cm}set\+Shared\+Style (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+H\+P\+Excel\+\_\+\+Style}}]{\$p\+Shared\+Cell\+Style = {\ttfamily null}, }
+\item[{}]{\$p\+Range = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a7afe627d04c16bf1943621cebc7dfec1}
+Set shared cell style to a range of cells
+
+Please note that this will overwrite existing cell styles for cells in range!
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[{\bf Deprecated}]
+\begin{DoxyParams}[1]{Parameters}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Style}{p.}{class_p_h_p_excel___style} & {\em \$p\+Shared\+Cell\+Style} & Cell style to share \\
+\hline
+string & {\em \$p\+Range} & Range of cells (i.\+e. \char`\"{}\+A1\+:\+B10\char`\"{}), or just one cell (i.\+e. \char`\"{}\+A1\char`\"{}) \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+\end{DoxyRefDesc}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!set\+Sheet\+State@{set\+Sheet\+State}}
+\index{set\+Sheet\+State@{set\+Sheet\+State}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{set\+Sheet\+State}]{\setlength{\rightskip}{0pt plus 5cm}set\+Sheet\+State (
+\begin{DoxyParamCaption}
+\item[{}]{\$value = {\ttfamily PHPExcel\+\_\+Worksheet\+:\+:SHEETSTATE\+\_\+VISIBLE}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a78661f3896c2ff01308b0f8108094f88}
+Set sheet state
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & Sheet state (visible, hidden, very\+Hidden) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!set\+Sheet\+View@{set\+Sheet\+View}}
+\index{set\+Sheet\+View@{set\+Sheet\+View}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{set\+Sheet\+View}]{\setlength{\rightskip}{0pt plus 5cm}set\+Sheet\+View (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Sheet\+View}}]{\$p\+Value}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a5d4ab33ba0c195157a159c53f956f148}
+Set sheet view
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet\+\_\+\+Sheet\+View}{p.}{class_p_h_p_excel___worksheet___sheet_view} & {\em \$p\+Value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!set\+Show\+Gridlines@{set\+Show\+Gridlines}}
+\index{set\+Show\+Gridlines@{set\+Show\+Gridlines}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{set\+Show\+Gridlines}]{\setlength{\rightskip}{0pt plus 5cm}set\+Show\+Gridlines (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Value = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_ac13b5222ebb1db0f083da788cd739853}
+Set show gridlines
+
+
+\begin{DoxyParams}[1]{Parameters}
+boolean & {\em \$p\+Value} & Show gridlines (true/false) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!set\+Show\+Row\+Col\+Headers@{set\+Show\+Row\+Col\+Headers}}
+\index{set\+Show\+Row\+Col\+Headers@{set\+Show\+Row\+Col\+Headers}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{set\+Show\+Row\+Col\+Headers}]{\setlength{\rightskip}{0pt plus 5cm}set\+Show\+Row\+Col\+Headers (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Value = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_afb70f12da8038d5479581d19c11e7e1e}
+Set show row and column headers
+
+
+\begin{DoxyParams}[1]{Parameters}
+boolean & {\em \$p\+Value} & Show row and column headers (true/false) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!set\+Show\+Summary\+Below@{set\+Show\+Summary\+Below}}
+\index{set\+Show\+Summary\+Below@{set\+Show\+Summary\+Below}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{set\+Show\+Summary\+Below}]{\setlength{\rightskip}{0pt plus 5cm}set\+Show\+Summary\+Below (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Value = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a049592fbe7e08ebd5dce567ca2ad68f3}
+Set show summary below
+
+
+\begin{DoxyParams}[1]{Parameters}
+boolean & {\em \$p\+Value} & Show summary below (true/false) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!set\+Show\+Summary\+Right@{set\+Show\+Summary\+Right}}
+\index{set\+Show\+Summary\+Right@{set\+Show\+Summary\+Right}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{set\+Show\+Summary\+Right}]{\setlength{\rightskip}{0pt plus 5cm}set\+Show\+Summary\+Right (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Value = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_ae130a4d9806f5b430188914e916dc2c4}
+Set show summary right
+
+
+\begin{DoxyParams}[1]{Parameters}
+boolean & {\em \$p\+Value} & Show summary right (true/false) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!set\+Title@{set\+Title}}
+\index{set\+Title@{set\+Title}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{set\+Title}]{\setlength{\rightskip}{0pt plus 5cm}set\+Title (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Value = {\ttfamily 'Worksheet'}, }
+\item[{}]{\$update\+Formula\+Cell\+References = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_ade6060eae547b7c8b2cf13dd1e1dc333}
+Set title
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Value} & String containing the dimension of this worksheet \\
+\hline
+string & {\em \$update\+Formula\+Cell\+References} & boolean Flag indicating whether cell references in formulae should be updated to reflect the new sheet name. This should be left as the default true, unless you are certain that no formula cells on any worksheet contain references to this worksheet \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!shrink\+Range\+To\+Fit@{shrink\+Range\+To\+Fit}}
+\index{shrink\+Range\+To\+Fit@{shrink\+Range\+To\+Fit}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{shrink\+Range\+To\+Fit}]{\setlength{\rightskip}{0pt plus 5cm}shrink\+Range\+To\+Fit (
+\begin{DoxyParamCaption}
+\item[{}]{\$range}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a6e68fafc733299430420ae0af18cf1b8}
+Accepts a range, returning it as a range that falls within the current highest row and column of the worksheet
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$range} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Adjusted range value 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!sort\+Cell\+Collection@{sort\+Cell\+Collection}}
+\index{sort\+Cell\+Collection@{sort\+Cell\+Collection}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{sort\+Cell\+Collection}]{\setlength{\rightskip}{0pt plus 5cm}sort\+Cell\+Collection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a36a4eafcae2e571d703a607ab71c21ed}
+Sort collection of cells
+
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!to\+Array@{to\+Array}}
+\index{to\+Array@{to\+Array}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{to\+Array}]{\setlength{\rightskip}{0pt plus 5cm}to\+Array (
+\begin{DoxyParamCaption}
+\item[{}]{\$null\+Value = {\ttfamily null}, }
+\item[{}]{\$calculate\+Formulas = {\ttfamily true}, }
+\item[{}]{\$format\+Data = {\ttfamily true}, }
+\item[{}]{\$return\+Cell\+Ref = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a1605df08d923e8b20f855ddee439d032}
+Create array from worksheet
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$null\+Value} & Value returned in the array entry if a cell doesn't exist \\
+\hline
+boolean & {\em \$calculate\+Formulas} & Should formulas be calculated? \\
+\hline
+boolean & {\em \$format\+Data} & Should formatting be applied to cell values? \\
+\hline
+boolean & {\em \$return\+Cell\+Ref} & False -\/ Return a simple array of rows and columns indexed by number counting from zero True -\/ Return rows and columns indexed by their actual row and column I\+Ds \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!unfreeze\+Pane@{unfreeze\+Pane}}
+\index{unfreeze\+Pane@{unfreeze\+Pane}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{unfreeze\+Pane}]{\setlength{\rightskip}{0pt plus 5cm}unfreeze\+Pane (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a5b79897f4bc5771eb20d4e114d9708f8}
+Unfreeze Pane
+
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!unmerge\+Cells@{unmerge\+Cells}}
+\index{unmerge\+Cells@{unmerge\+Cells}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{unmerge\+Cells}]{\setlength{\rightskip}{0pt plus 5cm}unmerge\+Cells (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Range = {\ttfamily 'A1\+:A1'}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a244f55fe581b7fbc88b36d8b84c0f34a}
+Remove merge on a cell range
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Range} & Cell range (e.\+g. A1\+:E1) \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!unmerge\+Cells\+By\+Column\+And\+Row@{unmerge\+Cells\+By\+Column\+And\+Row}}
+\index{unmerge\+Cells\+By\+Column\+And\+Row@{unmerge\+Cells\+By\+Column\+And\+Row}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{unmerge\+Cells\+By\+Column\+And\+Row}]{\setlength{\rightskip}{0pt plus 5cm}unmerge\+Cells\+By\+Column\+And\+Row (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Column1 = {\ttfamily 0}, }
+\item[{}]{\$p\+Row1 = {\ttfamily 1}, }
+\item[{}]{\$p\+Column2 = {\ttfamily 0}, }
+\item[{}]{\$p\+Row2 = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_a2cfb3e9c77cb57f1356b7ccf990bbc04}
+Remove merge on a cell range by using numeric cell coordinates
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$p\+Column1} & Numeric column coordinate of the first cell \\
+\hline
+int & {\em \$p\+Row1} & Numeric row coordinate of the first cell \\
+\hline
+int & {\em \$p\+Column2} & Numeric column coordinate of the last cell \\
+\hline
+int & {\em \$p\+Row2} & Numeric row coordinate of the last cell \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!unprotect\+Cells@{unprotect\+Cells}}
+\index{unprotect\+Cells@{unprotect\+Cells}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{unprotect\+Cells}]{\setlength{\rightskip}{0pt plus 5cm}unprotect\+Cells (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Range = {\ttfamily 'A1'}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_aeb806217d2e22f96d449338d0ec0f1a4}
+Remove protection on a cell range
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Range} & Cell (e.\+g. A1) or cell range (e.\+g. A1\+:E1) \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}!unprotect\+Cells\+By\+Column\+And\+Row@{unprotect\+Cells\+By\+Column\+And\+Row}}
+\index{unprotect\+Cells\+By\+Column\+And\+Row@{unprotect\+Cells\+By\+Column\+And\+Row}!P\+H\+P\+Excel\+\_\+\+Worksheet@{P\+H\+P\+Excel\+\_\+\+Worksheet}}
+\subsubsection[{unprotect\+Cells\+By\+Column\+And\+Row}]{\setlength{\rightskip}{0pt plus 5cm}unprotect\+Cells\+By\+Column\+And\+Row (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Column1 = {\ttfamily 0}, }
+\item[{}]{\$p\+Row1 = {\ttfamily 1}, }
+\item[{}]{\$p\+Column2 = {\ttfamily 0}, }
+\item[{}]{\$p\+Row2 = {\ttfamily 1}, }
+\item[{}]{\$p\+Password = {\ttfamily ''}, }
+\item[{}]{\$p\+Already\+Hashed = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___worksheet_abdedc1f30c73c74ecf2cd35aa0a23f29}
+Remove protection on a cell range by using numeric cell coordinates
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$p\+Column1} & Numeric column coordinate of the first cell \\
+\hline
+int & {\em \$p\+Row1} & Numeric row coordinate of the first cell \\
+\hline
+int & {\em \$p\+Column2} & Numeric column coordinate of the last cell \\
+\hline
+int & {\em \$p\+Row2} & Numeric row coordinate of the last cell \\
+\hline
+string & {\em \$p\+Password} & Password to unlock the protection \\
+\hline
+boolean & {\em \$p\+Already\+Hashed} & If the password has already been hashed, set this to true \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/var/www/workspace/\+O\+D\+I-\/\+P\+R\+O\+J\+E\+C\+T/model/\+P\+H\+P\+Excel/\+Classes/\+P\+H\+P\+Excel/Worksheet.\+php\end{DoxyCompactItemize}

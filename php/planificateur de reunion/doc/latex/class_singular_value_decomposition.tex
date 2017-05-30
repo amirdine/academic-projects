@@ -1,0 +1,135 @@
+\section{Singular\+Value\+Decomposition Class Reference}
+\label{class_singular_value_decomposition}\index{Singular\+Value\+Decomposition@{Singular\+Value\+Decomposition}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf \+\_\+\+\_\+construct} (\$Arg)
+\item 
+{\bf get\+U} ()
+\item 
+{\bf get\+V} ()
+\item 
+{\bf get\+Singular\+Values} ()
+\item 
+{\bf get\+S} ()
+\item 
+{\bf norm2} ()
+\item 
+{\bf cond} ()
+\item 
+{\bf rank} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Singular\+Value\+Decomposition@{Singular\+Value\+Decomposition}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!Singular\+Value\+Decomposition@{Singular\+Value\+Decomposition}}
+\subsubsection[{\+\_\+\+\_\+construct}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+\item[{}]{\$\+Arg}
+\end{DoxyParamCaption}
+)}\label{class_singular_value_decomposition_aad04401937c318eb9bce0ecb35b4a4ce}
+Construct the singular value decomposition
+
+Derived from L\+I\+N\+P\+A\+C\+K code.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$\+A} & Rectangular matrix \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Structure to access U, S and V. 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\index{Singular\+Value\+Decomposition@{Singular\+Value\+Decomposition}!cond@{cond}}
+\index{cond@{cond}!Singular\+Value\+Decomposition@{Singular\+Value\+Decomposition}}
+\subsubsection[{cond}]{\setlength{\rightskip}{0pt plus 5cm}cond (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_singular_value_decomposition_afb2b26a097a098f724c1ea7ebd406d88}
+Two norm condition number
+
+public \begin{DoxyReturn}{Returns}
+max(\+S)/min(S) 
+\end{DoxyReturn}
+\index{Singular\+Value\+Decomposition@{Singular\+Value\+Decomposition}!get\+S@{get\+S}}
+\index{get\+S@{get\+S}!Singular\+Value\+Decomposition@{Singular\+Value\+Decomposition}}
+\subsubsection[{get\+S}]{\setlength{\rightskip}{0pt plus 5cm}get\+S (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_singular_value_decomposition_a3041929ba693140726780ff0ea2b2e40}
+Return the diagonal matrix of singular values
+
+public \begin{DoxyReturn}{Returns}
+S 
+\end{DoxyReturn}
+\index{Singular\+Value\+Decomposition@{Singular\+Value\+Decomposition}!get\+Singular\+Values@{get\+Singular\+Values}}
+\index{get\+Singular\+Values@{get\+Singular\+Values}!Singular\+Value\+Decomposition@{Singular\+Value\+Decomposition}}
+\subsubsection[{get\+Singular\+Values}]{\setlength{\rightskip}{0pt plus 5cm}get\+Singular\+Values (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_singular_value_decomposition_ac418d919aa83c7ee6f5f40fe9ff46a74}
+Return the one-\/dimensional array of singular values
+
+public \begin{DoxyReturn}{Returns}
+diagonal of S. 
+\end{DoxyReturn}
+\index{Singular\+Value\+Decomposition@{Singular\+Value\+Decomposition}!get\+U@{get\+U}}
+\index{get\+U@{get\+U}!Singular\+Value\+Decomposition@{Singular\+Value\+Decomposition}}
+\subsubsection[{get\+U}]{\setlength{\rightskip}{0pt plus 5cm}get\+U (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_singular_value_decomposition_af5b33ffee151d0d6282bb01fdf46faa4}
+Return the left singular vectors
+
+public \begin{DoxyReturn}{Returns}
+U 
+\end{DoxyReturn}
+\index{Singular\+Value\+Decomposition@{Singular\+Value\+Decomposition}!get\+V@{get\+V}}
+\index{get\+V@{get\+V}!Singular\+Value\+Decomposition@{Singular\+Value\+Decomposition}}
+\subsubsection[{get\+V}]{\setlength{\rightskip}{0pt plus 5cm}get\+V (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_singular_value_decomposition_abcf26f3d1d95ad9c3b8a78eba1cb3030}
+Return the right singular vectors
+
+public \begin{DoxyReturn}{Returns}
+V 
+\end{DoxyReturn}
+\index{Singular\+Value\+Decomposition@{Singular\+Value\+Decomposition}!norm2@{norm2}}
+\index{norm2@{norm2}!Singular\+Value\+Decomposition@{Singular\+Value\+Decomposition}}
+\subsubsection[{norm2}]{\setlength{\rightskip}{0pt plus 5cm}norm2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_singular_value_decomposition_aff88f7d651897d866d16c7310f80e3e4}
+Two norm
+
+public \begin{DoxyReturn}{Returns}
+max(\+S) 
+\end{DoxyReturn}
+\index{Singular\+Value\+Decomposition@{Singular\+Value\+Decomposition}!rank@{rank}}
+\index{rank@{rank}!Singular\+Value\+Decomposition@{Singular\+Value\+Decomposition}}
+\subsubsection[{rank}]{\setlength{\rightskip}{0pt plus 5cm}rank (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_singular_value_decomposition_a2823cc781ced2770efb8801798a09dfd}
+Effective numerical matrix rank
+
+public \begin{DoxyReturn}{Returns}
+Number of nonnegligible singular values. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/var/www/workspace/\+O\+D\+I-\/\+P\+R\+O\+J\+E\+C\+T/model/\+P\+H\+P\+Excel/\+Classes/\+P\+H\+P\+Excel/\+Shared/\+J\+A\+M\+A/Singular\+Value\+Decomposition.\+php\end{DoxyCompactItemize}

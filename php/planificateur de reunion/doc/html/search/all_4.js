@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['database',['Database',['../class_database.html',1,'']]],
+  ['datatypeforvalue',['dataTypeForValue',['../class_p_h_p_excel___cell___data_type.html#a779f35d7fc18291a8baa94b38c1766a5',1,'PHPExcel_Cell_DataType\dataTypeForValue()'],['../class_p_h_p_excel___cell___default_value_binder.html#a779f35d7fc18291a8baa94b38c1766a5',1,'PHPExcel_Cell_DefaultValueBinder\dataTypeForValue()']]],
+  ['datavalidationexists',['dataValidationExists',['../class_p_h_p_excel___worksheet.html#a42c56c20daf7bc0f731903bdfd59c4df',1,'PHPExcel_Worksheet']]],
+  ['datedif',['DATEDIF',['../class_p_h_p_excel___calculation___date_time.html#a98dffbbc7f1fa8d4b1620a0cd5e0afb2',1,'PHPExcel_Calculation_DateTime']]],
+  ['dayofmonth',['DAYOFMONTH',['../class_p_h_p_excel___calculation___date_time.html#a76bb4e7629b49749125d327e8d00c397',1,'PHPExcel_Calculation_DateTime']]],
+  ['dayofweek',['DAYOFWEEK',['../class_p_h_p_excel___calculation___date_time.html#a2f31f158b73eeaf20642844b6e2f73f8',1,'PHPExcel_Calculation_DateTime']]],
+  ['defaultaction',['DefaultAction',['../class_default_action.html',1,'']]],
+  ['defaultview',['DefaultView',['../class_default_view.html',1,'']]],
+  ['degreestoangle',['degreesToAngle',['../class_p_h_p_excel___shared___drawing.html#af228ca4239f7764fe58163cf50204343',1,'PHPExcel_Shared_Drawing']]],
+  ['deletecachedata',['deleteCacheData',['../class_p_h_p_excel___cached_object_storage___a_p_c.html#ac667a16a9911448f38dd87a65edb5938',1,'PHPExcel_CachedObjectStorage_APC\deleteCacheData()'],['../class_p_h_p_excel___cached_object_storage___cache_base.html#ac667a16a9911448f38dd87a65edb5938',1,'PHPExcel_CachedObjectStorage_CacheBase\deleteCacheData()'],['../interface_p_h_p_excel___cached_object_storage___i_cache.html#ac667a16a9911448f38dd87a65edb5938',1,'PHPExcel_CachedObjectStorage_ICache\deleteCacheData()'],['../class_p_h_p_excel___cached_object_storage___memcache.html#ac667a16a9911448f38dd87a65edb5938',1,'PHPExcel_CachedObjectStorage_Memcache\deleteCacheData()'],['../class_p_h_p_excel___cached_object_storage___s_q_lite.html#ac667a16a9911448f38dd87a65edb5938',1,'PHPExcel_CachedObjectStorage_SQLite\deleteCacheData()'],['../class_p_h_p_excel___cached_object_storage___s_q_lite3.html#ac667a16a9911448f38dd87a65edb5938',1,'PHPExcel_CachedObjectStorage_SQLite3\deleteCacheData()'],['../class_p_h_p_excel___cached_object_storage___wincache.html#ac667a16a9911448f38dd87a65edb5938',1,'PHPExcel_CachedObjectStorage_Wincache\deleteCacheData()']]],
+  ['deleterule',['deleteRule',['../class_p_h_p_excel___worksheet___auto_filter___column.html#ac9f1237f7130787048cd54bd520d0c9a',1,'PHPExcel_Worksheet_AutoFilter_Column']]],
+  ['delta',['DELTA',['../class_p_h_p_excel___calculation___engineering.html#ab65050328278dfac04a2009e138b9353',1,'PHPExcel_Calculation_Engineering']]],
+  ['deprecated_20list',['Deprecated List',['../deprecated.html',1,'']]],
+  ['det',['det',['../class_p_h_p_excel___shared___j_a_m_a___l_u_decomposition.html#a1422c32a4e07773772a60265f8cf36d9',1,'PHPExcel_Shared_JAMA_LUDecomposition\det()'],['../class_p_h_p_excel___shared___j_a_m_a___matrix.html#a1422c32a4e07773772a60265f8cf36d9',1,'PHPExcel_Shared_JAMA_Matrix\det()']]],
+  ['diagonal',['diagonal',['../class_p_h_p_excel___shared___j_a_m_a___matrix.html#aeb07501ee4d7209ae36be4da84944292',1,'PHPExcel_Shared_JAMA_Matrix']]],
+  ['disablecalculationcache',['disableCalculationCache',['../class_p_h_p_excel___calculation.html#a31f86e8b1acc34583deeee06356c6d8e',1,'PHPExcel_Calculation']]],
+  ['discardmacros',['discardMacros',['../class_p_h_p_excel.html#adda47c18be0e323865019a4dada598f2',1,'PHPExcel']]],
+  ['disconnectcells',['disconnectCells',['../class_p_h_p_excel___worksheet.html#aa2ad31cf6133a8e0b7bf49c6d4d99911',1,'PHPExcel_Worksheet']]],
+  ['disconnectworksheets',['disconnectWorksheets',['../class_p_h_p_excel.html#a43c9c225e65a3ecf3928904cd476f647',1,'PHPExcel']]],
+  ['displaybody',['displayBody',['../class_add_survey_form_view.html#a40b09eae1ecbd17cdbc914fe587f186f',1,'AddSurveyFormView\displayBody()'],['../class_default_view.html#a40b09eae1ecbd17cdbc914fe587f186f',1,'DefaultView\displayBody()'],['../class_message_view.html#a40b09eae1ecbd17cdbc914fe587f186f',1,'MessageView\displayBody()'],['../class_result_survey_view.html#a40b09eae1ecbd17cdbc914fe587f186f',1,'ResultSurveyView\displayBody()'],['../class_sign_up_form_view.html#a40b09eae1ecbd17cdbc914fe587f186f',1,'SignUpFormView\displayBody()'],['../class_surveys_view.html#a40b09eae1ecbd17cdbc914fe587f186f',1,'SurveysView\displayBody()'],['../class_survey_view.html#a40b09eae1ecbd17cdbc914fe587f186f',1,'SurveyView\displayBody()'],['../class_update_user_form_view.html#a40b09eae1ecbd17cdbc914fe587f186f',1,'UpdateUserFormView\displayBody()'],['../class_view.html#a40b09eae1ecbd17cdbc914fe587f186f',1,'View\displayBody()']]],
+  ['dollar',['DOLLAR',['../class_p_h_p_excel___calculation___text_data.html#aa84f4f1a044d08d28e2a97f37dc34685',1,'PHPExcel_Calculation_TextData']]],
+  ['downloadview',['DownloadView',['../class_download_view.html',1,'']]],
+  ['duplicateconditionalstyle',['duplicateConditionalStyle',['../class_p_h_p_excel___worksheet.html#ab5af3183901d296dcfbd0ce373c653e3',1,'PHPExcel_Worksheet']]],
+  ['duplicatestyle',['duplicateStyle',['../class_p_h_p_excel___worksheet.html#a8b603df2f0b777f4fa77890d0ae67269',1,'PHPExcel_Worksheet']]],
+  ['duplicatestylearray',['duplicateStyleArray',['../class_p_h_p_excel___worksheet.html#a7e3ef822d64758a862d015aa6f99d978',1,'PHPExcel_Worksheet']]]
+];

@@ -1,0 +1,182 @@
+\section{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Drawing Class Reference}
+\label{class_p_h_p_excel___shared___drawing}\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Drawing@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Drawing}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static {\bf pixels\+To\+E\+M\+U} (\$p\+Value=0)
+\item 
+static {\bf E\+M\+U\+To\+Pixels} (\$p\+Value=0)
+\item 
+static {\bf pixels\+To\+Cell\+Dimension} (\$p\+Value=0, {\bf P\+H\+P\+Excel\+\_\+\+Style\+\_\+\+Font} \$p\+Default\+Font)
+\item 
+static {\bf cell\+Dimension\+To\+Pixels} (\$p\+Value=0, {\bf P\+H\+P\+Excel\+\_\+\+Style\+\_\+\+Font} \$p\+Default\+Font)
+\item 
+static {\bf pixels\+To\+Points} (\$p\+Value=0)
+\item 
+static {\bf points\+To\+Pixels} (\$p\+Value=0)
+\item 
+static {\bf degrees\+To\+Angle} (\$p\+Value=0)
+\item 
+static {\bf angle\+To\+Degrees} (\$p\+Value=0)
+\item 
+static {\bf imagecreatefrombmp} (\$p\+\_\+s\+File)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Drawing@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Drawing}!angle\+To\+Degrees@{angle\+To\+Degrees}}
+\index{angle\+To\+Degrees@{angle\+To\+Degrees}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Drawing@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Drawing}}
+\subsubsection[{angle\+To\+Degrees}]{\setlength{\rightskip}{0pt plus 5cm}static angle\+To\+Degrees (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Value = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___drawing_a822f11cfd4ee51230d834ea9f9c01e1f}
+Convert angle to degrees
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$p\+Value} & Angle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Degrees 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Drawing@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Drawing}!cell\+Dimension\+To\+Pixels@{cell\+Dimension\+To\+Pixels}}
+\index{cell\+Dimension\+To\+Pixels@{cell\+Dimension\+To\+Pixels}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Drawing@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Drawing}}
+\subsubsection[{cell\+Dimension\+To\+Pixels}]{\setlength{\rightskip}{0pt plus 5cm}static cell\+Dimension\+To\+Pixels (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Value = {\ttfamily 0}, }
+\item[{{\bf P\+H\+P\+Excel\+\_\+\+Style\+\_\+\+Font}}]{\$p\+Default\+Font}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___drawing_ad277ad1275f65facccdb5786d244519f}
+Convert column width from (intrinsic) Excel units to pixels
+
+
+\begin{DoxyParams}[1]{Parameters}
+float & {\em \$p\+Value} & Value in cell dimension \\
+\hline
+\doxyref{P\+H\+P\+Excel\+\_\+\+Style\+\_\+\+Font}{p.}{class_p_h_p_excel___style___font} & {\em \$p\+Default\+Font} & Default font of the workbook \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Value in pixels 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Drawing@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Drawing}!degrees\+To\+Angle@{degrees\+To\+Angle}}
+\index{degrees\+To\+Angle@{degrees\+To\+Angle}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Drawing@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Drawing}}
+\subsubsection[{degrees\+To\+Angle}]{\setlength{\rightskip}{0pt plus 5cm}static degrees\+To\+Angle (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Value = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___drawing_af228ca4239f7764fe58163cf50204343}
+Convert degrees to angle
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$p\+Value} & Degrees \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Angle 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Drawing@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Drawing}!E\+M\+U\+To\+Pixels@{E\+M\+U\+To\+Pixels}}
+\index{E\+M\+U\+To\+Pixels@{E\+M\+U\+To\+Pixels}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Drawing@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Drawing}}
+\subsubsection[{E\+M\+U\+To\+Pixels}]{\setlength{\rightskip}{0pt plus 5cm}static E\+M\+U\+To\+Pixels (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Value = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___drawing_aa1d607141ffb7d0ca311821dd6ef3c7a}
+Convert E\+M\+U to pixels
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$p\+Value} & Value in E\+M\+U \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Value in pixels 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Drawing@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Drawing}!imagecreatefrombmp@{imagecreatefrombmp}}
+\index{imagecreatefrombmp@{imagecreatefrombmp}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Drawing@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Drawing}}
+\subsubsection[{imagecreatefrombmp}]{\setlength{\rightskip}{0pt plus 5cm}static imagecreatefrombmp (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+\_\+s\+File}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___drawing_a14edf02474736ce2f4295dcb0c429334}
+Create a new image from file. By alexander at alexauto dot nl
+
+\doxyref{string \$filename Path to Windows D\+I\+B (B\+M\+P) image  resource }{p.}{}\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Drawing@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Drawing}!pixels\+To\+Cell\+Dimension@{pixels\+To\+Cell\+Dimension}}
+\index{pixels\+To\+Cell\+Dimension@{pixels\+To\+Cell\+Dimension}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Drawing@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Drawing}}
+\subsubsection[{pixels\+To\+Cell\+Dimension}]{\setlength{\rightskip}{0pt plus 5cm}static pixels\+To\+Cell\+Dimension (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Value = {\ttfamily 0}, }
+\item[{{\bf P\+H\+P\+Excel\+\_\+\+Style\+\_\+\+Font}}]{\$p\+Default\+Font}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___drawing_a89a03255c5ef3e6a128675ccd4f1fbba}
+Convert pixels to column width. Exact algorithm not known. By inspection of a real Excel file using Calibri 11, one finds 1000px $\sim$ 142.\+85546875 This gives a conversion factor of 7. Also, we assume that pixels and font size are proportional.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$p\+Value} & Value in pixels \\
+\hline
+\doxyref{P\+H\+P\+Excel\+\_\+\+Style\+\_\+\+Font}{p.}{class_p_h_p_excel___style___font} & {\em \$p\+Default\+Font} & Default font of the workbook \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Value in cell dimension 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Drawing@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Drawing}!pixels\+To\+E\+M\+U@{pixels\+To\+E\+M\+U}}
+\index{pixels\+To\+E\+M\+U@{pixels\+To\+E\+M\+U}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Drawing@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Drawing}}
+\subsubsection[{pixels\+To\+E\+M\+U}]{\setlength{\rightskip}{0pt plus 5cm}static pixels\+To\+E\+M\+U (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Value = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___drawing_a5ec038dbe86bc2adbf7657d662588b46}
+Convert pixels to E\+M\+U
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$p\+Value} & Value in pixels \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Value in E\+M\+U 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Drawing@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Drawing}!pixels\+To\+Points@{pixels\+To\+Points}}
+\index{pixels\+To\+Points@{pixels\+To\+Points}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Drawing@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Drawing}}
+\subsubsection[{pixels\+To\+Points}]{\setlength{\rightskip}{0pt plus 5cm}static pixels\+To\+Points (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Value = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___drawing_aba1a5dae5db4c29931213aebd520c79f}
+Convert pixels to points
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$p\+Value} & Value in pixels \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Value in points 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Drawing@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Drawing}!points\+To\+Pixels@{points\+To\+Pixels}}
+\index{points\+To\+Pixels@{points\+To\+Pixels}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Drawing@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Drawing}}
+\subsubsection[{points\+To\+Pixels}]{\setlength{\rightskip}{0pt plus 5cm}static points\+To\+Pixels (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Value = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___drawing_aded04525834b0b86c0c841ca1435f88a}
+Convert points to pixels
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$p\+Value} & Value in points \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Value in pixels 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/var/www/workspace/\+O\+D\+I-\/\+P\+R\+O\+J\+E\+C\+T/model/\+P\+H\+P\+Excel/\+Classes/\+P\+H\+P\+Excel/\+Shared/Drawing.\+php\end{DoxyCompactItemize}

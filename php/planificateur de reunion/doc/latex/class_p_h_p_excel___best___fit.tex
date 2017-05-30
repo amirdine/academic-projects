@@ -1,0 +1,337 @@
+\section{P\+H\+P\+Excel\+\_\+\+Best\+\_\+\+Fit Class Reference}
+\label{class_p_h_p_excel___best___fit}\index{P\+H\+P\+Excel\+\_\+\+Best\+\_\+\+Fit@{P\+H\+P\+Excel\+\_\+\+Best\+\_\+\+Fit}}
+
+
+Inheritance diagram for P\+H\+P\+Excel\+\_\+\+Best\+\_\+\+Fit\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_p_h_p_excel___best___fit__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries get\+Error} ()\label{class_p_h_p_excel___best___fit_a24ada5decce3d1b79cd82f5a90ccf404}
+
+\item 
+{\bfseries get\+Best\+Fit\+Type} ()\label{class_p_h_p_excel___best___fit_a5f14cc4080d2a457a7631ca8e026abc2}
+
+\item 
+{\bf get\+Value\+Of\+Y\+For\+X} (\$x\+Value)
+\item 
+{\bf get\+Value\+Of\+X\+For\+Y} (\$y\+Value)
+\item 
+{\bf get\+X\+Values} ()
+\item 
+{\bf get\+Equation} (\$dp=0)
+\item 
+{\bf get\+Slope} (\$dp=0)
+\item 
+{\bf get\+Slope\+S\+E} (\$dp=0)
+\item 
+{\bf get\+Intersect} (\$dp=0)
+\item 
+{\bf get\+Intersect\+S\+E} (\$dp=0)
+\item 
+{\bf get\+Goodness\+Of\+Fit} (\$dp=0)
+\item 
+{\bfseries get\+Goodness\+Of\+Fit\+Percent} (\$dp=0)\label{class_p_h_p_excel___best___fit_a1fb2fdd45e03e7af9716a3ffb03e7bad}
+
+\item 
+{\bf get\+Stdev\+Of\+Residuals} (\$dp=0)
+\item 
+{\bfseries get\+S\+S\+Regression} (\$dp=0)\label{class_p_h_p_excel___best___fit_acacfb25e75e78a9f2be6d9f9cafda445}
+
+\item 
+{\bfseries get\+S\+S\+Residuals} (\$dp=0)\label{class_p_h_p_excel___best___fit_a3cf07620d8d4e6effabba8d611145a68}
+
+\item 
+{\bfseries get\+D\+F\+Residuals} (\$dp=0)\label{class_p_h_p_excel___best___fit_a4efa49de971762bf3224d61dafd0fab3}
+
+\item 
+{\bfseries get\+F} (\$dp=0)\label{class_p_h_p_excel___best___fit_a6ad2d57d92af90891a63d623fc9b9265}
+
+\item 
+{\bfseries get\+Covariance} (\$dp=0)\label{class_p_h_p_excel___best___fit_a0a194384004d0f3d21d10ee1e65de7e6}
+
+\item 
+{\bfseries get\+Correlation} (\$dp=0)\label{class_p_h_p_excel___best___fit_a7d5506e6fa6f8383198a7d3d5708bfbc}
+
+\item 
+{\bfseries get\+Y\+Best\+Fit\+Values} ()\label{class_p_h_p_excel___best___fit_a129a59c30a56a507f97ef4c3565d6f92}
+
+\item 
+{\bf \+\_\+\+\_\+construct} (\$y\+Values, \$x\+Values=array(), \$const =True)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+calculate\+Goodness\+Of\+Fit} (\$sum\+X, \$sum\+Y, \$sum\+X2, \$sum\+Y2, \$sum\+X\+Y, \$mean\+X, \$mean\+Y, \$const)\label{class_p_h_p_excel___best___fit_ae210a080c0d5a2363681268053eb503d}
+
+\item 
+{\bfseries \+\_\+least\+Square\+Fit} (\$y\+Values, \$x\+Values, \$const)\label{class_p_h_p_excel___best___fit_aff26999bb1482d9f5df65dfe29696035}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$\+\_\+error} = False\label{class_p_h_p_excel___best___fit_acce511121b059a08c6ceceae174ce261}
+
+\item 
+{\bfseries \$\+\_\+best\+Fit\+Type} = 'undetermined'\label{class_p_h_p_excel___best___fit_a4771ba52d86525c0c781339ec94f3466}
+
+\item 
+{\bfseries \$\+\_\+value\+Count} = 0\label{class_p_h_p_excel___best___fit_a95c87ee312a8bc488a570aab7b8f2a4d}
+
+\item 
+{\bfseries \$\+\_\+x\+Values} = array()\label{class_p_h_p_excel___best___fit_a834f683b0dc87d90c13cad52bf72959e}
+
+\item 
+{\bfseries \$\+\_\+y\+Values} = array()\label{class_p_h_p_excel___best___fit_a90704d996946f2eb6f6ef3f6cc115a48}
+
+\item 
+{\bfseries \$\+\_\+adjust\+To\+Zero} = False\label{class_p_h_p_excel___best___fit_a6fc58a7a080a636748ece966fd5307f6}
+
+\item 
+{\bfseries \$\+\_\+y\+Best\+Fit\+Values} = array()\label{class_p_h_p_excel___best___fit_a4deb065572f64e40830dbb88abeaefbf}
+
+\item 
+{\bfseries \$\+\_\+goodness\+Of\+Fit} = 1\label{class_p_h_p_excel___best___fit_a2808a27f7aa41f0dd1a70a3b4c9ee06f}
+
+\item 
+{\bfseries \$\+\_\+stdev\+Of\+Residuals} = 0\label{class_p_h_p_excel___best___fit_a8ab3a3239f80ea80f09c9b2e533e750f}
+
+\item 
+{\bfseries \$\+\_\+covariance} = 0\label{class_p_h_p_excel___best___fit_a74d4b43d020d37e95e80bb47e0e35687}
+
+\item 
+{\bfseries \$\+\_\+correlation} = 0\label{class_p_h_p_excel___best___fit_a13f068660bda96669ef8411a040afde3}
+
+\item 
+{\bfseries \$\+\_\+\+S\+S\+Regression} = 0\label{class_p_h_p_excel___best___fit_a02fc0960cbb376657d301f383c6732ba}
+
+\item 
+{\bfseries \$\+\_\+\+S\+S\+Residuals} = 0\label{class_p_h_p_excel___best___fit_a619c683888fe09717fea92b8b788b50a}
+
+\item 
+{\bfseries \$\+\_\+\+D\+F\+Residuals} = 0\label{class_p_h_p_excel___best___fit_a6cbda5dbc0b94e0c7e11d806a4c5d308}
+
+\item 
+{\bfseries \$\+\_\+\+F} = 0\label{class_p_h_p_excel___best___fit_ab0dfe1a08be16b2babee79f72fc8269e}
+
+\item 
+{\bfseries \$\+\_\+slope} = 0\label{class_p_h_p_excel___best___fit_a30525659b8aad7b0d394de6bd8900df5}
+
+\item 
+{\bfseries \$\+\_\+slope\+S\+E} = 0\label{class_p_h_p_excel___best___fit_a09438c5288b1d916141b12ec6456324a}
+
+\item 
+{\bfseries \$\+\_\+intersect} = 0\label{class_p_h_p_excel___best___fit_a2444ced5b15d41e4405155be4f46261f}
+
+\item 
+{\bfseries \$\+\_\+intersect\+S\+E} = 0\label{class_p_h_p_excel___best___fit_a41e6359f142f845e514e62bacb63638c}
+
+\item 
+{\bfseries \$\+\_\+\+Xoffset} = 0\label{class_p_h_p_excel___best___fit_ae35631003b2992db2ede950c54a5160a}
+
+\item 
+{\bfseries \$\+\_\+\+Yoffset} = 0\label{class_p_h_p_excel___best___fit_ae05bb4a4db26170e1398b89744bdfda1}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{P\+H\+P\+Excel\+\_\+\+Best\+\_\+\+Fit@{P\+H\+P\+Excel\+\_\+\+Best\+\_\+\+Fit}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!P\+H\+P\+Excel\+\_\+\+Best\+\_\+\+Fit@{P\+H\+P\+Excel\+\_\+\+Best\+\_\+\+Fit}}
+\subsubsection[{\+\_\+\+\_\+construct}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+\item[{}]{\$y\+Values, }
+\item[{}]{\$x\+Values = {\ttfamily array()}, }
+\item[{}]{\$const = {\ttfamily True}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___best___fit_aee1da27c15879e9ccb9e1dccb30c793b}
+Define the regression
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em float\mbox{[}$\,$\mbox{]}} & \$y\+Values The set of Y-\/values for this regression \\
+\hline
+ & {\em float\mbox{[}$\,$\mbox{]}} & \$x\+Values The set of X-\/values for this regression \\
+\hline
+boolean & {\em \$const} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{P\+H\+P\+Excel\+\_\+\+Best\+\_\+\+Fit@{P\+H\+P\+Excel\+\_\+\+Best\+\_\+\+Fit}!get\+Equation@{get\+Equation}}
+\index{get\+Equation@{get\+Equation}!P\+H\+P\+Excel\+\_\+\+Best\+\_\+\+Fit@{P\+H\+P\+Excel\+\_\+\+Best\+\_\+\+Fit}}
+\subsubsection[{get\+Equation}]{\setlength{\rightskip}{0pt plus 5cm}get\+Equation (
+\begin{DoxyParamCaption}
+\item[{}]{\$dp = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___best___fit_a015c81d685693d7575b997328ff5930f}
+Return the Equation of the best-\/fit line
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$dp} & Number of places of decimal precision to display \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Best\+\_\+\+Fit@{P\+H\+P\+Excel\+\_\+\+Best\+\_\+\+Fit}!get\+Goodness\+Of\+Fit@{get\+Goodness\+Of\+Fit}}
+\index{get\+Goodness\+Of\+Fit@{get\+Goodness\+Of\+Fit}!P\+H\+P\+Excel\+\_\+\+Best\+\_\+\+Fit@{P\+H\+P\+Excel\+\_\+\+Best\+\_\+\+Fit}}
+\subsubsection[{get\+Goodness\+Of\+Fit}]{\setlength{\rightskip}{0pt plus 5cm}get\+Goodness\+Of\+Fit (
+\begin{DoxyParamCaption}
+\item[{}]{\$dp = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___best___fit_abf5509e078763883e01478d674faba4b}
+Return the goodness of fit for this regression
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$dp} & Number of places of decimal precision to return \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Best\+\_\+\+Fit@{P\+H\+P\+Excel\+\_\+\+Best\+\_\+\+Fit}!get\+Intersect@{get\+Intersect}}
+\index{get\+Intersect@{get\+Intersect}!P\+H\+P\+Excel\+\_\+\+Best\+\_\+\+Fit@{P\+H\+P\+Excel\+\_\+\+Best\+\_\+\+Fit}}
+\subsubsection[{get\+Intersect}]{\setlength{\rightskip}{0pt plus 5cm}get\+Intersect (
+\begin{DoxyParamCaption}
+\item[{}]{\$dp = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___best___fit_a129dafd5e95206e355ab0734bc5e9bea}
+Return the Value of X where it intersects Y = 0
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$dp} & Number of places of decimal precision to display \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Best\+\_\+\+Fit@{P\+H\+P\+Excel\+\_\+\+Best\+\_\+\+Fit}!get\+Intersect\+S\+E@{get\+Intersect\+S\+E}}
+\index{get\+Intersect\+S\+E@{get\+Intersect\+S\+E}!P\+H\+P\+Excel\+\_\+\+Best\+\_\+\+Fit@{P\+H\+P\+Excel\+\_\+\+Best\+\_\+\+Fit}}
+\subsubsection[{get\+Intersect\+S\+E}]{\setlength{\rightskip}{0pt plus 5cm}get\+Intersect\+S\+E (
+\begin{DoxyParamCaption}
+\item[{}]{\$dp = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___best___fit_a9374d0ba1b14886aa25cac1ecb380c7a}
+Return the standard error of the Intersect
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$dp} & Number of places of decimal precision to display \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Best\+\_\+\+Fit@{P\+H\+P\+Excel\+\_\+\+Best\+\_\+\+Fit}!get\+Slope@{get\+Slope}}
+\index{get\+Slope@{get\+Slope}!P\+H\+P\+Excel\+\_\+\+Best\+\_\+\+Fit@{P\+H\+P\+Excel\+\_\+\+Best\+\_\+\+Fit}}
+\subsubsection[{get\+Slope}]{\setlength{\rightskip}{0pt plus 5cm}get\+Slope (
+\begin{DoxyParamCaption}
+\item[{}]{\$dp = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___best___fit_acd86e793a51b30af0a2479cb2ba24c15}
+Return the Slope of the line
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$dp} & Number of places of decimal precision to display \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Best\+\_\+\+Fit@{P\+H\+P\+Excel\+\_\+\+Best\+\_\+\+Fit}!get\+Slope\+S\+E@{get\+Slope\+S\+E}}
+\index{get\+Slope\+S\+E@{get\+Slope\+S\+E}!P\+H\+P\+Excel\+\_\+\+Best\+\_\+\+Fit@{P\+H\+P\+Excel\+\_\+\+Best\+\_\+\+Fit}}
+\subsubsection[{get\+Slope\+S\+E}]{\setlength{\rightskip}{0pt plus 5cm}get\+Slope\+S\+E (
+\begin{DoxyParamCaption}
+\item[{}]{\$dp = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___best___fit_a643ac5bd2edb1a46a8c8ff8e99f8e15e}
+Return the standard error of the Slope
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$dp} & Number of places of decimal precision to display \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Best\+\_\+\+Fit@{P\+H\+P\+Excel\+\_\+\+Best\+\_\+\+Fit}!get\+Stdev\+Of\+Residuals@{get\+Stdev\+Of\+Residuals}}
+\index{get\+Stdev\+Of\+Residuals@{get\+Stdev\+Of\+Residuals}!P\+H\+P\+Excel\+\_\+\+Best\+\_\+\+Fit@{P\+H\+P\+Excel\+\_\+\+Best\+\_\+\+Fit}}
+\subsubsection[{get\+Stdev\+Of\+Residuals}]{\setlength{\rightskip}{0pt plus 5cm}get\+Stdev\+Of\+Residuals (
+\begin{DoxyParamCaption}
+\item[{}]{\$dp = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___best___fit_aa4284ad6db5c933b2eaceee65c6b31cd}
+Return the standard deviation of the residuals for this regression
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$dp} & Number of places of decimal precision to return \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Best\+\_\+\+Fit@{P\+H\+P\+Excel\+\_\+\+Best\+\_\+\+Fit}!get\+Value\+Of\+X\+For\+Y@{get\+Value\+Of\+X\+For\+Y}}
+\index{get\+Value\+Of\+X\+For\+Y@{get\+Value\+Of\+X\+For\+Y}!P\+H\+P\+Excel\+\_\+\+Best\+\_\+\+Fit@{P\+H\+P\+Excel\+\_\+\+Best\+\_\+\+Fit}}
+\subsubsection[{get\+Value\+Of\+X\+For\+Y}]{\setlength{\rightskip}{0pt plus 5cm}get\+Value\+Of\+X\+For\+Y (
+\begin{DoxyParamCaption}
+\item[{}]{\$y\+Value}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___best___fit_ae806bb042d6c95387e82c6feb5d178a5}
+Return the X-\/\+Value for a specified value of Y
+
+
+\begin{DoxyParams}[1]{Parameters}
+float & {\em \$y\+Value} & Y-\/\+Value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float X-\/\+Value 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Best\+\_\+\+Fit@{P\+H\+P\+Excel\+\_\+\+Best\+\_\+\+Fit}!get\+Value\+Of\+Y\+For\+X@{get\+Value\+Of\+Y\+For\+X}}
+\index{get\+Value\+Of\+Y\+For\+X@{get\+Value\+Of\+Y\+For\+X}!P\+H\+P\+Excel\+\_\+\+Best\+\_\+\+Fit@{P\+H\+P\+Excel\+\_\+\+Best\+\_\+\+Fit}}
+\subsubsection[{get\+Value\+Of\+Y\+For\+X}]{\setlength{\rightskip}{0pt plus 5cm}get\+Value\+Of\+Y\+For\+X (
+\begin{DoxyParamCaption}
+\item[{}]{\$x\+Value}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___best___fit_a0166e34b8a912b4ddf624660852345ec}
+Return the Y-\/\+Value for a specified value of X
+
+
+\begin{DoxyParams}[1]{Parameters}
+float & {\em \$x\+Value} & X-\/\+Value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float Y-\/\+Value 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Best\+\_\+\+Fit@{P\+H\+P\+Excel\+\_\+\+Best\+\_\+\+Fit}!get\+X\+Values@{get\+X\+Values}}
+\index{get\+X\+Values@{get\+X\+Values}!P\+H\+P\+Excel\+\_\+\+Best\+\_\+\+Fit@{P\+H\+P\+Excel\+\_\+\+Best\+\_\+\+Fit}}
+\subsubsection[{get\+X\+Values}]{\setlength{\rightskip}{0pt plus 5cm}get\+X\+Values (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___best___fit_ae60a7e6b8b2bf6247bb1061f20c4581e}
+Return the original set of X-\/\+Values
+
+\begin{DoxyReturn}{Returns}
+float[] X-\/\+Values 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/var/www/workspace/\+O\+D\+I-\/\+P\+R\+O\+J\+E\+C\+T/model/\+P\+H\+P\+Excel/\+Classes/\+P\+H\+P\+Excel/\+Shared/trend/best\+Fit\+Class.\+php\end{DoxyCompactItemize}

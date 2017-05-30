@@ -1,0 +1,685 @@
+\section{P\+H\+P\+Excel\+\_\+\+Calculation Class Reference}
+\label{class_p_h_p_excel___calculation}\index{P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf flush\+Instance} ()
+\item 
+{\bf get\+Debug\+Log} ()
+\item 
+{\bf \+\_\+\+\_\+clone} ()
+\item 
+{\bf get\+Calculation\+Cache\+Enabled} ()
+\item 
+{\bf set\+Calculation\+Cache\+Enabled} (\$p\+Value=T\+R\+U\+E)
+\item 
+{\bf enable\+Calculation\+Cache} ()
+\item 
+{\bf disable\+Calculation\+Cache} ()
+\item 
+{\bf clear\+Calculation\+Cache} ()
+\item 
+{\bf clear\+Calculation\+Cache\+For\+Worksheet} (\$worksheet\+Name)
+\item 
+{\bf rename\+Calculation\+Cache\+For\+Worksheet} (\$from\+Worksheet\+Name, \$to\+Worksheet\+Name)
+\item 
+{\bf get\+Locale} ()
+\item 
+{\bf set\+Locale} (\$locale= 'en\+\_\+us')
+\item 
+{\bfseries \+\_\+translate\+Formula\+To\+Locale} (\$formula)\label{class_p_h_p_excel___calculation_ad64a222a8ed0a3ae574ca54522ad5b26}
+
+\item 
+{\bfseries \+\_\+translate\+Formula\+To\+English} (\$formula)\label{class_p_h_p_excel___calculation_a2a6ab89f73d9920b0f7bc7ce3f98eac5}
+
+\item 
+{\bf calculate} ({\bf P\+H\+P\+Excel\+\_\+\+Cell} \$p\+Cell=N\+U\+L\+L)
+\item 
+{\bf calculate\+Cell\+Value} ({\bf P\+H\+P\+Excel\+\_\+\+Cell} \$p\+Cell=N\+U\+L\+L, \$reset\+Log=T\+R\+U\+E)
+\item 
+{\bf parse\+Formula} (\$formula)
+\item 
+{\bf calculate\+Formula} (\$formula, \$cell\+I\+D=N\+U\+L\+L, {\bf P\+H\+P\+Excel\+\_\+\+Cell} \$p\+Cell=N\+U\+L\+L)
+\item 
+{\bfseries get\+Value\+From\+Cache} (\$worksheet\+Name, \$cell\+I\+D, \&\$cell\+Value)\label{class_p_h_p_excel___calculation_a40bacc4903dd510b056cf0ba0ce4a7c4}
+
+\item 
+{\bfseries save\+Value\+To\+Cache} (\$worksheet\+Name, \$cell\+I\+D, \$cell\+Value)\label{class_p_h_p_excel___calculation_a774f1667a2f858552441b2332d22bfd0}
+
+\item 
+{\bf \+\_\+calculate\+Formula\+Value} (\$formula, \$cell\+I\+D=null, {\bf P\+H\+P\+Excel\+\_\+\+Cell} \$p\+Cell=null)
+\item 
+{\bf extract\+Cell\+Range} (\&\$p\+Range= 'A1', {\bf P\+H\+P\+Excel\+\_\+\+Worksheet} \$p\+Sheet=N\+U\+L\+L, \$reset\+Log=T\+R\+U\+E)
+\item 
+{\bf extract\+Named\+Range} (\&\$p\+Range= 'A1', {\bf P\+H\+P\+Excel\+\_\+\+Worksheet} \$p\+Sheet=N\+U\+L\+L, \$reset\+Log=T\+R\+U\+E)
+\item 
+{\bf is\+Implemented} (\$p\+Function= '')
+\item 
+{\bf list\+Functions} ()
+\item 
+{\bf list\+All\+Function\+Names} ()
+\item 
+{\bf list\+Function\+Names} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static {\bf get\+Instance} ({\bf P\+H\+P\+Excel} \$workbook=N\+U\+L\+L)
+\item 
+static {\bf unset\+Instance} ({\bf P\+H\+P\+Excel} \$workbook=N\+U\+L\+L)
+\item 
+static {\bf get\+T\+R\+U\+E} ()
+\item 
+static {\bf get\+F\+A\+L\+S\+E} ()
+\item 
+static {\bf set\+Array\+Return\+Type} (\$return\+Type)
+\item 
+static {\bf get\+Array\+Return\+Type} ()
+\item 
+static {\bfseries \+\_\+translate\+Separator} (\$from\+Separator, \$to\+Separator, \$formula, \&\$in\+Braces)\label{class_p_h_p_excel___calculation_a5c3dca786b67928537552878f9ae07ea}
+
+\item 
+static {\bfseries \+\_\+locale\+Func} (\$function)\label{class_p_h_p_excel___calculation_a98230c40ddf4c43aec37d0e3757ed6a5}
+
+\item 
+static {\bf \+\_\+wrap\+Result} (\$value)
+\item 
+static {\bf \+\_\+unwrap\+Result} (\$value)
+\item 
+static {\bf \+\_\+get\+Matrix\+Dimensions} (\&\$matrix)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const {\bf C\+A\+L\+C\+U\+L\+A\+T\+I\+O\+N\+\_\+\+R\+E\+G\+E\+X\+P\+\_\+\+N\+U\+M\+B\+E\+R} = '[-\/+]?\textbackslash{}d$\ast$\textbackslash{}.?\textbackslash{}d+(e[-\/+]?\textbackslash{}d+)?'
+\item 
+const {\bfseries C\+A\+L\+C\+U\+L\+A\+T\+I\+O\+N\+\_\+\+R\+E\+G\+E\+X\+P\+\_\+\+S\+T\+R\+I\+N\+G} = '\char`\"{}(?\+:[$^\wedge$\char`\"{}]$\vert$\char`\"{}\char`\"{})$\ast$\char`\"{}'\label{class_p_h_p_excel___calculation_a4a265da3415f3d7ffa6287835502d7b4}
+
+\item 
+const {\bfseries C\+A\+L\+C\+U\+L\+A\+T\+I\+O\+N\+\_\+\+R\+E\+G\+E\+X\+P\+\_\+\+O\+P\+E\+N\+B\+R\+A\+C\+E} = '\textbackslash{}('\label{class_p_h_p_excel___calculation_a4aa5514ddcc9e0e9adcc66972972eccc}
+
+\item 
+const {\bfseries C\+A\+L\+C\+U\+L\+A\+T\+I\+O\+N\+\_\+\+R\+E\+G\+E\+X\+P\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N} = '@?([A-\/Z][A-\/Z0-\/9\textbackslash{}.]$\ast$)[\textbackslash{}s]$\ast$\textbackslash{}('\label{class_p_h_p_excel___calculation_a2a0fc7551ba4535c9eb30ab707393df5}
+
+\item 
+const {\bfseries C\+A\+L\+C\+U\+L\+A\+T\+I\+O\+N\+\_\+\+R\+E\+G\+E\+X\+P\+\_\+\+C\+E\+L\+L\+R\+E\+F} = C\+A\+L\+C\+U\+L\+A\+T\+I\+O\+N\+\_\+\+R\+E\+G\+E\+X\+P\+\_\+\+C\+E\+L\+L\+R\+E\+F\label{class_p_h_p_excel___calculation_a95ce09c912f0248036c2b338425f1464}
+
+\item 
+const {\bfseries C\+A\+L\+C\+U\+L\+A\+T\+I\+O\+N\+\_\+\+R\+E\+G\+E\+X\+P\+\_\+\+N\+A\+M\+E\+D\+R\+A\+N\+G\+E} = C\+A\+L\+C\+U\+L\+A\+T\+I\+O\+N\+\_\+\+R\+E\+G\+E\+X\+P\+\_\+\+N\+A\+M\+E\+D\+R\+A\+N\+G\+E\label{class_p_h_p_excel___calculation_ac6a4f983aacbd7531432781b3a102ccd}
+
+\item 
+const {\bfseries C\+A\+L\+C\+U\+L\+A\+T\+I\+O\+N\+\_\+\+R\+E\+G\+E\+X\+P\+\_\+\+E\+R\+R\+O\+R} = '\textbackslash{}\#[A-\/Z][A-\/Z0\+\_\+\textbackslash{}/]$\ast$[!\textbackslash{}?]?'\label{class_p_h_p_excel___calculation_ad0b60bc6bb21a5a73e17415af61cdb24}
+
+\item 
+const {\bf R\+E\+T\+U\+R\+N\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+A\+S\+\_\+\+E\+R\+R\+O\+R} = 'error'
+\item 
+const {\bfseries R\+E\+T\+U\+R\+N\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+A\+S\+\_\+\+V\+A\+L\+U\+E} = 'value'\label{class_p_h_p_excel___calculation_a313687324c71e2556ae4ef9089e96857}
+
+\item 
+const {\bfseries R\+E\+T\+U\+R\+N\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+A\+S\+\_\+\+A\+R\+R\+A\+Y} = 'array'\label{class_p_h_p_excel___calculation_a998999d40e33a27f8b37af5369f4603b}
+
+\item 
+{\bfseries \$suppress\+Formula\+Errors} = F\+A\+L\+S\+E\label{class_p_h_p_excel___calculation_ae8fa93be9b3291f8dbfc2f3be7804566}
+
+\item 
+{\bfseries \$formula\+Error} = N\+U\+L\+L\label{class_p_h_p_excel___calculation_a01e2a8b6faf3481833be60bbf4c5304a}
+
+\item 
+{\bfseries \$cyclic\+Formula\+Count} = 0\label{class_p_h_p_excel___calculation_a9ccb85b61cbde1414a16cbaeb61e5be4}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static {\bfseries \$\+\_\+locale\+Boolean}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+raise\+Formula\+Error} (\$error\+Message)\label{class_p_h_p_excel___calculation_a015e23c2eb1e52857bc8191a3aefa2f4}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}!\+\_\+\+\_\+clone@{\+\_\+\+\_\+clone}}
+\index{\+\_\+\+\_\+clone@{\+\_\+\+\_\+clone}!P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}}
+\subsubsection[{\+\_\+\+\_\+clone}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+clone (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [final]}}\label{class_p_h_p_excel___calculation_ad0cb87b388bc74d63dc884accdca8713}
+\+\_\+\+\_\+clone implementation. Cloning should not be allowed in a Singleton!
+
+public 
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Exception}{p.}{class_p_h_p_excel___calculation___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\index{P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}!\+\_\+calculate\+Formula\+Value@{\+\_\+calculate\+Formula\+Value}}
+\index{\+\_\+calculate\+Formula\+Value@{\+\_\+calculate\+Formula\+Value}!P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}}
+\subsubsection[{\+\_\+calculate\+Formula\+Value}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+calculate\+Formula\+Value (
+\begin{DoxyParamCaption}
+\item[{}]{\$formula, }
+\item[{}]{\$cell\+I\+D = {\ttfamily null}, }
+\item[{{\bf P\+H\+P\+Excel\+\_\+\+Cell}}]{\$p\+Cell = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___calculation_ad1aef41691363540e51e0a585e111eaa}
+Parse a cell formula and calculate its value
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$formula} & The formula to parse and calculate \\
+\hline
+string & {\em \$cell\+I\+D} & The I\+D (e.\+g. A3) of the cell that we are calculating \\
+\hline
+\doxyref{P\+H\+P\+Excel\+\_\+\+Cell}{p.}{class_p_h_p_excel___cell} & {\em \$p\+Cell} & Cell to calculate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Exception}{p.}{class_p_h_p_excel___calculation___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\index{P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}!\+\_\+get\+Matrix\+Dimensions@{\+\_\+get\+Matrix\+Dimensions}}
+\index{\+\_\+get\+Matrix\+Dimensions@{\+\_\+get\+Matrix\+Dimensions}!P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}}
+\subsubsection[{\+\_\+get\+Matrix\+Dimensions}]{\setlength{\rightskip}{0pt plus 5cm}static \+\_\+get\+Matrix\+Dimensions (
+\begin{DoxyParamCaption}
+\item[{\&}]{\$matrix}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___calculation_ab2fcc5b6869de646d0e9b200aa053419}
+Read the dimensions of a matrix, and re-\/index it with straight numeric keys starting from row 0, column 0
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \&\$matrix} & matrix operand \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array An array comprising the number of rows, and number of columns 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}!\+\_\+unwrap\+Result@{\+\_\+unwrap\+Result}}
+\index{\+\_\+unwrap\+Result@{\+\_\+unwrap\+Result}!P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}}
+\subsubsection[{\+\_\+unwrap\+Result}]{\setlength{\rightskip}{0pt plus 5cm}static \+\_\+unwrap\+Result (
+\begin{DoxyParamCaption}
+\item[{}]{\$value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___calculation_a1a4195014a13334fb69a55cef96b0726}
+Remove quotes used as a wrapper to identify string values
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}!\+\_\+wrap\+Result@{\+\_\+wrap\+Result}}
+\index{\+\_\+wrap\+Result@{\+\_\+wrap\+Result}!P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}}
+\subsubsection[{\+\_\+wrap\+Result}]{\setlength{\rightskip}{0pt plus 5cm}static \+\_\+wrap\+Result (
+\begin{DoxyParamCaption}
+\item[{}]{\$value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___calculation_a0d547e0d88b0b27c7a098b5f0b2850f2}
+Wrap string values in quotes
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}!calculate@{calculate}}
+\index{calculate@{calculate}!P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}}
+\subsubsection[{calculate}]{\setlength{\rightskip}{0pt plus 5cm}calculate (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+H\+P\+Excel\+\_\+\+Cell}}]{\$p\+Cell = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___calculation_aff0d2d47319fbe424fc69b8e83d89b14}
+Calculate cell value (using formula from a cell I\+D) Retained for backward compatibility
+
+public 
+\begin{DoxyParams}[1]{Parameters}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Cell}{p.}{class_p_h_p_excel___cell} & {\em \$p\+Cell} & Cell to calculate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Exception}{p.}{class_p_h_p_excel___calculation___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\index{P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}!calculate\+Cell\+Value@{calculate\+Cell\+Value}}
+\index{calculate\+Cell\+Value@{calculate\+Cell\+Value}!P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}}
+\subsubsection[{calculate\+Cell\+Value}]{\setlength{\rightskip}{0pt plus 5cm}calculate\+Cell\+Value (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+H\+P\+Excel\+\_\+\+Cell}}]{\$p\+Cell = {\ttfamily NULL}, }
+\item[{}]{\$reset\+Log = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___calculation_a7d3a51a8f7ffbdb840d783f5e9be8452}
+Calculate the value of a cell formula
+
+public 
+\begin{DoxyParams}[1]{Parameters}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Cell}{p.}{class_p_h_p_excel___cell} & {\em \$p\+Cell} & Cell to calculate \\
+\hline
+Boolean & {\em \$reset\+Log} & Flag indicating whether the debug log should be reset or not \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Exception}{p.}{class_p_h_p_excel___calculation___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\index{P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}!calculate\+Formula@{calculate\+Formula}}
+\index{calculate\+Formula@{calculate\+Formula}!P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}}
+\subsubsection[{calculate\+Formula}]{\setlength{\rightskip}{0pt plus 5cm}calculate\+Formula (
+\begin{DoxyParamCaption}
+\item[{}]{\$formula, }
+\item[{}]{\$cell\+I\+D = {\ttfamily NULL}, }
+\item[{{\bf P\+H\+P\+Excel\+\_\+\+Cell}}]{\$p\+Cell = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___calculation_a954dde36753f3a65773d85ed943b7cd0}
+Calculate the value of a formula
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$formula} & Formula to parse \\
+\hline
+string & {\em \$cell\+I\+D} & Address of the cell to calculate \\
+\hline
+\doxyref{P\+H\+P\+Excel\+\_\+\+Cell}{p.}{class_p_h_p_excel___cell} & {\em \$p\+Cell} & Cell to calculate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Exception}{p.}{class_p_h_p_excel___calculation___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\index{P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}!clear\+Calculation\+Cache@{clear\+Calculation\+Cache}}
+\index{clear\+Calculation\+Cache@{clear\+Calculation\+Cache}!P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}}
+\subsubsection[{clear\+Calculation\+Cache}]{\setlength{\rightskip}{0pt plus 5cm}clear\+Calculation\+Cache (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___calculation_a63a490220d1aecf2b8b6a161cb95fd64}
+Clear calculation cache \index{P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}!clear\+Calculation\+Cache\+For\+Worksheet@{clear\+Calculation\+Cache\+For\+Worksheet}}
+\index{clear\+Calculation\+Cache\+For\+Worksheet@{clear\+Calculation\+Cache\+For\+Worksheet}!P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}}
+\subsubsection[{clear\+Calculation\+Cache\+For\+Worksheet}]{\setlength{\rightskip}{0pt plus 5cm}clear\+Calculation\+Cache\+For\+Worksheet (
+\begin{DoxyParamCaption}
+\item[{}]{\$worksheet\+Name}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___calculation_aaa7d10bdc76a9a581f3b832fa6eb4212}
+Clear calculation cache for a specified worksheet
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$worksheet\+Name} & \\
+\hline
+\end{DoxyParams}
+\index{P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}!disable\+Calculation\+Cache@{disable\+Calculation\+Cache}}
+\index{disable\+Calculation\+Cache@{disable\+Calculation\+Cache}!P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}}
+\subsubsection[{disable\+Calculation\+Cache}]{\setlength{\rightskip}{0pt plus 5cm}disable\+Calculation\+Cache (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___calculation_a31f86e8b1acc34583deeee06356c6d8e}
+Disable calculation cache \index{P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}!enable\+Calculation\+Cache@{enable\+Calculation\+Cache}}
+\index{enable\+Calculation\+Cache@{enable\+Calculation\+Cache}!P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}}
+\subsubsection[{enable\+Calculation\+Cache}]{\setlength{\rightskip}{0pt plus 5cm}enable\+Calculation\+Cache (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___calculation_acc4a5c83423b7e5771167e1e8136f2c7}
+Enable calculation cache \index{P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}!extract\+Cell\+Range@{extract\+Cell\+Range}}
+\index{extract\+Cell\+Range@{extract\+Cell\+Range}!P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}}
+\subsubsection[{extract\+Cell\+Range}]{\setlength{\rightskip}{0pt plus 5cm}extract\+Cell\+Range (
+\begin{DoxyParamCaption}
+\item[{\&}]{\$p\+Range = {\ttfamily 'A1'}, }
+\item[{{\bf P\+H\+P\+Excel\+\_\+\+Worksheet}}]{\$p\+Sheet = {\ttfamily NULL}, }
+\item[{}]{\$reset\+Log = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___calculation_ab0a9da2417a8e1933c07fdc2ab8c41a1}
+Extract range values
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \&\$p\+Range} & String based range representation \\
+\hline
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} & {\em \$p\+Sheet} & Worksheet \\
+\hline
+boolean & {\em \$reset\+Log} & Flag indicating whether calculation log should be reset or not \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed Array of values in range if range contains more than one element. Otherwise, a single value is returned. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Exception}{p.}{class_p_h_p_excel___calculation___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\index{P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}!extract\+Named\+Range@{extract\+Named\+Range}}
+\index{extract\+Named\+Range@{extract\+Named\+Range}!P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}}
+\subsubsection[{extract\+Named\+Range}]{\setlength{\rightskip}{0pt plus 5cm}extract\+Named\+Range (
+\begin{DoxyParamCaption}
+\item[{\&}]{\$p\+Range = {\ttfamily 'A1'}, }
+\item[{{\bf P\+H\+P\+Excel\+\_\+\+Worksheet}}]{\$p\+Sheet = {\ttfamily NULL}, }
+\item[{}]{\$reset\+Log = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___calculation_a2f0d225c83a029d82fae81ba447f8f83}
+Extract range values
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \&\$p\+Range} & String based range representation \\
+\hline
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} & {\em \$p\+Sheet} & Worksheet \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed Array of values in range if range contains more than one element. Otherwise, a single value is returned. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{Parameters}
+boolean & {\em \$reset\+Log} & Flag indicating whether calculation log should be reset or not \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Exception}{p.}{class_p_h_p_excel___calculation___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\index{P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}!flush\+Instance@{flush\+Instance}}
+\index{flush\+Instance@{flush\+Instance}!P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}}
+\subsubsection[{flush\+Instance}]{\setlength{\rightskip}{0pt plus 5cm}flush\+Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___calculation_a4e879d50318875eb5a506a8a16d72a15}
+Flush the calculation cache for any existing instance of this class but only if a \doxyref{P\+H\+P\+Excel\+\_\+\+Calculation}{p.}{class_p_h_p_excel___calculation} instance exists
+
+public \begin{DoxyReturn}{Returns}
+null 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}!get\+Array\+Return\+Type@{get\+Array\+Return\+Type}}
+\index{get\+Array\+Return\+Type@{get\+Array\+Return\+Type}!P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}}
+\subsubsection[{get\+Array\+Return\+Type}]{\setlength{\rightskip}{0pt plus 5cm}static get\+Array\+Return\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___calculation_a7da5ac6c3e8ce1a9cd9e9d358edab0da}
+Return the Array Return Type (Array or Value of first element in the array)
+
+public \begin{DoxyReturn}{Returns}
+string \$return\+Type Array return type 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}!get\+Calculation\+Cache\+Enabled@{get\+Calculation\+Cache\+Enabled}}
+\index{get\+Calculation\+Cache\+Enabled@{get\+Calculation\+Cache\+Enabled}!P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}}
+\subsubsection[{get\+Calculation\+Cache\+Enabled}]{\setlength{\rightskip}{0pt plus 5cm}get\+Calculation\+Cache\+Enabled (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___calculation_a4a302f4dbd639f91dce21e06a12ed531}
+Is calculation caching enabled?
+
+public \begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}!get\+Debug\+Log@{get\+Debug\+Log}}
+\index{get\+Debug\+Log@{get\+Debug\+Log}!P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}}
+\subsubsection[{get\+Debug\+Log}]{\setlength{\rightskip}{0pt plus 5cm}get\+Debug\+Log (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___calculation_a1f5f0bfffa7e348c26c7087a9af2f0d6}
+Get the debuglog for this claculation engine instance
+
+public \begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Calc\+Engine\+\_\+\+Logger}{p.}{class_p_h_p_excel___calc_engine___logger} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}!get\+F\+A\+L\+S\+E@{get\+F\+A\+L\+S\+E}}
+\index{get\+F\+A\+L\+S\+E@{get\+F\+A\+L\+S\+E}!P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}}
+\subsubsection[{get\+F\+A\+L\+S\+E}]{\setlength{\rightskip}{0pt plus 5cm}static get\+F\+A\+L\+S\+E (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___calculation_a6994a8f693ca683db1d52e3b96f5b1b1}
+Return the locale-\/specific translation of F\+A\+L\+S\+E
+
+public \begin{DoxyReturn}{Returns}
+string locale-\/specific translation of F\+A\+L\+S\+E 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}}
+\subsubsection[{get\+Instance}]{\setlength{\rightskip}{0pt plus 5cm}static get\+Instance (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+H\+P\+Excel}}]{\$workbook = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___calculation_a7d830f8e047f0f169050dcb34e60265e}
+Get an instance of this class
+
+public 
+\begin{DoxyParams}[1]{Parameters}
+\doxyref{P\+H\+P\+Excel}{p.}{class_p_h_p_excel} & {\em \$workbook} & Injected workbook for working with a \doxyref{P\+H\+P\+Excel}{p.}{class_p_h_p_excel} object, or N\+U\+L\+L to create a standalone claculation engine \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Calculation}{p.}{class_p_h_p_excel___calculation} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}!get\+Locale@{get\+Locale}}
+\index{get\+Locale@{get\+Locale}!P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}}
+\subsubsection[{get\+Locale}]{\setlength{\rightskip}{0pt plus 5cm}get\+Locale (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___calculation_ad532b661eb33c3e755bd3fa8ff1bd7af}
+Get the currently defined locale code
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}!get\+T\+R\+U\+E@{get\+T\+R\+U\+E}}
+\index{get\+T\+R\+U\+E@{get\+T\+R\+U\+E}!P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}}
+\subsubsection[{get\+T\+R\+U\+E}]{\setlength{\rightskip}{0pt plus 5cm}static get\+T\+R\+U\+E (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___calculation_aaef7ebd13f5494224915b6a5f131c94f}
+Return the locale-\/specific translation of T\+R\+U\+E
+
+public \begin{DoxyReturn}{Returns}
+string locale-\/specific translation of T\+R\+U\+E 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}!is\+Implemented@{is\+Implemented}}
+\index{is\+Implemented@{is\+Implemented}!P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}}
+\subsubsection[{is\+Implemented}]{\setlength{\rightskip}{0pt plus 5cm}is\+Implemented (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Function = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___calculation_afed34db3776e4f603b71bd1092421d02}
+Is a specific function implemented?
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Function} & Function Name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}!list\+All\+Function\+Names@{list\+All\+Function\+Names}}
+\index{list\+All\+Function\+Names@{list\+All\+Function\+Names}!P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}}
+\subsubsection[{list\+All\+Function\+Names}]{\setlength{\rightskip}{0pt plus 5cm}list\+All\+Function\+Names (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___calculation_af9fab2c3d5fea754ce52dbf46b559430}
+Get a list of all Excel function names
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}!list\+Function\+Names@{list\+Function\+Names}}
+\index{list\+Function\+Names@{list\+Function\+Names}!P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}}
+\subsubsection[{list\+Function\+Names}]{\setlength{\rightskip}{0pt plus 5cm}list\+Function\+Names (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___calculation_adcc2c4245c8b22e91171c836e0c4f7ec}
+Get a list of implemented Excel function names
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}!list\+Functions@{list\+Functions}}
+\index{list\+Functions@{list\+Functions}!P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}}
+\subsubsection[{list\+Functions}]{\setlength{\rightskip}{0pt plus 5cm}list\+Functions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___calculation_af8c7fa58d3585a1ca3d9830c728a716d}
+Get a list of all implemented functions as an array of function objects
+
+\begin{DoxyReturn}{Returns}
+array of \doxyref{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Function}{p.}{class_p_h_p_excel___calculation___function} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}!parse\+Formula@{parse\+Formula}}
+\index{parse\+Formula@{parse\+Formula}!P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}}
+\subsubsection[{parse\+Formula}]{\setlength{\rightskip}{0pt plus 5cm}parse\+Formula (
+\begin{DoxyParamCaption}
+\item[{}]{\$formula}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___calculation_ab448c9d7c2479d972e503e8e8f6774ed}
+Validate and parse a formula string
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$formula} & Formula to parse \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Exception}{p.}{class_p_h_p_excel___calculation___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\index{P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}!rename\+Calculation\+Cache\+For\+Worksheet@{rename\+Calculation\+Cache\+For\+Worksheet}}
+\index{rename\+Calculation\+Cache\+For\+Worksheet@{rename\+Calculation\+Cache\+For\+Worksheet}!P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}}
+\subsubsection[{rename\+Calculation\+Cache\+For\+Worksheet}]{\setlength{\rightskip}{0pt plus 5cm}rename\+Calculation\+Cache\+For\+Worksheet (
+\begin{DoxyParamCaption}
+\item[{}]{\$from\+Worksheet\+Name, }
+\item[{}]{\$to\+Worksheet\+Name}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___calculation_a8e919920563b7fd0cf92277d7cb7447d}
+Rename calculation cache for a specified worksheet
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$from\+Worksheet\+Name} & \\
+\hline
+string & {\em \$to\+Worksheet\+Name} & \\
+\hline
+\end{DoxyParams}
+\index{P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}!set\+Array\+Return\+Type@{set\+Array\+Return\+Type}}
+\index{set\+Array\+Return\+Type@{set\+Array\+Return\+Type}!P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}}
+\subsubsection[{set\+Array\+Return\+Type}]{\setlength{\rightskip}{0pt plus 5cm}static set\+Array\+Return\+Type (
+\begin{DoxyParamCaption}
+\item[{}]{\$return\+Type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___calculation_abb388070bc402b8fb947320520dc774c}
+Set the Array Return Type (Array or Value of first element in the array)
+
+public 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$return\+Type} & Array return type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean Success or failure 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}!set\+Calculation\+Cache\+Enabled@{set\+Calculation\+Cache\+Enabled}}
+\index{set\+Calculation\+Cache\+Enabled@{set\+Calculation\+Cache\+Enabled}!P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}}
+\subsubsection[{set\+Calculation\+Cache\+Enabled}]{\setlength{\rightskip}{0pt plus 5cm}set\+Calculation\+Cache\+Enabled (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Value = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___calculation_a262058b76eec83cf3e735737b012462c}
+Enable/disable calculation cache
+
+public 
+\begin{DoxyParams}[1]{Parameters}
+boolean & {\em \$p\+Value} & \\
+\hline
+\end{DoxyParams}
+\index{P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}!set\+Locale@{set\+Locale}}
+\index{set\+Locale@{set\+Locale}!P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}}
+\subsubsection[{set\+Locale}]{\setlength{\rightskip}{0pt plus 5cm}set\+Locale (
+\begin{DoxyParamCaption}
+\item[{}]{\$locale = {\ttfamily 'en\+\_\+us'}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___calculation_a573d12dcc6541b3c9786c70a29e9eb42}
+Set the locale code
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$locale} & The locale to use for formula translation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}!unset\+Instance@{unset\+Instance}}
+\index{unset\+Instance@{unset\+Instance}!P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}}
+\subsubsection[{unset\+Instance}]{\setlength{\rightskip}{0pt plus 5cm}static unset\+Instance (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+H\+P\+Excel}}]{\$workbook = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___calculation_a536c0f3f3e6d97616317f0cd7e732928}
+Unset an instance of this class
+
+public 
+\begin{DoxyParams}[1]{Parameters}
+\doxyref{P\+H\+P\+Excel}{p.}{class_p_h_p_excel} & {\em \$workbook} & Injected workbook identifying the instance to unset \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Field Documentation}
+\index{P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}!\$\+\_\+locale\+Boolean@{\$\+\_\+locale\+Boolean}}
+\index{\$\+\_\+locale\+Boolean@{\$\+\_\+locale\+Boolean}!P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}}
+\subsubsection[{\$\+\_\+locale\+Boolean}]{\setlength{\rightskip}{0pt plus 5cm}\$\+\_\+locale\+Boolean\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___calculation_aca33d1d4c56c8aae73ccdfa2b449bf44}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= array(    \textcolor{stringliteral}{'TRUE'}  => \textcolor{stringliteral}{'TRUE'},
+                                            \textcolor{stringliteral}{'FALSE'} => \textcolor{stringliteral}{'FALSE'},
+                                            \textcolor{stringliteral}{'NULL'}  => \textcolor{stringliteral}{'NULL'}
+                                          )
+\end{DoxyCode}
+\index{P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}!C\+A\+L\+C\+U\+L\+A\+T\+I\+O\+N\+\_\+\+R\+E\+G\+E\+X\+P\+\_\+\+N\+U\+M\+B\+E\+R@{C\+A\+L\+C\+U\+L\+A\+T\+I\+O\+N\+\_\+\+R\+E\+G\+E\+X\+P\+\_\+\+N\+U\+M\+B\+E\+R}}
+\index{C\+A\+L\+C\+U\+L\+A\+T\+I\+O\+N\+\_\+\+R\+E\+G\+E\+X\+P\+\_\+\+N\+U\+M\+B\+E\+R@{C\+A\+L\+C\+U\+L\+A\+T\+I\+O\+N\+\_\+\+R\+E\+G\+E\+X\+P\+\_\+\+N\+U\+M\+B\+E\+R}!P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}}
+\subsubsection[{C\+A\+L\+C\+U\+L\+A\+T\+I\+O\+N\+\_\+\+R\+E\+G\+E\+X\+P\+\_\+\+N\+U\+M\+B\+E\+R}]{\setlength{\rightskip}{0pt plus 5cm}const C\+A\+L\+C\+U\+L\+A\+T\+I\+O\+N\+\_\+\+R\+E\+G\+E\+X\+P\+\_\+\+N\+U\+M\+B\+E\+R = '[-\/+]?\textbackslash{}d$\ast$\textbackslash{}.?\textbackslash{}d+(e[-\/+]?\textbackslash{}d+)?'}\label{class_p_h_p_excel___calculation_ad5a7aed1c409669f83141aea95d54089}
+Constants Regular Expressions \index{P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}!R\+E\+T\+U\+R\+N\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+A\+S\+\_\+\+E\+R\+R\+O\+R@{R\+E\+T\+U\+R\+N\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+A\+S\+\_\+\+E\+R\+R\+O\+R}}
+\index{R\+E\+T\+U\+R\+N\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+A\+S\+\_\+\+E\+R\+R\+O\+R@{R\+E\+T\+U\+R\+N\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+A\+S\+\_\+\+E\+R\+R\+O\+R}!P\+H\+P\+Excel\+\_\+\+Calculation@{P\+H\+P\+Excel\+\_\+\+Calculation}}
+\subsubsection[{R\+E\+T\+U\+R\+N\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+A\+S\+\_\+\+E\+R\+R\+O\+R}]{\setlength{\rightskip}{0pt plus 5cm}const R\+E\+T\+U\+R\+N\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+A\+S\+\_\+\+E\+R\+R\+O\+R = 'error'}\label{class_p_h_p_excel___calculation_a1b0f84f03fdc1041fdfd0e3a634d48ed}
+constants 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/var/www/workspace/\+O\+D\+I-\/\+P\+R\+O\+J\+E\+C\+T/model/\+P\+H\+P\+Excel/\+Classes/\+P\+H\+P\+Excel/Calculation.\+php\end{DoxyCompactItemize}

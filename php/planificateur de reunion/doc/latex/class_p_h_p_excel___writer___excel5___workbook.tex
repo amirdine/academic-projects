@@ -1,0 +1,193 @@
+\section{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Workbook Class Reference}
+\label{class_p_h_p_excel___writer___excel5___workbook}\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Workbook@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Workbook}}
+
+
+Inheritance diagram for P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Workbook\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{class_p_h_p_excel___writer___excel5___workbook__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Workbook\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{class_p_h_p_excel___writer___excel5___workbook__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf \+\_\+\+\_\+construct} ({\bf P\+H\+P\+Excel} \$php\+Excel=null, \&\$str\+\_\+total, \&\$str\+\_\+unique, \&\$str\+\_\+table, \&\$colors, \$parser)
+\item 
+{\bf add\+Xf\+Writer} (\$style, \$is\+Style\+Xf=false)
+\item 
+{\bf \+\_\+add\+Font} ({\bf P\+H\+P\+Excel\+\_\+\+Style\+\_\+\+Font} \$font)
+\item 
+{\bf \+\_\+set\+Palette\+Xl97} ()
+\item 
+{\bf write\+Workbook} (\$p\+Worksheet\+Sizes=null)
+\item 
+{\bf \+\_\+calc\+Sheet\+Offsets} ()
+\item 
+{\bf get\+Escher} ()
+\item 
+{\bf set\+Escher} ({\bf P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Escher} \$p\+Value=null)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$\+\_\+biffsize}\label{class_p_h_p_excel___writer___excel5___workbook_ad35d243ffe6dcae20ab06abc4c1aed14}
+
+\item 
+{\bfseries \$\+\_\+palette}\label{class_p_h_p_excel___writer___excel5___workbook_a79370e768bfe336ecaf55e2c6c1d3c9e}
+
+\item 
+{\bfseries \$\+\_\+codepage}\label{class_p_h_p_excel___writer___excel5___workbook_a1033cbcf9bf63b6ea21e28bb8f670603}
+
+\item 
+{\bfseries \$\+\_\+country\+\_\+code}\label{class_p_h_p_excel___writer___excel5___workbook_aa8f91304f2f5d96be4f27b40c0fb31d7}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Workbook@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Workbook}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Workbook@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Workbook}}
+\subsubsection[{\+\_\+\+\_\+construct}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+H\+P\+Excel}}]{\$php\+Excel = {\ttfamily null}, }
+\item[{\&}]{\$str\+\_\+total, }
+\item[{\&}]{\$str\+\_\+unique, }
+\item[{\&}]{\$str\+\_\+table, }
+\item[{\&}]{\$colors, }
+\item[{}]{\$parser}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___excel5___workbook_ae4e27fb774631a6bb4d1258d6a84501f}
+Class constructor
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxyref{P\+H\+P\+Excel}{p.}{class_p_h_p_excel} & {\em \$php\+Excel} & The Workbook \\
+\hline
+int & {\em \&\$str\+\_\+total} & Total number of strings \\
+\hline
+int & {\em \&\$str\+\_\+unique} & Total number of unique strings \\
+\hline
+array & {\em \&\$str\+\_\+table} & String Table \\
+\hline
+array & {\em \&\$colors} & Colour Table \\
+\hline
+mixed & {\em \$parser} & The formula parser created for the Workbook \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Workbook@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Workbook}!\+\_\+add\+Font@{\+\_\+add\+Font}}
+\index{\+\_\+add\+Font@{\+\_\+add\+Font}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Workbook@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Workbook}}
+\subsubsection[{\+\_\+add\+Font}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+add\+Font (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+H\+P\+Excel\+\_\+\+Style\+\_\+\+Font}}]{\$font}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___excel5___workbook_a5ead917b1fc0d7ed5a90ff81ccce4fcc}
+Add a font to added fonts
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Style\+\_\+\+Font}{p.}{class_p_h_p_excel___style___font} & {\em \$font} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Index to F\+O\+N\+T record 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Workbook@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Workbook}!\+\_\+calc\+Sheet\+Offsets@{\+\_\+calc\+Sheet\+Offsets}}
+\index{\+\_\+calc\+Sheet\+Offsets@{\+\_\+calc\+Sheet\+Offsets}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Workbook@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Workbook}}
+\subsubsection[{\+\_\+calc\+Sheet\+Offsets}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+calc\+Sheet\+Offsets (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___excel5___workbook_a7f56ba7fe738b446d525dcf23a985d91}
+Calculate offsets for Worksheet B\+O\+F records.
+
+private \index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Workbook@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Workbook}!\+\_\+set\+Palette\+Xl97@{\+\_\+set\+Palette\+Xl97}}
+\index{\+\_\+set\+Palette\+Xl97@{\+\_\+set\+Palette\+Xl97}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Workbook@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Workbook}}
+\subsubsection[{\+\_\+set\+Palette\+Xl97}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+set\+Palette\+Xl97 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___excel5___workbook_a51fde31d10bf94e336f9c6d05394b629}
+Sets the colour palette to the Excel 97+ default.
+
+private \index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Workbook@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Workbook}!add\+Xf\+Writer@{add\+Xf\+Writer}}
+\index{add\+Xf\+Writer@{add\+Xf\+Writer}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Workbook@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Workbook}}
+\subsubsection[{add\+Xf\+Writer}]{\setlength{\rightskip}{0pt plus 5cm}add\+Xf\+Writer (
+\begin{DoxyParamCaption}
+\item[{}]{\$style, }
+\item[{}]{\$is\+Style\+Xf = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___excel5___workbook_ab570aeedd37ec6e609f70c3ec3eccd5d}
+Add a new X\+F writer
+
+
+\begin{DoxyParams}{Parameters}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Style}{p.}{class_p_h_p_excel___style}} & \\
+\hline
+{\em boolean} & Is it a style X\+F? \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Index to X\+F record 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Workbook@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Workbook}!get\+Escher@{get\+Escher}}
+\index{get\+Escher@{get\+Escher}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Workbook@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Workbook}}
+\subsubsection[{get\+Escher}]{\setlength{\rightskip}{0pt plus 5cm}get\+Escher (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___excel5___workbook_a2f9f8a0e0ce7fe1626e8deaaf99a5281}
+Get Escher object
+
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Escher}{p.}{class_p_h_p_excel___shared___escher} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Workbook@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Workbook}!set\+Escher@{set\+Escher}}
+\index{set\+Escher@{set\+Escher}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Workbook@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Workbook}}
+\subsubsection[{set\+Escher}]{\setlength{\rightskip}{0pt plus 5cm}set\+Escher (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Escher}}]{\$p\+Value = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___excel5___workbook_a7f63e34d69a5432cbe7e22c5104e88ff}
+Set Escher object
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Escher}{p.}{class_p_h_p_excel___shared___escher} & {\em \$p\+Value} & \\
+\hline
+\end{DoxyParams}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Workbook@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Workbook}!write\+Workbook@{write\+Workbook}}
+\index{write\+Workbook@{write\+Workbook}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Workbook@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel5\+\_\+\+Workbook}}
+\subsubsection[{write\+Workbook}]{\setlength{\rightskip}{0pt plus 5cm}write\+Workbook (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Worksheet\+Sizes = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___excel5___workbook_af80277839176b576655d2805029dabd7}
+Assemble worksheets into a workbook and send the B\+I\+F\+F data to an O\+L\+E storage.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$p\+Worksheet\+Sizes} & The sizes in bytes of the binary worksheet streams \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Binary data for workbook stream 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/var/www/workspace/\+O\+D\+I-\/\+P\+R\+O\+J\+E\+C\+T/model/\+P\+H\+P\+Excel/\+Classes/\+P\+H\+P\+Excel/\+Writer/\+Excel5/Workbook.\+php\end{DoxyCompactItemize}

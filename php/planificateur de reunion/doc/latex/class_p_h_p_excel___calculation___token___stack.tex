@@ -1,0 +1,91 @@
+\section{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Token\+\_\+\+Stack Class Reference}
+\label{class_p_h_p_excel___calculation___token___stack}\index{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Token\+\_\+\+Stack@{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Token\+\_\+\+Stack}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf count} ()
+\item 
+{\bf push} (\$type, \$value, \$reference=N\+U\+L\+L)
+\item 
+{\bf pop} ()
+\item 
+{\bf last} (\$n=1)
+\item 
+{\bf clear} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Token\+\_\+\+Stack@{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Token\+\_\+\+Stack}!clear@{clear}}
+\index{clear@{clear}!P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Token\+\_\+\+Stack@{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Token\+\_\+\+Stack}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___calculation___token___stack_aa821bec12eaa7e0f649397c9675ff505}
+Clear the stack \index{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Token\+\_\+\+Stack@{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Token\+\_\+\+Stack}!count@{count}}
+\index{count@{count}!P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Token\+\_\+\+Stack@{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Token\+\_\+\+Stack}}
+\subsubsection[{count}]{\setlength{\rightskip}{0pt plus 5cm}count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___calculation___token___stack_ac751e87b3d4c4bf2feb03bee8b092755}
+Return the number of entries on the stack
+
+\begin{DoxyReturn}{Returns}
+integer 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Token\+\_\+\+Stack@{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Token\+\_\+\+Stack}!last@{last}}
+\index{last@{last}!P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Token\+\_\+\+Stack@{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Token\+\_\+\+Stack}}
+\subsubsection[{last}]{\setlength{\rightskip}{0pt plus 5cm}last (
+\begin{DoxyParamCaption}
+\item[{}]{\$n = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___calculation___token___stack_a5ed5354b2df52be39af799f934570764}
+Return an entry from the stack without removing it
+
+
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$n} & number indicating how far back in the stack we want to look \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Token\+\_\+\+Stack@{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Token\+\_\+\+Stack}!pop@{pop}}
+\index{pop@{pop}!P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Token\+\_\+\+Stack@{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Token\+\_\+\+Stack}}
+\subsubsection[{pop}]{\setlength{\rightskip}{0pt plus 5cm}pop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___calculation___token___stack_af08a41a567567d62f673b57214644195}
+Pop the last entry from the stack
+
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Token\+\_\+\+Stack@{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Token\+\_\+\+Stack}!push@{push}}
+\index{push@{push}!P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Token\+\_\+\+Stack@{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Token\+\_\+\+Stack}}
+\subsubsection[{push}]{\setlength{\rightskip}{0pt plus 5cm}push (
+\begin{DoxyParamCaption}
+\item[{}]{\$type, }
+\item[{}]{\$value, }
+\item[{}]{\$reference = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___calculation___token___stack_a6e6624bac0660b47c155777b688e4a19}
+Push a new entry onto the stack
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$type} & \\
+\hline
+mixed & {\em \$value} & \\
+\hline
+mixed & {\em \$reference} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/var/www/workspace/\+O\+D\+I-\/\+P\+R\+O\+J\+E\+C\+T/model/\+P\+H\+P\+Excel/\+Classes/\+P\+H\+P\+Excel/\+Calculation/\+Token/Stack.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,334 @@
+\section{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base Class Reference}
+\label{class_p_h_p_excel___cached_object_storage___cache_base}\index{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base@{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base}}
+
+
+Inheritance diagram for P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_p_h_p_excel___cached_object_storage___cache_base__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf \+\_\+\+\_\+construct} ({\bf P\+H\+P\+Excel\+\_\+\+Worksheet} \$parent)
+\item 
+{\bf get\+Parent} ()
+\item 
+{\bf is\+Data\+Set} (\$p\+Coord)
+\item 
+{\bf move\+Cell} (\$from\+Address, \$to\+Address)
+\item 
+{\bf update\+Cache\+Data} ({\bf P\+H\+P\+Excel\+\_\+\+Cell} \$cell)
+\item 
+{\bf delete\+Cache\+Data} (\$p\+Coord)
+\item 
+{\bf get\+Cell\+List} ()
+\item 
+{\bf get\+Sorted\+Cell\+List} ()
+\item 
+{\bf get\+Highest\+Row\+And\+Column} ()
+\item 
+{\bf get\+Current\+Address} ()
+\item 
+{\bf get\+Current\+Column} ()
+\item 
+{\bf get\+Current\+Row} ()
+\item 
+{\bf get\+Highest\+Column} (\$row=null)
+\item 
+{\bf get\+Highest\+Row} (\$column=null)
+\item 
+{\bf copy\+Cell\+Collection} ({\bf P\+H\+P\+Excel\+\_\+\+Worksheet} \$parent)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static {\bf cache\+Method\+Is\+Available} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf \+\_\+get\+Unique\+I\+D} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$\+\_\+parent}\label{class_p_h_p_excel___cached_object_storage___cache_base_a8c040f02d9e695416231845d2aaf7f59}
+
+\item 
+{\bfseries \$\+\_\+current\+Object} = null\label{class_p_h_p_excel___cached_object_storage___cache_base_a8704b6a9a56641a21842871df04c7262}
+
+\item 
+{\bfseries \$\+\_\+current\+Object\+I\+D} = null\label{class_p_h_p_excel___cached_object_storage___cache_base_ab417796f7ca6df1296f3c448e8e53623}
+
+\item 
+{\bfseries \$\+\_\+current\+Cell\+Is\+Dirty} = true\label{class_p_h_p_excel___cached_object_storage___cache_base_a95781f69ba573c3c0ab283fa7f2bd788}
+
+\item 
+{\bfseries \$\+\_\+cell\+Cache} = array()\label{class_p_h_p_excel___cached_object_storage___cache_base_a46cf30504896aebf1d917c58b99a70b3}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base@{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base@{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base}}
+\subsubsection[{\+\_\+\+\_\+construct}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+H\+P\+Excel\+\_\+\+Worksheet}}]{\$parent}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___cached_object_storage___cache_base_a4d0ee1d94da514b132c2b753d7f5169d}
+Initialise this new cell collection
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} & {\em \$parent} & The worksheet for this cell collection \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base@{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base}!\+\_\+get\+Unique\+I\+D@{\+\_\+get\+Unique\+I\+D}}
+\index{\+\_\+get\+Unique\+I\+D@{\+\_\+get\+Unique\+I\+D}!P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base@{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base}}
+\subsubsection[{\+\_\+get\+Unique\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+get\+Unique\+I\+D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_p_h_p_excel___cached_object_storage___cache_base_acf63d8f582cd28cb15e729247ab66a1b}
+Generate a unique I\+D for cache referencing
+
+\begin{DoxyReturn}{Returns}
+string Unique Reference 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base@{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base}!cache\+Method\+Is\+Available@{cache\+Method\+Is\+Available}}
+\index{cache\+Method\+Is\+Available@{cache\+Method\+Is\+Available}!P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base@{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base}}
+\subsubsection[{cache\+Method\+Is\+Available}]{\setlength{\rightskip}{0pt plus 5cm}static cache\+Method\+Is\+Available (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___cached_object_storage___cache_base_aabe032d4401949830fb2df63de941004}
+Identify whether the caching method is currently available Some methods are dependent on the availability of certain extensions being enabled in the P\+H\+P build
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base@{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base}!copy\+Cell\+Collection@{copy\+Cell\+Collection}}
+\index{copy\+Cell\+Collection@{copy\+Cell\+Collection}!P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base@{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base}}
+\subsubsection[{copy\+Cell\+Collection}]{\setlength{\rightskip}{0pt plus 5cm}copy\+Cell\+Collection (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+H\+P\+Excel\+\_\+\+Worksheet}}]{\$parent}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___cached_object_storage___cache_base_a51058a2727b1b9ed29e90d69442b61c1}
+Clone the cell collection
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} & {\em \$parent} & The new worksheet \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base@{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base}!delete\+Cache\+Data@{delete\+Cache\+Data}}
+\index{delete\+Cache\+Data@{delete\+Cache\+Data}!P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base@{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base}}
+\subsubsection[{delete\+Cache\+Data}]{\setlength{\rightskip}{0pt plus 5cm}delete\+Cache\+Data (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Coord}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___cached_object_storage___cache_base_ac667a16a9911448f38dd87a65edb5938}
+Delete a cell in cache identified by coordinate address
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Coord} & Coordinate address of the cell to delete \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\index{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base@{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base}!get\+Cell\+List@{get\+Cell\+List}}
+\index{get\+Cell\+List@{get\+Cell\+List}!P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base@{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base}}
+\subsubsection[{get\+Cell\+List}]{\setlength{\rightskip}{0pt plus 5cm}get\+Cell\+List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___cached_object_storage___cache_base_adebf78f21c01b7615cfdcaf2821120f5}
+Get a list of all cell addresses currently held in cache
+
+\begin{DoxyReturn}{Returns}
+array of string 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base@{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base}!get\+Current\+Address@{get\+Current\+Address}}
+\index{get\+Current\+Address@{get\+Current\+Address}!P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base@{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base}}
+\subsubsection[{get\+Current\+Address}]{\setlength{\rightskip}{0pt plus 5cm}get\+Current\+Address (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___cached_object_storage___cache_base_a60a3565ea4eb3b6b6cfca8275698a71b}
+Return the cell address of the currently active cell object
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base@{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base}!get\+Current\+Column@{get\+Current\+Column}}
+\index{get\+Current\+Column@{get\+Current\+Column}!P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base@{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base}}
+\subsubsection[{get\+Current\+Column}]{\setlength{\rightskip}{0pt plus 5cm}get\+Current\+Column (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___cached_object_storage___cache_base_a9767dfd055e7a3cdaace23ea5631a565}
+Return the column address of the currently active cell object
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base@{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base}!get\+Current\+Row@{get\+Current\+Row}}
+\index{get\+Current\+Row@{get\+Current\+Row}!P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base@{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base}}
+\subsubsection[{get\+Current\+Row}]{\setlength{\rightskip}{0pt plus 5cm}get\+Current\+Row (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___cached_object_storage___cache_base_a52745b54b79442ca627b466931270ffb}
+Return the row address of the currently active cell object
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base@{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base}!get\+Highest\+Column@{get\+Highest\+Column}}
+\index{get\+Highest\+Column@{get\+Highest\+Column}!P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base@{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base}}
+\subsubsection[{get\+Highest\+Column}]{\setlength{\rightskip}{0pt plus 5cm}get\+Highest\+Column (
+\begin{DoxyParamCaption}
+\item[{}]{\$row = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___cached_object_storage___cache_base_ad3c18234404cb06b8ee10126a0091aeb}
+Get highest worksheet column
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$row} & Return the highest column for the specified row, or the highest column of any row if no row number is passed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Highest column name 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base@{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base}!get\+Highest\+Row@{get\+Highest\+Row}}
+\index{get\+Highest\+Row@{get\+Highest\+Row}!P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base@{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base}}
+\subsubsection[{get\+Highest\+Row}]{\setlength{\rightskip}{0pt plus 5cm}get\+Highest\+Row (
+\begin{DoxyParamCaption}
+\item[{}]{\$column = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___cached_object_storage___cache_base_ab1930a4c441cd53616caa55b195bde27}
+Get highest worksheet row
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & Return the highest row for the specified column, or the highest row of any column if no column letter is passed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Highest row number 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base@{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base}!get\+Highest\+Row\+And\+Column@{get\+Highest\+Row\+And\+Column}}
+\index{get\+Highest\+Row\+And\+Column@{get\+Highest\+Row\+And\+Column}!P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base@{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base}}
+\subsubsection[{get\+Highest\+Row\+And\+Column}]{\setlength{\rightskip}{0pt plus 5cm}get\+Highest\+Row\+And\+Column (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___cached_object_storage___cache_base_aa16eaa7ac9c15a90a532560d419f663e}
+Get highest worksheet column and highest row that have cell records
+
+\begin{DoxyReturn}{Returns}
+array Highest column name and highest row number 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base@{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base}!get\+Parent@{get\+Parent}}
+\index{get\+Parent@{get\+Parent}!P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base@{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base}}
+\subsubsection[{get\+Parent}]{\setlength{\rightskip}{0pt plus 5cm}get\+Parent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___cached_object_storage___cache_base_a95ecaee3537b1ad29b04ef383a57bbae}
+Return the parent worksheet for this cell collection
+
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base@{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base}!get\+Sorted\+Cell\+List@{get\+Sorted\+Cell\+List}}
+\index{get\+Sorted\+Cell\+List@{get\+Sorted\+Cell\+List}!P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base@{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base}}
+\subsubsection[{get\+Sorted\+Cell\+List}]{\setlength{\rightskip}{0pt plus 5cm}get\+Sorted\+Cell\+List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___cached_object_storage___cache_base_ae2280d20c26e5ec7903d26e34a25c95b}
+Sort the list of all cell addresses currently held in cache by row and column
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base@{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base}!is\+Data\+Set@{is\+Data\+Set}}
+\index{is\+Data\+Set@{is\+Data\+Set}!P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base@{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base}}
+\subsubsection[{is\+Data\+Set}]{\setlength{\rightskip}{0pt plus 5cm}is\+Data\+Set (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Coord}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___cached_object_storage___cache_base_a2e02b8609e589b44981eefd10ddb1dc0}
+Is a value set in the current \doxyref{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+I\+Cache}{p.}{interface_p_h_p_excel___cached_object_storage___i_cache} for an indexed cell?
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Coord} & Coordinate address of the cell to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base@{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base}!move\+Cell@{move\+Cell}}
+\index{move\+Cell@{move\+Cell}!P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base@{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base}}
+\subsubsection[{move\+Cell}]{\setlength{\rightskip}{0pt plus 5cm}move\+Cell (
+\begin{DoxyParamCaption}
+\item[{}]{\$from\+Address, }
+\item[{}]{\$to\+Address}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___cached_object_storage___cache_base_ad35c4f1555c17eb7880a81df90841ea7}
+Move a cell object from one address to another
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$from\+Address} & Current address of the cell to move \\
+\hline
+string & {\em \$to\+Address} & Destination address of the cell to move \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base@{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base}!update\+Cache\+Data@{update\+Cache\+Data}}
+\index{update\+Cache\+Data@{update\+Cache\+Data}!P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base@{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base}}
+\subsubsection[{update\+Cache\+Data}]{\setlength{\rightskip}{0pt plus 5cm}update\+Cache\+Data (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+H\+P\+Excel\+\_\+\+Cell}}]{\$cell}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___cached_object_storage___cache_base_aaafcb8e07935301a37c47bfc463dc705}
+Add or Update a cell in cache
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Cell}{p.}{class_p_h_p_excel___cell} & {\em \$cell} & Cell to update \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/var/www/workspace/\+O\+D\+I-\/\+P\+R\+O\+J\+E\+C\+T/model/\+P\+H\+P\+Excel/\+Classes/\+P\+H\+P\+Excel/\+Cached\+Object\+Storage/Cache\+Base.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,250 @@
+\section{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Abstract Class Reference}
+\label{class_p_h_p_excel___reader___abstract}\index{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Abstract@{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Abstract}}
+
+
+Inheritance diagram for P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Abstract\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_p_h_p_excel___reader___abstract__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Abstract\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{class_p_h_p_excel___reader___abstract__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf get\+Read\+Data\+Only} ()
+\item 
+{\bf set\+Read\+Data\+Only} (\$p\+Value=F\+A\+L\+S\+E)
+\item 
+{\bf get\+Include\+Charts} ()
+\item 
+{\bf set\+Include\+Charts} (\$p\+Value=F\+A\+L\+S\+E)
+\item 
+{\bf get\+Load\+Sheets\+Only} ()
+\item 
+{\bf set\+Load\+Sheets\+Only} (\$value=N\+U\+L\+L)
+\item 
+{\bf set\+Load\+All\+Sheets} ()
+\item 
+{\bf get\+Read\+Filter} ()
+\item 
+{\bf set\+Read\+Filter} ({\bf P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+I\+Read\+Filter} \$p\+Value)
+\item 
+{\bf can\+Read} (\$p\+Filename)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf \+\_\+open\+File} (\$p\+Filename)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$\+\_\+read\+Data\+Only} = F\+A\+L\+S\+E\label{class_p_h_p_excel___reader___abstract_af14133ab6757b287eb9f1c7815bacd86}
+
+\item 
+{\bfseries \$\+\_\+include\+Charts} = F\+A\+L\+S\+E\label{class_p_h_p_excel___reader___abstract_adb16e9c3558b7a5a20f127782fc15a77}
+
+\item 
+{\bfseries \$\+\_\+load\+Sheets\+Only} = N\+U\+L\+L\label{class_p_h_p_excel___reader___abstract_a93a8a65d5d8e1fdeddec63486f04d0f5}
+
+\item 
+{\bfseries \$\+\_\+read\+Filter} = N\+U\+L\+L\label{class_p_h_p_excel___reader___abstract_acb3617895cc08af1049d690d4de40b95}
+
+\item 
+{\bfseries \$\+\_\+file\+Handle} = N\+U\+L\+L\label{class_p_h_p_excel___reader___abstract_ae366b05cc56b919cccdc7fa983dd5b83}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Abstract@{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Abstract}!\+\_\+open\+File@{\+\_\+open\+File}}
+\index{\+\_\+open\+File@{\+\_\+open\+File}!P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Abstract@{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Abstract}}
+\subsubsection[{\+\_\+open\+File}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+open\+File (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Filename}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_p_h_p_excel___reader___abstract_a23cbbcbd17459bcd11c5c9dc8b3ab03e}
+Open file for reading
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Filename} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Exception}{p.}{class_p_h_p_excel___reader___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+resource 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Abstract@{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Abstract}!can\+Read@{can\+Read}}
+\index{can\+Read@{can\+Read}!P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Abstract@{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Abstract}}
+\subsubsection[{can\+Read}]{\setlength{\rightskip}{0pt plus 5cm}can\+Read (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Filename}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___reader___abstract_aaf37e346855968e7310a6b43eb701fff}
+Can the current \doxyref{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+I\+Reader}{p.}{interface_p_h_p_excel___reader___i_reader} read the file?
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Filename} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Exception}{p.}{class_p_h_p_excel___reader___exception}} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements {\bf P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+I\+Reader} \doxyref{}{p.}{interface_p_h_p_excel___reader___i_reader_aaf37e346855968e7310a6b43eb701fff}.
+
+\index{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Abstract@{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Abstract}!get\+Include\+Charts@{get\+Include\+Charts}}
+\index{get\+Include\+Charts@{get\+Include\+Charts}!P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Abstract@{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Abstract}}
+\subsubsection[{get\+Include\+Charts}]{\setlength{\rightskip}{0pt plus 5cm}get\+Include\+Charts (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___reader___abstract_a93df2187f1b0056fb304340bee88d8aa}
+Read charts in workbook? If this is true, then the Reader will include any charts that exist in the workbook. Note that a Read\+Data\+Only value of false overrides, and charts won't be read regardless of the Include\+Charts value. If false (the default) it will ignore any charts defined in the workbook file.
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Abstract@{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Abstract}!get\+Load\+Sheets\+Only@{get\+Load\+Sheets\+Only}}
+\index{get\+Load\+Sheets\+Only@{get\+Load\+Sheets\+Only}!P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Abstract@{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Abstract}}
+\subsubsection[{get\+Load\+Sheets\+Only}]{\setlength{\rightskip}{0pt plus 5cm}get\+Load\+Sheets\+Only (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___reader___abstract_a695cb4d19db37af2891bddbfdd1f41b1}
+Get which sheets to load Returns either an array of worksheet names (the list of worksheets that should be loaded), or a null indicating that all worksheets in the workbook should be loaded.
+
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Abstract@{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Abstract}!get\+Read\+Data\+Only@{get\+Read\+Data\+Only}}
+\index{get\+Read\+Data\+Only@{get\+Read\+Data\+Only}!P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Abstract@{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Abstract}}
+\subsubsection[{get\+Read\+Data\+Only}]{\setlength{\rightskip}{0pt plus 5cm}get\+Read\+Data\+Only (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___reader___abstract_ac6cdd4ab0966c44c43b90565280cd593}
+Read data only? If this is true, then the Reader will only read data values for cells, it will not read any formatting information. If false (the default) it will read data and formatting.
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Abstract@{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Abstract}!get\+Read\+Filter@{get\+Read\+Filter}}
+\index{get\+Read\+Filter@{get\+Read\+Filter}!P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Abstract@{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Abstract}}
+\subsubsection[{get\+Read\+Filter}]{\setlength{\rightskip}{0pt plus 5cm}get\+Read\+Filter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___reader___abstract_abe90e2c64af2e5fbcd07da932986b785}
+Read filter
+
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+I\+Read\+Filter}{p.}{interface_p_h_p_excel___reader___i_read_filter} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Abstract@{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Abstract}!set\+Include\+Charts@{set\+Include\+Charts}}
+\index{set\+Include\+Charts@{set\+Include\+Charts}!P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Abstract@{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Abstract}}
+\subsubsection[{set\+Include\+Charts}]{\setlength{\rightskip}{0pt plus 5cm}set\+Include\+Charts (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Value = {\ttfamily FALSE}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___reader___abstract_a447320da1c895df226e3491aba520071}
+Set read charts in workbook Set to true, to advise the Reader to include any charts that exist in the workbook. Note that a Read\+Data\+Only value of false overrides, and charts won't be read regardless of the Include\+Charts value. Set to false (the default) to discard charts.
+
+
+\begin{DoxyParams}[1]{Parameters}
+boolean & {\em \$p\+Value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+I\+Reader}{p.}{interface_p_h_p_excel___reader___i_reader} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Abstract@{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Abstract}!set\+Load\+All\+Sheets@{set\+Load\+All\+Sheets}}
+\index{set\+Load\+All\+Sheets@{set\+Load\+All\+Sheets}!P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Abstract@{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Abstract}}
+\subsubsection[{set\+Load\+All\+Sheets}]{\setlength{\rightskip}{0pt plus 5cm}set\+Load\+All\+Sheets (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___reader___abstract_aa3d41d9cb6134f208486e8aa966e60cb}
+Set all sheets to load Tells the Reader to load all worksheets from the workbook.
+
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+I\+Reader}{p.}{interface_p_h_p_excel___reader___i_reader} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Abstract@{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Abstract}!set\+Load\+Sheets\+Only@{set\+Load\+Sheets\+Only}}
+\index{set\+Load\+Sheets\+Only@{set\+Load\+Sheets\+Only}!P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Abstract@{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Abstract}}
+\subsubsection[{set\+Load\+Sheets\+Only}]{\setlength{\rightskip}{0pt plus 5cm}set\+Load\+Sheets\+Only (
+\begin{DoxyParamCaption}
+\item[{}]{\$value = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___reader___abstract_ae1c5489e64d260316d455e91be855259}
+Set which sheets to load
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$value} & This should be either an array of worksheet names to be loaded, or a string containing a single worksheet name. If N\+U\+L\+L, then it tells the Reader to read all worksheets in the workbook\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+I\+Reader}{p.}{interface_p_h_p_excel___reader___i_reader} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Abstract@{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Abstract}!set\+Read\+Data\+Only@{set\+Read\+Data\+Only}}
+\index{set\+Read\+Data\+Only@{set\+Read\+Data\+Only}!P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Abstract@{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Abstract}}
+\subsubsection[{set\+Read\+Data\+Only}]{\setlength{\rightskip}{0pt plus 5cm}set\+Read\+Data\+Only (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Value = {\ttfamily FALSE}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___reader___abstract_ac00f373e9b05b9c16dc660574b5ad76a}
+Set read data only Set to true, to advise the Reader only to read data values for cells, and to ignore any formatting information. Set to false (the default) to advise the Reader to read both data and formatting for cells.
+
+
+\begin{DoxyParams}[1]{Parameters}
+boolean & {\em \$p\+Value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+I\+Reader}{p.}{interface_p_h_p_excel___reader___i_reader} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Abstract@{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Abstract}!set\+Read\+Filter@{set\+Read\+Filter}}
+\index{set\+Read\+Filter@{set\+Read\+Filter}!P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Abstract@{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+Abstract}}
+\subsubsection[{set\+Read\+Filter}]{\setlength{\rightskip}{0pt plus 5cm}set\+Read\+Filter (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+I\+Read\+Filter}}]{\$p\+Value}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___reader___abstract_ac9c7a28a7f6fe57133f4175a64d38326}
+Set read filter
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+I\+Read\+Filter}{p.}{interface_p_h_p_excel___reader___i_read_filter} & {\em \$p\+Value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Reader\+\_\+\+I\+Reader}{p.}{interface_p_h_p_excel___reader___i_reader} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/var/www/workspace/\+O\+D\+I-\/\+P\+R\+O\+J\+E\+C\+T/model/\+P\+H\+P\+Excel/\+Classes/\+P\+H\+P\+Excel/\+Reader/Abstract.\+php\end{DoxyCompactItemize}

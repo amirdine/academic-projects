@@ -1,0 +1,1043 @@
+\section{P\+H\+P\+Excel Class Reference}
+\label{class_p_h_p_excel}\index{P\+H\+P\+Excel@{P\+H\+P\+Excel}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf has\+Macros} ()
+\item 
+{\bf set\+Has\+Macros} (\${\bf has\+Macros}=false)
+\item 
+{\bf set\+Macros\+Code} (\$Macros\+Code)
+\item 
+{\bf get\+Macros\+Code} ()
+\item 
+{\bf set\+Macros\+Certificate} (\$Certificate=N\+U\+L\+L)
+\item 
+{\bf has\+Macros\+Certificate} ()
+\item 
+{\bf get\+Macros\+Certificate} ()
+\item 
+{\bf discard\+Macros} ()
+\item 
+{\bf set\+Ribbon\+X\+M\+L\+Data} (\$Target=N\+U\+L\+L, \$X\+M\+L\+Data=N\+U\+L\+L)
+\item 
+{\bf get\+Ribbon\+X\+M\+L\+Data} (\$What='all')
+\item 
+{\bf set\+Ribbon\+Bin\+Objects} (\$Bin\+Objects\+Names=N\+U\+L\+L, \$Bin\+Objects\+Data=N\+U\+L\+L)
+\item 
+{\bf get\+Ribbon\+Bin\+Objects} (\$What='all')
+\item 
+{\bf has\+Ribbon} ()
+\item 
+{\bf has\+Ribbon\+Bin\+Objects} ()
+\item 
+{\bf sheet\+Code\+Name\+Exists} (\$p\+Sheet\+Code\+Name)
+\item 
+{\bf get\+Sheet\+By\+Code\+Name} (\$p\+Name= '')
+\item 
+{\bf \+\_\+\+\_\+construct} ()
+\item 
+{\bf \+\_\+\+\_\+destruct} ()
+\item 
+{\bf disconnect\+Worksheets} ()
+\item 
+{\bf get\+Calculation\+Engine} ()
+\item 
+{\bf get\+Properties} ()
+\item 
+{\bf set\+Properties} ({\bf P\+H\+P\+Excel\+\_\+\+Document\+Properties} \$p\+Value)
+\item 
+{\bf get\+Security} ()
+\item 
+{\bf set\+Security} ({\bf P\+H\+P\+Excel\+\_\+\+Document\+Security} \$p\+Value)
+\item 
+{\bf get\+Active\+Sheet} ()
+\item 
+{\bf create\+Sheet} (\$i\+Sheet\+Index=N\+U\+L\+L)
+\item 
+{\bf sheet\+Name\+Exists} (\$p\+Sheet\+Name)
+\item 
+{\bf add\+Sheet} ({\bf P\+H\+P\+Excel\+\_\+\+Worksheet} \$p\+Sheet, \$i\+Sheet\+Index=N\+U\+L\+L)
+\item 
+{\bf remove\+Sheet\+By\+Index} (\$p\+Index=0)
+\item 
+{\bf get\+Sheet} (\$p\+Index=0)
+\item 
+{\bf get\+All\+Sheets} ()
+\item 
+{\bf get\+Sheet\+By\+Name} (\$p\+Name= '')
+\item 
+{\bf get\+Index} ({\bf P\+H\+P\+Excel\+\_\+\+Worksheet} \$p\+Sheet)
+\item 
+{\bf set\+Index\+By\+Name} (\$sheet\+Name, \$new\+Index)
+\item 
+{\bf get\+Sheet\+Count} ()
+\item 
+{\bf get\+Active\+Sheet\+Index} ()
+\item 
+{\bf set\+Active\+Sheet\+Index} (\$p\+Index=0)
+\item 
+{\bf set\+Active\+Sheet\+Index\+By\+Name} (\$p\+Value= '')
+\item 
+{\bf get\+Sheet\+Names} ()
+\item 
+{\bf add\+External\+Sheet} ({\bf P\+H\+P\+Excel\+\_\+\+Worksheet} \$p\+Sheet, \$i\+Sheet\+Index=null)
+\item 
+{\bf get\+Named\+Ranges} ()
+\item 
+{\bf add\+Named\+Range} ({\bf P\+H\+P\+Excel\+\_\+\+Named\+Range} \$named\+Range)
+\item 
+{\bf get\+Named\+Range} (\$named\+Range, {\bf P\+H\+P\+Excel\+\_\+\+Worksheet} \$p\+Sheet=null)
+\item 
+{\bf remove\+Named\+Range} (\$named\+Range, {\bf P\+H\+P\+Excel\+\_\+\+Worksheet} \$p\+Sheet=null)
+\item 
+{\bf get\+Worksheet\+Iterator} ()
+\item 
+{\bf copy} ()
+\item 
+{\bf \+\_\+\+\_\+clone} ()
+\item 
+{\bf get\+Cell\+Xf\+Collection} ()
+\item 
+{\bf get\+Cell\+Xf\+By\+Index} (\$p\+Index=0)
+\item 
+{\bf get\+Cell\+Xf\+By\+Hash\+Code} (\$p\+Value= '')
+\item 
+{\bf cell\+Xf\+Exists} (\$p\+Cell\+Style=null)
+\item 
+{\bf get\+Default\+Style} ()
+\item 
+{\bf add\+Cell\+Xf} ({\bf P\+H\+P\+Excel\+\_\+\+Style} \$style)
+\item 
+{\bf remove\+Cell\+Xf\+By\+Index} (\$p\+Index=0)
+\item 
+{\bf get\+Cell\+Xf\+Supervisor} ()
+\item 
+{\bf get\+Cell\+Style\+Xf\+Collection} ()
+\item 
+{\bf get\+Cell\+Style\+Xf\+By\+Index} (\$p\+Index=0)
+\item 
+{\bf get\+Cell\+Style\+Xf\+By\+Hash\+Code} (\$p\+Value= '')
+\item 
+{\bf add\+Cell\+Style\+Xf} ({\bf P\+H\+P\+Excel\+\_\+\+Style} \$p\+Style)
+\item 
+{\bf remove\+Cell\+Style\+Xf\+By\+Index} (\$p\+Index=0)
+\item 
+{\bf garbage\+Collect} ()
+\item 
+{\bf get\+I\+D} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{P\+H\+P\+Excel@{P\+H\+P\+Excel}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!P\+H\+P\+Excel@{P\+H\+P\+Excel}}
+\subsubsection[{\+\_\+\+\_\+construct}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel_a095c5d389db211932136b53f25f39685}
+Create a new \doxyref{P\+H\+P\+Excel}{p.}{class_p_h_p_excel} with one Worksheet \index{P\+H\+P\+Excel@{P\+H\+P\+Excel}!\+\_\+\+\_\+destruct@{\+\_\+\+\_\+destruct}}
+\index{\+\_\+\+\_\+destruct@{\+\_\+\+\_\+destruct}!P\+H\+P\+Excel@{P\+H\+P\+Excel}}
+\subsubsection[{\+\_\+\+\_\+destruct}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+destruct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel_a421831a265621325e1fdd19aace0c758}
+Code to execute when this worksheet is unset() 
+
+\subsection{Member Function Documentation}
+\index{P\+H\+P\+Excel@{P\+H\+P\+Excel}!\+\_\+\+\_\+clone@{\+\_\+\+\_\+clone}}
+\index{\+\_\+\+\_\+clone@{\+\_\+\+\_\+clone}!P\+H\+P\+Excel@{P\+H\+P\+Excel}}
+\subsubsection[{\+\_\+\+\_\+clone}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+clone (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel_ad0cb87b388bc74d63dc884accdca8713}
+Implement P\+H\+P \+\_\+\+\_\+clone to create a deep clone, not just a shallow copy. \index{P\+H\+P\+Excel@{P\+H\+P\+Excel}!add\+Cell\+Style\+Xf@{add\+Cell\+Style\+Xf}}
+\index{add\+Cell\+Style\+Xf@{add\+Cell\+Style\+Xf}!P\+H\+P\+Excel@{P\+H\+P\+Excel}}
+\subsubsection[{add\+Cell\+Style\+Xf}]{\setlength{\rightskip}{0pt plus 5cm}add\+Cell\+Style\+Xf (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+H\+P\+Excel\+\_\+\+Style}}]{\$p\+Style}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel_a1007c6ead8afd37eefe609fbadc3e823}
+Add a cell\+Style\+Xf to the workbook
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Style}{p.}{class_p_h_p_excel___style} & {\em \$p\+Style} & \\
+\hline
+\end{DoxyParams}
+\index{P\+H\+P\+Excel@{P\+H\+P\+Excel}!add\+Cell\+Xf@{add\+Cell\+Xf}}
+\index{add\+Cell\+Xf@{add\+Cell\+Xf}!P\+H\+P\+Excel@{P\+H\+P\+Excel}}
+\subsubsection[{add\+Cell\+Xf}]{\setlength{\rightskip}{0pt plus 5cm}add\+Cell\+Xf (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+H\+P\+Excel\+\_\+\+Style}}]{\$style}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel_aed4a8b3652cc45510b0565ea1fc4d56f}
+Add a cell\+Xf to the workbook
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Style}{p.}{class_p_h_p_excel___style} & {\em \$style} & \\
+\hline
+\end{DoxyParams}
+\index{P\+H\+P\+Excel@{P\+H\+P\+Excel}!add\+External\+Sheet@{add\+External\+Sheet}}
+\index{add\+External\+Sheet@{add\+External\+Sheet}!P\+H\+P\+Excel@{P\+H\+P\+Excel}}
+\subsubsection[{add\+External\+Sheet}]{\setlength{\rightskip}{0pt plus 5cm}add\+External\+Sheet (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+H\+P\+Excel\+\_\+\+Worksheet}}]{\$p\+Sheet, }
+\item[{}]{\$i\+Sheet\+Index = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel_ae3eb93d22e35406eaf39fc6f2a5f7356}
+Add external sheet
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} & {\em \$p\+Sheet} & External sheet to add \\
+\hline
+int | null & {\em \$i\+Sheet\+Index} & Index where sheet should go (0,1,..., or null for last) \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel@{P\+H\+P\+Excel}!add\+Named\+Range@{add\+Named\+Range}}
+\index{add\+Named\+Range@{add\+Named\+Range}!P\+H\+P\+Excel@{P\+H\+P\+Excel}}
+\subsubsection[{add\+Named\+Range}]{\setlength{\rightskip}{0pt plus 5cm}add\+Named\+Range (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+H\+P\+Excel\+\_\+\+Named\+Range}}]{\$named\+Range}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel_a91fc79d12c2e9a7e2048b36a8a73ce39}
+Add named range
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Named\+Range}{p.}{class_p_h_p_excel___named_range} & {\em \$named\+Range} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel}{p.}{class_p_h_p_excel} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel@{P\+H\+P\+Excel}!add\+Sheet@{add\+Sheet}}
+\index{add\+Sheet@{add\+Sheet}!P\+H\+P\+Excel@{P\+H\+P\+Excel}}
+\subsubsection[{add\+Sheet}]{\setlength{\rightskip}{0pt plus 5cm}add\+Sheet (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+H\+P\+Excel\+\_\+\+Worksheet}}]{\$p\+Sheet, }
+\item[{}]{\$i\+Sheet\+Index = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel_a2572d73caee7fe2fa58088a8f492aeed}
+Add sheet
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} & {\em \$p\+Sheet} & \\
+\hline
+int | null & {\em \$i\+Sheet\+Index} & Index where sheet should go (0,1,..., or null for last) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\index{P\+H\+P\+Excel@{P\+H\+P\+Excel}!cell\+Xf\+Exists@{cell\+Xf\+Exists}}
+\index{cell\+Xf\+Exists@{cell\+Xf\+Exists}!P\+H\+P\+Excel@{P\+H\+P\+Excel}}
+\subsubsection[{cell\+Xf\+Exists}]{\setlength{\rightskip}{0pt plus 5cm}cell\+Xf\+Exists (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Cell\+Style = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel_af0b5fc22204299ac6ac4f3a0d7330642}
+Check if style exists in style collection
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Style}{p.}{class_p_h_p_excel___style} & {\em \$p\+Cell\+Style} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel@{P\+H\+P\+Excel}!copy@{copy}}
+\index{copy@{copy}!P\+H\+P\+Excel@{P\+H\+P\+Excel}}
+\subsubsection[{copy}]{\setlength{\rightskip}{0pt plus 5cm}copy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel_af2ee38d1ce36008491d935c9431afc7b}
+Copy workbook (!= clone!)
+
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel}{p.}{class_p_h_p_excel} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel@{P\+H\+P\+Excel}!create\+Sheet@{create\+Sheet}}
+\index{create\+Sheet@{create\+Sheet}!P\+H\+P\+Excel@{P\+H\+P\+Excel}}
+\subsubsection[{create\+Sheet}]{\setlength{\rightskip}{0pt plus 5cm}create\+Sheet (
+\begin{DoxyParamCaption}
+\item[{}]{\$i\+Sheet\+Index = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel_a3132253ef4433f717d0354a2f9b79b22}
+Create sheet and add it to this workbook
+
+
+\begin{DoxyParams}[1]{Parameters}
+int | null & {\em \$i\+Sheet\+Index} & Index where sheet should go (0,1,..., or null for last) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\index{P\+H\+P\+Excel@{P\+H\+P\+Excel}!discard\+Macros@{discard\+Macros}}
+\index{discard\+Macros@{discard\+Macros}!P\+H\+P\+Excel@{P\+H\+P\+Excel}}
+\subsubsection[{discard\+Macros}]{\setlength{\rightskip}{0pt plus 5cm}discard\+Macros (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel_adda47c18be0e323865019a4dada598f2}
+Remove all macros, certificate from spreadsheet
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel@{P\+H\+P\+Excel}!disconnect\+Worksheets@{disconnect\+Worksheets}}
+\index{disconnect\+Worksheets@{disconnect\+Worksheets}!P\+H\+P\+Excel@{P\+H\+P\+Excel}}
+\subsubsection[{disconnect\+Worksheets}]{\setlength{\rightskip}{0pt plus 5cm}disconnect\+Worksheets (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel_a43c9c225e65a3ecf3928904cd476f647}
+Disconnect all worksheets from this \doxyref{P\+H\+P\+Excel}{p.}{class_p_h_p_excel} workbook object, typically so that the \doxyref{P\+H\+P\+Excel}{p.}{class_p_h_p_excel} object can be unset \index{P\+H\+P\+Excel@{P\+H\+P\+Excel}!garbage\+Collect@{garbage\+Collect}}
+\index{garbage\+Collect@{garbage\+Collect}!P\+H\+P\+Excel@{P\+H\+P\+Excel}}
+\subsubsection[{garbage\+Collect}]{\setlength{\rightskip}{0pt plus 5cm}garbage\+Collect (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel_ad054aa2be59f850062572eca2d1a7231}
+Eliminate all unneeded cell\+Xf and afterwards update the xf\+Index for all cells and columns in the workbook \index{P\+H\+P\+Excel@{P\+H\+P\+Excel}!get\+Active\+Sheet@{get\+Active\+Sheet}}
+\index{get\+Active\+Sheet@{get\+Active\+Sheet}!P\+H\+P\+Excel@{P\+H\+P\+Excel}}
+\subsubsection[{get\+Active\+Sheet}]{\setlength{\rightskip}{0pt plus 5cm}get\+Active\+Sheet (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel_aec8f52691db1a69bb76b089bdae0c8e6}
+Get active sheet
+
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel@{P\+H\+P\+Excel}!get\+Active\+Sheet\+Index@{get\+Active\+Sheet\+Index}}
+\index{get\+Active\+Sheet\+Index@{get\+Active\+Sheet\+Index}!P\+H\+P\+Excel@{P\+H\+P\+Excel}}
+\subsubsection[{get\+Active\+Sheet\+Index}]{\setlength{\rightskip}{0pt plus 5cm}get\+Active\+Sheet\+Index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel_a2ae92a8c7a0ee6f7d91d0b59d3ecc853}
+Get active sheet index
+
+\begin{DoxyReturn}{Returns}
+int Active sheet index 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel@{P\+H\+P\+Excel}!get\+All\+Sheets@{get\+All\+Sheets}}
+\index{get\+All\+Sheets@{get\+All\+Sheets}!P\+H\+P\+Excel@{P\+H\+P\+Excel}}
+\subsubsection[{get\+All\+Sheets}]{\setlength{\rightskip}{0pt plus 5cm}get\+All\+Sheets (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel_a8fc6fda6ed2884b5dd5a9a58d17c0304}
+Get all sheets
+
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet}[] 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel@{P\+H\+P\+Excel}!get\+Calculation\+Engine@{get\+Calculation\+Engine}}
+\index{get\+Calculation\+Engine@{get\+Calculation\+Engine}!P\+H\+P\+Excel@{P\+H\+P\+Excel}}
+\subsubsection[{get\+Calculation\+Engine}]{\setlength{\rightskip}{0pt plus 5cm}get\+Calculation\+Engine (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel_adb598817e28b020a5d1818cadfc1d0e4}
+Return the calculation engine for this worksheet
+
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Calculation}{p.}{class_p_h_p_excel___calculation} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel@{P\+H\+P\+Excel}!get\+Cell\+Style\+Xf\+By\+Hash\+Code@{get\+Cell\+Style\+Xf\+By\+Hash\+Code}}
+\index{get\+Cell\+Style\+Xf\+By\+Hash\+Code@{get\+Cell\+Style\+Xf\+By\+Hash\+Code}!P\+H\+P\+Excel@{P\+H\+P\+Excel}}
+\subsubsection[{get\+Cell\+Style\+Xf\+By\+Hash\+Code}]{\setlength{\rightskip}{0pt plus 5cm}get\+Cell\+Style\+Xf\+By\+Hash\+Code (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Value = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel_a0233b5e9da01670fbf253ed09df2441b}
+Get cell\+Style\+Xf by hash code
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+P\+H\+P\+Excel\+\_\+\+Style$\vert$false 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel@{P\+H\+P\+Excel}!get\+Cell\+Style\+Xf\+By\+Index@{get\+Cell\+Style\+Xf\+By\+Index}}
+\index{get\+Cell\+Style\+Xf\+By\+Index@{get\+Cell\+Style\+Xf\+By\+Index}!P\+H\+P\+Excel@{P\+H\+P\+Excel}}
+\subsubsection[{get\+Cell\+Style\+Xf\+By\+Index}]{\setlength{\rightskip}{0pt plus 5cm}get\+Cell\+Style\+Xf\+By\+Index (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Index = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel_a4788426d5359814fa443a8a256f4c4ea}
+Get cell\+Style\+Xf by index
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$p\+Index} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Style}{p.}{class_p_h_p_excel___style} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel@{P\+H\+P\+Excel}!get\+Cell\+Style\+Xf\+Collection@{get\+Cell\+Style\+Xf\+Collection}}
+\index{get\+Cell\+Style\+Xf\+Collection@{get\+Cell\+Style\+Xf\+Collection}!P\+H\+P\+Excel@{P\+H\+P\+Excel}}
+\subsubsection[{get\+Cell\+Style\+Xf\+Collection}]{\setlength{\rightskip}{0pt plus 5cm}get\+Cell\+Style\+Xf\+Collection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel_a319264b6f51eb24d8dc0e174917bb3f4}
+Get the workbook collection of cell\+Style\+Xfs
+
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Style}{p.}{class_p_h_p_excel___style}[] 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel@{P\+H\+P\+Excel}!get\+Cell\+Xf\+By\+Hash\+Code@{get\+Cell\+Xf\+By\+Hash\+Code}}
+\index{get\+Cell\+Xf\+By\+Hash\+Code@{get\+Cell\+Xf\+By\+Hash\+Code}!P\+H\+P\+Excel@{P\+H\+P\+Excel}}
+\subsubsection[{get\+Cell\+Xf\+By\+Hash\+Code}]{\setlength{\rightskip}{0pt plus 5cm}get\+Cell\+Xf\+By\+Hash\+Code (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Value = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel_ab3f8a07111b3242870aeca7329a4df93}
+Get cell\+Xf by hash code
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+P\+H\+P\+Excel\+\_\+\+Style$\vert$false 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel@{P\+H\+P\+Excel}!get\+Cell\+Xf\+By\+Index@{get\+Cell\+Xf\+By\+Index}}
+\index{get\+Cell\+Xf\+By\+Index@{get\+Cell\+Xf\+By\+Index}!P\+H\+P\+Excel@{P\+H\+P\+Excel}}
+\subsubsection[{get\+Cell\+Xf\+By\+Index}]{\setlength{\rightskip}{0pt plus 5cm}get\+Cell\+Xf\+By\+Index (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Index = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel_a2631075cf36984c8bf4915045228bbf0}
+Get cell\+Xf by index
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$p\+Index} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Style}{p.}{class_p_h_p_excel___style} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel@{P\+H\+P\+Excel}!get\+Cell\+Xf\+Collection@{get\+Cell\+Xf\+Collection}}
+\index{get\+Cell\+Xf\+Collection@{get\+Cell\+Xf\+Collection}!P\+H\+P\+Excel@{P\+H\+P\+Excel}}
+\subsubsection[{get\+Cell\+Xf\+Collection}]{\setlength{\rightskip}{0pt plus 5cm}get\+Cell\+Xf\+Collection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel_ac69f0c60a8f8dbd415044ab9a4140238}
+Get the workbook collection of cell\+Xfs
+
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Style}{p.}{class_p_h_p_excel___style}[] 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel@{P\+H\+P\+Excel}!get\+Cell\+Xf\+Supervisor@{get\+Cell\+Xf\+Supervisor}}
+\index{get\+Cell\+Xf\+Supervisor@{get\+Cell\+Xf\+Supervisor}!P\+H\+P\+Excel@{P\+H\+P\+Excel}}
+\subsubsection[{get\+Cell\+Xf\+Supervisor}]{\setlength{\rightskip}{0pt plus 5cm}get\+Cell\+Xf\+Supervisor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel_af7f080d1514be4ac01679bebc53cf954}
+Get the cell\+Xf supervisor
+
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Style}{p.}{class_p_h_p_excel___style} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel@{P\+H\+P\+Excel}!get\+Default\+Style@{get\+Default\+Style}}
+\index{get\+Default\+Style@{get\+Default\+Style}!P\+H\+P\+Excel@{P\+H\+P\+Excel}}
+\subsubsection[{get\+Default\+Style}]{\setlength{\rightskip}{0pt plus 5cm}get\+Default\+Style (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel_a5f5160f2d723f87b0bb763596590dfde}
+Get default style
+
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Style}{p.}{class_p_h_p_excel___style} 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\index{P\+H\+P\+Excel@{P\+H\+P\+Excel}!get\+I\+D@{get\+I\+D}}
+\index{get\+I\+D@{get\+I\+D}!P\+H\+P\+Excel@{P\+H\+P\+Excel}}
+\subsubsection[{get\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}get\+I\+D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel_a30dd7fff4fec7a39f9be9d27d4b22a59}
+Return the unique I\+D value assigned to this spreadsheet workbook
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel@{P\+H\+P\+Excel}!get\+Index@{get\+Index}}
+\index{get\+Index@{get\+Index}!P\+H\+P\+Excel@{P\+H\+P\+Excel}}
+\subsubsection[{get\+Index}]{\setlength{\rightskip}{0pt plus 5cm}get\+Index (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+H\+P\+Excel\+\_\+\+Worksheet}}]{\$p\+Sheet}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel_a577dfa51f6a9b29f6f14f9e46c4d42c7}
+Get index for sheet
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} & {\em \$p\+Sheet} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Sheet index 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\index{P\+H\+P\+Excel@{P\+H\+P\+Excel}!get\+Macros\+Certificate@{get\+Macros\+Certificate}}
+\index{get\+Macros\+Certificate@{get\+Macros\+Certificate}!P\+H\+P\+Excel@{P\+H\+P\+Excel}}
+\subsubsection[{get\+Macros\+Certificate}]{\setlength{\rightskip}{0pt plus 5cm}get\+Macros\+Certificate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel_abdd27fae1f977fe71066b258ce8954e0}
+Return the macros certificate
+
+\begin{DoxyReturn}{Returns}
+binary$\vert$null 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel@{P\+H\+P\+Excel}!get\+Macros\+Code@{get\+Macros\+Code}}
+\index{get\+Macros\+Code@{get\+Macros\+Code}!P\+H\+P\+Excel@{P\+H\+P\+Excel}}
+\subsubsection[{get\+Macros\+Code}]{\setlength{\rightskip}{0pt plus 5cm}get\+Macros\+Code (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel_a8bed244a6ee0ca848f6d3c9ad72c1e69}
+Return the macros code
+
+\begin{DoxyReturn}{Returns}
+binary$\vert$null 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel@{P\+H\+P\+Excel}!get\+Named\+Range@{get\+Named\+Range}}
+\index{get\+Named\+Range@{get\+Named\+Range}!P\+H\+P\+Excel@{P\+H\+P\+Excel}}
+\subsubsection[{get\+Named\+Range}]{\setlength{\rightskip}{0pt plus 5cm}get\+Named\+Range (
+\begin{DoxyParamCaption}
+\item[{}]{\$named\+Range, }
+\item[{{\bf P\+H\+P\+Excel\+\_\+\+Worksheet}}]{\$p\+Sheet = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel_a004a0216f3b089b2b08a98571266b499}
+Get named range
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$named\+Range} & \\
+\hline
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} | null & {\em \$p\+Sheet} & Scope. Use null for global scope \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+P\+H\+P\+Excel\+\_\+\+Named\+Range$\vert$null 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel@{P\+H\+P\+Excel}!get\+Named\+Ranges@{get\+Named\+Ranges}}
+\index{get\+Named\+Ranges@{get\+Named\+Ranges}!P\+H\+P\+Excel@{P\+H\+P\+Excel}}
+\subsubsection[{get\+Named\+Ranges}]{\setlength{\rightskip}{0pt plus 5cm}get\+Named\+Ranges (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel_a901a1f01d97b8f34020465757573132f}
+Get named ranges
+
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Named\+Range}{p.}{class_p_h_p_excel___named_range}[] 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel@{P\+H\+P\+Excel}!get\+Properties@{get\+Properties}}
+\index{get\+Properties@{get\+Properties}!P\+H\+P\+Excel@{P\+H\+P\+Excel}}
+\subsubsection[{get\+Properties}]{\setlength{\rightskip}{0pt plus 5cm}get\+Properties (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel_ad92c14b6c86304d3f1fb86b2936d3408}
+Get properties
+
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Document\+Properties}{p.}{class_p_h_p_excel___document_properties} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel@{P\+H\+P\+Excel}!get\+Ribbon\+Bin\+Objects@{get\+Ribbon\+Bin\+Objects}}
+\index{get\+Ribbon\+Bin\+Objects@{get\+Ribbon\+Bin\+Objects}!P\+H\+P\+Excel@{P\+H\+P\+Excel}}
+\subsubsection[{get\+Ribbon\+Bin\+Objects}]{\setlength{\rightskip}{0pt plus 5cm}get\+Ribbon\+Bin\+Objects (
+\begin{DoxyParamCaption}
+\item[{}]{\$\+What = {\ttfamily 'all'}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel_ac7da7cf61fd522858cfd708662e0131a}
+retrieve Binaries Ribbon Objects \index{P\+H\+P\+Excel@{P\+H\+P\+Excel}!get\+Ribbon\+X\+M\+L\+Data@{get\+Ribbon\+X\+M\+L\+Data}}
+\index{get\+Ribbon\+X\+M\+L\+Data@{get\+Ribbon\+X\+M\+L\+Data}!P\+H\+P\+Excel@{P\+H\+P\+Excel}}
+\subsubsection[{get\+Ribbon\+X\+M\+L\+Data}]{\setlength{\rightskip}{0pt plus 5cm}get\+Ribbon\+X\+M\+L\+Data (
+\begin{DoxyParamCaption}
+\item[{}]{\$\+What = {\ttfamily 'all'}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel_a8ee41e7f66d720c69f482afccf8dd772}
+retrieve ribbon X\+M\+L Data
+
+return string$\vert$null$\vert$array \index{P\+H\+P\+Excel@{P\+H\+P\+Excel}!get\+Security@{get\+Security}}
+\index{get\+Security@{get\+Security}!P\+H\+P\+Excel@{P\+H\+P\+Excel}}
+\subsubsection[{get\+Security}]{\setlength{\rightskip}{0pt plus 5cm}get\+Security (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel_ab0a889a3bf2556aa035b301b001c875a}
+Get security
+
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Document\+Security}{p.}{class_p_h_p_excel___document_security} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel@{P\+H\+P\+Excel}!get\+Sheet@{get\+Sheet}}
+\index{get\+Sheet@{get\+Sheet}!P\+H\+P\+Excel@{P\+H\+P\+Excel}}
+\subsubsection[{get\+Sheet}]{\setlength{\rightskip}{0pt plus 5cm}get\+Sheet (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Index = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel_a07931a2864c59d2dfad2050cfbb63506}
+Get sheet by index
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$p\+Index} & Sheet index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\index{P\+H\+P\+Excel@{P\+H\+P\+Excel}!get\+Sheet\+By\+Code\+Name@{get\+Sheet\+By\+Code\+Name}}
+\index{get\+Sheet\+By\+Code\+Name@{get\+Sheet\+By\+Code\+Name}!P\+H\+P\+Excel@{P\+H\+P\+Excel}}
+\subsubsection[{get\+Sheet\+By\+Code\+Name}]{\setlength{\rightskip}{0pt plus 5cm}get\+Sheet\+By\+Code\+Name (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Name = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel_a677594ac9d85206d9fa15299aaaeb775}
+Get sheet by code name. Warning \+: sheet don't have always a code name !
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Name} & Sheet name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel@{P\+H\+P\+Excel}!get\+Sheet\+By\+Name@{get\+Sheet\+By\+Name}}
+\index{get\+Sheet\+By\+Name@{get\+Sheet\+By\+Name}!P\+H\+P\+Excel@{P\+H\+P\+Excel}}
+\subsubsection[{get\+Sheet\+By\+Name}]{\setlength{\rightskip}{0pt plus 5cm}get\+Sheet\+By\+Name (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Name = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel_ae57e81d9a1f73be4e90c11bce2cd7dfb}
+Get sheet by name
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Name} & Sheet name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel@{P\+H\+P\+Excel}!get\+Sheet\+Count@{get\+Sheet\+Count}}
+\index{get\+Sheet\+Count@{get\+Sheet\+Count}!P\+H\+P\+Excel@{P\+H\+P\+Excel}}
+\subsubsection[{get\+Sheet\+Count}]{\setlength{\rightskip}{0pt plus 5cm}get\+Sheet\+Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel_aeb77a7ab605018ee252a2397716371e6}
+Get sheet count
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel@{P\+H\+P\+Excel}!get\+Sheet\+Names@{get\+Sheet\+Names}}
+\index{get\+Sheet\+Names@{get\+Sheet\+Names}!P\+H\+P\+Excel@{P\+H\+P\+Excel}}
+\subsubsection[{get\+Sheet\+Names}]{\setlength{\rightskip}{0pt plus 5cm}get\+Sheet\+Names (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel_aaa50ea911cee86990b765740b716ae2c}
+Get sheet names
+
+\begin{DoxyReturn}{Returns}
+string[] 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel@{P\+H\+P\+Excel}!get\+Worksheet\+Iterator@{get\+Worksheet\+Iterator}}
+\index{get\+Worksheet\+Iterator@{get\+Worksheet\+Iterator}!P\+H\+P\+Excel@{P\+H\+P\+Excel}}
+\subsubsection[{get\+Worksheet\+Iterator}]{\setlength{\rightskip}{0pt plus 5cm}get\+Worksheet\+Iterator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel_a1556ab97096b630947f02b32563805a0}
+Get worksheet iterator
+
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet\+Iterator}{p.}{class_p_h_p_excel___worksheet_iterator} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel@{P\+H\+P\+Excel}!has\+Macros@{has\+Macros}}
+\index{has\+Macros@{has\+Macros}!P\+H\+P\+Excel@{P\+H\+P\+Excel}}
+\subsubsection[{has\+Macros}]{\setlength{\rightskip}{0pt plus 5cm}has\+Macros (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel_aa652c8ab10be5cfb467024280fbb1405}
+The workbook has macros ?
+
+\begin{DoxyReturn}{Returns}
+true if workbook has macros, false if not 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel@{P\+H\+P\+Excel}!has\+Macros\+Certificate@{has\+Macros\+Certificate}}
+\index{has\+Macros\+Certificate@{has\+Macros\+Certificate}!P\+H\+P\+Excel@{P\+H\+P\+Excel}}
+\subsubsection[{has\+Macros\+Certificate}]{\setlength{\rightskip}{0pt plus 5cm}has\+Macros\+Certificate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel_a8793e06619262955919adfb4bfc8e8f3}
+Is the project signed ?
+
+\begin{DoxyReturn}{Returns}
+true$\vert$false 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel@{P\+H\+P\+Excel}!has\+Ribbon@{has\+Ribbon}}
+\index{has\+Ribbon@{has\+Ribbon}!P\+H\+P\+Excel@{P\+H\+P\+Excel}}
+\subsubsection[{has\+Ribbon}]{\setlength{\rightskip}{0pt plus 5cm}has\+Ribbon (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel_afc75507e89fcb452c0a9c3c9ce1b45cc}
+This workbook have a custom U\+I ?
+
+\begin{DoxyReturn}{Returns}
+true$\vert$false 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel@{P\+H\+P\+Excel}!has\+Ribbon\+Bin\+Objects@{has\+Ribbon\+Bin\+Objects}}
+\index{has\+Ribbon\+Bin\+Objects@{has\+Ribbon\+Bin\+Objects}!P\+H\+P\+Excel@{P\+H\+P\+Excel}}
+\subsubsection[{has\+Ribbon\+Bin\+Objects}]{\setlength{\rightskip}{0pt plus 5cm}has\+Ribbon\+Bin\+Objects (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel_af33681aa70a664f5c55af314fd71b02d}
+This workbook have additionnal object for the ribbon ?
+
+\begin{DoxyReturn}{Returns}
+true$\vert$false 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel@{P\+H\+P\+Excel}!remove\+Cell\+Style\+Xf\+By\+Index@{remove\+Cell\+Style\+Xf\+By\+Index}}
+\index{remove\+Cell\+Style\+Xf\+By\+Index@{remove\+Cell\+Style\+Xf\+By\+Index}!P\+H\+P\+Excel@{P\+H\+P\+Excel}}
+\subsubsection[{remove\+Cell\+Style\+Xf\+By\+Index}]{\setlength{\rightskip}{0pt plus 5cm}remove\+Cell\+Style\+Xf\+By\+Index (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Index = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel_a491cc836bb12a083a6b73d2ef854d121}
+Remove cell\+Style\+Xf by index
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$p\+Index} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\index{P\+H\+P\+Excel@{P\+H\+P\+Excel}!remove\+Cell\+Xf\+By\+Index@{remove\+Cell\+Xf\+By\+Index}}
+\index{remove\+Cell\+Xf\+By\+Index@{remove\+Cell\+Xf\+By\+Index}!P\+H\+P\+Excel@{P\+H\+P\+Excel}}
+\subsubsection[{remove\+Cell\+Xf\+By\+Index}]{\setlength{\rightskip}{0pt plus 5cm}remove\+Cell\+Xf\+By\+Index (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Index = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel_ab4b24c47089d93bd60389c30687d3652}
+Remove cell\+Xf by index. It is ensured that all cells get their xf index updated.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$p\+Index} & Index to cell\+Xf \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\index{P\+H\+P\+Excel@{P\+H\+P\+Excel}!remove\+Named\+Range@{remove\+Named\+Range}}
+\index{remove\+Named\+Range@{remove\+Named\+Range}!P\+H\+P\+Excel@{P\+H\+P\+Excel}}
+\subsubsection[{remove\+Named\+Range}]{\setlength{\rightskip}{0pt plus 5cm}remove\+Named\+Range (
+\begin{DoxyParamCaption}
+\item[{}]{\$named\+Range, }
+\item[{{\bf P\+H\+P\+Excel\+\_\+\+Worksheet}}]{\$p\+Sheet = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel_a48b394b16194eb1a84034569f78cd7f3}
+Remove named range
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$named\+Range} & \\
+\hline
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} | null & {\em \$p\+Sheet} & Scope\+: use null for global scope. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel}{p.}{class_p_h_p_excel} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel@{P\+H\+P\+Excel}!remove\+Sheet\+By\+Index@{remove\+Sheet\+By\+Index}}
+\index{remove\+Sheet\+By\+Index@{remove\+Sheet\+By\+Index}!P\+H\+P\+Excel@{P\+H\+P\+Excel}}
+\subsubsection[{remove\+Sheet\+By\+Index}]{\setlength{\rightskip}{0pt plus 5cm}remove\+Sheet\+By\+Index (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Index = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel_aa050a10085ec93c3cf44b361955ba387}
+Remove sheet by index
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$p\+Index} & Active sheet index \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\index{P\+H\+P\+Excel@{P\+H\+P\+Excel}!set\+Active\+Sheet\+Index@{set\+Active\+Sheet\+Index}}
+\index{set\+Active\+Sheet\+Index@{set\+Active\+Sheet\+Index}!P\+H\+P\+Excel@{P\+H\+P\+Excel}}
+\subsubsection[{set\+Active\+Sheet\+Index}]{\setlength{\rightskip}{0pt plus 5cm}set\+Active\+Sheet\+Index (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Index = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel_a4b556157238438489de09d38f990cfb7}
+Set active sheet index
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$p\+Index} & Active sheet index \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel@{P\+H\+P\+Excel}!set\+Active\+Sheet\+Index\+By\+Name@{set\+Active\+Sheet\+Index\+By\+Name}}
+\index{set\+Active\+Sheet\+Index\+By\+Name@{set\+Active\+Sheet\+Index\+By\+Name}!P\+H\+P\+Excel@{P\+H\+P\+Excel}}
+\subsubsection[{set\+Active\+Sheet\+Index\+By\+Name}]{\setlength{\rightskip}{0pt plus 5cm}set\+Active\+Sheet\+Index\+By\+Name (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Value = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel_a32fa3457513decdb6ecc646e4b960185}
+Set active sheet index by name
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Value} & Sheet title \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\index{P\+H\+P\+Excel@{P\+H\+P\+Excel}!set\+Has\+Macros@{set\+Has\+Macros}}
+\index{set\+Has\+Macros@{set\+Has\+Macros}!P\+H\+P\+Excel@{P\+H\+P\+Excel}}
+\subsubsection[{set\+Has\+Macros}]{\setlength{\rightskip}{0pt plus 5cm}set\+Has\+Macros (
+\begin{DoxyParamCaption}
+\item[{}]{\$has\+Macros = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel_a2b8aff2658ab8c0dad784743f853e28a}
+Define if a workbook has macros
+
+
+\begin{DoxyParams}{Parameters}
+{\em true$\vert$false} & \\
+\hline
+\end{DoxyParams}
+\index{P\+H\+P\+Excel@{P\+H\+P\+Excel}!set\+Index\+By\+Name@{set\+Index\+By\+Name}}
+\index{set\+Index\+By\+Name@{set\+Index\+By\+Name}!P\+H\+P\+Excel@{P\+H\+P\+Excel}}
+\subsubsection[{set\+Index\+By\+Name}]{\setlength{\rightskip}{0pt plus 5cm}set\+Index\+By\+Name (
+\begin{DoxyParamCaption}
+\item[{}]{\$sheet\+Name, }
+\item[{}]{\$new\+Index}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel_af31f76dd01a034e59967fb909fdf39d8}
+Set index for sheet by sheet name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$sheet\+Name} & Sheet name to modify index for \\
+\hline
+int & {\em \$new\+Index} & New index for the sheet \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+New sheet index 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\index{P\+H\+P\+Excel@{P\+H\+P\+Excel}!set\+Macros\+Certificate@{set\+Macros\+Certificate}}
+\index{set\+Macros\+Certificate@{set\+Macros\+Certificate}!P\+H\+P\+Excel@{P\+H\+P\+Excel}}
+\subsubsection[{set\+Macros\+Certificate}]{\setlength{\rightskip}{0pt plus 5cm}set\+Macros\+Certificate (
+\begin{DoxyParamCaption}
+\item[{}]{\$\+Certificate = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel_a2fe1f462888707d47f1f87d90773e7e3}
+Set the macros certificate
+
+
+\begin{DoxyParams}{Parameters}
+{\em binary$\vert$null} & \\
+\hline
+\end{DoxyParams}
+\index{P\+H\+P\+Excel@{P\+H\+P\+Excel}!set\+Macros\+Code@{set\+Macros\+Code}}
+\index{set\+Macros\+Code@{set\+Macros\+Code}!P\+H\+P\+Excel@{P\+H\+P\+Excel}}
+\subsubsection[{set\+Macros\+Code}]{\setlength{\rightskip}{0pt plus 5cm}set\+Macros\+Code (
+\begin{DoxyParamCaption}
+\item[{}]{\$\+Macros\+Code}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel_a50b3d55076135f9a38a8bb2657fdbac1}
+Set the macros code
+
+
+\begin{DoxyParams}{Parameters}
+{\em binary} & string$\vert$null \\
+\hline
+\end{DoxyParams}
+\index{P\+H\+P\+Excel@{P\+H\+P\+Excel}!set\+Properties@{set\+Properties}}
+\index{set\+Properties@{set\+Properties}!P\+H\+P\+Excel@{P\+H\+P\+Excel}}
+\subsubsection[{set\+Properties}]{\setlength{\rightskip}{0pt plus 5cm}set\+Properties (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+H\+P\+Excel\+\_\+\+Document\+Properties}}]{\$p\+Value}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel_ad2c0f3583806e7953d9b71b0c6846c77}
+Set properties
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Document\+Properties}{p.}{class_p_h_p_excel___document_properties} & {\em \$p\+Value} & \\
+\hline
+\end{DoxyParams}
+\index{P\+H\+P\+Excel@{P\+H\+P\+Excel}!set\+Ribbon\+Bin\+Objects@{set\+Ribbon\+Bin\+Objects}}
+\index{set\+Ribbon\+Bin\+Objects@{set\+Ribbon\+Bin\+Objects}!P\+H\+P\+Excel@{P\+H\+P\+Excel}}
+\subsubsection[{set\+Ribbon\+Bin\+Objects}]{\setlength{\rightskip}{0pt plus 5cm}set\+Ribbon\+Bin\+Objects (
+\begin{DoxyParamCaption}
+\item[{}]{\$\+Bin\+Objects\+Names = {\ttfamily NULL}, }
+\item[{}]{\$\+Bin\+Objects\+Data = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel_ad2f37821efbb54244df3fde6df9e9a5c}
+store binaries ribbon objects (pictures) \index{P\+H\+P\+Excel@{P\+H\+P\+Excel}!set\+Ribbon\+X\+M\+L\+Data@{set\+Ribbon\+X\+M\+L\+Data}}
+\index{set\+Ribbon\+X\+M\+L\+Data@{set\+Ribbon\+X\+M\+L\+Data}!P\+H\+P\+Excel@{P\+H\+P\+Excel}}
+\subsubsection[{set\+Ribbon\+X\+M\+L\+Data}]{\setlength{\rightskip}{0pt plus 5cm}set\+Ribbon\+X\+M\+L\+Data (
+\begin{DoxyParamCaption}
+\item[{}]{\$\+Target = {\ttfamily NULL}, }
+\item[{}]{\$\+X\+M\+L\+Data = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel_ad0007b756a521f8ff74978c3aba29a5b}
+set ribbon X\+M\+L data \index{P\+H\+P\+Excel@{P\+H\+P\+Excel}!set\+Security@{set\+Security}}
+\index{set\+Security@{set\+Security}!P\+H\+P\+Excel@{P\+H\+P\+Excel}}
+\subsubsection[{set\+Security}]{\setlength{\rightskip}{0pt plus 5cm}set\+Security (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+H\+P\+Excel\+\_\+\+Document\+Security}}]{\$p\+Value}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel_acc69301832adf2e49de96e16c62f0b36}
+Set security
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Document\+Security}{p.}{class_p_h_p_excel___document_security} & {\em \$p\+Value} & \\
+\hline
+\end{DoxyParams}
+\index{P\+H\+P\+Excel@{P\+H\+P\+Excel}!sheet\+Code\+Name\+Exists@{sheet\+Code\+Name\+Exists}}
+\index{sheet\+Code\+Name\+Exists@{sheet\+Code\+Name\+Exists}!P\+H\+P\+Excel@{P\+H\+P\+Excel}}
+\subsubsection[{sheet\+Code\+Name\+Exists}]{\setlength{\rightskip}{0pt plus 5cm}sheet\+Code\+Name\+Exists (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Sheet\+Code\+Name}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel_a9c4d7bd43e21933b920bfde14973403b}
+Check if a sheet with a specified code name already exists
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Sheet\+Code\+Name} & Name of the worksheet to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel@{P\+H\+P\+Excel}!sheet\+Name\+Exists@{sheet\+Name\+Exists}}
+\index{sheet\+Name\+Exists@{sheet\+Name\+Exists}!P\+H\+P\+Excel@{P\+H\+P\+Excel}}
+\subsubsection[{sheet\+Name\+Exists}]{\setlength{\rightskip}{0pt plus 5cm}sheet\+Name\+Exists (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Sheet\+Name}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel_a96c046a232b2925734f98a44ad84bb58}
+Check if a sheet with a specified name already exists
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Sheet\+Name} & Name of the worksheet to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/var/www/workspace/\+O\+D\+I-\/\+P\+R\+O\+J\+E\+C\+T/model/\+P\+H\+P\+Excel/\+Classes/P\+H\+P\+Excel.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,300 @@
+\section{Database Class Reference}
+\label{class_database}\index{Database@{Database}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf \+\_\+\+\_\+construct} ()
+\item 
+{\bf check\+Password} (\$login, \$password)
+\item 
+{\bf add\+User} (\$login, \$password)
+\item 
+{\bf update\+User} (\$login, \$password)
+\item 
+{\bf insert\+Survey} (\$survey\+I\+D, \$title, \$comment, \$author)
+\item 
+{\bf insert\+Time\+Slot} (\$time\+Slot, \$Survey\+I\+D)
+\item 
+{\bf get\+Disponibility\+Numbers\+By\+Time\+Slot} (\$survey\+I\+D)
+\item 
+{\bf get\+Max\+Number\+Available\+Persons} (\$survey\+I\+D)
+\item 
+{\bf get\+Survey} (\$survey\+I\+D)
+\item 
+{\bf check\+Duplicate\+Response} (\$name, \$time\+Slot\+I\+D)
+\item 
+{\bf insert\+Response} (\$responses, \$survey\+I\+D, \$name)
+\item 
+{\bf get\+Response} (\$survey\+I\+D)
+\item 
+{\bf survey\+Not\+Exist} (\$survey\+I\+D)
+\item 
+{\bf get\+Surveys\+I\+D\+By\+Author} (\$author)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Database@{Database}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!Database@{Database}}
+\subsubsection[{\+\_\+\+\_\+construct}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_database_a095c5d389db211932136b53f25f39685}
+Ouvre la base de données. Si la base n'existe pas elle est créée à l'aide de la méthode create\+Data\+Base(). 
+
+\subsection{Member Function Documentation}
+\index{Database@{Database}!add\+User@{add\+User}}
+\index{add\+User@{add\+User}!Database@{Database}}
+\subsubsection[{add\+User}]{\setlength{\rightskip}{0pt plus 5cm}add\+User (
+\begin{DoxyParamCaption}
+\item[{}]{\$login, }
+\item[{}]{\$password}
+\end{DoxyParamCaption}
+)}\label{class_database_a2084f02bc661aca182029fd5896e8454}
+Permet d'ajouter un utilisateur lors de l'inscription.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$login} & \\
+\hline
+string & {\em \$password} & \\
+\hline
+\end{DoxyParams}
+return string [un message d'erreur], sinon string \char`\"{}\+True\char`\"{}. \index{Database@{Database}!check\+Duplicate\+Response@{check\+Duplicate\+Response}}
+\index{check\+Duplicate\+Response@{check\+Duplicate\+Response}!Database@{Database}}
+\subsubsection[{check\+Duplicate\+Response}]{\setlength{\rightskip}{0pt plus 5cm}check\+Duplicate\+Response (
+\begin{DoxyParamCaption}
+\item[{}]{\$name, }
+\item[{}]{\$time\+Slot\+I\+D}
+\end{DoxyParamCaption}
+)}\label{class_database_ac9f8475264a3262eb7c829219b7331a5}
+Empêche de faire plus de 1 sondage avec le meme nom. Utile pour éviter les doublons dans le résultat d'un sondage.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+string & {\em \$time\+Slot\+I\+D} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+False si la personne a déjà répondu au sondage, sinon True 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+public function \doxyref{insert\+Response()}{p.}{class_database_aabf7c021381ab8f113b6ad8379135457} dans le fichier Database.\+inc.\+php 
+\end{DoxySeeAlso}
+\index{Database@{Database}!check\+Password@{check\+Password}}
+\index{check\+Password@{check\+Password}!Database@{Database}}
+\subsubsection[{check\+Password}]{\setlength{\rightskip}{0pt plus 5cm}check\+Password (
+\begin{DoxyParamCaption}
+\item[{}]{\$login, }
+\item[{}]{\$password}
+\end{DoxyParamCaption}
+)}\label{class_database_a5e07e32d343ced0159c60d7839f52566}
+Vérfie si le mot de passe saisi par l'utilisateur est correct.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$login} & \\
+\hline
+string & {\em \$password} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean True si le mot de passe est correct, sinon false 
+\end{DoxyReturn}
+\index{Database@{Database}!get\+Disponibility\+Numbers\+By\+Time\+Slot@{get\+Disponibility\+Numbers\+By\+Time\+Slot}}
+\index{get\+Disponibility\+Numbers\+By\+Time\+Slot@{get\+Disponibility\+Numbers\+By\+Time\+Slot}!Database@{Database}}
+\subsubsection[{get\+Disponibility\+Numbers\+By\+Time\+Slot}]{\setlength{\rightskip}{0pt plus 5cm}get\+Disponibility\+Numbers\+By\+Time\+Slot (
+\begin{DoxyParamCaption}
+\item[{}]{\$survey\+I\+D}
+\end{DoxyParamCaption}
+)}\label{class_database_aba9a283f94db3d7cc20cd59531fdf91c}
+On calcule le nombre de personne disponible pour chaque créneau horaire..
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$survey\+I\+D} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array,retourne un tableau de nombre. 
+\end{DoxyReturn}
+\index{Database@{Database}!get\+Max\+Number\+Available\+Persons@{get\+Max\+Number\+Available\+Persons}}
+\index{get\+Max\+Number\+Available\+Persons@{get\+Max\+Number\+Available\+Persons}!Database@{Database}}
+\subsubsection[{get\+Max\+Number\+Available\+Persons}]{\setlength{\rightskip}{0pt plus 5cm}get\+Max\+Number\+Available\+Persons (
+\begin{DoxyParamCaption}
+\item[{}]{\$survey\+I\+D}
+\end{DoxyParamCaption}
+)}\label{class_database_af63cc33b36a6f8b2521c43c99896f90e}
+Cherche dans chaque créneau horaire d'un sondage, le nombre maximal de personne disponible dans un créneau horaire.. Utile pour savoir le meilleur créneau horaire.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$survey\+I\+D} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un nombre 
+\end{DoxyReturn}
+\index{Database@{Database}!get\+Response@{get\+Response}}
+\index{get\+Response@{get\+Response}!Database@{Database}}
+\subsubsection[{get\+Response}]{\setlength{\rightskip}{0pt plus 5cm}get\+Response (
+\begin{DoxyParamCaption}
+\item[{}]{\$survey\+I\+D}
+\end{DoxyParamCaption}
+)}\label{class_database_a4654099b01cecb6ac557d19d85eb60e1}
+Permet de récupérer les réponses d'un sondage
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$survey\+I\+D} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array , retourne un tableau de réponses d'un sondage. 
+\end{DoxyReturn}
+\index{Database@{Database}!get\+Survey@{get\+Survey}}
+\index{get\+Survey@{get\+Survey}!Database@{Database}}
+\subsubsection[{get\+Survey}]{\setlength{\rightskip}{0pt plus 5cm}get\+Survey (
+\begin{DoxyParamCaption}
+\item[{}]{\$survey\+I\+D}
+\end{DoxyParamCaption}
+)}\label{class_database_ab58e16de23069666ef9e7e9c23f07df0}
+Récupère tous les informations d'un sondage.
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & survey\+I\+D \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{Survey}{p.}{class_survey} 
+\end{DoxyReturn}
+\index{Database@{Database}!get\+Surveys\+I\+D\+By\+Author@{get\+Surveys\+I\+D\+By\+Author}}
+\index{get\+Surveys\+I\+D\+By\+Author@{get\+Surveys\+I\+D\+By\+Author}!Database@{Database}}
+\subsubsection[{get\+Surveys\+I\+D\+By\+Author}]{\setlength{\rightskip}{0pt plus 5cm}get\+Surveys\+I\+D\+By\+Author (
+\begin{DoxyParamCaption}
+\item[{}]{\$author}
+\end{DoxyParamCaption}
+)}\label{class_database_a0853f5da31e7235511bef7ca0a966672}
+Permet de récupérer tous les sondages créé par par utilisateur.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$author,.} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array \$survey\+I\+D, tableau contenant les n° I\+D des sondage de l'utilisateur. 
+\end{DoxyReturn}
+\index{Database@{Database}!insert\+Response@{insert\+Response}}
+\index{insert\+Response@{insert\+Response}!Database@{Database}}
+\subsubsection[{insert\+Response}]{\setlength{\rightskip}{0pt plus 5cm}insert\+Response (
+\begin{DoxyParamCaption}
+\item[{}]{\$responses, }
+\item[{}]{\$survey\+I\+D, }
+\item[{}]{\$name}
+\end{DoxyParamCaption}
+)}\label{class_database_aabf7c021381ab8f113b6ad8379135457}
+Insérer les réponses d'un utilisateur dans un sondage
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$responses} & \\
+\hline
+string & {\em \$survey\+I\+D} & \\
+\hline
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean True, si l'insertion s'est bien passé. 
+\end{DoxyReturn}
+\index{Database@{Database}!insert\+Survey@{insert\+Survey}}
+\index{insert\+Survey@{insert\+Survey}!Database@{Database}}
+\subsubsection[{insert\+Survey}]{\setlength{\rightskip}{0pt plus 5cm}insert\+Survey (
+\begin{DoxyParamCaption}
+\item[{}]{\$survey\+I\+D, }
+\item[{}]{\$title, }
+\item[{}]{\$comment, }
+\item[{}]{\$author}
+\end{DoxyParamCaption}
+)}\label{class_database_a99b569a2c092c7737293ec0f9700be5c}
+Permet d'inserer une nouveau sondage dans la base de données lorsqu'un utilisateur crée un sondage.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$survey\+I\+D,I\+D} & du sondage \\
+\hline
+string & {\em \$title,Titre} & du sondage. \\
+\hline
+string & {\em \$comment,information} & concernant la réunion \\
+\hline
+string & {\em \$author,L'auteur} & du sondage.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean, si le création du sondage s'est bien passé 
+\end{DoxyReturn}
+\index{Database@{Database}!insert\+Time\+Slot@{insert\+Time\+Slot}}
+\index{insert\+Time\+Slot@{insert\+Time\+Slot}!Database@{Database}}
+\subsubsection[{insert\+Time\+Slot}]{\setlength{\rightskip}{0pt plus 5cm}insert\+Time\+Slot (
+\begin{DoxyParamCaption}
+\item[{}]{\$time\+Slot, }
+\item[{}]{\$\+Survey\+I\+D}
+\end{DoxyParamCaption}
+)}\label{class_database_a67e74ef03bd4418fecd805e2cccc0275}
+Pour un sondage, on insère un créneau horaire, Sous cette forme, exemple\+: \$debut = 2014-\/12-\/10 14\+:15\+:00 -\/ \$fin = 2014-\/12-\/10 16\+:15\+:00
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxyref{Time\+Slot}{p.}{class_time_slot} & {\em \$time\+Slot} & \\
+\hline
+string & {\em \$survey\+I\+D} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean true, si l'ajout d'un créneau horaire. s'est bien passé. 
+\end{DoxyReturn}
+\index{Database@{Database}!survey\+Not\+Exist@{survey\+Not\+Exist}}
+\index{survey\+Not\+Exist@{survey\+Not\+Exist}!Database@{Database}}
+\subsubsection[{survey\+Not\+Exist}]{\setlength{\rightskip}{0pt plus 5cm}survey\+Not\+Exist (
+\begin{DoxyParamCaption}
+\item[{}]{\$survey\+I\+D}
+\end{DoxyParamCaption}
+)}\label{class_database_a3d053ea3ccc38e63be648ed65b4cf726}
+Permet de vérifier si un sondage n'existe pas.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$survey} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean True si le sondage n'existe pas, sinon false. 
+\end{DoxyReturn}
+\index{Database@{Database}!update\+User@{update\+User}}
+\index{update\+User@{update\+User}!Database@{Database}}
+\subsubsection[{update\+User}]{\setlength{\rightskip}{0pt plus 5cm}update\+User (
+\begin{DoxyParamCaption}
+\item[{}]{\$login, }
+\item[{}]{\$password}
+\end{DoxyParamCaption}
+)}\label{class_database_a84abad3f8d92a62b117f5d381a112a7f}
+Permet de changer de mot de passe. 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$login,.} & \\
+\hline
+string & {\em \$password} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True si la changement de mot de passe s'est effectué correctement. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/var/www/workspace/\+O\+D\+I-\/\+P\+R\+O\+J\+E\+C\+T/model/Database.\+inc.\+php\end{DoxyCompactItemize}

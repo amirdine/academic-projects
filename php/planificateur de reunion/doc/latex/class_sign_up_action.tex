@@ -1,0 +1,53 @@
+\section{Sign\+Up\+Action Class Reference}
+\label{class_sign_up_action}\index{Sign\+Up\+Action@{Sign\+Up\+Action}}
+
+
+Inheritance diagram for Sign\+Up\+Action\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=160pt]{class_sign_up_action__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Sign\+Up\+Action\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=160pt]{class_sign_up_action__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf run} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\index{Sign\+Up\+Action@{Sign\+Up\+Action}!run@{run}}
+\index{run@{run}!Sign\+Up\+Action@{Sign\+Up\+Action}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_sign_up_action_afb0fafe7e02a3ae1993c01c19fad2bae}
+Traite les données envoyées par le formulaire d'inscription (\$\+\_\+\+P\+O\+S\+T['sign\+Up\+Login'], \$\+\_\+\+P\+O\+S\+T['sign\+Up\+Password'], \$\+\_\+\+P\+O\+S\+T['sign\+Up\+Password2']).
+
+Le compte est crée à l'aide de la méthode 'add\+User' de la classe \doxyref{Database}{p.}{class_database}.
+
+Si la fonction 'add\+User' retourne une erreur ou si le mot de passe et sa confirmation sont différents, on envoie l'utilisateur vers la vue 'Sign\+Up\+Form' contenant le message retourné par 'add\+User' ou la chaîne \char`\"{}\+Le mot de passe et sa confirmation 
+sont différents.\char`\"{};
+
+Si l'inscription est validée, le visiteur est envoyé vers la vue '\doxyref{Message\+View}{p.}{class_message_view}' avec un message confirmant son inscription.
+
+\begin{DoxySeeAlso}{See also}
+\doxyref{Action\+::run()}{p.}{class_action_afb0fafe7e02a3ae1993c01c19fad2bae} 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/var/www/workspace/\+O\+D\+I-\/\+P\+R\+O\+J\+E\+C\+T/actions/Sign\+Up\+Action.\+inc.\+php\end{DoxyCompactItemize}

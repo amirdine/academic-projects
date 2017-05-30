@@ -1,0 +1,151 @@
+\section{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Formula\+Parser Class Reference}
+\label{class_p_h_p_excel___calculation___formula_parser}\index{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Formula\+Parser@{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Formula\+Parser}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf \+\_\+\+\_\+construct} (\$p\+Formula= '')
+\item 
+{\bf get\+Formula} ()
+\item 
+{\bf get\+Token} (\$p\+Id=0)
+\item 
+{\bf get\+Token\+Count} ()
+\item 
+{\bf get\+Tokens} ()
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const {\bfseries Q\+U\+O\+T\+E\+\_\+\+D\+O\+U\+B\+L\+E} = '\char`\"{}'\label{class_p_h_p_excel___calculation___formula_parser_aa9e062bf3c4e73c18023220f621ceb82}
+
+\item 
+const {\bfseries Q\+U\+O\+T\+E\+\_\+\+S\+I\+N\+G\+L\+E} = '\textbackslash{}''\label{class_p_h_p_excel___calculation___formula_parser_af999e2bf249ae373b66d48a529a9804e}
+
+\item 
+const {\bfseries B\+R\+A\+C\+K\+E\+T\+\_\+\+C\+L\+O\+S\+E} = ']'\label{class_p_h_p_excel___calculation___formula_parser_ab0e69b02b60fc7bbd41c5b1894ddb94c}
+
+\item 
+const {\bfseries B\+R\+A\+C\+K\+E\+T\+\_\+\+O\+P\+E\+N} = '['\label{class_p_h_p_excel___calculation___formula_parser_af638047ccce18624a84ad49728ae1aba}
+
+\item 
+const {\bfseries B\+R\+A\+C\+E\+\_\+\+O\+P\+E\+N} = '\{'\label{class_p_h_p_excel___calculation___formula_parser_a2c6ca3b5290eee45d5e4d1387d2a4bd5}
+
+\item 
+const {\bfseries B\+R\+A\+C\+E\+\_\+\+C\+L\+O\+S\+E} = '\}'\label{class_p_h_p_excel___calculation___formula_parser_ab92361216b6d9fdd011752e90201edb9}
+
+\item 
+const {\bfseries P\+A\+R\+E\+N\+\_\+\+O\+P\+E\+N} = '('\label{class_p_h_p_excel___calculation___formula_parser_a9265d0c8ac52da6004e5703454b2b72f}
+
+\item 
+const {\bfseries P\+A\+R\+E\+N\+\_\+\+C\+L\+O\+S\+E} = ')'\label{class_p_h_p_excel___calculation___formula_parser_af53292408c359227a8dc360c2d65188f}
+
+\item 
+const {\bfseries S\+E\+M\+I\+C\+O\+L\+O\+N} = ';'\label{class_p_h_p_excel___calculation___formula_parser_a02ab3a6144f298c947a056f99ad1327f}
+
+\item 
+const {\bfseries W\+H\+I\+T\+E\+S\+P\+A\+C\+E} = ' '\label{class_p_h_p_excel___calculation___formula_parser_abcf1a098376d1d6d2b88a84f25709979}
+
+\item 
+const {\bfseries C\+O\+M\+M\+A} = ','\label{class_p_h_p_excel___calculation___formula_parser_a02305e816bdca0500c7cfb20457c1caf}
+
+\item 
+const {\bfseries E\+R\+R\+O\+R\+\_\+\+S\+T\+A\+R\+T} = '\#'\label{class_p_h_p_excel___calculation___formula_parser_a858379935db70a82c3390b4fccead8d4}
+
+\item 
+const {\bfseries O\+P\+E\+R\+A\+T\+O\+R\+S\+\_\+\+S\+N} = \char`\"{}+-\/\char`\"{}\label{class_p_h_p_excel___calculation___formula_parser_aa4f546f0c4ce9d020ad6d03147fa06e7}
+
+\item 
+const {\bfseries O\+P\+E\+R\+A\+T\+O\+R\+S\+\_\+\+I\+N\+F\+I\+X} = \char`\"{}+-\/$\ast$/$^\wedge$\&=$>$$<$\char`\"{}\label{class_p_h_p_excel___calculation___formula_parser_a720f294fa2e293fd4abbac9373d4276c}
+
+\item 
+const {\bfseries O\+P\+E\+R\+A\+T\+O\+R\+S\+\_\+\+P\+O\+S\+T\+F\+I\+X} = \char`\"{}\%\char`\"{}\label{class_p_h_p_excel___calculation___formula_parser_aa62a93a0b3fa221c4892715d3f0ef483}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Formula\+Parser@{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Formula\+Parser}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Formula\+Parser@{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Formula\+Parser}}
+\subsubsection[{\+\_\+\+\_\+construct}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Formula = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___calculation___formula_parser_a5ba0a16a36305d81a25473cce748fd0b}
+Create a new \doxyref{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Formula\+Parser}{p.}{class_p_h_p_excel___calculation___formula_parser}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Formula} & Formula to parse \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Exception}{p.}{class_p_h_p_excel___calculation___exception}} & \\
+\hline
+\end{DoxyExceptions}
+
+
+\subsection{Member Function Documentation}
+\index{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Formula\+Parser@{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Formula\+Parser}!get\+Formula@{get\+Formula}}
+\index{get\+Formula@{get\+Formula}!P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Formula\+Parser@{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Formula\+Parser}}
+\subsubsection[{get\+Formula}]{\setlength{\rightskip}{0pt plus 5cm}get\+Formula (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___calculation___formula_parser_afe576b1641d513ebf2bb66b276aeff0e}
+Get Formula
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Formula\+Parser@{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Formula\+Parser}!get\+Token@{get\+Token}}
+\index{get\+Token@{get\+Token}!P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Formula\+Parser@{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Formula\+Parser}}
+\subsubsection[{get\+Token}]{\setlength{\rightskip}{0pt plus 5cm}get\+Token (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Id = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___calculation___formula_parser_add899520d5d9397f637acde03d909c4e}
+Get Token
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$p\+Id} & Token id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Exception}{p.}{class_p_h_p_excel___calculation___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\index{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Formula\+Parser@{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Formula\+Parser}!get\+Token\+Count@{get\+Token\+Count}}
+\index{get\+Token\+Count@{get\+Token\+Count}!P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Formula\+Parser@{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Formula\+Parser}}
+\subsubsection[{get\+Token\+Count}]{\setlength{\rightskip}{0pt plus 5cm}get\+Token\+Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___calculation___formula_parser_a9019d1147277d3b26760730ba2fc18f6}
+Get Token count
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Formula\+Parser@{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Formula\+Parser}!get\+Tokens@{get\+Tokens}}
+\index{get\+Tokens@{get\+Tokens}!P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Formula\+Parser@{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Formula\+Parser}}
+\subsubsection[{get\+Tokens}]{\setlength{\rightskip}{0pt plus 5cm}get\+Tokens (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___calculation___formula_parser_acf2f05f60b57bd67020d2259a2cf9982}
+Get Tokens
+
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Calculation\+\_\+\+Formula\+Token}{p.}{class_p_h_p_excel___calculation___formula_token}[] 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/var/www/workspace/\+O\+D\+I-\/\+P\+R\+O\+J\+E\+C\+T/model/\+P\+H\+P\+Excel/\+Classes/\+P\+H\+P\+Excel/\+Calculation/Formula\+Parser.\+php\end{DoxyCompactItemize}

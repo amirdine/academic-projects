@@ -1,0 +1,405 @@
+\section{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series Class Reference}
+\label{class_p_h_p_excel___chart___data_series}\index{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series@{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf \+\_\+\+\_\+construct} (\$plot\+Type=null, \$plot\+Grouping=null, \$plot\+Order=array(), \$plot\+Label=array(), \$plot\+Category=array(), \$plot\+Values=array(), \$smooth\+Line=null, \$plot\+Style=null)
+\item 
+{\bf get\+Plot\+Type} ()
+\item 
+{\bf set\+Plot\+Type} (\$plot\+Type= '')
+\item 
+{\bf get\+Plot\+Grouping} ()
+\item 
+{\bf set\+Plot\+Grouping} (\$grouping\+Type=null)
+\item 
+{\bf get\+Plot\+Direction} ()
+\item 
+{\bf set\+Plot\+Direction} (\$plot\+Direction=null)
+\item 
+{\bf get\+Plot\+Order} ()
+\item 
+{\bf get\+Plot\+Labels} ()
+\item 
+{\bf get\+Plot\+Label\+By\+Index} (\$index)
+\item 
+{\bf get\+Plot\+Categories} ()
+\item 
+{\bf get\+Plot\+Category\+By\+Index} (\$index)
+\item 
+{\bf get\+Plot\+Style} ()
+\item 
+{\bf set\+Plot\+Style} (\$plot\+Style=null)
+\item 
+{\bf get\+Plot\+Values} ()
+\item 
+{\bf get\+Plot\+Values\+By\+Index} (\$index)
+\item 
+{\bf get\+Plot\+Series\+Count} ()
+\item 
+{\bf get\+Smooth\+Line} ()
+\item 
+{\bf set\+Smooth\+Line} (\$smooth\+Line=T\+R\+U\+E)
+\item 
+{\bfseries refresh} ({\bf P\+H\+P\+Excel\+\_\+\+Worksheet} \$worksheet)\label{class_p_h_p_excel___chart___data_series_ad4c433198cd61281857bc099caa011cc}
+
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const {\bfseries T\+Y\+P\+E\+\_\+\+B\+A\+R\+C\+H\+A\+R\+T} = 'bar\+Chart'\label{class_p_h_p_excel___chart___data_series_aae33a7e1e1c73fdee50f55212f56fc85}
+
+\item 
+const {\bfseries T\+Y\+P\+E\+\_\+\+B\+A\+R\+C\+H\+A\+R\+T\+\_\+3\+D} = 'bar3\+D\+Chart'\label{class_p_h_p_excel___chart___data_series_a89a5b5924e94051a0754bc54fa9149e2}
+
+\item 
+const {\bfseries T\+Y\+P\+E\+\_\+\+L\+I\+N\+E\+C\+H\+A\+R\+T} = 'line\+Chart'\label{class_p_h_p_excel___chart___data_series_a9be9d877783219c639c5f6eea504d871}
+
+\item 
+const {\bfseries T\+Y\+P\+E\+\_\+\+L\+I\+N\+E\+C\+H\+A\+R\+T\+\_\+3\+D} = 'line3\+D\+Chart'\label{class_p_h_p_excel___chart___data_series_a0cf62beb43c79e2f1eac765de1638356}
+
+\item 
+const {\bfseries T\+Y\+P\+E\+\_\+\+A\+R\+E\+A\+C\+H\+A\+R\+T} = 'area\+Chart'\label{class_p_h_p_excel___chart___data_series_ac91662bf555544f7507aa3840759fb39}
+
+\item 
+const {\bfseries T\+Y\+P\+E\+\_\+\+A\+R\+E\+A\+C\+H\+A\+R\+T\+\_\+3\+D} = 'area3\+D\+Chart'\label{class_p_h_p_excel___chart___data_series_aaa71fa496ce49b7496ec418e9b0040d7}
+
+\item 
+const {\bfseries T\+Y\+P\+E\+\_\+\+P\+I\+E\+C\+H\+A\+R\+T} = 'pie\+Chart'\label{class_p_h_p_excel___chart___data_series_acd8e9daa6c8f399917140de321ae962f}
+
+\item 
+const {\bfseries T\+Y\+P\+E\+\_\+\+P\+I\+E\+C\+H\+A\+R\+T\+\_\+3\+D} = 'pie3\+D\+Chart'\label{class_p_h_p_excel___chart___data_series_abb1bb27023897ede070bb368eebf8d30}
+
+\item 
+const {\bfseries T\+Y\+P\+E\+\_\+\+D\+O\+U\+G\+H\+T\+N\+U\+T\+C\+H\+A\+R\+T} = 'doughnut\+Chart'\label{class_p_h_p_excel___chart___data_series_a0494e8e809a715955a614691bb038d7f}
+
+\item 
+const {\bfseries T\+Y\+P\+E\+\_\+\+D\+O\+N\+U\+T\+C\+H\+A\+R\+T} = self\+::\+T\+Y\+P\+E\+\_\+\+D\+O\+U\+G\+H\+T\+N\+U\+T\+C\+H\+A\+R\+T\label{class_p_h_p_excel___chart___data_series_a42c843063a1fcc5c3a59b8d69fd06a6c}
+
+\item 
+const {\bfseries T\+Y\+P\+E\+\_\+\+S\+C\+A\+T\+T\+E\+R\+C\+H\+A\+R\+T} = 'scatter\+Chart'\label{class_p_h_p_excel___chart___data_series_aa5f7cfefb2acb91aca958adc78ddbbcf}
+
+\item 
+const {\bfseries T\+Y\+P\+E\+\_\+\+S\+U\+R\+F\+A\+C\+E\+C\+H\+A\+R\+T} = 'surface\+Chart'\label{class_p_h_p_excel___chart___data_series_a074cae7164caeba13af374e4d82cb7cb}
+
+\item 
+const {\bfseries T\+Y\+P\+E\+\_\+\+S\+U\+R\+F\+A\+C\+E\+C\+H\+A\+R\+T\+\_\+3\+D} = 'surface3\+D\+Chart'\label{class_p_h_p_excel___chart___data_series_a71c2ab1e45db7bb34ac6ba13399fc435}
+
+\item 
+const {\bfseries T\+Y\+P\+E\+\_\+\+R\+A\+D\+A\+R\+C\+H\+A\+R\+T} = 'radar\+Chart'\label{class_p_h_p_excel___chart___data_series_a9f5e2a9d3b8a6f316e6ef6ed678be4bf}
+
+\item 
+const {\bfseries T\+Y\+P\+E\+\_\+\+B\+U\+B\+B\+L\+E\+C\+H\+A\+R\+T} = 'bubble\+Chart'\label{class_p_h_p_excel___chart___data_series_a63d0410925faf85cff0f5a8f094fda79}
+
+\item 
+const {\bfseries T\+Y\+P\+E\+\_\+\+S\+T\+O\+C\+K\+C\+H\+A\+R\+T} = 'stock\+Chart'\label{class_p_h_p_excel___chart___data_series_af379d91d51d3126095b2263f557ce14f}
+
+\item 
+const {\bfseries T\+Y\+P\+E\+\_\+\+C\+A\+N\+D\+L\+E\+C\+H\+A\+R\+T} = self\+::\+T\+Y\+P\+E\+\_\+\+S\+T\+O\+C\+K\+C\+H\+A\+R\+T\label{class_p_h_p_excel___chart___data_series_af9b3af3eeb3e140540f9f453434d759b}
+
+\item 
+const {\bfseries G\+R\+O\+U\+P\+I\+N\+G\+\_\+\+C\+L\+U\+S\+T\+E\+R\+E\+D} = 'clustered'\label{class_p_h_p_excel___chart___data_series_a49982cb15fe06cf7a307a517e306a5f4}
+
+\item 
+const {\bfseries G\+R\+O\+U\+P\+I\+N\+G\+\_\+\+S\+T\+A\+C\+K\+E\+D} = 'stacked'\label{class_p_h_p_excel___chart___data_series_a562e8ad476e7665e4b37c2e7aaf3e16d}
+
+\item 
+const {\bfseries G\+R\+O\+U\+P\+I\+N\+G\+\_\+\+P\+E\+R\+C\+E\+N\+T\+\_\+\+S\+T\+A\+C\+K\+E\+D} = 'percent\+Stacked'\label{class_p_h_p_excel___chart___data_series_adc86ba48457486c13d580a3be9ac713a}
+
+\item 
+const {\bfseries G\+R\+O\+U\+P\+I\+N\+G\+\_\+\+S\+T\+A\+N\+D\+A\+R\+D} = 'standard'\label{class_p_h_p_excel___chart___data_series_a117f7cf7069d925436cbefefee83c7b3}
+
+\item 
+const {\bfseries D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+B\+A\+R} = 'bar'\label{class_p_h_p_excel___chart___data_series_a54a73e6b5d3790080eeb336d6aaf85f0}
+
+\item 
+const {\bfseries D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+H\+O\+R\+I\+Z\+O\+N\+T\+A\+L} = self\+::\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+B\+A\+R\label{class_p_h_p_excel___chart___data_series_a0ed046eccc777a6d1ad0266dd634aacc}
+
+\item 
+const {\bfseries D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+C\+O\+L} = 'col'\label{class_p_h_p_excel___chart___data_series_a4a13dbabdc63c6482b1fa45e6f311296}
+
+\item 
+const {\bfseries D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+C\+O\+L\+U\+M\+N} = self\+::\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+C\+O\+L\label{class_p_h_p_excel___chart___data_series_a7b7c4fb0af866543e9023dc85a8e8bb4}
+
+\item 
+const {\bfseries D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+V\+E\+R\+T\+I\+C\+A\+L} = self\+::\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+C\+O\+L\label{class_p_h_p_excel___chart___data_series_a9dce3857017367a406b9308fad45dbcf}
+
+\item 
+const {\bfseries S\+T\+Y\+L\+E\+\_\+\+L\+I\+N\+E\+M\+A\+R\+K\+E\+R} = 'line\+Marker'\label{class_p_h_p_excel___chart___data_series_a6402c22ab648de26bcc1b8373b407a15}
+
+\item 
+const {\bfseries S\+T\+Y\+L\+E\+\_\+\+S\+M\+O\+O\+T\+H\+M\+A\+R\+K\+E\+R} = 'smooth\+Marker'\label{class_p_h_p_excel___chart___data_series_a12d40f5afec0aa9826ff6fc872715577}
+
+\item 
+const {\bfseries S\+T\+Y\+L\+E\+\_\+\+M\+A\+R\+K\+E\+R} = 'marker'\label{class_p_h_p_excel___chart___data_series_a8c1c8e0bc48034eef46fbe3ad5c183b6}
+
+\item 
+const {\bfseries S\+T\+Y\+L\+E\+\_\+\+F\+I\+L\+L\+E\+D} = 'filled'\label{class_p_h_p_excel___chart___data_series_ab9e66e93f8b1a326559471972d828683}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series@{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series@{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series}}
+\subsubsection[{\+\_\+\+\_\+construct}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+\item[{}]{\$plot\+Type = {\ttfamily null}, }
+\item[{}]{\$plot\+Grouping = {\ttfamily null}, }
+\item[{}]{\$plot\+Order = {\ttfamily array()}, }
+\item[{}]{\$plot\+Label = {\ttfamily array()}, }
+\item[{}]{\$plot\+Category = {\ttfamily array()}, }
+\item[{}]{\$plot\+Values = {\ttfamily array()}, }
+\item[{}]{\$smooth\+Line = {\ttfamily null}, }
+\item[{}]{\$plot\+Style = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___chart___data_series_a07718550b39380db6c3c71f2e2b594c3}
+Create a new \doxyref{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series}{p.}{class_p_h_p_excel___chart___data_series} 
+
+\subsection{Member Function Documentation}
+\index{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series@{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series}!get\+Plot\+Categories@{get\+Plot\+Categories}}
+\index{get\+Plot\+Categories@{get\+Plot\+Categories}!P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series@{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series}}
+\subsubsection[{get\+Plot\+Categories}]{\setlength{\rightskip}{0pt plus 5cm}get\+Plot\+Categories (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___chart___data_series_a0a6b33eae71d640d2c67503cebf7239c}
+Get Plot Categories
+
+\begin{DoxyReturn}{Returns}
+array of \doxyref{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series\+Values}{p.}{class_p_h_p_excel___chart___data_series_values} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series@{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series}!get\+Plot\+Category\+By\+Index@{get\+Plot\+Category\+By\+Index}}
+\index{get\+Plot\+Category\+By\+Index@{get\+Plot\+Category\+By\+Index}!P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series@{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series}}
+\subsubsection[{get\+Plot\+Category\+By\+Index}]{\setlength{\rightskip}{0pt plus 5cm}get\+Plot\+Category\+By\+Index (
+\begin{DoxyParamCaption}
+\item[{}]{\$index}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___chart___data_series_aaaf8a06ca59f2889b66150ff082b74ab}
+Get Plot Category by Index
+
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series\+Values}{p.}{class_p_h_p_excel___chart___data_series_values} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series@{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series}!get\+Plot\+Direction@{get\+Plot\+Direction}}
+\index{get\+Plot\+Direction@{get\+Plot\+Direction}!P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series@{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series}}
+\subsubsection[{get\+Plot\+Direction}]{\setlength{\rightskip}{0pt plus 5cm}get\+Plot\+Direction (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___chart___data_series_a5291960cd9a90ee7b574d225ef668013}
+Get Plot Direction
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series@{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series}!get\+Plot\+Grouping@{get\+Plot\+Grouping}}
+\index{get\+Plot\+Grouping@{get\+Plot\+Grouping}!P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series@{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series}}
+\subsubsection[{get\+Plot\+Grouping}]{\setlength{\rightskip}{0pt plus 5cm}get\+Plot\+Grouping (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___chart___data_series_a65991210432cb24014314d3d5208a314}
+Get Plot Grouping Type
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series@{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series}!get\+Plot\+Label\+By\+Index@{get\+Plot\+Label\+By\+Index}}
+\index{get\+Plot\+Label\+By\+Index@{get\+Plot\+Label\+By\+Index}!P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series@{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series}}
+\subsubsection[{get\+Plot\+Label\+By\+Index}]{\setlength{\rightskip}{0pt plus 5cm}get\+Plot\+Label\+By\+Index (
+\begin{DoxyParamCaption}
+\item[{}]{\$index}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___chart___data_series_a3a291900c394809b7d8a76fcd34a0018}
+Get Plot Label by Index
+
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series\+Values}{p.}{class_p_h_p_excel___chart___data_series_values} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series@{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series}!get\+Plot\+Labels@{get\+Plot\+Labels}}
+\index{get\+Plot\+Labels@{get\+Plot\+Labels}!P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series@{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series}}
+\subsubsection[{get\+Plot\+Labels}]{\setlength{\rightskip}{0pt plus 5cm}get\+Plot\+Labels (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___chart___data_series_abf8f15766ad2b4df08515447e281628d}
+Get Plot Labels
+
+\begin{DoxyReturn}{Returns}
+array of \doxyref{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series\+Values}{p.}{class_p_h_p_excel___chart___data_series_values} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series@{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series}!get\+Plot\+Order@{get\+Plot\+Order}}
+\index{get\+Plot\+Order@{get\+Plot\+Order}!P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series@{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series}}
+\subsubsection[{get\+Plot\+Order}]{\setlength{\rightskip}{0pt plus 5cm}get\+Plot\+Order (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___chart___data_series_a673a7e55f167d545f06af50346de12f3}
+Get Plot Order
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series@{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series}!get\+Plot\+Series\+Count@{get\+Plot\+Series\+Count}}
+\index{get\+Plot\+Series\+Count@{get\+Plot\+Series\+Count}!P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series@{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series}}
+\subsubsection[{get\+Plot\+Series\+Count}]{\setlength{\rightskip}{0pt plus 5cm}get\+Plot\+Series\+Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___chart___data_series_a3545321819defea42545aa3bc3d53725}
+Get Number of Plot Series
+
+\begin{DoxyReturn}{Returns}
+integer 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series@{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series}!get\+Plot\+Style@{get\+Plot\+Style}}
+\index{get\+Plot\+Style@{get\+Plot\+Style}!P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series@{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series}}
+\subsubsection[{get\+Plot\+Style}]{\setlength{\rightskip}{0pt plus 5cm}get\+Plot\+Style (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___chart___data_series_ac2dd5060dd624ec6b96d85eb41db0448}
+Get Plot Style
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series@{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series}!get\+Plot\+Type@{get\+Plot\+Type}}
+\index{get\+Plot\+Type@{get\+Plot\+Type}!P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series@{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series}}
+\subsubsection[{get\+Plot\+Type}]{\setlength{\rightskip}{0pt plus 5cm}get\+Plot\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___chart___data_series_ad472a1373b51bc9b2e4990c67108c9b6}
+Get Plot Type
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series@{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series}!get\+Plot\+Values@{get\+Plot\+Values}}
+\index{get\+Plot\+Values@{get\+Plot\+Values}!P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series@{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series}}
+\subsubsection[{get\+Plot\+Values}]{\setlength{\rightskip}{0pt plus 5cm}get\+Plot\+Values (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___chart___data_series_ae1fe965de0e25e70d1c6468b0240dcf3}
+Get Plot Values
+
+\begin{DoxyReturn}{Returns}
+array of \doxyref{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series\+Values}{p.}{class_p_h_p_excel___chart___data_series_values} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series@{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series}!get\+Plot\+Values\+By\+Index@{get\+Plot\+Values\+By\+Index}}
+\index{get\+Plot\+Values\+By\+Index@{get\+Plot\+Values\+By\+Index}!P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series@{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series}}
+\subsubsection[{get\+Plot\+Values\+By\+Index}]{\setlength{\rightskip}{0pt plus 5cm}get\+Plot\+Values\+By\+Index (
+\begin{DoxyParamCaption}
+\item[{}]{\$index}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___chart___data_series_a246a9b79b58db4a41ea89ee0ec01e1e3}
+Get Plot Values by Index
+
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series\+Values}{p.}{class_p_h_p_excel___chart___data_series_values} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series@{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series}!get\+Smooth\+Line@{get\+Smooth\+Line}}
+\index{get\+Smooth\+Line@{get\+Smooth\+Line}!P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series@{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series}}
+\subsubsection[{get\+Smooth\+Line}]{\setlength{\rightskip}{0pt plus 5cm}get\+Smooth\+Line (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___chart___data_series_aa87b7804b1b58f31399e69a2d02def99}
+Get Smooth Line
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series@{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series}!set\+Plot\+Direction@{set\+Plot\+Direction}}
+\index{set\+Plot\+Direction@{set\+Plot\+Direction}!P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series@{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series}}
+\subsubsection[{set\+Plot\+Direction}]{\setlength{\rightskip}{0pt plus 5cm}set\+Plot\+Direction (
+\begin{DoxyParamCaption}
+\item[{}]{\$plot\+Direction = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___chart___data_series_a23cafc986c7880dcaa8c1863724fc05c}
+Set Plot Direction
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$plot\+Direction} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series}{p.}{class_p_h_p_excel___chart___data_series} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series@{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series}!set\+Plot\+Grouping@{set\+Plot\+Grouping}}
+\index{set\+Plot\+Grouping@{set\+Plot\+Grouping}!P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series@{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series}}
+\subsubsection[{set\+Plot\+Grouping}]{\setlength{\rightskip}{0pt plus 5cm}set\+Plot\+Grouping (
+\begin{DoxyParamCaption}
+\item[{}]{\$grouping\+Type = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___chart___data_series_adf54270b75949be337ba4ca34fa54f06}
+Set Plot Grouping Type
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$grouping\+Type} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series}{p.}{class_p_h_p_excel___chart___data_series} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series@{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series}!set\+Plot\+Style@{set\+Plot\+Style}}
+\index{set\+Plot\+Style@{set\+Plot\+Style}!P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series@{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series}}
+\subsubsection[{set\+Plot\+Style}]{\setlength{\rightskip}{0pt plus 5cm}set\+Plot\+Style (
+\begin{DoxyParamCaption}
+\item[{}]{\$plot\+Style = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___chart___data_series_a6a06a61beb270103804db0e516c9efd6}
+Set Plot Style
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$plot\+Style} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series}{p.}{class_p_h_p_excel___chart___data_series} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series@{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series}!set\+Plot\+Type@{set\+Plot\+Type}}
+\index{set\+Plot\+Type@{set\+Plot\+Type}!P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series@{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series}}
+\subsubsection[{set\+Plot\+Type}]{\setlength{\rightskip}{0pt plus 5cm}set\+Plot\+Type (
+\begin{DoxyParamCaption}
+\item[{}]{\$plot\+Type = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___chart___data_series_a8c701efbd7fd285932fb4c3089a7b5d5}
+Set Plot Type
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$plot\+Type} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series}{p.}{class_p_h_p_excel___chart___data_series} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series@{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series}!set\+Smooth\+Line@{set\+Smooth\+Line}}
+\index{set\+Smooth\+Line@{set\+Smooth\+Line}!P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series@{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series}}
+\subsubsection[{set\+Smooth\+Line}]{\setlength{\rightskip}{0pt plus 5cm}set\+Smooth\+Line (
+\begin{DoxyParamCaption}
+\item[{}]{\$smooth\+Line = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___chart___data_series_a046d846954c8d8c31c1995471eaf4b8e}
+Set Smooth Line
+
+
+\begin{DoxyParams}[1]{Parameters}
+boolean & {\em \$smooth\+Line} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Chart\+\_\+\+Data\+Series}{p.}{class_p_h_p_excel___chart___data_series} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/var/www/workspace/\+O\+D\+I-\/\+P\+R\+O\+J\+E\+C\+T/model/\+P\+H\+P\+Excel/\+Classes/\+P\+H\+P\+Excel/\+Chart/Data\+Series.\+php\end{DoxyCompactItemize}

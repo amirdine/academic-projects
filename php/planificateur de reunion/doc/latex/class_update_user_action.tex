@@ -1,0 +1,52 @@
+\section{Update\+User\+Action Class Reference}
+\label{class_update_user_action}\index{Update\+User\+Action@{Update\+User\+Action}}
+
+
+Inheritance diagram for Update\+User\+Action\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=182pt]{class_update_user_action__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Update\+User\+Action\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=182pt]{class_update_user_action__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf run} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\index{Update\+User\+Action@{Update\+User\+Action}!run@{run}}
+\index{run@{run}!Update\+User\+Action@{Update\+User\+Action}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_update_user_action_afb0fafe7e02a3ae1993c01c19fad2bae}
+Met à jour le mot de passe de l'utilisateur en procédant de la façon suivante \+:
+
+Si toutes les données du formulaire de modification de profil ont été postées (\$\+\_\+\+P\+O\+S\+T['update\+Password'] et \$\+\_\+\+P\+O\+S\+T['update\+Password2']), on vérifie que le mot de passe et la confirmation sont identiques. S'ils le sont, on modifie le compte avec les méthodes de la classe '\doxyref{Database}{p.}{class_database}'.
+
+Si une erreur se produit, le formulaire de modification de mot de passe est affiché à nouveau avec un message d'erreur.
+
+Si aucune erreur n'est détectée, le message 'Modification enregistrée.' est affiché à l'utilisateur.
+
+\begin{DoxySeeAlso}{See also}
+\doxyref{Action\+::run()}{p.}{class_action_afb0fafe7e02a3ae1993c01c19fad2bae} 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/var/www/workspace/\+O\+D\+I-\/\+P\+R\+O\+J\+E\+C\+T/actions/Update\+User\+Action.\+inc.\+php\end{DoxyCompactItemize}

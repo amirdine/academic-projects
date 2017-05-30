@@ -1,0 +1,113 @@
+\section{P\+H\+P\+Excel\+\_\+\+Cell\+\_\+\+Data\+Type Class Reference}
+\label{class_p_h_p_excel___cell___data_type}\index{P\+H\+P\+Excel\+\_\+\+Cell\+\_\+\+Data\+Type@{P\+H\+P\+Excel\+\_\+\+Cell\+\_\+\+Data\+Type}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static {\bf get\+Error\+Codes} ()
+\item 
+static {\bf data\+Type\+For\+Value} (\$p\+Value=null)
+\item 
+static {\bf check\+String} (\$p\+Value=null)
+\item 
+static {\bf check\+Error\+Code} (\$p\+Value=null)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const {\bfseries T\+Y\+P\+E\+\_\+\+S\+T\+R\+I\+N\+G2} = 'str'\label{class_p_h_p_excel___cell___data_type_a5c53da39769da326fb5621cc1bd9b160}
+
+\item 
+const {\bfseries T\+Y\+P\+E\+\_\+\+S\+T\+R\+I\+N\+G} = 's'\label{class_p_h_p_excel___cell___data_type_a7b176bd55450d1c25a421b13dd484b4e}
+
+\item 
+const {\bfseries T\+Y\+P\+E\+\_\+\+F\+O\+R\+M\+U\+L\+A} = 'f'\label{class_p_h_p_excel___cell___data_type_a3f21a42ed981cc1dcc1ffc66b02695b4}
+
+\item 
+const {\bfseries T\+Y\+P\+E\+\_\+\+N\+U\+M\+E\+R\+I\+C} = 'n'\label{class_p_h_p_excel___cell___data_type_a05506caa66752aa1b4d1be8fdba80095}
+
+\item 
+const {\bfseries T\+Y\+P\+E\+\_\+\+B\+O\+O\+L} = 'b'\label{class_p_h_p_excel___cell___data_type_a2008e61ac981f88cf7a8218c600077f5}
+
+\item 
+const {\bfseries T\+Y\+P\+E\+\_\+\+N\+U\+L\+L} = 'null'\label{class_p_h_p_excel___cell___data_type_a5e1f66f767bfb7293469d627772da2bb}
+
+\item 
+const {\bfseries T\+Y\+P\+E\+\_\+\+I\+N\+L\+I\+N\+E} = 'inline\+Str'\label{class_p_h_p_excel___cell___data_type_a9eb8b45663f5679207bf35f8be916dd8}
+
+\item 
+const {\bfseries T\+Y\+P\+E\+\_\+\+E\+R\+R\+O\+R} = 'e'\label{class_p_h_p_excel___cell___data_type_a3fe2769ddfea861c46b7292e730a68db}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{P\+H\+P\+Excel\+\_\+\+Cell\+\_\+\+Data\+Type@{P\+H\+P\+Excel\+\_\+\+Cell\+\_\+\+Data\+Type}!check\+Error\+Code@{check\+Error\+Code}}
+\index{check\+Error\+Code@{check\+Error\+Code}!P\+H\+P\+Excel\+\_\+\+Cell\+\_\+\+Data\+Type@{P\+H\+P\+Excel\+\_\+\+Cell\+\_\+\+Data\+Type}}
+\subsubsection[{check\+Error\+Code}]{\setlength{\rightskip}{0pt plus 5cm}static check\+Error\+Code (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Value = {\ttfamily null}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___cell___data_type_a58d08993f74cc702354aa4e79454b1f1}
+Check a value that it is a valid error code
+
+
+\begin{DoxyParams}{Parameters}
+{\em mixed} & Value to sanitize to an Excel error code \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Sanitized value 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Cell\+\_\+\+Data\+Type@{P\+H\+P\+Excel\+\_\+\+Cell\+\_\+\+Data\+Type}!check\+String@{check\+String}}
+\index{check\+String@{check\+String}!P\+H\+P\+Excel\+\_\+\+Cell\+\_\+\+Data\+Type@{P\+H\+P\+Excel\+\_\+\+Cell\+\_\+\+Data\+Type}}
+\subsubsection[{check\+String}]{\setlength{\rightskip}{0pt plus 5cm}static check\+String (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Value = {\ttfamily null}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___cell___data_type_af91aba28ee9999884768e5ad9699b770}
+Check a string that it satisfies Excel requirements
+
+
+\begin{DoxyParams}{Parameters}
+{\em mixed} & Value to sanitize to an Excel string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed Sanitized value 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Cell\+\_\+\+Data\+Type@{P\+H\+P\+Excel\+\_\+\+Cell\+\_\+\+Data\+Type}!data\+Type\+For\+Value@{data\+Type\+For\+Value}}
+\index{data\+Type\+For\+Value@{data\+Type\+For\+Value}!P\+H\+P\+Excel\+\_\+\+Cell\+\_\+\+Data\+Type@{P\+H\+P\+Excel\+\_\+\+Cell\+\_\+\+Data\+Type}}
+\subsubsection[{data\+Type\+For\+Value}]{\setlength{\rightskip}{0pt plus 5cm}static data\+Type\+For\+Value (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Value = {\ttfamily null}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___cell___data_type_a779f35d7fc18291a8baa94b38c1766a5}
+Data\+Type for value
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[{\bf Deprecated}]Replaced by \doxyref{P\+H\+P\+Excel\+\_\+\+Cell\+\_\+\+I\+Value\+Binder}{p.}{interface_p_h_p_excel___cell___i_value_binder} infrastructure, will be removed in version 1.\+8.\+0 
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$p\+Value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\end{DoxyRefDesc}
+\index{P\+H\+P\+Excel\+\_\+\+Cell\+\_\+\+Data\+Type@{P\+H\+P\+Excel\+\_\+\+Cell\+\_\+\+Data\+Type}!get\+Error\+Codes@{get\+Error\+Codes}}
+\index{get\+Error\+Codes@{get\+Error\+Codes}!P\+H\+P\+Excel\+\_\+\+Cell\+\_\+\+Data\+Type@{P\+H\+P\+Excel\+\_\+\+Cell\+\_\+\+Data\+Type}}
+\subsubsection[{get\+Error\+Codes}]{\setlength{\rightskip}{0pt plus 5cm}static get\+Error\+Codes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___cell___data_type_ad1d6c60806448503d9b9159e2846e16c}
+Get list of error codes
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/var/www/workspace/\+O\+D\+I-\/\+P\+R\+O\+J\+E\+C\+T/model/\+P\+H\+P\+Excel/\+Classes/\+P\+H\+P\+Excel/\+Cell/Data\+Type.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,871 @@
+\section{P\+H\+P\+Excel\+\_\+\+Cell Class Reference}
+\label{class_p_h_p_excel___cell}\index{P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf notify\+Cache\+Controller} ()
+\item 
+{\bfseries detach} ()\label{class_p_h_p_excel___cell_aa4c7e8ce5147b0a22d6f2543c017a937}
+
+\item 
+{\bfseries attach} ({\bf P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base} \$parent)\label{class_p_h_p_excel___cell_aed6ffd2670c0e1981cfeaf17bdb41bf4}
+
+\item 
+{\bf \+\_\+\+\_\+construct} (\$p\+Value=N\+U\+L\+L, \$p\+Data\+Type=N\+U\+L\+L, {\bf P\+H\+P\+Excel\+\_\+\+Worksheet} \$p\+Sheet=N\+U\+L\+L)
+\item 
+{\bf get\+Column} ()
+\item 
+{\bf get\+Row} ()
+\item 
+{\bf get\+Coordinate} ()
+\item 
+{\bf get\+Value} ()
+\item 
+{\bf get\+Formatted\+Value} ()
+\item 
+{\bf set\+Value} (\$p\+Value=N\+U\+L\+L)
+\item 
+{\bf set\+Value\+Explicit} (\$p\+Value=N\+U\+L\+L, \$p\+Data\+Type=P\+H\+P\+Excel\+\_\+\+Cell\+\_\+\+Data\+Type\+::\+T\+Y\+P\+E\+\_\+\+S\+T\+R\+I\+N\+G)
+\item 
+{\bf get\+Calculated\+Value} (\$reset\+Log=T\+R\+U\+E)
+\item 
+{\bf set\+Calculated\+Value} (\$p\+Value=N\+U\+L\+L)
+\item 
+{\bf get\+Old\+Calculated\+Value} ()
+\item 
+{\bf get\+Data\+Type} ()
+\item 
+{\bf set\+Data\+Type} (\$p\+Data\+Type=P\+H\+P\+Excel\+\_\+\+Cell\+\_\+\+Data\+Type\+::\+T\+Y\+P\+E\+\_\+\+S\+T\+R\+I\+N\+G)
+\item 
+{\bf is\+Formula} ()
+\item 
+{\bf has\+Data\+Validation} ()
+\item 
+{\bf get\+Data\+Validation} ()
+\item 
+{\bf set\+Data\+Validation} ({\bf P\+H\+P\+Excel\+\_\+\+Cell\+\_\+\+Data\+Validation} \$p\+Data\+Validation=N\+U\+L\+L)
+\item 
+{\bf has\+Hyperlink} ()
+\item 
+{\bf get\+Hyperlink} ()
+\item 
+{\bf set\+Hyperlink} ({\bf P\+H\+P\+Excel\+\_\+\+Cell\+\_\+\+Hyperlink} \$p\+Hyperlink=N\+U\+L\+L)
+\item 
+{\bf get\+Parent} ()
+\item 
+{\bf get\+Worksheet} ()
+\item 
+{\bf get\+Style} ()
+\item 
+{\bf rebind\+Parent} ({\bf P\+H\+P\+Excel\+\_\+\+Worksheet} \$parent)
+\item 
+{\bf is\+In\+Range} (\$p\+Range= 'A1\+:\+A1')
+\item 
+{\bf \+\_\+\+\_\+clone} ()
+\item 
+{\bf get\+Xf\+Index} ()
+\item 
+{\bf set\+Xf\+Index} (\$p\+Value=0)
+\item 
+{\bf set\+Formula\+Attributes} (\$p\+Attributes)
+\item 
+{\bf get\+Formula\+Attributes} ()
+\item 
+{\bf \+\_\+\+\_\+to\+String} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static {\bf coordinate\+From\+String} (\$p\+Coordinate\+String= 'A1')
+\item 
+static {\bf absolute\+Reference} (\$p\+Coordinate\+String= 'A1')
+\item 
+static {\bf absolute\+Coordinate} (\$p\+Coordinate\+String= 'A1')
+\item 
+static {\bf split\+Range} (\$p\+Range= 'A1\+:\+A1')
+\item 
+static {\bf build\+Range} (\$p\+Range)
+\item 
+static {\bf range\+Boundaries} (\$p\+Range= 'A1\+:\+A1')
+\item 
+static {\bf range\+Dimension} (\$p\+Range= 'A1\+:\+A1')
+\item 
+static {\bf get\+Range\+Boundaries} (\$p\+Range= 'A1\+:\+A1')
+\item 
+static {\bf column\+Index\+From\+String} (\$p\+String= 'A')
+\item 
+static {\bf string\+From\+Column\+Index} (\$p\+Column\+Index=0)
+\item 
+static {\bf extract\+All\+Cell\+References\+In\+Range} (\$p\+Range= 'A1')
+\item 
+static {\bf compare\+Cells} ({\bf P\+H\+P\+Excel\+\_\+\+Cell} \$a, {\bf P\+H\+P\+Excel\+\_\+\+Cell} \$b)
+\item 
+static {\bf get\+Value\+Binder} ()
+\item 
+static {\bf set\+Value\+Binder} ({\bf P\+H\+P\+Excel\+\_\+\+Cell\+\_\+\+I\+Value\+Binder} \$binder=N\+U\+L\+L)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const {\bfseries D\+E\+F\+A\+U\+L\+T\+\_\+\+R\+A\+N\+G\+E} = 'A1\+:\+A1'\label{class_p_h_p_excel___cell_adc27e24b698ced17be0fcb48e04038f3}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}}
+\subsubsection[{\+\_\+\+\_\+construct}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Value = {\ttfamily NULL}, }
+\item[{}]{\$p\+Data\+Type = {\ttfamily NULL}, }
+\item[{{\bf P\+H\+P\+Excel\+\_\+\+Worksheet}}]{\$p\+Sheet = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___cell_a92979102200113ccab4b2f73366b7783}
+Create a new Cell
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$p\+Value} & \\
+\hline
+string & {\em \$p\+Data\+Type} & \\
+\hline
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} & {\em \$p\+Sheet} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+
+
+\subsection{Member Function Documentation}
+\index{P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}!\+\_\+\+\_\+clone@{\+\_\+\+\_\+clone}}
+\index{\+\_\+\+\_\+clone@{\+\_\+\+\_\+clone}!P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}}
+\subsubsection[{\+\_\+\+\_\+clone}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+clone (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___cell_ad0cb87b388bc74d63dc884accdca8713}
+Implement P\+H\+P \+\_\+\+\_\+clone to create a deep clone, not just a shallow copy. \index{P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}!\+\_\+\+\_\+to\+String@{\+\_\+\+\_\+to\+String}}
+\index{\+\_\+\+\_\+to\+String@{\+\_\+\+\_\+to\+String}!P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}}
+\subsubsection[{\+\_\+\+\_\+to\+String}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+to\+String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___cell_a7516ca30af0db3cdbf9a7739b48ce91d}
+Convert to string
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}!absolute\+Coordinate@{absolute\+Coordinate}}
+\index{absolute\+Coordinate@{absolute\+Coordinate}!P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}}
+\subsubsection[{absolute\+Coordinate}]{\setlength{\rightskip}{0pt plus 5cm}static absolute\+Coordinate (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Coordinate\+String = {\ttfamily 'A1'}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___cell_acf3f1c13115af0f902ca16a7be743e85}
+Make string coordinate absolute
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Coordinate\+String} & e.\+g. 'A1' \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Absolute coordinate e.\+g. '\$\+A\$1' 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\index{P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}!absolute\+Reference@{absolute\+Reference}}
+\index{absolute\+Reference@{absolute\+Reference}!P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}}
+\subsubsection[{absolute\+Reference}]{\setlength{\rightskip}{0pt plus 5cm}static absolute\+Reference (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Coordinate\+String = {\ttfamily 'A1'}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___cell_ac6dda89daede57a7bbf912cf3420f400}
+Make string row, column or cell coordinate absolute
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Coordinate\+String} & e.\+g. 'A' or '1' or 'A1' Note that this value can be a row or column reference as well as a cell reference \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Absolute coordinate e.\+g. '\$\+A' or '\$1' or '\$\+A\$1' 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\index{P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}!build\+Range@{build\+Range}}
+\index{build\+Range@{build\+Range}!P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}}
+\subsubsection[{build\+Range}]{\setlength{\rightskip}{0pt plus 5cm}static build\+Range (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Range}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___cell_ad111f50409c9016288031168bb9c820c}
+Build range from coordinate strings
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$p\+Range} & Array containg one or more arrays containing one or two coordinate strings \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string String representation of \$p\+Range 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\index{P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}!column\+Index\+From\+String@{column\+Index\+From\+String}}
+\index{column\+Index\+From\+String@{column\+Index\+From\+String}!P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}}
+\subsubsection[{column\+Index\+From\+String}]{\setlength{\rightskip}{0pt plus 5cm}static column\+Index\+From\+String (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+String = {\ttfamily 'A'}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___cell_a32e7ee045aca49c7b62ee8504e9fbdcb}
+Column index from string
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+String} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Column index (base 1 !!!) 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}!compare\+Cells@{compare\+Cells}}
+\index{compare\+Cells@{compare\+Cells}!P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}}
+\subsubsection[{compare\+Cells}]{\setlength{\rightskip}{0pt plus 5cm}static compare\+Cells (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+H\+P\+Excel\+\_\+\+Cell}}]{\$a, }
+\item[{{\bf P\+H\+P\+Excel\+\_\+\+Cell}}]{\$b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___cell_a65938001c10229bbc315e6677d0e2238}
+Compare 2 cells
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Cell}{p.}{class_p_h_p_excel___cell} & {\em \$a} & Cell a \\
+\hline
+\doxyref{P\+H\+P\+Excel\+\_\+\+Cell}{p.}{class_p_h_p_excel___cell} & {\em \$b} & Cell b \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Result of comparison (always -\/1 or 1, never zero!) 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}!coordinate\+From\+String@{coordinate\+From\+String}}
+\index{coordinate\+From\+String@{coordinate\+From\+String}!P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}}
+\subsubsection[{coordinate\+From\+String}]{\setlength{\rightskip}{0pt plus 5cm}static coordinate\+From\+String (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Coordinate\+String = {\ttfamily 'A1'}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___cell_a2998c9bd3c48af60b74c7c8ac3d6ce1c}
+Coordinate from string
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Coordinate\+String} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array Array containing column and row (indexes 0 and 1) 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\index{P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}!extract\+All\+Cell\+References\+In\+Range@{extract\+All\+Cell\+References\+In\+Range}}
+\index{extract\+All\+Cell\+References\+In\+Range@{extract\+All\+Cell\+References\+In\+Range}!P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}}
+\subsubsection[{extract\+All\+Cell\+References\+In\+Range}]{\setlength{\rightskip}{0pt plus 5cm}static extract\+All\+Cell\+References\+In\+Range (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Range = {\ttfamily 'A1'}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___cell_a63ef9f91260dae6fb5261cc70ddcd8ce}
+Extract all cell references in range
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Range} & Range (e.\+g. A1 or A1\+:C10 or A1\+:E10 A20\+:E25) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array Array containing single cell references 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}!get\+Calculated\+Value@{get\+Calculated\+Value}}
+\index{get\+Calculated\+Value@{get\+Calculated\+Value}!P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}}
+\subsubsection[{get\+Calculated\+Value}]{\setlength{\rightskip}{0pt plus 5cm}get\+Calculated\+Value (
+\begin{DoxyParamCaption}
+\item[{}]{\$reset\+Log = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___cell_ae939806d376076d577be7b9f64e0ed44}
+Get calculated cell value
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[{\bf Deprecated}]Since version 1.\+7.\+8 for planned changes to cell for array formula handling\end{DoxyRefDesc}
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+boolean & {\em \$reset\+Log} & Whether the calculation engine logger should be reset or not \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\index{P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}!get\+Column@{get\+Column}}
+\index{get\+Column@{get\+Column}!P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}}
+\subsubsection[{get\+Column}]{\setlength{\rightskip}{0pt plus 5cm}get\+Column (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___cell_a6368934d4a94b76943cd6b5bebfcdaf3}
+Get cell coordinate column
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}!get\+Coordinate@{get\+Coordinate}}
+\index{get\+Coordinate@{get\+Coordinate}!P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}}
+\subsubsection[{get\+Coordinate}]{\setlength{\rightskip}{0pt plus 5cm}get\+Coordinate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___cell_aae786387ba028d93acb63742e4b9d871}
+Get cell coordinate
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}!get\+Data\+Type@{get\+Data\+Type}}
+\index{get\+Data\+Type@{get\+Data\+Type}!P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}}
+\subsubsection[{get\+Data\+Type}]{\setlength{\rightskip}{0pt plus 5cm}get\+Data\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___cell_a0859b7b143e085eb26bf7ca4397465c0}
+Get cell data type
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}!get\+Data\+Validation@{get\+Data\+Validation}}
+\index{get\+Data\+Validation@{get\+Data\+Validation}!P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}}
+\subsubsection[{get\+Data\+Validation}]{\setlength{\rightskip}{0pt plus 5cm}get\+Data\+Validation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___cell_af822d941f17f5b3ce079067a724093cc}
+Get Data validation rules
+
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Cell\+\_\+\+Data\+Validation}{p.}{class_p_h_p_excel___cell___data_validation} 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\index{P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}!get\+Formatted\+Value@{get\+Formatted\+Value}}
+\index{get\+Formatted\+Value@{get\+Formatted\+Value}!P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}}
+\subsubsection[{get\+Formatted\+Value}]{\setlength{\rightskip}{0pt plus 5cm}get\+Formatted\+Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___cell_a0e1d962392c3196f167138cb2eb174d5}
+Get cell value with formatting
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}!get\+Formula\+Attributes@{get\+Formula\+Attributes}}
+\index{get\+Formula\+Attributes@{get\+Formula\+Attributes}!P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}}
+\subsubsection[{get\+Formula\+Attributes}]{\setlength{\rightskip}{0pt plus 5cm}get\+Formula\+Attributes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___cell_a235cc50f4fcd271a13ba58c0ba2cbe2a}
+\begin{DoxyRefDesc}{Deprecated}
+\item[{\bf Deprecated}]Since version 1.\+7.\+8 for planned changes to cell for array formula handling \end{DoxyRefDesc}
+\index{P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}!get\+Hyperlink@{get\+Hyperlink}}
+\index{get\+Hyperlink@{get\+Hyperlink}!P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}}
+\subsubsection[{get\+Hyperlink}]{\setlength{\rightskip}{0pt plus 5cm}get\+Hyperlink (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___cell_a7d52f8a3b6a254714a4fc9805d461892}
+Get Hyperlink
+
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Cell\+\_\+\+Hyperlink}{p.}{class_p_h_p_excel___cell___hyperlink} 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\index{P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}!get\+Old\+Calculated\+Value@{get\+Old\+Calculated\+Value}}
+\index{get\+Old\+Calculated\+Value@{get\+Old\+Calculated\+Value}!P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}}
+\subsubsection[{get\+Old\+Calculated\+Value}]{\setlength{\rightskip}{0pt plus 5cm}get\+Old\+Calculated\+Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___cell_af1e4edfcce7f7d48095117e6b3b81369}
+Get old calculated value (cached) This returns the value last calculated by M\+S Excel or whichever spreadsheet program was used to create the original spreadsheet file. Note that this value is not guaranteed to refelect the actual calculated value because it is possible that auto-\/calculation was disabled in the original spreadsheet, and underlying data values used by the formula have changed since it was last calculated.
+
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}!get\+Parent@{get\+Parent}}
+\index{get\+Parent@{get\+Parent}!P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}}
+\subsubsection[{get\+Parent}]{\setlength{\rightskip}{0pt plus 5cm}get\+Parent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___cell_a95ecaee3537b1ad29b04ef383a57bbae}
+Get parent worksheet
+
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Cached\+Object\+Storage\+\_\+\+Cache\+Base}{p.}{class_p_h_p_excel___cached_object_storage___cache_base} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}!get\+Range\+Boundaries@{get\+Range\+Boundaries}}
+\index{get\+Range\+Boundaries@{get\+Range\+Boundaries}!P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}}
+\subsubsection[{get\+Range\+Boundaries}]{\setlength{\rightskip}{0pt plus 5cm}static get\+Range\+Boundaries (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Range = {\ttfamily 'A1\+:A1'}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___cell_ad6fde38e86ed835c0b6902b10af0ab4c}
+Calculate range boundaries
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Range} & Cell range (e.\+g. A1\+:A1) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array Range coordinates array(\+Start Cell, End Cell) where Start Cell and End Cell are arrays (Column I\+D, Row Number) 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}!get\+Row@{get\+Row}}
+\index{get\+Row@{get\+Row}!P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}}
+\subsubsection[{get\+Row}]{\setlength{\rightskip}{0pt plus 5cm}get\+Row (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___cell_a632382a60ab0034764c10ee608fb39da}
+Get cell coordinate row
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}!get\+Style@{get\+Style}}
+\index{get\+Style@{get\+Style}!P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}}
+\subsubsection[{get\+Style}]{\setlength{\rightskip}{0pt plus 5cm}get\+Style (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___cell_a1a9c641ae8a39113009425cbccaee5d5}
+Get cell style
+
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Style}{p.}{class_p_h_p_excel___style} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}!get\+Value@{get\+Value}}
+\index{get\+Value@{get\+Value}!P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}}
+\subsubsection[{get\+Value}]{\setlength{\rightskip}{0pt plus 5cm}get\+Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___cell_ac0bc18784b182c89fcfd276625aef435}
+Get cell value
+
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}!get\+Value\+Binder@{get\+Value\+Binder}}
+\index{get\+Value\+Binder@{get\+Value\+Binder}!P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}}
+\subsubsection[{get\+Value\+Binder}]{\setlength{\rightskip}{0pt plus 5cm}static get\+Value\+Binder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___cell_a9dab3f3e829b0da0e21f700918f0901b}
+Get value binder to use
+
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Cell\+\_\+\+I\+Value\+Binder}{p.}{interface_p_h_p_excel___cell___i_value_binder} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}!get\+Worksheet@{get\+Worksheet}}
+\index{get\+Worksheet@{get\+Worksheet}!P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}}
+\subsubsection[{get\+Worksheet}]{\setlength{\rightskip}{0pt plus 5cm}get\+Worksheet (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___cell_a0b9578d26d483501488b34f52c899a70}
+Get parent worksheet
+
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}!get\+Xf\+Index@{get\+Xf\+Index}}
+\index{get\+Xf\+Index@{get\+Xf\+Index}!P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}}
+\subsubsection[{get\+Xf\+Index}]{\setlength{\rightskip}{0pt plus 5cm}get\+Xf\+Index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___cell_a960d4bf67939e6e425fd65891e25c42f}
+Get index to cell\+Xf
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}!has\+Data\+Validation@{has\+Data\+Validation}}
+\index{has\+Data\+Validation@{has\+Data\+Validation}!P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}}
+\subsubsection[{has\+Data\+Validation}]{\setlength{\rightskip}{0pt plus 5cm}has\+Data\+Validation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___cell_a44a3ac26cf0a55db4784576e9515d762}
+Does this cell contain Data validation rules?
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\index{P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}!has\+Hyperlink@{has\+Hyperlink}}
+\index{has\+Hyperlink@{has\+Hyperlink}!P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}}
+\subsubsection[{has\+Hyperlink}]{\setlength{\rightskip}{0pt plus 5cm}has\+Hyperlink (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___cell_adf4346bab51d030a3749ef4fd28df698}
+Does this cell contain a Hyperlink?
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\index{P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}!is\+Formula@{is\+Formula}}
+\index{is\+Formula@{is\+Formula}!P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}}
+\subsubsection[{is\+Formula}]{\setlength{\rightskip}{0pt plus 5cm}is\+Formula (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___cell_ab7cd06990488bc3ff5278d92c29f1e27}
+Identify if the cell contains a formula
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}!is\+In\+Range@{is\+In\+Range}}
+\index{is\+In\+Range@{is\+In\+Range}!P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}}
+\subsubsection[{is\+In\+Range}]{\setlength{\rightskip}{0pt plus 5cm}is\+In\+Range (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Range = {\ttfamily 'A1\+:A1'}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___cell_a012d8840dd2f13eaf6eaa21a90d632b4}
+Is cell in a specific range?
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Range} & Cell range (e.\+g. A1\+:A1) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}!notify\+Cache\+Controller@{notify\+Cache\+Controller}}
+\index{notify\+Cache\+Controller@{notify\+Cache\+Controller}!P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}}
+\subsubsection[{notify\+Cache\+Controller}]{\setlength{\rightskip}{0pt plus 5cm}notify\+Cache\+Controller (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___cell_a0bd16d7974d8f077e52be4fcb2a51d34}
+Send notification to the cache controller
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}!range\+Boundaries@{range\+Boundaries}}
+\index{range\+Boundaries@{range\+Boundaries}!P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}}
+\subsubsection[{range\+Boundaries}]{\setlength{\rightskip}{0pt plus 5cm}static range\+Boundaries (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Range = {\ttfamily 'A1\+:A1'}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___cell_ab22eb79cb795cff62c4c675339a2ca78}
+Calculate range boundaries
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Range} & Cell range (e.\+g. A1\+:A1) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array Range coordinates array(\+Start Cell, End Cell) where Start Cell and End Cell are arrays (Column Number, Row Number) 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}!range\+Dimension@{range\+Dimension}}
+\index{range\+Dimension@{range\+Dimension}!P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}}
+\subsubsection[{range\+Dimension}]{\setlength{\rightskip}{0pt plus 5cm}static range\+Dimension (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Range = {\ttfamily 'A1\+:A1'}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___cell_a981d4ac5a8502c471533a11d19b7313f}
+Calculate range dimension
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Range} & Cell range (e.\+g. A1\+:A1) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array Range dimension (width, height) 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}!rebind\+Parent@{rebind\+Parent}}
+\index{rebind\+Parent@{rebind\+Parent}!P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}}
+\subsubsection[{rebind\+Parent}]{\setlength{\rightskip}{0pt plus 5cm}rebind\+Parent (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+H\+P\+Excel\+\_\+\+Worksheet}}]{\$parent}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___cell_a2d739e5dc0d4568f19291000a3a7fdd1}
+Re-\/bind parent
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Worksheet}{p.}{class_p_h_p_excel___worksheet} & {\em \$parent} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Cell}{p.}{class_p_h_p_excel___cell} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}!set\+Calculated\+Value@{set\+Calculated\+Value}}
+\index{set\+Calculated\+Value@{set\+Calculated\+Value}!P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}}
+\subsubsection[{set\+Calculated\+Value}]{\setlength{\rightskip}{0pt plus 5cm}set\+Calculated\+Value (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Value = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___cell_ae35e25d101fb837228fc08d1ca57fcfa}
+Set old calculated value (cached)
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$p\+Value} & Value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Cell}{p.}{class_p_h_p_excel___cell} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}!set\+Data\+Type@{set\+Data\+Type}}
+\index{set\+Data\+Type@{set\+Data\+Type}!P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}}
+\subsubsection[{set\+Data\+Type}]{\setlength{\rightskip}{0pt plus 5cm}set\+Data\+Type (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Data\+Type = {\ttfamily PHPExcel\+\_\+Cell\+\_\+DataType\+:\+:TYPE\+\_\+STRING}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___cell_a6e68c1a63342b5cc6925c4246f70eade}
+Set cell data type
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Data\+Type} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Cell}{p.}{class_p_h_p_excel___cell} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}!set\+Data\+Validation@{set\+Data\+Validation}}
+\index{set\+Data\+Validation@{set\+Data\+Validation}!P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}}
+\subsubsection[{set\+Data\+Validation}]{\setlength{\rightskip}{0pt plus 5cm}set\+Data\+Validation (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+H\+P\+Excel\+\_\+\+Cell\+\_\+\+Data\+Validation}}]{\$p\+Data\+Validation = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___cell_ace4703824588af08e0457c1d95316848}
+Set Data validation rules
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Cell\+\_\+\+Data\+Validation}{p.}{class_p_h_p_excel___cell___data_validation} & {\em \$p\+Data\+Validation} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Cell}{p.}{class_p_h_p_excel___cell} 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\index{P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}!set\+Formula\+Attributes@{set\+Formula\+Attributes}}
+\index{set\+Formula\+Attributes@{set\+Formula\+Attributes}!P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}}
+\subsubsection[{set\+Formula\+Attributes}]{\setlength{\rightskip}{0pt plus 5cm}set\+Formula\+Attributes (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Attributes}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___cell_ad60fe46d40789c34a026c6294ffc4115}
+\begin{DoxyRefDesc}{Deprecated}
+\item[{\bf Deprecated}]Since version 1.\+7.\+8 for planned changes to cell for array formula handling \end{DoxyRefDesc}
+\index{P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}!set\+Hyperlink@{set\+Hyperlink}}
+\index{set\+Hyperlink@{set\+Hyperlink}!P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}}
+\subsubsection[{set\+Hyperlink}]{\setlength{\rightskip}{0pt plus 5cm}set\+Hyperlink (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+H\+P\+Excel\+\_\+\+Cell\+\_\+\+Hyperlink}}]{\$p\+Hyperlink = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___cell_aacde62e3efdae7d0be1d0b1c168df6c3}
+Set Hyperlink
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Cell\+\_\+\+Hyperlink}{p.}{class_p_h_p_excel___cell___hyperlink} & {\em \$p\+Hyperlink} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Cell}{p.}{class_p_h_p_excel___cell} 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\index{P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}!set\+Value@{set\+Value}}
+\index{set\+Value@{set\+Value}!P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}}
+\subsubsection[{set\+Value}]{\setlength{\rightskip}{0pt plus 5cm}set\+Value (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Value = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___cell_a6318110e26087dbd199adabd36d1acc4}
+Set cell value
+
+Sets the value for a cell, automatically determining the datatype using the value binder
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$p\+Value} & Value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Cell}{p.}{class_p_h_p_excel___cell} 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\index{P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}!set\+Value\+Binder@{set\+Value\+Binder}}
+\index{set\+Value\+Binder@{set\+Value\+Binder}!P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}}
+\subsubsection[{set\+Value\+Binder}]{\setlength{\rightskip}{0pt plus 5cm}static set\+Value\+Binder (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+H\+P\+Excel\+\_\+\+Cell\+\_\+\+I\+Value\+Binder}}]{\$binder = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___cell_adb447b0e9fec22cfb0232df4237084f2}
+Set value binder to use
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Cell\+\_\+\+I\+Value\+Binder}{p.}{interface_p_h_p_excel___cell___i_value_binder} & {\em \$binder} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\index{P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}!set\+Value\+Explicit@{set\+Value\+Explicit}}
+\index{set\+Value\+Explicit@{set\+Value\+Explicit}!P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}}
+\subsubsection[{set\+Value\+Explicit}]{\setlength{\rightskip}{0pt plus 5cm}set\+Value\+Explicit (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Value = {\ttfamily NULL}, }
+\item[{}]{\$p\+Data\+Type = {\ttfamily PHPExcel\+\_\+Cell\+\_\+DataType\+:\+:TYPE\+\_\+STRING}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___cell_a3b9d05a146a00dceb7d8aa9632cdde65}
+Set the value for a cell, with the explicit data type passed to the method (bypassing any use of the value binder)
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$p\+Value} & Value \\
+\hline
+string & {\em \$p\+Data\+Type} & Explicit data type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Cell}{p.}{class_p_h_p_excel___cell} 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Exception}{p.}{class_p_h_p_excel___exception}} & \\
+\hline
+\end{DoxyExceptions}
+\index{P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}!set\+Xf\+Index@{set\+Xf\+Index}}
+\index{set\+Xf\+Index@{set\+Xf\+Index}!P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}}
+\subsubsection[{set\+Xf\+Index}]{\setlength{\rightskip}{0pt plus 5cm}set\+Xf\+Index (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Value = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___cell_a84f50bfa5303ee6df674fef1641109da}
+Set index to cell\+Xf
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$p\+Value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Cell}{p.}{class_p_h_p_excel___cell} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}!split\+Range@{split\+Range}}
+\index{split\+Range@{split\+Range}!P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}}
+\subsubsection[{split\+Range}]{\setlength{\rightskip}{0pt plus 5cm}static split\+Range (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Range = {\ttfamily 'A1\+:A1'}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___cell_a54b7b7cf428283f65db285cb37544560}
+Split range into coordinate strings
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Range} & e.\+g. 'B4\+:D9' or 'B4\+:D9,H2\+:O11' or 'B4' \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array Array containg one or more arrays containing one or two coordinate strings e.\+g. array('B4','D9') or array(array('B4','D9'),array('H2','O11')) or array('B4') 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}!string\+From\+Column\+Index@{string\+From\+Column\+Index}}
+\index{string\+From\+Column\+Index@{string\+From\+Column\+Index}!P\+H\+P\+Excel\+\_\+\+Cell@{P\+H\+P\+Excel\+\_\+\+Cell}}
+\subsubsection[{string\+From\+Column\+Index}]{\setlength{\rightskip}{0pt plus 5cm}static string\+From\+Column\+Index (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Column\+Index = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___cell_ab5501b4cf2f8cd0af389ad4096fb9387}
+String from columnindex
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$p\+Column\+Index} & Column index (base 0 !!!) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/var/www/workspace/\+O\+D\+I-\/\+P\+R\+O\+J\+E\+C\+T/model/\+P\+H\+P\+Excel/\+Classes/\+P\+H\+P\+Excel/Cell.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,11 @@
+<map id="View" name="View">
+<area shape="rect" id="node3" href="$class_add_survey_form_view.html" title="AddSurveyFormView" alt="" coords="111,5,263,35"/>
+<area shape="rect" id="node5" href="$class_default_view.html" title="DefaultView" alt="" coords="139,59,235,88"/>
+<area shape="rect" id="node7" href="$class_download_view.html" title="DownloadView" alt="" coords="129,112,244,141"/>
+<area shape="rect" id="node9" href="$class_message_view.html" title="MessageView" alt="" coords="132,165,241,195"/>
+<area shape="rect" id="node11" href="$class_result_survey_view.html" title="ResultSurveyView" alt="" coords="120,219,253,248"/>
+<area shape="rect" id="node13" href="$class_sign_up_form_view.html" title="SignUpFormView" alt="" coords="121,272,252,301"/>
+<area shape="rect" id="node15" href="$class_surveys_view.html" title="SurveysView" alt="" coords="136,325,237,355"/>
+<area shape="rect" id="node17" href="$class_survey_view.html" title="SurveyView" alt="" coords="140,379,233,408"/>
+<area shape="rect" id="node19" href="$class_update_user_form_view.html" title="UpdateUserFormView" alt="" coords="107,432,267,461"/>
+</map>

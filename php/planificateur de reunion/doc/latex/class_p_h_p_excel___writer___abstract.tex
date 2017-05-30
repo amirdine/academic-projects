@@ -1,0 +1,167 @@
+\section{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Abstract Class Reference}
+\label{class_p_h_p_excel___writer___abstract}\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Abstract@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Abstract}}
+
+
+Inheritance diagram for P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Abstract\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_p_h_p_excel___writer___abstract__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Abstract\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{class_p_h_p_excel___writer___abstract__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf get\+Include\+Charts} ()
+\item 
+{\bf set\+Include\+Charts} (\$p\+Value=F\+A\+L\+S\+E)
+\item 
+{\bf get\+Pre\+Calculate\+Formulas} ()
+\item 
+{\bf set\+Pre\+Calculate\+Formulas} (\$p\+Value=T\+R\+U\+E)
+\item 
+{\bf get\+Use\+Disk\+Caching} ()
+\item 
+{\bf set\+Use\+Disk\+Caching} (\$p\+Value=F\+A\+L\+S\+E, \$p\+Directory=N\+U\+L\+L)
+\item 
+{\bf get\+Disk\+Caching\+Directory} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$\+\_\+include\+Charts} = F\+A\+L\+S\+E\label{class_p_h_p_excel___writer___abstract_adb16e9c3558b7a5a20f127782fc15a77}
+
+\item 
+{\bfseries \$\+\_\+pre\+Calculate\+Formulas} = T\+R\+U\+E\label{class_p_h_p_excel___writer___abstract_a9408f77088c09ddfa3ae6db72ea96ac0}
+
+\item 
+{\bfseries \$\+\_\+use\+Disk\+Caching} = F\+A\+L\+S\+E\label{class_p_h_p_excel___writer___abstract_a720fd1b9c9805b39ea133914fec0654a}
+
+\item 
+{\bfseries \$\+\_\+disk\+Caching\+Directory} = './'\label{class_p_h_p_excel___writer___abstract_adf42bfa5f30c4b819fa39b63d2b86c15}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Abstract@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Abstract}!get\+Disk\+Caching\+Directory@{get\+Disk\+Caching\+Directory}}
+\index{get\+Disk\+Caching\+Directory@{get\+Disk\+Caching\+Directory}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Abstract@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Abstract}}
+\subsubsection[{get\+Disk\+Caching\+Directory}]{\setlength{\rightskip}{0pt plus 5cm}get\+Disk\+Caching\+Directory (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___abstract_a41826c4f44ebc1fa9c0edcf22c94ef03}
+Get disk caching directory
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Abstract@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Abstract}!get\+Include\+Charts@{get\+Include\+Charts}}
+\index{get\+Include\+Charts@{get\+Include\+Charts}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Abstract@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Abstract}}
+\subsubsection[{get\+Include\+Charts}]{\setlength{\rightskip}{0pt plus 5cm}get\+Include\+Charts (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___abstract_a93df2187f1b0056fb304340bee88d8aa}
+Write charts in workbook? If this is true, then the Writer will write definitions for any charts that exist in the \doxyref{P\+H\+P\+Excel}{p.}{class_p_h_p_excel} object. If false (the default) it will ignore any charts defined in the \doxyref{P\+H\+P\+Excel}{p.}{class_p_h_p_excel} object.
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Abstract@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Abstract}!get\+Pre\+Calculate\+Formulas@{get\+Pre\+Calculate\+Formulas}}
+\index{get\+Pre\+Calculate\+Formulas@{get\+Pre\+Calculate\+Formulas}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Abstract@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Abstract}}
+\subsubsection[{get\+Pre\+Calculate\+Formulas}]{\setlength{\rightskip}{0pt plus 5cm}get\+Pre\+Calculate\+Formulas (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___abstract_abadd293247bbcacf5dea0f69abb7ef6e}
+Get Pre-\/\+Calculate Formulas flag If this is true (the default), then the writer will recalculate all formulae in a workbook when saving, so that the pre-\/calculated values are immediately available to M\+S Excel or other office spreadsheet viewer when opening the file If false, then formulae are not calculated on save. This is faster for saving in \doxyref{P\+H\+P\+Excel}{p.}{class_p_h_p_excel}, but slower when opening the resulting file in M\+S Excel, because Excel has to recalculate the formulae itself
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Abstract@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Abstract}!get\+Use\+Disk\+Caching@{get\+Use\+Disk\+Caching}}
+\index{get\+Use\+Disk\+Caching@{get\+Use\+Disk\+Caching}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Abstract@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Abstract}}
+\subsubsection[{get\+Use\+Disk\+Caching}]{\setlength{\rightskip}{0pt plus 5cm}get\+Use\+Disk\+Caching (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___abstract_a4a458bfd3cb86b531534cb77663ad008}
+Get use disk caching where possible?
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Abstract@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Abstract}!set\+Include\+Charts@{set\+Include\+Charts}}
+\index{set\+Include\+Charts@{set\+Include\+Charts}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Abstract@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Abstract}}
+\subsubsection[{set\+Include\+Charts}]{\setlength{\rightskip}{0pt plus 5cm}set\+Include\+Charts (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Value = {\ttfamily FALSE}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___abstract_a447320da1c895df226e3491aba520071}
+Set write charts in workbook Set to true, to advise the Writer to include any charts that exist in the \doxyref{P\+H\+P\+Excel}{p.}{class_p_h_p_excel} object. Set to false (the default) to ignore charts.
+
+
+\begin{DoxyParams}[1]{Parameters}
+boolean & {\em \$p\+Value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+I\+Writer}{p.}{interface_p_h_p_excel___writer___i_writer} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Abstract@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Abstract}!set\+Pre\+Calculate\+Formulas@{set\+Pre\+Calculate\+Formulas}}
+\index{set\+Pre\+Calculate\+Formulas@{set\+Pre\+Calculate\+Formulas}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Abstract@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Abstract}}
+\subsubsection[{set\+Pre\+Calculate\+Formulas}]{\setlength{\rightskip}{0pt plus 5cm}set\+Pre\+Calculate\+Formulas (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Value = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___abstract_a06eab4cd8319044d648f7e79197fc3cf}
+Set Pre-\/\+Calculate Formulas Set to true (the default) to advise the Writer to calculate all formulae on save Set to false to prevent precalculation of formulae on save.
+
+
+\begin{DoxyParams}[1]{Parameters}
+boolean & {\em \$p\+Value} & Pre-\/\+Calculate Formulas? \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+I\+Writer}{p.}{interface_p_h_p_excel___writer___i_writer} 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Abstract@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Abstract}!set\+Use\+Disk\+Caching@{set\+Use\+Disk\+Caching}}
+\index{set\+Use\+Disk\+Caching@{set\+Use\+Disk\+Caching}!P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Abstract@{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Abstract}}
+\subsubsection[{set\+Use\+Disk\+Caching}]{\setlength{\rightskip}{0pt plus 5cm}set\+Use\+Disk\+Caching (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Value = {\ttfamily FALSE}, }
+\item[{}]{\$p\+Directory = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___writer___abstract_aeb1acbc41c83a9f347f15609c1026ebd}
+Set use disk caching where possible?
+
+
+\begin{DoxyParams}[1]{Parameters}
+boolean & {\em \$p\+Value} & \\
+\hline
+string & {\em \$p\+Directory} & Disk caching directory \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Exception}{p.}{class_p_h_p_excel___writer___exception}} & when directory does not exist \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+\doxyref{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+Excel2007}{p.}{class_p_h_p_excel___writer___excel2007} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/var/www/workspace/\+O\+D\+I-\/\+P\+R\+O\+J\+E\+C\+T/model/\+P\+H\+P\+Excel/\+Classes/\+P\+H\+P\+Excel/\+Writer/Abstract.\+php\end{DoxyCompactItemize}

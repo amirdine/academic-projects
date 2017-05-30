@@ -1,0 +1,112 @@
+\section{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Archive Class Reference}
+\label{class_p_h_p_excel___shared___zip_archive}\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Archive@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Archive}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf open} (\$file\+Name)
+\item 
+{\bf close} ()
+\item 
+{\bf add\+From\+String} (\$localname, \$contents)
+\item 
+{\bf locate\+Name} (\$file\+Name)
+\item 
+{\bf get\+From\+Name} (\$file\+Name)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const {\bf O\+V\+E\+R\+W\+R\+I\+T\+E} = 'O\+V\+E\+R\+W\+R\+I\+T\+E'
+\item 
+const {\bfseries C\+R\+E\+A\+T\+E} = 'C\+R\+E\+A\+T\+E'\label{class_p_h_p_excel___shared___zip_archive_ae7d71eec207ebcef53a99536e8ca8825}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Archive@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Archive}!add\+From\+String@{add\+From\+String}}
+\index{add\+From\+String@{add\+From\+String}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Archive@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Archive}}
+\subsubsection[{add\+From\+String}]{\setlength{\rightskip}{0pt plus 5cm}add\+From\+String (
+\begin{DoxyParamCaption}
+\item[{}]{\$localname, }
+\item[{}]{\$contents}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___shared___zip_archive_ae67e7b10dbc8aac67330d8c795828ab2}
+Add a new file to the zip archive from a string of raw data.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$localname} & Directory/\+Name of the file to add to the zip archive \\
+\hline
+string & {\em \$contents} & String of data to add to the zip archive \\
+\hline
+\end{DoxyParams}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Archive@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Archive}!close@{close}}
+\index{close@{close}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Archive@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Archive}}
+\subsubsection[{close}]{\setlength{\rightskip}{0pt plus 5cm}close (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___shared___zip_archive_aa69c8bf1f1dcf4e72552efff1fe3e87e}
+Close this zip archive \index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Archive@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Archive}!get\+From\+Name@{get\+From\+Name}}
+\index{get\+From\+Name@{get\+From\+Name}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Archive@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Archive}}
+\subsubsection[{get\+From\+Name}]{\setlength{\rightskip}{0pt plus 5cm}get\+From\+Name (
+\begin{DoxyParamCaption}
+\item[{}]{\$file\+Name}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___shared___zip_archive_a328778d353cbbc2d94cc3957de875e3f}
+Extract file from archive by given file\+Name (Emulate Zip\+Archive \doxyref{get\+From\+Name()}{p.}{class_p_h_p_excel___shared___zip_archive_a328778d353cbbc2d94cc3957de875e3f})
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$file\+Name} & Filename for the file in zip archive \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string \$contents File string contents 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Archive@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Archive}!locate\+Name@{locate\+Name}}
+\index{locate\+Name@{locate\+Name}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Archive@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Archive}}
+\subsubsection[{locate\+Name}]{\setlength{\rightskip}{0pt plus 5cm}locate\+Name (
+\begin{DoxyParamCaption}
+\item[{}]{\$file\+Name}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___shared___zip_archive_a92ca8e0a7608f1850ab6b7f6e75103f1}
+Find if given file\+Name exist in archive (Emulate Zip\+Archive \doxyref{locate\+Name()}{p.}{class_p_h_p_excel___shared___zip_archive_a92ca8e0a7608f1850ab6b7f6e75103f1})
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$file\+Name} & Filename for the file in zip archive \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Archive@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Archive}!open@{open}}
+\index{open@{open}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Archive@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Archive}}
+\subsubsection[{open}]{\setlength{\rightskip}{0pt plus 5cm}open (
+\begin{DoxyParamCaption}
+\item[{}]{\$file\+Name}
+\end{DoxyParamCaption}
+)}\label{class_p_h_p_excel___shared___zip_archive_a8e2031e7f25050e84753f2fb178e9d8d}
+Open a new zip archive
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$file\+Name} & Filename for the zip archive \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+\subsection{Field Documentation}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Archive@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Archive}!O\+V\+E\+R\+W\+R\+I\+T\+E@{O\+V\+E\+R\+W\+R\+I\+T\+E}}
+\index{O\+V\+E\+R\+W\+R\+I\+T\+E@{O\+V\+E\+R\+W\+R\+I\+T\+E}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Archive@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+Zip\+Archive}}
+\subsubsection[{O\+V\+E\+R\+W\+R\+I\+T\+E}]{\setlength{\rightskip}{0pt plus 5cm}const O\+V\+E\+R\+W\+R\+I\+T\+E = 'O\+V\+E\+R\+W\+R\+I\+T\+E'}\label{class_p_h_p_excel___shared___zip_archive_aec60cb732462b447b4386e3364d1d0d1}
+constants 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/var/www/workspace/\+O\+D\+I-\/\+P\+R\+O\+J\+E\+C\+T/model/\+P\+H\+P\+Excel/\+Classes/\+P\+H\+P\+Excel/\+Shared/Zip\+Archive.\+php\end{DoxyCompactItemize}

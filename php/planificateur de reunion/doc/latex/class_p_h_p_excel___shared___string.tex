@@ -1,0 +1,505 @@
+\section{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String Class Reference}
+\label{class_p_h_p_excel___shared___string}\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static {\bf get\+Is\+Mbstring\+Enabled} ()
+\item 
+static {\bf get\+Is\+Iconv\+Enabled} ()
+\item 
+static {\bfseries build\+Character\+Sets} ()\label{class_p_h_p_excel___shared___string_a25102095193968dd2952929dae3760b8}
+
+\item 
+static {\bf Control\+Character\+O\+O\+X\+M\+L2\+P\+H\+P} (\$value= '')
+\item 
+static {\bf Control\+Character\+P\+H\+P2\+O\+O\+X\+M\+L} (\$value= '')
+\item 
+static {\bf Sanitize\+U\+T\+F8} (\$value)
+\item 
+static {\bf Is\+U\+T\+F8} (\$value= '')
+\item 
+static {\bf Format\+Number} (\$value)
+\item 
+static {\bf U\+T\+F8to\+B\+I\+F\+F8\+Unicode\+Short} (\$value, \$arrc\+Runs=array())
+\item 
+static {\bf U\+T\+F8to\+B\+I\+F\+F8\+Unicode\+Long} (\$value)
+\item 
+static {\bf Convert\+Encoding} (\$value, \$to, \$from)
+\item 
+static {\bf utf16\+\_\+decode} (\$str, \$bom\+\_\+be=T\+R\+U\+E)
+\item 
+static {\bf Count\+Characters} (\$value, \$enc= 'U\+T\+F-\/8')
+\item 
+static {\bf Substring} (\$p\+Value= '', \$p\+Start=0, \$p\+Length=0)
+\item 
+static {\bf Str\+To\+Upper} (\$p\+Value= '')
+\item 
+static {\bf Str\+To\+Lower} (\$p\+Value= '')
+\item 
+static {\bf Str\+To\+Title} (\$p\+Value= '')
+\item 
+static {\bf convert\+To\+Number\+If\+Fraction} (\&\$operand)
+\item 
+static {\bf get\+Decimal\+Separator} ()
+\item 
+static {\bf set\+Decimal\+Separator} (\$p\+Value= '.')
+\item 
+static {\bf get\+Thousands\+Separator} ()
+\item 
+static {\bf set\+Thousands\+Separator} (\$p\+Value= ',')
+\item 
+static {\bf get\+Currency\+Code} ()
+\item 
+static {\bf set\+Currency\+Code} (\$p\+Value= '\$')
+\item 
+static {\bf S\+Y\+L\+Kto\+U\+T\+F8} (\$p\+Value= '')
+\item 
+static {\bf test\+String\+As\+Numeric} (\$value)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const {\bf S\+T\+R\+I\+N\+G\+\_\+\+R\+E\+G\+E\+X\+P\+\_\+\+F\+R\+A\+C\+T\+I\+O\+N} = '(-\/?)(\textbackslash{}d+)\textbackslash{}s+(\textbackslash{}d+\textbackslash{}/\textbackslash{}d+)'
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String}!Control\+Character\+O\+O\+X\+M\+L2\+P\+H\+P@{Control\+Character\+O\+O\+X\+M\+L2\+P\+H\+P}}
+\index{Control\+Character\+O\+O\+X\+M\+L2\+P\+H\+P@{Control\+Character\+O\+O\+X\+M\+L2\+P\+H\+P}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String}}
+\subsubsection[{Control\+Character\+O\+O\+X\+M\+L2\+P\+H\+P}]{\setlength{\rightskip}{0pt plus 5cm}static Control\+Character\+O\+O\+X\+M\+L2\+P\+H\+P (
+\begin{DoxyParamCaption}
+\item[{}]{\$value = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___string_ae367aecf21b666a0216f28b0c79dcbd4}
+Convert from Open\+X\+M\+L escaped control character to P\+H\+P control character
+
+\subsubsection*{Excel 2007 team\+: }
+
+That's correct, control characters are stored directly in the shared-\/strings table. We do encode characters that cannot be represented in X\+M\+L using the following escape sequence\+: {\itshape x\+H\+H\+H\+H} where H represents a hexadecimal character in the character's value... So you could end up with something like {\itshape x0008} in a string (either in a cell value ($<$v$>$) element or in the shared string $<$t$>$ element.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & Value to unescape \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String}!Control\+Character\+P\+H\+P2\+O\+O\+X\+M\+L@{Control\+Character\+P\+H\+P2\+O\+O\+X\+M\+L}}
+\index{Control\+Character\+P\+H\+P2\+O\+O\+X\+M\+L@{Control\+Character\+P\+H\+P2\+O\+O\+X\+M\+L}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String}}
+\subsubsection[{Control\+Character\+P\+H\+P2\+O\+O\+X\+M\+L}]{\setlength{\rightskip}{0pt plus 5cm}static Control\+Character\+P\+H\+P2\+O\+O\+X\+M\+L (
+\begin{DoxyParamCaption}
+\item[{}]{\$value = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___string_a03b401e315f6a86ddf257bed290fc409}
+Convert from P\+H\+P control character to Open\+X\+M\+L escaped control character
+
+\subsubsection*{Excel 2007 team\+: }
+
+That's correct, control characters are stored directly in the shared-\/strings table. We do encode characters that cannot be represented in X\+M\+L using the following escape sequence\+: {\itshape x\+H\+H\+H\+H} where H represents a hexadecimal character in the character's value... So you could end up with something like {\itshape x0008} in a string (either in a cell value ($<$v$>$) element or in the shared string $<$t$>$ element.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & Value to escape \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String}!Convert\+Encoding@{Convert\+Encoding}}
+\index{Convert\+Encoding@{Convert\+Encoding}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String}}
+\subsubsection[{Convert\+Encoding}]{\setlength{\rightskip}{0pt plus 5cm}static Convert\+Encoding (
+\begin{DoxyParamCaption}
+\item[{}]{\$value, }
+\item[{}]{\$to, }
+\item[{}]{\$from}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___string_a982b6ccf62d697bdfc42fb8c1e7b0adf}
+Convert string from one encoding to another. First try mbstring, then iconv, finally strlen
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & \\
+\hline
+string & {\em \$to} & Encoding to convert to, e.\+g. 'U\+T\+F-\/8' \\
+\hline
+string & {\em \$from} & Encoding to convert from, e.\+g. 'U\+T\+F-\/16\+L\+E' \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String}!convert\+To\+Number\+If\+Fraction@{convert\+To\+Number\+If\+Fraction}}
+\index{convert\+To\+Number\+If\+Fraction@{convert\+To\+Number\+If\+Fraction}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String}}
+\subsubsection[{convert\+To\+Number\+If\+Fraction}]{\setlength{\rightskip}{0pt plus 5cm}static convert\+To\+Number\+If\+Fraction (
+\begin{DoxyParamCaption}
+\item[{\&}]{\$operand}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___string_a213492f004f36e26ad8186a85937c073}
+Identify whether a string contains a fractional numeric value, and convert it to a numeric if it is
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \&\$operand} & string value to test \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String}!Count\+Characters@{Count\+Characters}}
+\index{Count\+Characters@{Count\+Characters}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String}}
+\subsubsection[{Count\+Characters}]{\setlength{\rightskip}{0pt plus 5cm}static Count\+Characters (
+\begin{DoxyParamCaption}
+\item[{}]{\$value, }
+\item[{}]{\$enc = {\ttfamily 'UTF-\/8'}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___string_a4ee44902646bdc95dcc26b5a0656997d}
+Get character count. First try mbstring, then iconv, finally strlen
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & \\
+\hline
+string & {\em \$enc} & Encoding \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Character count 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String}!Format\+Number@{Format\+Number}}
+\index{Format\+Number@{Format\+Number}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String}}
+\subsubsection[{Format\+Number}]{\setlength{\rightskip}{0pt plus 5cm}static Format\+Number (
+\begin{DoxyParamCaption}
+\item[{}]{\$value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___string_aae880322b8d5807f7b5400da2e6d2be2}
+Formats a numeric value as a string for output in various output writers forcing point as decimal separator in case locale is other than English.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String}!get\+Currency\+Code@{get\+Currency\+Code}}
+\index{get\+Currency\+Code@{get\+Currency\+Code}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String}}
+\subsubsection[{get\+Currency\+Code}]{\setlength{\rightskip}{0pt plus 5cm}static get\+Currency\+Code (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___string_aaba192253f94bbad45870587c5a6cf47}
+Get the currency code. If it has not yet been set explicitly, try to obtain the symbol information from locale.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String}!get\+Decimal\+Separator@{get\+Decimal\+Separator}}
+\index{get\+Decimal\+Separator@{get\+Decimal\+Separator}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String}}
+\subsubsection[{get\+Decimal\+Separator}]{\setlength{\rightskip}{0pt plus 5cm}static get\+Decimal\+Separator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___string_a9508b69d0dcef67c5189fa6e0b602443}
+Get the decimal separator. If it has not yet been set explicitly, try to obtain number formatting information from locale.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String}!get\+Is\+Iconv\+Enabled@{get\+Is\+Iconv\+Enabled}}
+\index{get\+Is\+Iconv\+Enabled@{get\+Is\+Iconv\+Enabled}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String}}
+\subsubsection[{get\+Is\+Iconv\+Enabled}]{\setlength{\rightskip}{0pt plus 5cm}static get\+Is\+Iconv\+Enabled (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___string_aa05fbd6d52127b9f0d3f10e8fa1c8708}
+Get whether iconv extension is available
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String}!get\+Is\+Mbstring\+Enabled@{get\+Is\+Mbstring\+Enabled}}
+\index{get\+Is\+Mbstring\+Enabled@{get\+Is\+Mbstring\+Enabled}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String}}
+\subsubsection[{get\+Is\+Mbstring\+Enabled}]{\setlength{\rightskip}{0pt plus 5cm}static get\+Is\+Mbstring\+Enabled (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___string_a1f68705fb5601acff3751bdb5774e0fc}
+Get whether mbstring extension is available
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String}!get\+Thousands\+Separator@{get\+Thousands\+Separator}}
+\index{get\+Thousands\+Separator@{get\+Thousands\+Separator}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String}}
+\subsubsection[{get\+Thousands\+Separator}]{\setlength{\rightskip}{0pt plus 5cm}static get\+Thousands\+Separator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___string_a58c3a485683aeb388f90fde3226b473a}
+Get the thousands separator. If it has not yet been set explicitly, try to obtain number formatting information from locale.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String}!Is\+U\+T\+F8@{Is\+U\+T\+F8}}
+\index{Is\+U\+T\+F8@{Is\+U\+T\+F8}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String}}
+\subsubsection[{Is\+U\+T\+F8}]{\setlength{\rightskip}{0pt plus 5cm}static Is\+U\+T\+F8 (
+\begin{DoxyParamCaption}
+\item[{}]{\$value = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___string_a63f6a2278f75e0cf5aeccc9732dd55b9}
+Check if a string contains U\+T\+F8 data
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String}!Sanitize\+U\+T\+F8@{Sanitize\+U\+T\+F8}}
+\index{Sanitize\+U\+T\+F8@{Sanitize\+U\+T\+F8}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String}}
+\subsubsection[{Sanitize\+U\+T\+F8}]{\setlength{\rightskip}{0pt plus 5cm}static Sanitize\+U\+T\+F8 (
+\begin{DoxyParamCaption}
+\item[{}]{\$value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___string_a232af7cdcf067fdccbea57efad186412}
+Try to sanitize U\+T\+F8, stripping invalid byte sequences. Not perfect. Does not surrogate characters.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String}!set\+Currency\+Code@{set\+Currency\+Code}}
+\index{set\+Currency\+Code@{set\+Currency\+Code}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String}}
+\subsubsection[{set\+Currency\+Code}]{\setlength{\rightskip}{0pt plus 5cm}static set\+Currency\+Code (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Value = {\ttfamily '\$'}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___string_a7b5d6e31a6509987d3ded22cf25d1594}
+Set the currency code. Only used by \doxyref{P\+H\+P\+Excel\+\_\+\+Style\+\_\+\+Number\+Format\+::to\+Formatted\+String()}{p.}{class_p_h_p_excel___style___number_format_a406a13658526181a171b0f9f43ff5d71} to format output by \doxyref{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L}{p.}{class_p_h_p_excel___writer___h_t_m_l} and \doxyref{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+P\+D\+F}{p.}{class_p_h_p_excel___writer___p_d_f}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Value} & Character for currency code \\
+\hline
+\end{DoxyParams}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String}!set\+Decimal\+Separator@{set\+Decimal\+Separator}}
+\index{set\+Decimal\+Separator@{set\+Decimal\+Separator}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String}}
+\subsubsection[{set\+Decimal\+Separator}]{\setlength{\rightskip}{0pt plus 5cm}static set\+Decimal\+Separator (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Value = {\ttfamily '.'}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___string_a148be0186e3985f51972f26e96642a01}
+Set the decimal separator. Only used by \doxyref{P\+H\+P\+Excel\+\_\+\+Style\+\_\+\+Number\+Format\+::to\+Formatted\+String()}{p.}{class_p_h_p_excel___style___number_format_a406a13658526181a171b0f9f43ff5d71} to format output by \doxyref{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L}{p.}{class_p_h_p_excel___writer___h_t_m_l} and \doxyref{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+P\+D\+F}{p.}{class_p_h_p_excel___writer___p_d_f}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Value} & Character for decimal separator \\
+\hline
+\end{DoxyParams}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String}!set\+Thousands\+Separator@{set\+Thousands\+Separator}}
+\index{set\+Thousands\+Separator@{set\+Thousands\+Separator}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String}}
+\subsubsection[{set\+Thousands\+Separator}]{\setlength{\rightskip}{0pt plus 5cm}static set\+Thousands\+Separator (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Value = {\ttfamily ','}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___string_aa3a1bbda8bc937fcfb632a703423868a}
+Set the thousands separator. Only used by \doxyref{P\+H\+P\+Excel\+\_\+\+Style\+\_\+\+Number\+Format\+::to\+Formatted\+String()}{p.}{class_p_h_p_excel___style___number_format_a406a13658526181a171b0f9f43ff5d71} to format output by \doxyref{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+H\+T\+M\+L}{p.}{class_p_h_p_excel___writer___h_t_m_l} and \doxyref{P\+H\+P\+Excel\+\_\+\+Writer\+\_\+\+P\+D\+F}{p.}{class_p_h_p_excel___writer___p_d_f}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Value} & Character for thousands separator \\
+\hline
+\end{DoxyParams}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String}!Str\+To\+Lower@{Str\+To\+Lower}}
+\index{Str\+To\+Lower@{Str\+To\+Lower}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String}}
+\subsubsection[{Str\+To\+Lower}]{\setlength{\rightskip}{0pt plus 5cm}static Str\+To\+Lower (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Value = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___string_a807a6401b75bda803c0968becf82a234}
+Convert a U\+T\+F-\/8 encoded string to lower case
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Value} & U\+T\+F-\/8 encoded string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String}!Str\+To\+Title@{Str\+To\+Title}}
+\index{Str\+To\+Title@{Str\+To\+Title}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String}}
+\subsubsection[{Str\+To\+Title}]{\setlength{\rightskip}{0pt plus 5cm}static Str\+To\+Title (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Value = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___string_a126d16b26a55dfa64604e90ea52ea4b5}
+Convert a U\+T\+F-\/8 encoded string to title/proper case (uppercase every first character in each word, lower case all other characters)
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Value} & U\+T\+F-\/8 encoded string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String}!Str\+To\+Upper@{Str\+To\+Upper}}
+\index{Str\+To\+Upper@{Str\+To\+Upper}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String}}
+\subsubsection[{Str\+To\+Upper}]{\setlength{\rightskip}{0pt plus 5cm}static Str\+To\+Upper (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Value = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___string_a9cc6c8b0d6e70d2926c9ccc2aed9f62a}
+Convert a U\+T\+F-\/8 encoded string to upper case
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Value} & U\+T\+F-\/8 encoded string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String}!Substring@{Substring}}
+\index{Substring@{Substring}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String}}
+\subsubsection[{Substring}]{\setlength{\rightskip}{0pt plus 5cm}static Substring (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Value = {\ttfamily ''}, }
+\item[{}]{\$p\+Start = {\ttfamily 0}, }
+\item[{}]{\$p\+Length = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___string_a493b0e2f367f61371dfe1add5886e384}
+Get a substring of a U\+T\+F-\/8 encoded string. First try mbstring, then iconv, finally strlen
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Value} & U\+T\+F-\/8 encoded string \\
+\hline
+int & {\em \$p\+Start} & Start offset \\
+\hline
+int & {\em \$p\+Length} & Maximum number of characters in substring \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String}!S\+Y\+L\+Kto\+U\+T\+F8@{S\+Y\+L\+Kto\+U\+T\+F8}}
+\index{S\+Y\+L\+Kto\+U\+T\+F8@{S\+Y\+L\+Kto\+U\+T\+F8}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String}}
+\subsubsection[{S\+Y\+L\+Kto\+U\+T\+F8}]{\setlength{\rightskip}{0pt plus 5cm}static S\+Y\+L\+Kto\+U\+T\+F8 (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Value = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___string_aa3502f4c7b767bab9891a0d5c63a30fb}
+Convert S\+Y\+L\+K encoded string to U\+T\+F-\/8
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string U\+T\+F-\/8 encoded string 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String}!test\+String\+As\+Numeric@{test\+String\+As\+Numeric}}
+\index{test\+String\+As\+Numeric@{test\+String\+As\+Numeric}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String}}
+\subsubsection[{test\+String\+As\+Numeric}]{\setlength{\rightskip}{0pt plus 5cm}static test\+String\+As\+Numeric (
+\begin{DoxyParamCaption}
+\item[{}]{\$value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___string_a438e2c6b87640e6e83f7ac4daf137bed}
+Retrieve any leading numeric part of a string, or return the full string if no leading numeric (handles basic integer or float, but not exponent or non decimal)
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed string or only the leading numeric part of the string 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String}!utf16\+\_\+decode@{utf16\+\_\+decode}}
+\index{utf16\+\_\+decode@{utf16\+\_\+decode}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String}}
+\subsubsection[{utf16\+\_\+decode}]{\setlength{\rightskip}{0pt plus 5cm}static utf16\+\_\+decode (
+\begin{DoxyParamCaption}
+\item[{}]{\$str, }
+\item[{}]{\$bom\+\_\+be = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___string_a41e6470cc33268282353ff7c43bba0ef}
+Decode U\+T\+F-\/16 encoded strings.
+
+Can handle both B\+O\+M'ed data and un-\/\+B\+O\+M'ed data. Assumes Big-\/\+Endian byte order if no B\+O\+M is available. This function was taken from {\tt http\+://php.\+net/manual/en/function.\+utf8-\/decode.\+php} and \$bom\+\_\+be parameter added.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$str} & U\+T\+F-\/16 encoded data to decode. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string U\+T\+F-\/8 / I\+S\+O encoded data.  public 
+\end{DoxyReturn}
+\begin{DoxyVersion}{Version}
+0.\+2 / 2010-\/05-\/13 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Author}
+Rasmus Andersson \doxyref{http\+://rasmusandersson.\+se/}{p.}{} 
+
+vadik56 
+\end{DoxyAuthor}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String}!U\+T\+F8to\+B\+I\+F\+F8\+Unicode\+Long@{U\+T\+F8to\+B\+I\+F\+F8\+Unicode\+Long}}
+\index{U\+T\+F8to\+B\+I\+F\+F8\+Unicode\+Long@{U\+T\+F8to\+B\+I\+F\+F8\+Unicode\+Long}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String}}
+\subsubsection[{U\+T\+F8to\+B\+I\+F\+F8\+Unicode\+Long}]{\setlength{\rightskip}{0pt plus 5cm}static U\+T\+F8to\+B\+I\+F\+F8\+Unicode\+Long (
+\begin{DoxyParamCaption}
+\item[{}]{\$value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___string_ab8bb1f6798969de77820379f7a341967}
+Converts a U\+T\+F-\/8 string into B\+I\+F\+F8 Unicode string data (16-\/bit string length) Writes the string using uncompressed notation, no rich text, no Asian phonetics If mbstring extension is not available, A\+S\+C\+I\+I is assumed, and compressed notation is used although this will give wrong results for non-\/\+A\+S\+C\+I\+I strings see Open\+Office.\+org's Documentation of the Microsoft Excel File Format, sect. 2.\+5.\+3
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & U\+T\+F-\/8 encoded string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String}!U\+T\+F8to\+B\+I\+F\+F8\+Unicode\+Short@{U\+T\+F8to\+B\+I\+F\+F8\+Unicode\+Short}}
+\index{U\+T\+F8to\+B\+I\+F\+F8\+Unicode\+Short@{U\+T\+F8to\+B\+I\+F\+F8\+Unicode\+Short}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String}}
+\subsubsection[{U\+T\+F8to\+B\+I\+F\+F8\+Unicode\+Short}]{\setlength{\rightskip}{0pt plus 5cm}static U\+T\+F8to\+B\+I\+F\+F8\+Unicode\+Short (
+\begin{DoxyParamCaption}
+\item[{}]{\$value, }
+\item[{}]{\$arrc\+Runs = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___string_a2642412b9dfc60ebb4f5840a56c8d060}
+Converts a U\+T\+F-\/8 string into B\+I\+F\+F8 Unicode string data (8-\/bit string length) Writes the string using uncompressed notation, no rich text, no Asian phonetics If mbstring extension is not available, A\+S\+C\+I\+I is assumed, and compressed notation is used although this will give wrong results for non-\/\+A\+S\+C\+I\+I strings see Open\+Office.\+org's Documentation of the Microsoft Excel File Format, sect. 2.\+5.\+3
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & U\+T\+F-\/8 encoded string \\
+\hline
+ & {\em mixed\mbox{[}$\,$\mbox{]}} & \$arrc\+Runs Details of rich text runs in \$value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+\subsection{Field Documentation}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String}!S\+T\+R\+I\+N\+G\+\_\+\+R\+E\+G\+E\+X\+P\+\_\+\+F\+R\+A\+C\+T\+I\+O\+N@{S\+T\+R\+I\+N\+G\+\_\+\+R\+E\+G\+E\+X\+P\+\_\+\+F\+R\+A\+C\+T\+I\+O\+N}}
+\index{S\+T\+R\+I\+N\+G\+\_\+\+R\+E\+G\+E\+X\+P\+\_\+\+F\+R\+A\+C\+T\+I\+O\+N@{S\+T\+R\+I\+N\+G\+\_\+\+R\+E\+G\+E\+X\+P\+\_\+\+F\+R\+A\+C\+T\+I\+O\+N}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+String}}
+\subsubsection[{S\+T\+R\+I\+N\+G\+\_\+\+R\+E\+G\+E\+X\+P\+\_\+\+F\+R\+A\+C\+T\+I\+O\+N}]{\setlength{\rightskip}{0pt plus 5cm}const S\+T\+R\+I\+N\+G\+\_\+\+R\+E\+G\+E\+X\+P\+\_\+\+F\+R\+A\+C\+T\+I\+O\+N = '(-\/?)(\textbackslash{}d+)\textbackslash{}s+(\textbackslash{}d+\textbackslash{}/\textbackslash{}d+)'}\label{class_p_h_p_excel___shared___string_a425b8f16d7a8686c75c6b103348374f7}
+Constants Regular Expressions 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/var/www/workspace/\+O\+D\+I-\/\+P\+R\+O\+J\+E\+C\+T/model/\+P\+H\+P\+Excel/\+Classes/\+P\+H\+P\+Excel/\+Shared/String.\+php\end{DoxyCompactItemize}

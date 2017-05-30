@@ -1,0 +1,101 @@
+\section{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+File Class Reference}
+\label{class_p_h_p_excel___shared___file}\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+File@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+File}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static {\bf set\+Use\+Upload\+Temp\+Directory} (\$use\+Upload\+Temp\+Dir=F\+A\+L\+S\+E)
+\item 
+static {\bf get\+Use\+Upload\+Temp\+Directory} ()
+\item 
+static {\bf file\+\_\+exists} (\$p\+Filename)
+\item 
+static {\bf realpath} (\$p\+Filename)
+\item 
+static {\bf sys\+\_\+get\+\_\+temp\+\_\+dir} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static {\bfseries \$\+\_\+use\+Upload\+Temp\+Directory} = F\+A\+L\+S\+E\label{class_p_h_p_excel___shared___file_a390f5646aa2c14d8ecc01594ef6b133e}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+File@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+File}!file\+\_\+exists@{file\+\_\+exists}}
+\index{file\+\_\+exists@{file\+\_\+exists}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+File@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+File}}
+\subsubsection[{file\+\_\+exists}]{\setlength{\rightskip}{0pt plus 5cm}static file\+\_\+exists (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Filename}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___file_a065720635f19b64912db08f72cb13c4a}
+Verify if a file exists
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Filename} & Filename \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+File@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+File}!get\+Use\+Upload\+Temp\+Directory@{get\+Use\+Upload\+Temp\+Directory}}
+\index{get\+Use\+Upload\+Temp\+Directory@{get\+Use\+Upload\+Temp\+Directory}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+File@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+File}}
+\subsubsection[{get\+Use\+Upload\+Temp\+Directory}]{\setlength{\rightskip}{0pt plus 5cm}static get\+Use\+Upload\+Temp\+Directory (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___file_a8d2fa2f493122747924339df5500c235}
+Get the flag indicating whether the File Upload Temp directory should be used for temporary files
+
+\begin{DoxyReturn}{Returns}
+boolean Use File Upload Temporary directory (true or false) 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+File@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+File}!realpath@{realpath}}
+\index{realpath@{realpath}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+File@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+File}}
+\subsubsection[{realpath}]{\setlength{\rightskip}{0pt plus 5cm}static realpath (
+\begin{DoxyParamCaption}
+\item[{}]{\$p\+Filename}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___file_a548c451387ddad2e2a9d304e976ee122}
+Returns canonicalized absolute pathname, also for Z\+I\+P archives
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$p\+Filename} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+File@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+File}!set\+Use\+Upload\+Temp\+Directory@{set\+Use\+Upload\+Temp\+Directory}}
+\index{set\+Use\+Upload\+Temp\+Directory@{set\+Use\+Upload\+Temp\+Directory}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+File@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+File}}
+\subsubsection[{set\+Use\+Upload\+Temp\+Directory}]{\setlength{\rightskip}{0pt plus 5cm}static set\+Use\+Upload\+Temp\+Directory (
+\begin{DoxyParamCaption}
+\item[{}]{\$use\+Upload\+Temp\+Dir = {\ttfamily FALSE}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___file_aebda6c8f5427853aae5264e8fe100b38}
+Set the flag indicating whether the File Upload Temp directory should be used for temporary files
+
+
+\begin{DoxyParams}[1]{Parameters}
+boolean & {\em \$use\+Upload\+Temp\+Dir} & Use File Upload Temporary directory (true or false) \\
+\hline
+\end{DoxyParams}
+\index{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+File@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+File}!sys\+\_\+get\+\_\+temp\+\_\+dir@{sys\+\_\+get\+\_\+temp\+\_\+dir}}
+\index{sys\+\_\+get\+\_\+temp\+\_\+dir@{sys\+\_\+get\+\_\+temp\+\_\+dir}!P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+File@{P\+H\+P\+Excel\+\_\+\+Shared\+\_\+\+File}}
+\subsubsection[{sys\+\_\+get\+\_\+temp\+\_\+dir}]{\setlength{\rightskip}{0pt plus 5cm}static sys\+\_\+get\+\_\+temp\+\_\+dir (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_h_p_excel___shared___file_ace631d4bfe98296fe65c34b0bf50f2e3}
+Get the systems temporary directory.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/var/www/workspace/\+O\+D\+I-\/\+P\+R\+O\+J\+E\+C\+T/model/\+P\+H\+P\+Excel/\+Classes/\+P\+H\+P\+Excel/\+Shared/File.\+php\end{DoxyCompactItemize}
